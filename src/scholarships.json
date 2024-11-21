@@ -1,0 +1,939 @@
+[
+  {
+    "id": "petronas",
+    "name": "PETRONAS Powering Knowledge Education Sponsorship (PESP)",
+    "shortName": "PETRONAS",
+    "description": "Since 1975, PETRONAS has awarded education sponsorships to more than 36,000 deserving students of high academic calibre who dare to push boundaries with a performance mindset and leadership capabilities. The PETRONAS Powering Knowledge Education Sponsorship (PESP) is a programme for deserving SPM leavers to pursue their tertiary education at top-notch universities globally and locally. Besides providing a golden opportunity for students to further their studies, PESP also provides mentoring sessions and programmes that aim to enhance interpersonal skills and help its scholars fully develop their potential in certain industries. Upon graduation, PESP scholars will enjoy the privilege to work with PETRONAS, gaining insightful experience from more experienced and skilled staff.",
+    "logoPlaceholder": "/assets/company_logos/Petronas_logo.jpg",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian Citizen aged between 17 - 19 years old during year of application",
+        "Possess strong leadership skills and active participation (demonstrable) in extra-curricular activities",
+        "Have high integrity and humility",
+        "Not presently holding other scholarships/loans"
+      ],
+      "academicQualifications": [
+        "UTP (Computing/Engineering): Minimum 8A- including Chemistry, Physics, and Mathematics",
+        "Local Universities (Arts): Minimum 8A- including Mathematics",
+        "Overseas Universities (Science/Engineering): Minimum 4A+ and 4A- including Chemistry, Physics, and Mathematics",
+        "Overseas Universities (Arts/Computing): Minimum 4A+ and 4A- including Mathematics"
+      ]
+    },
+    "requiredDocuments": [
+      "Copy of applicant's IC and parents' IC (Certified True Copy)",
+      "SPM results (Certified True Copy)",
+      "Co-curricular certificates (Certified True Copy)",
+      "PAJSK Certificate (Certified True Copy)",
+      "Parents' or Guardians' Salary Slip / EA form (Certified True Copy)",
+      "Statutory Declaration (if any of your parents are unemployed/retired) (Certified True Copy)"
+    ],
+    "coursesOffered": {
+      "UTP": [
+        "Chemical Engineering",
+        "Electrical & Electronic Engineering",
+        "Mechanical Engineering",
+        "Petroleum Engineering",
+        "Petroleum Geoscience"
+      ],
+      "Overseas": [
+        "Applied Chemistry",
+        "Chemical Engineering",
+        "Mechanical Engineering",
+        "Electrical Engineering",
+        "Instrumentation Engineering",
+        "Geoscience / Geology / Geophysics",
+        "Petroleum Engineering",
+        "Accounting / Finance",
+        "Economics / Business Admin / International Business",
+        "Marketing",
+        "IT / Software Engineering / Computer Science",
+        "Data Science / Data Engineering",
+        "Actuarial Science",
+        "Sociology / Psychology",
+        "Law",
+        "Mathematics",
+        "Statistics",
+        "Software Engineering"
+      ]
+    },
+    "countriesOffered": {
+      "Global": [
+        "United States",
+        "United Kingdom",
+        "Australia",
+        "New Zealand",
+        "China",
+        "Japan",
+        "South Korea"
+      ],
+      "Local": [
+        "Universiti Teknologi PETRONAS",
+        "Universiti Malaya",
+        "Universiti Kebangsaan Malaysia",
+        "Universiti Putra Malaysia",
+        "Universiti Utara Malaysia",
+        "Curtin University",
+        "Swinburne University",
+        "University of Nottingham Malaysia",
+        "Sunway University",
+        "Heriot-Watt University Malaysia",
+        "University of Wollongong Malaysia"
+      ]
+    },
+    "bondingDetails": {
+      "duration": "Minimum 5 years",
+      "workLocation": "Various work stations locally or globally",
+      "repaymentConditions": null
+    },
+    "applicationTimeline": {
+      "startDate": "May 20, 2024",
+      "endDate": "June 5, 2024",
+      "note": "Application opens right after the announcement of SPM results and lasts for about 2 weeks"
+    },
+    "numberOfRecipients": {
+      "local": 400,
+      "overseas": 200,
+      "total": 600,
+      "note": "Approximately 600 successful recipients (200 overseas, 400 local)"
+    },
+    "applicationLink": "https://educationsponsorship.petronas.com.my/OAS",
+    "resultNotification": [
+      "Via PETRONAS website (https://educationsponsorship.petronas.com.my/OAS)",
+      "Email notification",
+      "SMS notification",
+      "Phone call"
+    ],
+    "applicationProcess": [
+      "Stage 1: Submit application online",
+      "Stage 2: Personality and Cognitive Assessment (Cambridge Personal Styles Questionnaire (CPSQ) and Thinking Skills Assessment (TSA) test)",
+      "Stage 3: Student Potential Assessment (SPA) - For candidates who meet the requirements",
+      "Stage 4: Physical Interview - Group discussions and individual presentations"
+    ],
+    "contactEmail": "edu_sponsorship@petronas.com.my",
+    "scholars": [
+      {
+        "contributorName": "Yeoh Sheng Ze",
+        "contributorImage": "/assets/portrait/Sheng_Ze.jpg",
+        "intendedCourse": "Mathematics / Statistics (Data Science)",
+        "motivationalQuote": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "1. Please introduce yourself.",
+              "Answer: I am Yeoh Sheng Ze, passionate about Mathematics and Statistics with aspirations to work in data science.",
+              "2. Which country do you want to go? Locally or abroad? Why?",
+              "Answer: I prefer studying in the UK as it offers cutting-edge research and exposure to advanced systems in data science."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "- Being cohesive and able to collaborate with others.",
+              "- Ability to streamline your thoughts and deliver your ideas appropriately."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "- Stay informed of the latest global affairs.",
+              "- Prepare data and statistics to support your statements.",
+              "- Understand the company’s vision and mission.",
+              "- Practice how you deliver ideas."
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Sarvintirran Parthiban",
+        "contributorImage": "/assets/portrait/Sarvin.jpg",
+        "intendedCourse": "Electrical Engineering",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "1. Please introduce yourself (name, course applied, local or abroad, etc.).",
+              "2. The next other questions are regarding case studies which are to be answered individually and in a group."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Interview:",
+              "1. Be modest and avoid exaggeration of yourself.",
+              "2. Be honest and comfortable to agree and disagree with points. This shows that you are really engaged in conversations and feel free to share personal thoughts.",
+              "3. Stay calm and do not stutter. Be clear with your points even though they could be wrong. This exudes confidence and gives a good reputation.",
+              "4. Maintain a good posture and always smile. This also shows a good impression for interviewers.",
+              "5. Dress well and stay sanitary."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "i) Study scholarship bodies' websites or social media accounts. Acknowledge their initiatives and implement them in your interviews.",
+              "ii) Understand the company's goals and think about how you can help them achieve those goals.",
+              "iii) Just be calm and chill 😎. Don't exasperate yourselves before the interview. Don't treat the interview as an interview but treat it as a group conversation and have a good time ;)"
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Soo Jian Xing",
+        "contributorImage": "/assets/portrait/Soo.JPG",
+        "intendedCourse": "Accounting and Finance",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "1. Introduce yourself.",
+              "2. What do you know about our organisation?",
+              "3. What is your opinion towards xxx?",
+              "4. Why did you choose this course?",
+              "5. What makes you deserve this scholarship?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Be honest and just be yourself. Do not try to impress the interviewers by boasting about your achievements too much because many candidates who have successfully made it to the last stage are just as good as you are, if not more."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "1. Be yourself. Answer the questions honestly; do not try to lie or impress the interviewers by saying something that you know is illogical or impossible to achieve as of now.",
+              "2. Do your research. This is definitely one of the most crucial parts of the interview. A candidate who does his/her research says a lot about his/her personality. The interviewers can tell if you are well prepared for the interview from the way you relate your answers with information that is relevant to the organisation.",
+              "3. Be confident. If you can make it to the stages, you are already more successful than most of the candidates who did not! Do not have low self-esteem just because your achievements are not as marvellous as other people's! Remember you have spent 5 years building the fundamentals, and it's time to move forward instead of looking back at your past achievements.",
+              "4. Prepare for mock interviews. Make a list of questions that you think might come out in the interview. Remember, the effort you put in today can make a huge difference tomorrow!",
+              "5. Get sufficient sleep before assessment/interview. THIS IS ABSOLUTELY VITAL! You must get sufficient sleep the day before you do any assessment or go for an interview. Having sufficient sleep ensures you think critically the next day and maximises your performance. A wise man once said, better to be safe than sorry; you would not want to cry in regret when you get rejected because you performed poorly in the interview due to insufficient quality sleep!"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shell",
+    "name": "Shell Malaysia Scholarship",
+    "shortName": "Shell",
+    "description": "The Shell Scholarship Programme provides successful applicants with the chance to pursue undergraduate studies in global top-tier universities while participating in mentoring and internship programmes. Upon graduation, scholars will have the opportunity to embark on a fulfilling career in various engineering, geosciences, and commercial disciplines across the organisation’s business operations.",
+    "logoPlaceholder": "/assets/company_logos/Shell_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports, etc.",
+        "Not presently holding other scholarships/loans",
+        "Consistently strong academic achievements",
+        "Minimum 8As (A/A+) in Sijil Pelajaran Malaysia (SPM) OR Excellent O-level grades at IGCSE (A*/A)",
+        "Before applying, ensure you are eligible to work in the country where the scholarship program is offered.",
+        "Willing to pursue A-levels at a selected boarding institution"
+      ]
+    },
+    "requiredDocuments": [
+      "SPM/IGCSE result slips",
+      "Certificates (certified true copy)",
+      "Resume (Shell requires a resume)"
+    ],
+    "coursesOffered": [
+      "Engineering: Mechanical, Civil, Chemical, Petroleum, Electrical & Electronics, Environmental, Sustainable",
+      "Sciences: Geology, Geosciences, Geomatics, Geophysics, Data Science",
+      "Commercial: Business & Management, Digital Marketing"
+    ],
+    "bondingDetails": {
+      "duration": "5 years",
+      "workLocation": "Shell Malaysia",
+      "repaymentConditions": null
+    },
+    "applicationTimeline": {
+      "startDate": "May 27, 2024",
+      "endDate": "June 17, 2024"
+    },
+    "numberOfRecipients": {
+      "2024": null,
+      "2023": null
+    },
+    "applicationLink": "https://www.shell.com.my/careers/students-and-graduates/scholarships.html",
+    "resultNotification": [
+      "Online application stage: via Email",
+      "Virtual Job Tryout and ODVI stage: via Phone Call (at any time by a Shell officer)",
+      "Phone Call stage: via Email",
+      "Competency-Based Interview stage: Congratulatory phone call"
+    ],
+    "applicationProcess": [
+      "Stage 1: Online Application",
+      "Stage 2: Virtual Job Tryout and On-Demand Video Interview (ODVI)",
+      "Stage 3: Phone Call",
+      "Stage 4: Competency-Based Interview"
+    ],
+    "contactEmail": "careers@shell.com",
+    "scholars": [
+      {
+        "contributorName": "Liyana Mohammed Rafidz",
+        "contributorImage": "/assets/portrait/Liyana.jpg",
+        "intendedCourse": "Data Science",
+        "motivationalQuote": "Believe in yourself!",
+        "resumeImage": "/assets/resumes/Liyana_Resume.jpg",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "Tell me about a time or situation you displayed leadership.",
+              "Situation: My school participated in the Malaysian National Schools Debating Championship 2023, a prestigious national debate competition for secondary schools in Malaysia.",
+              "Task: We entered the competition as a relatively new team, facing formidable opponents from established schools in the national scene. As the president of our debate club, I was determined to use my leadership and debating experience to help the team succeed and uplift our school’s name in the circuit.",
+              "Action: As team captain, I drew on my experience in competitive debating to strategically train the team. For instance, I organised after-school mock debates and joint research sessions, and communicated with our teacher advisor and the Guru Penolong Kanan Kokurikulum to secure our training time and location.",
+              "Result: Despite my own nerves, I focused on building team cohesion and instilling confidence in ourselves before and throughout the competition. After six gruelling rounds of intense debates, we made it to the Grand Finals and were awarded Runner-Up. It was one of the happiest moments of my life and taught me the importance of strong team bonds and unwavering determination amidst tough competition.",
+              "Sample questions:",
+              "1. Talk about a time where you had to work in a diverse environment/team.",
+              "2. Talk about a time where you didn't succeed. How did you handle that situation?",
+              "3. Talk about a time where you had to juggle multiple commitments at once."
+            ]
+          },
+          {
+            "title": "Advice and Tips for Juniors",
+            "content": [
+              "1. Keep track of your participations/achievements as you make your way through high school (with relevant certificates as proof) as it will be useful in crafting your resume. If you don't have a resume ready, try to get working on it early.",
+              "2. Thoroughly research the sponsorship bodies. Personally, reading the 2023 annual reports from Shell really helped me get a rough overview of Shell's global operations, their goals, and values.",
+              "3. Create a scholarship spreadsheet to track deadlines, login information, etc. It can get hectic during the application season!",
+              "4. Try to do mock interviews with family members/friends. Practicing the content of your answers and the WAY you phrase your answers is incredibly important.",
+              "5. Don't feel discouraged from applying to scholarships if you feel your academics or ECAs are not 'exemplary' enough. Scholarships care a lot about personal character and vision from an individual, as well as the knowledge/values you gain from your experiences.",
+              "6. In group interviews, be a leader when there is none, and spice the discussion up if there are many! You can take the opportunity to step up as a leader if no one seems to be leading the group, or contribute meaningfully if your group members are all very active. Don't fight other candidates for the spot of the 'leader'. Scholarships value people who can be good team leaders AND team players."
+            ]
+          },
+          {
+            "title": "Sample Resume",
+            "content": [],
+            "resumeImage": "/assets/image1.jpg"
+          }
+        ]
+      },
+      {
+        "contributorName": "Muhammad Danish Deniel",
+        "contributorImage": "/assets/portrait/Danish_Deniel.jpeg",
+        "intendedCourse": "Engineering",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "1. Please introduce yourself.",
+              "Answer: Hi, my name is Danish Deniel. I was born and raised in Subang Jaya and grew up together with my cousins under one roof. I pursued my secondary education in Kolej Yayasan Saad Melaka and hope to further my education in the field of engineering. I am someone who puts my all into my work and will always ensure that whatever I do, I will try my best to be the best.",
+              "2. Describe a time when you disagreed with someone during a group discussion/project.",
+              "Answer: I once had to work together with my friends to run a food bazaar stall for a charity project. One of the hiccups we faced was when buying our ingredients, the available ingredients were significantly more expensive than what was budgeted and thus, my group and I had to discuss whether to increase prices to make up for the increased cost or to maintain the price but reduce our profit margin. I was of the opinion that we should increase the prices but as group leader, I had to take into account the opinions of my group mates. Particularly, one of my group mates was vocal about maintaining the prices, and I made it a point to understand his rationale. After discussion, we decided to increase prices to meet profit goals."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "- Due dates are critical. Always be aware of submission deadlines and ensure timely submissions.",
+              "- Get all documents ready and certified (if required). Scan and save them as PDFs for easy reference.",
+              "- When writing essays, research the company’s vision and mission. Incorporate these into your writing.",
+              "- Reach out to previous scholars for advice and insights. Different candidates have different experiences, so seek multiple perspectives."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "- Study diligently and be prepared for all stages.",
+              "- Check your emails regularly as most communications are done via email. Consider creating a separate email for work-related matters.",
+              "- Stay flexible and adaptable to changes or unexpected elements in the process.",
+              "- Approach the interview as a conversation rather than a formal interrogation. Be genuine and confident."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jpa-ppn",
+    "name": "Program Penajaan Nasional (PPN) - JPA",
+    "shortName": "PPN - JPA",
+    "description": "The JPA-Program Penajaan Nasional (PPN) is a highly esteemed scholarship program in Malaysia, structured as a convertible loan. It is designed for outstanding students who excel in the Sijil Pelajaran Malaysia (SPM) examination. Successful recipients of this scholarship are granted the unique opportunity to pursue their undergraduate studies at one of the top 20 universities abroad, as ranked by the Quacquarelli Symonds (QS) World University Rankings for the relevant year. This initiative aims to cultivate future leaders and innovators by providing access to world-class education.",
+    "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Must be a Malaysian citizen.",
+        "Applicants must be free from chronic, contagious, or any conditions that require ongoing treatment and must be certified as healthy enough to complete their studies.",
+        "The applicant's parents must not be blacklisted by JPA or involved in any legal action with JPA.",
+        "Applicants must have taken the SPM examination for the first time at any secondary school or as private candidates.",
+        "Must be under the age of 19 (or under 20 for transition students) by 31st December of the SPM exam year.",
+        "Not receiving financial aid or sponsorship from any other agency for the same level of study."
+      ],
+      "academicQualifications": [
+        {
+          "field": "Engineering/Science and Technology",
+          "criteria": [
+            "Applicants must achieve at least 9 A+ grades in the following subjects:",
+            "- Malay Language",
+            "- English Language",
+            "- Mathematics",
+            "- Sejarah",
+            "- Additional Mathematics",
+            "- Physics",
+            "- Chemistry",
+            "- Islamic Education (or equivalent religious/moral studies)",
+            "- One additional subject",
+            "Additionally, if applicable, they must achieve a minimum of an A- grade in all other subjects."
+          ]
+        },
+        {
+          "field": "Non-Engineering/Non-Science and Technology",
+          "criteria": [
+            "Applicants must achieve at least 8 A+ grades in the following subjects:",
+            "- Malay Language",
+            "- English Language",
+            "- Mathematics",
+            "- Sejarah",
+            "- Islamic Education (or equivalent religious/moral studies)",
+            "- Science",
+            "- Two elective subjects",
+            "Additionally, if applicable, they must achieve a minimum of an A- grade in all other subjects."
+          ]
+        }
+      ]
+    },
+    "requiredDocuments": [
+      "Certified copy of SPM results",
+      "Copy of MyKad (identity card)",
+      "Copies of both parents' MyKad",
+      "Parents' income statement (subject to current requirements)",
+      "Health certification or medical report (when prompted)",
+      "Recent passport-sized photograph",
+      "Any additional supporting documents (e.g., co-curricular certificates) (subject to current requirements)"
+    ],
+    "coursesOffered": {
+      "Engineering/Science and Technology": [
+        "Aerospace Engineering",
+        "Civil and Structural Engineering",
+        "Security Engineering",
+        "Biomaterials Engineering"
+      ],
+      "Science and Technology": [
+        "Various scientific and technological fields"
+      ],
+      "Social Sciences": [
+        "Political Science/International Relations",
+        "Finance/Banking",
+        "Accounting/Taxation",
+        "Economics",
+        "Psychology"
+      ],
+      "Creative Industries": [
+        "Film and Television Production",
+        "Advertising",
+        "Graphic Design",
+        "Animation and Digital Content Creation",
+        "Visual Arts",
+        "Creative Writing"
+      ]
+    },
+    "countriesOffered": [
+      "United States",
+      "United Kingdom",
+      "Australia"
+    ],
+    "bondingDetails": {
+      "duration": "Convertible loan (conditions apply)",
+      "workLocation": null,
+      "repaymentConditions": [
+        "Full scholarship (0% repayment) if the student serves in the Public Service after graduation.",
+        "25% repayment if the student is employed by a Government-Linked Company (GLC) after graduation.",
+        "50% repayment if the student is employed by a private sector company in Malaysia.",
+        "100% repayment if the student is employed outside Malaysia."
+      ]
+    },
+    "applicationTimeline": {
+      "startDate": "29 May, 2024",
+      "endDate": "9 June, 2024",
+      "note": "Application opens right after the announcement of SPM results and typically lasts for about 1 week."
+    },
+    "numberOfRecipients": {
+      "local": null,
+      "overseas": null,
+      "total": 20
+    },
+    "applicationLink": "https://bmipenajaan.jpa.gov.my/ms",
+    "resultNotification": [
+      "Applicants can check their application results through a dedicated link provided on the official Jabatan Perkhidmatan Awam (JPA) website.",
+      "An email will be sent for successful candidates to attend the Student Assessment Centre (SAC).",
+      "Final results will be released approximately 1 month after the SAC session via the portal."
+    ],
+    "applicationProcess": [
+      "Stage 1: Screening based on SPM results.",
+      "Stage 2: Submission of application forms and psychometric tests.",
+      "Stage 3: Invitation to the Student Assessment Centre (SAC), which involves physical group interviews and activities.",
+      "Stage 4: Final selection and announcement of successful candidates."
+    ],
+    "contactEmail": "lspln.bmi@jpa.gov.my",
+    "scholars": [
+      {
+        "contributorName": "Teoh Wen Xuen",
+        "contributorImage": "/assets/portrait/Wen_Xuen.jpg",
+        "intendedCourse": "Biotechnology (Natural Sciences)",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "The most crucial element during the application process is to become a well-rounded person.",
+              "Focus on excelling in academics while actively participating in extracurricular activities.",
+              "Highlight leadership roles and achievements that align with the intended course."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "Stay calm during the interview.",
+              "Research your intended course to show genuine interest and passion.",
+              "Get to know your group members and maintain a positive atmosphere.",
+              "Be yourself and avoid memorizing answers. Show authenticity.",
+              "Lead discussions when appropriate, but allow others to contribute.",
+              "Ensure you have sufficient rest and present yourself confidently."
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Verness Chia Xin Thong",
+        "contributorImage": "/assets/portrait/Verness.jpeg",
+        "intendedCourse": "Data Science",
+        "motivationalQuote": null,
+        "resumeImage": "/assets/resumes/Verness_Resume.jpg",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "Q: What is your dream course? Can you please further explain?",
+              "A: Data Science. The most appealing part of it is the combination of mathematics and AI to process a huge amount of data, subsequently obtaining insights that will be beneficial for various aspects such as businesses. I am looking forward to acquiring knowledge about Machine Learning and coding skills.",
+              "Q: What is your dream university?",
+              "A: MIT and Stanford offer rigorous courses in data science.",
+              "Q: What are some cultural shocks that you experienced?",
+              "A: In Korea, I noticed guys putting on makeup, which is rarely seen in Malaysia. This taught me to embrace different perspectives and be open-minded.",
+              "Q: What are your contributions to your country?",
+              "A: I have participated in competitions and achieved international recognition. Additionally, I contributed to community projects such as recycling initiatives, clean-up campaigns, and visits to orphanages."
+            ]
+          },
+          {
+            "title": "Advice and Tips for Juniors",
+            "content": [
+              "1. Stay calm and adapt quickly to the interview environment.",
+              "2. Research your intended course and show genuine passion.",
+              "3. Build rapport with your group members before the interview to ease the process.",
+              "4. Be yourself and do not memorize answers; focus on authentic communication.",
+              "5. During discussions, show leadership while allowing others to contribute.",
+              "6. Ensure proper rest and eat well before your interview."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bomj",
+    "name": "Biasiswa Orang Muda Johor",
+    "shortName": "YPJ",
+    "description": "Biasiswa Orang Muda Johor is backed by Yayasan Pelajaran Johor. It provides successful applicants with the chance to pursue undergraduate studies in global top-tier universities. Upon graduation, scholars will have the opportunity to embark on a fulfilling career in government agencies or Government-linked companies (GLCs) linked to the Johor government.",
+    "logoPlaceholder": "/assets/company_logos/YPJ_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Applicant and parents are Malaysia citizens.",
+        "Applicant and father OR mother were born or resided in Johor for at least 10 consecutive years (from the date of application).",
+        "Being single / unmarried.",
+        "Pursuing full-time studies.",
+        "Not receiving financial aid / sponsorship from any other agency."
+      ],
+      "academicQualifications": [
+        "Obtain results of at least 9A+ for the following subjects:",
+        "- Malay.",
+        "- English.",
+        "- Mathematics.",
+        "- History.",
+        "- Additional Mathematics.",
+        "- Physics.",
+        "- Chemistry.",
+        "- Islamic Education / Moral Education / other equivalent religious studies.",
+        "- One additional subject.",
+        "AND IF ANY:",
+        "Obtain a minimum grade of A- for all other subjects."
+      ],
+      "additionalCriteria": [
+        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports, etc."
+      ]
+    },
+    "requiredDocuments": [
+      "Copy of Student’s Identification Card.",
+      "Copy of Parents’ or Guardian’s Identification Card.",
+      "Copy of SPM Result Slip.",
+      "Copy of Birth Certificate.",
+      "Copy of School Leaving Certificate.",
+      "Copy of Death / Divorce Certificate (If Applicable).",
+      "Copy of Income Statement of Mother AND Father / Guardian (SALARY SLIP / INCOME STATEMENT / EA FORM).",
+      "Certificate of co-curricular activities for the latest 3 years (ALL regardless of level of participation).",
+      "Letter of support from the school (if applicable).",
+      "Application form (instruction given in the website)."
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Engineering & Technical",
+        "Science & Technology",
+        "Social Science: Political Science / International Relations, Finance / Banking, Accounting / Taxation, Economics, Psychology"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Educational Pharmacy",
+        "Nursing",
+        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
+      ]
+    },
+    "countriesOffered": [
+      "The world's 20 best universities as listed in the Times Higher Education (THE) World University Rankings, Quacquarelli Symonds (QS) World University Rankings, and / or Academic Ranking of World Universities (ARWU) based on university ranking."
+    ],
+    "bondingDetails": {
+      "duration": "5 years",
+      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+    },
+    "applicationTimeline": {
+      "startDate": "May 26, 2024",
+      "endDate": "June 8, 2024",
+      "note": "SPM result released: 27 May 2024. All documents and certificates must be submitted to Yayasan Pelajaran Johor office in Larkin, Johor Bahru before deadline."
+    },
+    "numberOfRecipients": {
+      "2023": 3,
+      "2024": 6
+    },
+    "applicationLink": "https://prolims.gov.my/",
+    "generalInfoLink": "https://portal.ypj.gov.my/biasiswa-orang-muda-johor/",
+    "resultNotification": [
+      "Applicants will be notified via SMS to attend the assessment session.",
+      "Recipients will be notified through phone call."
+    ],
+    "applicationProcess": [
+      "Successful applicants will be invited to attend a 3-day assessment.",
+      "Activities include:",
+      "- Drawing to introduce yourself (character, goals, setbacks).",
+      "- Games and activities to test leadership, teamwork, and communication skills.",
+      "- English test comprising grammar, vocabulary, comprehension reading, and opinionated writing.",
+      "- IQ test (basic maths and sentence-based questions).",
+      "- Interactive sessions for setting realistic goals and action plans.",
+      "- Debate sessions (informal format).",
+      "- 10 applicants will attend a 30-minute interview conducted in both English and Malay."
+    ],
+    "contactEmail": "biasiswapelajaran@ypj.gov.my",
+    "contactNumber": "07-2344355",
+    "scholars": [
+      {
+        "contributorName": "Tan Wen Bin",
+        "contributorImage": "/assets/portrait/Wen_Bin.jpeg",
+        "intendedCourse": "Computer Science",
+        "motivationalQuote": "Believe in yourself and stay prepared.",
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "https://efficient-parent-8ec.notion.site/BOMJ-5ed7432570c842e4bee1eed2f1886a11?pvs=4"
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "Don’t be afraid to voice out your opinions but do ensure they are RELEVANT.",
+              "Strong leadership skills and active participation in the sessions.",
+              "Be honest and genuine. Don’t try to lie as you’ll definitely struggle during follow-up questions.",
+              "Have a good understanding of yourself. (Strength, weakness, course, goals, reasons for your choice, etc.)",
+              "Do ample preparation about your course and how it aligns with Johor’s developments.",
+              "Know facts about Malaysia and Johor (Menteri Besar, districts, population, recent development such as RTS link, Johor-Singapore Special Economic Zone etc.)",
+              "Read about IR 4.0, Society 5.0, Khazanah Research Institute.",
+              "Don’t give vague responses. Support your ideas with statistics."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kijang-bnm",
+    "name": "Kijang Scholarship (Bank Negara Malaysia)",
+    "shortName": "Kijang Scholarship",
+    "description": "The Kijang Scholarship is awarded to eligible individuals to pursue pre-university programmes at BNM's approved pre-university colleges. This scholarship provides tuition fees, subsistence allowance, as well as related scholarship allowances. The subsequent sponsorship to pursue an undergraduate programme is subject to the candidate meeting the Bank’s requirements.",
+    "logoPlaceholder": "/assets/company_logos/BNM.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Excellent examination result: A minimum of 8As (A and A+ only) obtained for SPM examinations",
+        "Strong leadership qualities, proven teamwork capabilities, outstanding performance in extra-curricular activities",
+        "Exceptional interpersonal skills",
+        "Not exceeding 19 years of age"
+      ]
+    },
+    "requiredDocuments": [
+      "Passport Size Photo",
+      "SPM Result",
+      "Certificates",
+      "Parents' or Guardians' salary slips or EA form"
+    ],
+    "coursesOffered": [
+      "Economics",
+      "Accounting",
+      "Finance",
+      "Actuarial Science",
+      "Mathematics",
+      "Statistics",
+      "Law",
+      "Data Science",
+      "Computer Science"
+    ],
+    "countriesOffered": [
+      "Both Local and Global"
+    ],
+    "bondingDetails": {
+      "duration": "Scholars will be required to serve their employment bond with BNM (i.e. ratio of one year of study to two years of service).",
+      "workLocation": "Bank Negara Malaysia headquarters or other relevant locations"
+    },
+    "applicationTimeline": {
+      "startDate": "May 24, 2024",
+      "endDate": "June 9, 2024"
+    },
+    "numberOfRecipients": {
+      "2024": 30
+    },
+    "applicationLink": "https://www.bnm.gov.my/careers/scholarships",
+    "resultNotification": [
+      "Via email",
+      "To confirm your acceptance, you must reply to the email by filling in the provided forms."
+    ],
+    "applicationProcess": [
+      "Stage 1: Writing an essay - When submitting your application through the website, you are required to write an essay of 250 words. Based on this essay, you will be shortlisted to the next stage.",
+      "Stage 2: Cognitive Ability Test (CAT) - Once shortlisted, you will receive an email requesting supporting documents. After that, you will sit for an online Cognitive Ability Test (CAT), including questions involving English (Passage Reading), Math, and Pattern Recognition.",
+      "Stage 3: Video Submission & Personality Assessment - You are required to create a 2-minute long video on a certain topic. Note: The personality assessment is conducted separately online, and NOT for shortlisting purposes.",
+      "Stage 4: Final Stage - The final stage is conducted physically at Bank Negara Malaysia's accommodation. Consists of: Briefings of the scholarship, 2 Group Assessments, Individual Interview Session (Final Interview)."
+    ],
+    "contactEmail": "profiling@bnm.gov.my",
+    "scholars": [
+      {
+        "contributorName": "Trinity Seow Kit Ye",
+        "contributorImage": "/assets/portrait/Trinity.jpeg",
+        "intendedCourse": "Economics",
+        "motivationalQuote": "Confidence and Authenticity",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Why do you want to pursue economics?",
+              "2. Why did you choose Bank Negara?",
+              "3. What did you do to prepare for this interview?",
+              "4. What real world issues did you learn from your research?",
+              "5. What was a challenging situation you faced?",
+              "6. Why did you choose to study in the US/UK?",
+              "7. What would you do if you didn't get accepted, and what if you did?"
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "i) Stay True to Yourself:",
+              "- Be confident in yourself and your abilities.",
+              "- Let your personality shine through, and be honest about your current knowledge.",
+              "- Don't pretend to know more information than you actually do. They WILL ask you further questions on what you tell them.",
+              "ii) Leadership and Teamwork:",
+              "- Take the opportunity to showcase your leadership skills during group assessments.",
+              "- Listen to your groupmates' ideas, and develop good strategies in solving the problem at hand.",
+              "- You don't necessarily HAVE to be the leader, as fighting for that position within the group may result in misunderstandings. Nonetheless, make sure you provide contributions during discussions and take initiative when the opportunity arises. Display your abilities to the assessors watching!",
+              "iii) Be Open Minded:",
+              "- After every group assessment, you are given time to reflect on your errors and discuss what improvements could've been made.",
+              "- In the final interview, the assessors will point out flaws in your approach during the assessments. Be receptive towards their input, and consider looking at things from different perspectives.",
+              "iv) Nation Building Mindset:",
+              "- As Bank Negara is the central bank of Malaysia, it's important to understand your role in contributing to the country if you were to work at the bank.",
+              "v) Show Interest in Your Chosen Course:",
+              "- This doesn't mean you need to have a deep understanding of it. However, it is important to be knowledgeable on some information regarding your course.",
+              "- For economics, I read a few books regarding the topic, which showed that I had passion in pursuing the course. Since I did research, I was able to answer questions involving economics given by my assessors to a certain degree."
+            ]
+          }
+        ]
+      },      
+      {
+        "contributorName": "Liaw Chong Ye",
+        "contributorImage": "/assets/portrait/Liaw.jpg",
+        "intendedCourse": "Economics",
+        "motivationalQuote": "The ability to work as a team and also be involved during the interview.",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Please introduce yourself.",
+              "- Hi, my name is Liaw Chong Ye. I am 18 years old and I am intending to pursue economics under the Kijang Scholarship. A few fun facts about me, I was the only Chinese in my secondary school throughout 5 years. This experience allowed me to accept diverse communities and cultures better. I also really like mathematics because I find it fascinating how formulas and equations are formed, as well as enjoying the feeling of getting complex questions right.",
+              "2. On the scale of 1-10, how would you rate yourself throughout the assessments today?",
+              "- I will give myself an 8/10. Because I feel like I have a bit of lacking in some aspects when discussing the case study with my teammates. I am glad they can fill up the gaps that I lacked. I personally went for a more moderation approach by keeping track on time and ensuring the discussions were not side tracking.",
+              "3. How much do you know about Bank Negara Malaysia?",
+              "- I know BNM is the place to promote financial and monetary stability in the country. I also know BNM acts as an advisor to the government when it comes to releasing our yearly budget. I also know a bit about how BNM is important in determining the interest rate for the banks in our country."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "1. Be yourself (obviously).",
+              "2. Don't act smart if you are not smart, that's crucial. This is really important because bear in mind that the panels are way more knowledgeable than you.",
+              "3. Have good teamwork, not necessarily being the leader, being the moderator can also be sufficient enough.",
+              "4. If you want the scholarship, show that you want the scholarship, practice interviews, sharpen your essay, in other words make it seem like you are desperate.",
+              "5. Read up a bit on Bank Negara, but don't abuse terminologies during the interview unless you are really knowledgeable about it.",
+              "6. Be confident with your capabilities, just trust yourself.",
+              "7. Enjoy the process, make more connections and friends."
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Joachim Low Cher Yang",
+        "contributorImage": "/assets/portrait/Joachim.jpg",
+        "intendedCourse": "Accounting and Finance",
+        "motivationalQuote": "Be yourself, participate and involve yourself in the group activity, and be honest with your thoughts.",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Please introduce yourself.",
+              "Ans: My name is Joachim Low Cher Yang. I applied to pursue Accounting and Finance under the Bank Negara Kijang Scholarship. I am from Malaysia.",
+              "2. What do you know about Bank Negara?",
+              "Ans: BNM is a financial institution that plays an important role in our country's development. It helps regulate policies and provides advisory on economic decisions for the government.",
+              "3. What is the importance of international reserves?",
+              "Ans: International reserves are assets our country holds that contain value, such as gold and foreign currency. These reserves function as a backup fund to sustain our economy during emergencies. International reserves are like a personal bank account—having more ensures financial stability and the ability to handle unforeseen circumstances.",
+              "4. We have all experienced stress in life. When do you feel the most stressful moment in your life?",
+              "Ans: Well, I won't say there is a single point that was the most stressful, but my entire life has been under a certain amount of pressure due to unforeseen circumstances.",
+              "5. From yesterday's group activity, state 2 strengths and 2 weaknesses that you realized and how you are going to find a solution for them.",
+              "Ans: One weakness I realized is that during the start of the group activity, no one took charge of the group, and we all executed our ideas individually. This highlighted the lack of leadership. I would try to be more involved and bring my team into discussions to lead them in the right direction. Another weakness was the lack of communication. Group members were doing their own tasks without coordination. To improve, I would encourage open communication to ensure everyone is on the same page.",
+              "For strengths, one is that I managed to bring my group together after guidance from our mentors. I initiated a discussion to align our goals, assigned tasks, and ensured we could consult each other to overcome challenges efficiently. This led to better synchronization and a decent presentation. Another strength is that I consider my groupmates' ideas, break them down into pros and cons, and discuss them collectively to reach a conclusion. This ensures everyone's participation without being overly dominant."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "1. Understand what your scholarship body does.",
+              "- Eg. Research what BNM actually does and have a general idea about it.",
+              "2. Have a character and understand what you want to do for your future.",
+              "- This allows you to know more about yourself and apply your passions to the scholarship application. By doing so, you can stand out as an applicant.",
+              "- You may also add what lessons you learned from your previous mistakes in life. Don't be afraid to share them, as they demonstrate personal growth and maturity.",
+              "3. Be brave to share your thoughts to allow the interviewers to better understand you.",
+              "- Ensure your thoughts are mature enough to be expressed. Avoid sharing immature thoughts, such as those related to violence, bias, or selfishness."
+            ]
+          }
+        ]
+      }      
+    ]
+  },
+  {
+    "id": "fgv-scholarship-programme",
+    "name": "FGV Scholarship Programme",
+    "shortName": "FGV",
+    "description": "The FGV Scholarship Programme 2024 offers Malaysian students the opportunity to pursue undergraduate studies at reputable higher learning institutions. The scholarship supports students in various fields, including Accounting & Finance, Business Management & Economics, Engineering, and more. This programme not only provides financial support but also nurtures leadership and academic excellence, preparing scholars for a successful future in their chosen professions.",
+    "logoPlaceholder": "/assets/company_logos/FGV_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Achieved a minimum of 8A’s in the recent SPM examination",
+        "Must be a Malaysian citizen.",
+        "Not exceeding 18 years of age at the time of application.",
+        "Demonstrated strong leadership qualities by actively holding leadership positions in extracurricular activities, such as student councils, clubs, or societies. Applicants should showcase their ability to lead teams, organize events, and make impactful contributions in areas like sports, community service, or school-based initiatives."
+      ]
+    },
+    "requiredDocuments": [
+      "SPM results",
+      "Certificates (you are recommended to bring your physical certificates during the first and final interview stages)",
+      "Candidate’s and Parents’ IC",
+      "Parents’ or Guardians’ salary slips or EA form"
+    ],
+    "coursesOffered": [
+      "Accounting & Finance",
+      "Agriculture & Agronomy",
+      "Business Management & Economics",
+      "Engineering & Automation",
+      "Environment, Social & Governance",
+      "Food Science & Technology",
+      "Hospitality",
+      "Information & Technology",
+      "Logistics Supply Chain",
+      "Science & Statistics"
+    ],
+    "bondingDetails": {
+      "duration": "10 years",
+      "workLocation": "FGV Holdings Berhad"
+    },
+    "applicationTimeline": {
+      "startDate": "May 21, 2024",
+      "endDate": "June 15, 2024"
+    },
+    "numberOfRecipients": {
+      "2024": 3
+    },
+    "applicationLink": "No specific application link available at the moment. My advice would be to keep track of the latest scholarship updates from trusted sources.",
+    "resultNotification": [
+      "Shortlisted candidates receive an email with details on the first round of assessment (date, time, venue, dress code).",
+      "RSVP your attendance by the deadline.",
+      "The number of shortlisted candidates can vary each year; during my time, only 60 out of 5,600 applicants were selected for the first round.",
+      "After the assessment, FGV will call you (keep your phone on) and send an email confirming if you’ve been selected for the final interview at Wisma FGV.",
+      "Two days after the final interview, you’ll receive another phone call if you’re chosen as a scholar.",
+      "The timeline and process may vary depending on the year and individual circumstances."
+    ],
+    "applicationProcess": [
+      "Stage 1: Online Application - You will need to provide your SPM results and extracurricular activities. Be mindful of your responses, as the final interview will include a presentation about you based on this information. For example, if you include swimming as an activity, assessors may ask how it shaped you beyond discipline and time management.",
+      "Stage 2: First Round of Assessment at AC Hotel Kuala Lumpur - This consists of three parts: Game-Based Assessment, Group Interview, and Individual Interview.",
+      "i) Game-Based Assessment: You will be divided into pairs and asked to solve a puzzle within a time limit. Some of your puzzle pieces will be swapped with those from other groups, so you will need to negotiate for your missing pieces.",
+      "ii) Group Interview: You’ll be divided into groups of three and given a question to discuss for 15 minutes, followed by a 30-minute presentation. Topics range from fast fashion to AI.",
+      "iii) Individual Interview: Two assessors will ask personal questions about your extracurricular activities and company-related topics. Before the interview, you will solve a puzzle.",
+      "Final Interview: The final round involves a panel of senior management. A presentation about you will be shown, and the panel will ask questions related to the departments they oversee."
+    ],
+    "contactEmail": "",
+    "scholars": [
+      {
+        "contributorName": "Marissa Dhaniyah binti Ahmad Danis",
+        "contributorImage": "/assets/portrait/Marissa.jpeg",
+        "intendedCourse": "Data Science",
+        "motivationalQuote": "Dream big, and all the best!",
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Do you have any experience in leadership? Tell me more about it.",
+              "In my role as a project manager for Malam Ambang Merdeka, there was a time when my team was understaffed, leading to workload accumulation. Besides encouraging my team and establishing trust that we would meet the deadlines, I engaged in a comprehensive discussion with the management team about improvements we could implement. I delegated tasks to each individual according to their strengths and established a timeline for completion while keeping my teacher informed. In the end, the event went smoothly, the audience had fun, and we received great feedback from the principal. I learned how important open communication and adaptability are in a group project.",
+              "2. Tell me about your strengths and weaknesses as an individual.",
+              "Strengths: I am driven by a strong sense of responsibility for achieving goals. I believe in taking full ownership of my tasks and delivering on expectations with diligence and determination. I am confident that with persistence and hard work, I can overcome challenges and successfully meet objectives, no matter how difficult they may seem.",
+              "Weaknesses: I am currently working on developing my sense of humour. In professional settings, I tend to be quite serious, and I recognize the need to lighten the atmosphere at times. I am actively learning to inject more humour and positivity into my interactions, understanding that not everything needs to be approached with solemnity.",
+              "3. What do you know about the FGV Holdings Berhad?",
+              "Ans: FGV Holdings Berhad is a Malaysian-based agricultural company, one of the world's largest producers of crude palm oil. Founded in 2007 and listed on Bursa Malaysia in 2012, it was initially a commercial arm of the Federal Land Development Authority (FELDA). The company rebranded from Felda Global Ventures Holdings Berhad to FGV Holdings Berhad in 2018. Primarily involved in oil palm cultivation and processing, as well as refining and producing products like cooking oil and margarine. Engages in rubber plantations, sugar production (via MSM Malaysia Holdings Berhad), logistics, manufacturing, IT, and renewable energy. Operates in countries like Indonesia, Thailand, Cambodia, and several African nations."
+            ]
+          },
+          {
+            "title": "What Do You Believe is the Most Crucial Element to Focus On During the Scholarship Interview or Application Process?",
+            "content": [
+              "1. Mindset is crucial! Do not view these interviews as a measure of your worth—if you succeed, it doesn’t make you amazing, and if you are rejected, it doesn’t make you a failure. Instead, see them as opportunities to meet new people and gain valuable experience.",
+              "2. Thoroughly research the companies where you will be interviewing, especially FGV, as they often ask numerous questions related to their organization.",
+              "3. Discuss extracurricular activities that you are familiar with or passionate about, so you can elaborate on your answers without struggling.",
+              "4. Pay attention to your body language. Maintain eye contact and use voice projection to convey confidence.",
+              "5. Emphasize teamwork. It’s important to work well with your teammates and ensure that you reach the same conclusions."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "1. Get involved in a variety of extracurricular activities during high school to gain diverse experiences you can discuss during interviews. It can be monotonous to repeat the same answer for every question. You don’t need to excel in every activity; what matters most is what you learned along the way and how you overcame obstacles during these experiences.",
+              "2. Seek help from your seniors and parents (or others with more experience). Many seniors have already gone through this process and have valuable insights to share. Don’t hesitate to approach them for guidance. (I reached out to three of my seniors for three different interviews, and I was accepted by all three!)",
+              "3. When answering questions, structure your responses by addressing:",
+              "- What I did (the activities I participated in)",
+              "- What happened (the challenges I faced)",
+              "- How I solved the problem",
+              "- What I learned from the experience",
+              "4. Build a strong support system! The scholarship application process can be daunting, with multiple interviews often scheduled in the same week. Be prepared mentally and emotionally. Remember that you are not alone in this journey, and always seek help if you need it.",
+              "5. Dream big, and all the best! If you need any help or specific interview advice for FGV, feel free to reach out to me on Instagram @m4riss4_dhaniyah!"
+            ]
+          }
+        ]
+      }
+      
+    ]
+  }
+  
+  
+]
