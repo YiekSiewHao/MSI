@@ -98,16 +98,37 @@
     },
     "applicationLink": "https://educationsponsorship.petronas.com.my/OAS",
     "resultNotification": [
-      "Via PETRONAS website (https://educationsponsorship.petronas.com.my/OAS)",
-      "Email notification",
-      "SMS notification",
-      "Phone call"
+      "An SMS will be sent to notify applicants that the application results are readily available in the official website. There will also be emails to notify applicants regarding details of assessment and interview."
     ],
     "applicationProcess": [
-      "Stage 1: Submit application online",
-      "Stage 2: Personality and Cognitive Assessment (Cambridge Personal Styles Questionnaire (CPSQ) and Thinking Skills Assessment (TSA) test)",
-      "Stage 3: Student Potential Assessment (SPA) - For candidates who meet the requirements",
-      "Stage 4: Physical Interview - Group discussions and individual presentations"
+      {
+        "stage": "Stage 1: Application Stage",
+        "details": "This stage will be open for applicants to apply starting from the day when the SPM results are announced. Take note of the application deadline and submit your application form before that. Prepare all the required information and documents as stated in the scholarship guidelines.",
+        "tips": [
+          "Monitor the SPM result announcement date and set a reminder for the application deadline.",
+          "Gather all required documents in advance, such as academic transcripts, certificates, and identification.",
+          "Carefully read the application guidelines to avoid missing any important steps or details."
+        ]
+      },
+      {
+        "stage": "Stage 2: Personality and Cognitive Assessment",
+        "details": "This stage aims to assess candidates' personality and cognitive abilities, focusing on problem-solving and critical-thinking skills. Conducted through an online platform, this assessment allows applicants to demonstrate their ability to think critically and come up with solutions quickly.",
+        "tips": [
+          "Complete the assessment in a conducive environment where distractions are minimized.",
+          "Ensure a stable internet connection and a fully charged device to avoid technical issues.",
+          "Stay calm and focused during the assessment to perform at your best."
+        ]
+      },
+      {
+        "stage": "Stage 3: Student Potential Assessment (SPA)",
+        "details": "In this final stage, applicants participate in face-to-face interviews with PETRONAS staff. Emphasizing leadership and interpersonal skills, this stage includes two presentation rounds. The first is an individual presentation, where candidates are given about 15 minutes to prepare a 5-to-8-minute presentation based on a given prompt. The second is a group discussion revolving around the same topic, providing candidates an opportunity to showcase leadership skills. A Q&A session with interviewers may follow if time permits.",
+        "tips": [
+          "Practice delivering concise and clear presentations to effectively communicate your ideas.",
+          "During the group discussion, balance asserting your opinions with listening to others to demonstrate leadership and teamwork.",
+          "Prepare examples of past leadership experiences to share if asked during the Q&A session.",
+          "Dress professionally and maintain a confident yet approachable demeanor throughout the interview."
+        ]
+      }
     ],
     "contactEmail": "edu_sponsorship@petronas.com.my",
     "scholars": [
@@ -264,10 +285,43 @@
       "Competency-Based Interview stage: Congratulatory phone call"
     ],
     "applicationProcess": [
-      "Stage 1: Online Application",
-      "Stage 2: Virtual Job Tryout and On-Demand Video Interview (ODVI)",
-      "Stage 3: Phone Call",
-      "Stage 4: Competency-Based Interview"
+      {
+        "stage": "Stage 1: Online Application",
+        "details": "Prepare your resume ahead of time. Ensure your CV is easy to read, well-formatted, and professional. Highlight your best achievements with specific details (e.g., 3rd place out of how many participants, level of participation, organiser, etc.). Diversify your extracurricular activities (ECAs) to show you are an all-rounder (e.g., sports, languages, volunteering).",
+        "tips": [
+          "Format your CV with consistent line spacing, font type, and size to make it easy on the eyes.",
+          "Focus on quality over quantity when listing achievements. Provide meaningful details.",
+          "Avoid saturating your CV with one type of activity. Display diversity in ECAs."
+        ]
+      },
+      {
+        "stage": "Stage 2: Virtual Job Tryout and On-Demand Video Interview (ODVI)",
+        "details": "This stage includes a personality test, competency test, and video interview. It must be completed within 7 days of receiving the invitation. The personality test evaluates consistency and honesty in your answers. The competency test assesses your ability to understand and apply instructions in work situations. The video interview allows a maximum of 2 minutes to answer each question.",
+        "tips": [
+          "For the personality test, be consistent in your answers as questions are often rephrased. Don’t lie about unrealistic things like 'I have never told a lie.'",
+          "Read the competency test instructions meticulously to ensure you understand them.",
+          "Draft your answers for the video interview and rerecord until satisfied. Ensure your audio is clear and crisp."
+        ]
+      },
+      {
+        "stage": "Stage 3: Phone Call",
+        "details": "You may receive a call from Shell if you advance to this stage. Shell does not notify candidates in advance, so be prepared for an unexpected call. The officer will reference your CV and ask about your achievements and experiences.",
+        "tips": [
+          "Be conversational and treat the call like a normal conversation.",
+          "Prepare bullet points for generic questions but avoid memorizing word-for-word.",
+          "Familiarize yourself with the details in your CV to respond confidently."
+        ]
+      },
+      {
+        "stage": "Stage 4: Competency-Based Interview",
+        "details": "This is a virtual interview lasting approximately 1 hour with the Scholarship Board of Trustees. Shell evaluates candidates using the CAR criteria (Capacity, Achievement, Relationships). Use the STAR method (Situation, Task, Action, Result) to explain your experiences and what you learned.",
+        "tips": [
+          "Be conversational and genuine. Engage with the interviewers by asking about their careers at Shell.",
+          "Take a few seconds to think before answering instead of blurting out responses.",
+          "Make eye contact, use hand gestures, and avoid monotony to keep the interviewers engaged.",
+          "Prepare questions about Shell, such as careers or sponsorship programmes, to show your interest."
+        ]
+      }
     ],
     "contactEmail": "careers@shell.com",
     "scholars": [
@@ -463,16 +517,46 @@
       "Final results will be released approximately 1 month after the SAC session via the portal."
     ],
     "applicationProcess": [
-      "Stage 1: Screening based on SPM results.",
-      "Stage 2: Submission of application forms and psychometric tests.",
-      "Stage 3: Invitation to the Student Assessment Centre (SAC), which involves physical group interviews and activities.",
-      "Stage 4: Final selection and announcement of successful candidates."
+      {
+        "stage": "Stage 1: Application Stage",
+        "details": "Candidates are filtered based on their SPM results, as this program has the highest entry requirement. Only around 300 candidates (or fewer) are eligible to access the application system. After completing the application form, candidates need to complete a psychometric test and wait for the email invitation to the next stage. Essay writing is not required for the application. However, candidates must ensure their passport-size photo is compressed to the acceptable size range as specified in the system guidelines.",
+        "tips": [
+          "Ensure you meet the SPM result requirements before applying.",
+          "Prepare all necessary documents, including academic transcripts and identification, in advance.",
+          "Compress your passport-size photo to the system's required size range to avoid upload errors.",
+          "Submit your application well before the deadline to avoid last-minute issues."
+        ]
+      },
+      {
+        "stage": "Stage 2: Personality and Cognitive Assessment",
+        "details": "This stage assesses candidates' personality traits and cognitive abilities, focusing on problem-solving and critical-thinking skills. Conducted through an online platform, this assessment allows candidates to showcase their ability to think critically and make quick decisions.",
+        "tips": [
+          "Choose a quiet, distraction-free environment to complete the assessment.",
+          "Ensure your internet connection is stable and your device is fully charged.",
+          "Read all questions carefully and take your time to provide thoughtful answers.",
+          "Stay calm and composed to demonstrate your problem-solving capabilities effectively."
+        ]
+      },
+      {
+        "stage": "Stage 3: Student Assessment Centre (SAC) - Interview Process",
+        "details": "The final stage involves a face-to-face assessment conducted at the SAC. It begins with registration and a short briefing. Candidates are grouped into teams of 4-5 members and participate in group activities, followed by an individual and group interview. Activities include Latihan Dalam Kumpulan (LDK), where candidates engage in either a debate or a group discussion. The format varies yearly but aims to evaluate communication skills, teamwork, and critical thinking. Candidates also answer individual questions posed by interviewers and participate in group activities under the observation of assessors. The process concludes with a follow-up interview where candidates answer questions in both Malay and English.",
+        "tips": [
+          "Arrive early (typically by 8 AM) to ensure you are ready for registration and the briefing.",
+          "Dress professionally and ensure your phone is in silent mode when stored in the provided paper bag.",
+          "Prepare for group activities by practicing debates and discussions to articulate your ideas clearly and collaborate effectively.",
+          "In the LDK, present at least two strong arguments, whether supporting or opposing the given statement.",
+          "Engage actively during group discussions and debates, balancing assertiveness with teamwork.",
+          "Practice switching between Malay and English to answer questions as requested by the assessors.",
+          "Remain confident and calm during the follow-up interview, attempting every question even if unsure.",
+          "Take advantage of the preparation time to organize your ideas before presenting."
+        ]
+      }
     ],
     "contactEmail": "lspln.bmi@jpa.gov.my",
     "scholars": [
       {
         "contributorName": "Teoh Wen Xuen",
-        "contributorImage": "/assets/portrait/Wen_Xuen.jpg",
+        "contributorImage": "/assets/portrait/wen_xuan.jpg",
         "intendedCourse": "Biotechnology (Natural Sciences)",
         "motivationalQuote": null,
         "resumeImage": null,
@@ -614,15 +698,35 @@
       "Recipients will be notified through phone call."
     ],
     "applicationProcess": [
-      "Successful applicants will be invited to attend a 3-day assessment.",
-      "Activities include:",
-      "- Drawing to introduce yourself (character, goals, setbacks).",
-      "- Games and activities to test leadership, teamwork, and communication skills.",
-      "- English test comprising grammar, vocabulary, comprehension reading, and opinionated writing.",
-      "- IQ test (basic maths and sentence-based questions).",
-      "- Interactive sessions for setting realistic goals and action plans.",
-      "- Debate sessions (informal format).",
-      "- 10 applicants will attend a 30-minute interview conducted in both English and Malay."
+      {
+        "stage": "Successful Applicants Invitation",
+        "details": "Successful applicants will be invited to attend a 3-day assessment. Unlike other scholarship bodies, there is no need to write an essay or create a video 🥳.",
+        "tips": [
+          "Prepare yourself for a range of activities that test leadership, teamwork, communication, and critical thinking.",
+          "Get plenty of rest before the assessment to stay sharp and focused during the 3 days."
+        ]
+      },
+      {
+        "stage": "Day 1-3 Activities",
+        "details": "The activities across the 3 days include: \n\n- **Draw on a Paper**: Introduce yourself (your character, goals, setbacks) creatively through drawing. \n\n- **Games and Activities**: Designed to test your leadership, teamwork, and communication skills. Participate actively to demonstrate these qualities. \n\n- **English Test**: Comprising grammar, vocabulary, comprehension reading, and opinionated writing. The writing test is similar to IELTS Writing Task 2. \n\n- **IQ Test**: Includes maths and sentence-based IQ questions. The maths section is straightforward and doesn’t require advanced calculations. \n\n- **Interactive Sessions**: Learn about setting realistic goals and developing effective action plans. Engage in reflections and voice out your opinions during discussions. \n\n- **Debate**: Groups of 3-4 people debate on national issues for 3 minutes per group. The format is informal, so prior experience isn’t necessary. Key topics include digital education, public transportation, and whether the government should spend more money on natural disaster prevention measures.",
+        "tips": [
+          "Be creative and authentic when introducing yourself through the drawing activity.",
+          "Actively participate in games and group discussions to showcase teamwork and leadership skills.",
+          "Study English grammar, vocabulary, and practice opinionated writing similar to IELTS Writing Task 2.",
+          "Brush up on basic math and sentence-based logic for the IQ test.",
+          "Research national issues beforehand by reading newspapers or articles from Khazanah Research Institute (https://www.krinstitute.org/).",
+          "During debates, focus on articulating your opinions clearly, even if you lack prior experience."
+        ]
+      },
+      {
+        "stage": "Final Interview",
+        "details": "10 applicants will be selected to attend a 30-minute interview session on the following day. The interview will be conducted in both English and Malay.",
+        "tips": [
+          "Prepare to discuss your experiences, strengths, and goals confidently in both languages.",
+          "Practice answering potential questions in Malay and English to ensure fluency.",
+          "Stay composed and genuine during the interview to leave a strong impression."
+        ]
+      }
     ],
     "contactEmail": "biasiswapelajaran@ypj.gov.my",
     "contactNumber": "07-2344355",
@@ -707,12 +811,36 @@
       "Via email",
       "To confirm your acceptance, you must reply to the email by filling in the provided forms."
     ],
-    "applicationProcess": [
-      "Stage 1: Writing an essay - When submitting your application through the website, you are required to write an essay of 250 words. Based on this essay, you will be shortlisted to the next stage.",
-      "Stage 2: Cognitive Ability Test (CAT) - Once shortlisted, you will receive an email requesting supporting documents. After that, you will sit for an online Cognitive Ability Test (CAT), including questions involving English (Passage Reading), Math, and Pattern Recognition.",
-      "Stage 3: Video Submission & Personality Assessment - You are required to create a 2-minute long video on a certain topic. Note: The personality assessment is conducted separately online, and NOT for shortlisting purposes.",
-      "Stage 4: Final Stage - The final stage is conducted physically at Bank Negara Malaysia's accommodation. Consists of: Briefings of the scholarship, 2 Group Assessments, Individual Interview Session (Final Interview)."
-    ],
+      "applicationProcess": [
+        {
+          "stage": "Stage 1: Cognitive Ability Test (CAT)",
+          "details": "This is essentially an English and Mathematics test. There is also an extra rubric where you are required to determine patterns of given photos. There is a limited amount of time, so candidates are expected to have a high level of comprehension in a short amount of time.",
+          "tips": [
+            "Practice solving pattern-based problems to improve your visual reasoning skills.",
+            "Enhance your English comprehension and mathematical problem-solving under timed conditions.",
+            "Stay calm and focus on accuracy while managing your time effectively."
+          ]
+        },
+        {
+          "stage": "Stage 2: Video Submission + Psychometric Assessment (Factors+)",
+          "details": "Candidates who are eligible will be notified early on. In this stage, there will be a video submission. For my cohort, we were required to talk about a book or movie (Describe it, why is it significant) for not more than 2 minutes. We were also required to answer some psychometric questions that display our personality overall.",
+          "tips": [
+            "Choose a book or movie that you are genuinely passionate about and can explain with clarity.",
+            "Practice speaking clearly and concisely to fit within the 2-minute limit.",
+            "Be authentic and honest in the psychometric test to reflect your true personality."
+          ]
+        },
+        {
+          "stage": "Final Stage: 2-Day, 1-Night Stay in Lanai Kijang",
+          "details": "Candidates who are eligible will be notified early on. In this stage, candidates are required to stay in Lanai Kijang, a resort owned by Bank Negara Malaysia in Kuala Lumpur. Those who are unable will be participating in an online interview. Groups will be divided in Lanai Kijang, and you will get to have an ice-breaking session. The real game is day 2, because that's when the assessments come. There will be 3 panels assigned to each group, and they will observe you as you and your groupmates work together. There were two assessments, the first was an activity where we presented our intended courses in a creative way. The second one was a case study. For my group we had to discuss the application of AI in Tvet sectors(something like that). After lunch, there will be an individual interview, this is the finale. You will be alone with 3 panels in a room. It will take up to 30 minutes, and that is where questions of personality and ability will be given.",
+          "tips": [
+            "Engage actively in group activities and showcase your teamwork and leadership skills.",
+            "Be creative and thorough when presenting your intended courses.",
+            "Research topics like AI in various sectors to prepare for potential case studies.",
+            "Stay composed and confident during the individual interview and answer questions thoughtfully."
+          ]
+        }
+      ],    
     "contactEmail": "profiling@bnm.gov.my",
     "scholars": [
       {
@@ -755,7 +883,7 @@
             ]
           }
         ]
-      },      
+      },
       {
         "contributorName": "Liaw Chong Ye",
         "contributorImage": "/assets/portrait/Liaw.jpg",
@@ -822,7 +950,7 @@
             ]
           }
         ]
-      }      
+      }
     ]
   },
   {
@@ -878,12 +1006,33 @@
       "The timeline and process may vary depending on the year and individual circumstances."
     ],
     "applicationProcess": [
-      "Stage 1: Online Application - You will need to provide your SPM results and extracurricular activities. Be mindful of your responses, as the final interview will include a presentation about you based on this information. For example, if you include swimming as an activity, assessors may ask how it shaped you beyond discipline and time management.",
-      "Stage 2: First Round of Assessment at AC Hotel Kuala Lumpur - This consists of three parts: Game-Based Assessment, Group Interview, and Individual Interview.",
-      "i) Game-Based Assessment: You will be divided into pairs and asked to solve a puzzle within a time limit. Some of your puzzle pieces will be swapped with those from other groups, so you will need to negotiate for your missing pieces.",
-      "ii) Group Interview: You’ll be divided into groups of three and given a question to discuss for 15 minutes, followed by a 30-minute presentation. Topics range from fast fashion to AI.",
-      "iii) Individual Interview: Two assessors will ask personal questions about your extracurricular activities and company-related topics. Before the interview, you will solve a puzzle.",
-      "Final Interview: The final round involves a panel of senior management. A presentation about you will be shown, and the panel will ask questions related to the departments they oversee."
+      {
+        "stage": "Stage 1: Online Application",
+        "details": "You will need to provide your SPM results and extracurricular activities. Be mindful of your responses, as the final interview will include a presentation about you based on this information. For example, if you include swimming as an activity, assessors may ask how it shaped you beyond discipline and time management.",
+        "tips": [
+          "Ensure your SPM results and extracurricular activities are accurate and well-documented.",
+          "Think critically about how each activity reflects your personal growth beyond surface-level qualities.",
+          "Prepare to articulate how your experiences have shaped your skills and values."
+        ]
+      },
+      {
+        "stage": "Stage 2: First Round of Assessment at AC Hotel Kuala Lumpur",
+        "details": "This consists of three parts: Game-Based Assessment, Group Interview, and Individual Interview. \n\nGame-Based Assessment: You will be divided into pairs and asked to solve a puzzle within a time limit. Some of your puzzle pieces will be swapped with those from other groups, so you will need to negotiate for your missing pieces. Afterward, you’ll answer questions like 'How did you arrive at your solutions?', 'Could you have solved the puzzle faster?', and 'How did you decide your roles in the group?'. \n\nGroup Interview: You’ll be divided into groups of three and given a question to discuss for 15 minutes, followed by a 30-minute presentation. Topics range from fast fashion to AI. After the presentation, assessors will ask questions related to your topic and personal experiences like 'Share a time when you miscommunicated' and 'How do you communicate with people from different generations in the workplace?'. \n\nIndividual Interview: Two assessors will ask personal questions about your extracurricular activities and company-related topics. Before the interview, you will solve a puzzle. Questions you might encounter include 'What is your preferred course and university?' and 'Would you accept the scholarship if we sent you to the UK instead of the USA?'.",
+        "tips": [
+          "Communicate effectively during the assessments and group discussions.",
+          "Structure your answers and presentations clearly with logical flow and examples.",
+          "Familiarize yourself with your extracurricular activities and prepare to discuss personal experiences."
+        ]
+      },
+      {
+        "stage": "Final Interview",
+        "details": "The final round involves a panel of senior management. A presentation about you will be shown, and the panel will ask questions related to the departments they oversee.",
+        "tips": [
+          "Pay attention to instructions and stay calm under pressure.",
+          "Use personal experiences in your answers to demonstrate your unique qualities.",
+          "Conduct thorough research on FGV, and don’t justify incorrect answers if corrected."
+        ]
+      }
     ],
     "contactEmail": "",
     "scholars": [
@@ -931,9 +1080,6 @@
           }
         ]
       }
-      
     ]
   }
-  
-  
 ]

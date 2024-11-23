@@ -391,13 +391,21 @@ const ScholarshipDetails = () => {
       </Section>
 
       <Section>
-        <h2>Application Process</h2>
+  <h2>Application Process</h2>
+  <ul>
+    {applicationProcess.map((step, index) => (
+      <li key={index}>
+        <h3>{step.stage}</h3>
+        <p>{step.details}</p>
         <ul>
-          {applicationProcess.map((step, index) => (
-            <li key={index}>{step}</li>
+          {step.tips.map((tip, tipIndex) => (
+            <li key={tipIndex}>{tip}</li>
           ))}
         </ul>
-      </Section>
+      </li>
+    ))}
+  </ul>
+</Section>
 
       <Section>
         <h2>Contact Email</h2>
