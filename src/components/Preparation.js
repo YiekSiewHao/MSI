@@ -5,7 +5,7 @@ import essays from "../essays.json";
 
 const PreparationContainer = styled.div`
   padding: 40px 20px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 `;
 
@@ -25,7 +25,7 @@ const SubHeading = styled.h2`
 
 const EssayCardContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 `;
 
