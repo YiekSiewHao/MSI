@@ -4,13 +4,13 @@ import styled from 'styled-components';
 import scholarships from '../scholarships.json';
 
 const ListContainer = styled.div`
-  padding: 40px 20px;
-  max-width: 1200px;
+  padding: 20px; /* Reduced padding */
+  max-width: 1400px; /* Increased max-width */
   margin: 0 auto;
 `;
 
 const Title = styled.h1`
-  font-size: 28px;
+  font-size: 32px; /* Increased font size */
   color: #007BFF;
   text-align: center;
   margin-bottom: 30px;
@@ -18,12 +18,8 @@ const Title = styled.h1`
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted for responsive columns */
   gap: 20px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* One column on smaller screens */
-  }
 `;
 
 const ScholarshipCard = styled.div`
@@ -83,7 +79,7 @@ const ScholarshipList = () => {
             )}
             <div className="content">
               <h3>{scholarship.shortName}</h3>
-              <p>{scholarship.description.substring(0, 200)}...</p>
+              <p>{scholarship.description.substring(0, 150)}...</p>
             </div>
           </ScholarshipCard>
         ))}
