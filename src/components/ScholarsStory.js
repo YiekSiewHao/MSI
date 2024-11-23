@@ -5,39 +5,57 @@ import scholarships from '../scholarships.json';
 import { ArrowBack } from '@mui/icons-material';
 
 const StoryContainer = styled.div`
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 40px 5%; /* Padding is now percentage */
+  max-width: 1200px;
   margin: 0 auto;
+  background-color: white;
+`;
+
+const FullWidthSection = styled.div`
+  width: 100%;
+  background-color: white;
 `;
 
 const Header = styled.div`
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 0 15%; /* Padding to left and right is percentage */
+  position: relative; /* To position BackButton absolutely */
 
   img {
-    width: 120px;
-    height: 120px;
+    flex: 1.7; /* Adjusted flex to make image narrower */
+    width: 100%;
+    max-height: 600px; /* Adjust as needed */
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 2px solid #007BFF;
   }
 
-  h1 {
-    font-size: 28px;
-    color: #007BFF;
-    margin-bottom: 5px;
-  }
+  .text-section {
+    flex: 1.2; /* Adjusted flex to make text section wider */
+    padding: 10px 20px; /* Adjusted padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
 
-  h3 {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 5px;
-  }
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 0px;
+    }
 
-  p {
-    font-size: 16px;
-    color: #888;
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin: 0px 0;
+      color: #007BFF;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 3px 0;
+      color: #666;
+    }
   }
 `;
 
@@ -49,10 +67,12 @@ const BackButton = styled.button`
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
-  margin-bottom: 20px;
   display: inline-flex;
   align-items: center;
   transition: background-color 0.3s ease;
+  position: absolute;
+  top: 20px; /* Space from top */
+  left: calc(5% + 10px); /* Move to the right, matching the padding */
 
   svg {
     margin-right: 5px;
@@ -63,12 +83,21 @@ const BackButton = styled.button`
   }
 `;
 
+const FullWidthLine = styled.div`
+  width: 100%;
+  border-bottom: 1px solid #000;
+`;
+
 const Content = styled.div`
-  font-size: 16px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 0%; /* Padding matches Header padding */
+  margin: 0 auto;
+  font-size: 18px;
   color: #555;
 
   h3 {
-    font-size: 22px;
+    font-size: 26px;
     color: #007BFF;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -102,6 +131,7 @@ const Content = styled.div`
   }
 `;
 
+
 const ScholarsStory = () => {
   const navigate = useNavigate();
   const { id, scholarName } = useParams();
@@ -113,7 +143,8 @@ const ScholarsStory = () => {
 
   const scholarship = scholarships.find((s) => s.id === id);
   const scholar = scholarship?.scholars?.find(
-    (s) => s.contributorName.toLowerCase().replace(/\s+/g, '-') === scholarName
+    (s) =>
+      s.contributorName.toLowerCase().replace(/\s+/g, '-') === scholarName
   );
 
   if (!scholarship || !scholar) {
@@ -140,16 +171,28 @@ const ScholarsStory = () => {
   };
 
   return (
-    <StoryContainer>
-      <BackButton onClick={() => navigate(-1)}>
-        <ArrowBack />
-      </BackButton>
-      <Header>
-        <img src={scholar.contributorImage || '/default-avatar.png'} alt={scholar.contributorName} />
-        <h1>{scholar.contributorName}</h1>
-        <h3>{scholar.intendedCourse}</h3>
-        {scholar.motivationalQuote && <p>"{scholar.motivationalQuote}"</p>}
-      </Header>
+    <>
+      <FullWidthSection>
+        <Header>
+          <BackButton onClick={() => navigate(-1)}>
+            <ArrowBack />
+          </BackButton>
+          <img
+            src={scholar.contributorImage || '/default-avatar.png'}
+            alt={scholar.contributorName}
+          />
+          <div className="text-section">
+            <h2>Meet</h2>
+            <h1>{scholar.contributorName}</h1>
+            <p>{scholar.intendedCourse}</p>
+            {scholar.motivationalQuote && <p>"{scholar.motivationalQuote}"</p>}
+          </div>
+        </Header>
+
+        {/* Line that spans the entire screen */}
+        <FullWidthLine />
+      </FullWidthSection>
+
       <Content>
         {stories.length > 0 ? (
           stories.map((story, storyIndex) => (
@@ -162,7 +205,11 @@ const ScholarsStory = () => {
               </ul>
               {story.resumeImage && (
                 <div>
-                  <img src={story.resumeImage} alt="Sample Resume" className="resume" />
+                  <img
+                    src={story.resumeImage}
+                    alt="Sample Resume"
+                    className="resume"
+                  />
                 </div>
               )}
             </div>
@@ -171,7 +218,7 @@ const ScholarsStory = () => {
           <p>No stories available.</p>
         )}
       </Content>
-    </StoryContainer>
+    </>
   );
 };
 
