@@ -9,8 +9,11 @@ import Preparation from "./components/Preparation";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ScholarshipDetails from "./components/ScholarshipDetails";
-import ScholarsStory from "./components/ScholarsStory"; // Import the ScholarsStory component
+import ScholarsStory from "./components/ScholarsStory";
 import EssayDetail from "./components/EssayDetail";
+import Wishes from "./components/Wishes";
+import Events from "./components/Events"; // Import the Events component
+import Koh_hui_xin_resource_pack from "./components/Koh_hui_xin_resource_pack"; // Updated import
 import "./App.css";
 
 // Global Styles
@@ -48,6 +51,8 @@ const App = () => {
   const homeRef = useRef(null);
   const scholarshipListRef = useRef(null);
   const contactRef = useRef(null);
+  const wishesRef = useRef(null);
+  const eventsRef = useRef(null); // Add reference for Events section
   const [showTransition, setShowTransition] = useState(true);
 
   const handleTransitionComplete = () => {
@@ -68,6 +73,8 @@ const App = () => {
         onHomeClick={() => scrollToSection(homeRef)}
         onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
         onContactClick={() => scrollToSection(contactRef)}
+        onWishesClick={() => scrollToSection(wishesRef)}
+        onEventsClick={() => scrollToSection(eventsRef)} // Add navigation for Events
       />
       <Routes>
         {/* Main Home Route */}
@@ -82,6 +89,12 @@ const App = () => {
                 <section ref={scholarshipListRef}>
                   <ScholarshipList />
                 </section>
+                <section ref={wishesRef}>
+                  <Wishes />
+                </section>
+                <section ref={eventsRef}>
+                  <Events />
+                </section>
                 <section ref={contactRef}>
                   <Contact />
                 </section>
@@ -94,11 +107,10 @@ const App = () => {
         <Route path="/preparation" element={<Preparation />} />
         <Route path="/about" element={<About />} />
         <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
-        {/* Add the missing route for ScholarsStory */}
         <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
-        {/* EssayDetail Page */}
         <Route path="/essay/:id" element={<EssayDetail />} />
-      </Routes>
+        <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} /> {/* Updated route */}
+        </Routes>
     </>
   );
 };

@@ -33,6 +33,29 @@ const SubText = styled.p`
   margin-bottom: 20px;
 `;
 
+const SectionHeading = styled.h2`
+  font-size: 22px;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+`;
+
+const QuestionList = styled.ul`
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  list-style-type: disc;
+
+  li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+`;
+
 const EssayContent = styled.div`
   font-size: 16px;
   color: #333;
@@ -59,9 +82,18 @@ const EssayDetail = () => {
       <SubText>
         <strong>Author:</strong> {essay.author} | <strong>Year:</strong> {essay.year}
       </SubText>
+
+      <SectionHeading>Questions</SectionHeading>
+      <QuestionList>
+        {essay.question.map((question, index) => (
+          <li key={index}>{question}</li>
+        ))}
+      </QuestionList>
+
+      <SectionHeading>Essay</SectionHeading>
       <EssayContent>
         {essay.essay.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p> /* Render each paragraph with spacing */
+          <p key={index}>{paragraph}</p>
         ))}
       </EssayContent>
     </DetailContainer>

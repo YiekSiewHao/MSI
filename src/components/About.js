@@ -164,30 +164,6 @@ const About = () => {
       </HeroSection>
 
       <Section>
-        <SectionTitle>About Us</SectionTitle>
-        <SectionContent>
-          <p>
-            The Malaysian Student Initiative (MSI) is an open platform dedicated to helping secondary
-            school students discover opportunities for better personal and academic growth. MSI
-            provides a comprehensive website including tips and tricks for self-development, and
-            detailed information on various scholarships.
-          </p>
-          <p>
-            Beyond just being a source of information, MSI empowers students and scholars to take an
-            active role in spreading knowledge. Anyone can become a "Local Lead" to organize events
-            and workshops at their own secondary schools, sharing first-hand experiences and
-            practical advice about education. MSI supports these Local Leads by providing all
-            necessary materials, guidance, and resources, ensuring that the preparation process is
-            smooth and effective.
-          </p>
-          <p>
-            Through MSI, we aim to create a community where students feel informed, supported, and
-            motivated to pursue their educational dreams without barriers.
-          </p>
-        </SectionContent>
-      </Section>
-
-      <Section>
         <SectionTitle>Meet the Founders</SectionTitle>
         <TeamGrid>
           <TeamMember>
@@ -207,6 +183,21 @@ const About = () => {
           </TeamMember>
         </TeamGrid>
       </Section>
+      
+      <Section>
+        <SectionTitle>About Us</SectionTitle>
+        <SectionContent>
+          <p>
+          The Malaysian Student Initiative (MSI) is an open platform dedicated to helping secondary school students discover opportunities for better personal and academic growth. MSI provides a comprehensive website including tips and tricks for self development, and detailed information on various scholarships.
+          </p>
+          <p>
+          Beyond just being a source of information, MSI empowers students and scholars to take an active role in spreading knowledge. Anyone can become a "Local Lead" to organize events and workshops at their own secondary schools, sharing first-hand experiences and practical advice about education. MSI supports these Local Leads by providing all necessary materials, guidance, and resources, ensuring that the preparation process is smooth and effective.
+          </p>
+          <p>
+          Through MSI, we aim to create a community where students feel informed, supported, and motivated to pursue their educational dreams without barriers.
+          </p>
+        </SectionContent>
+      </Section>
 
       <Section>
         <SectionTitle>Vision & Mission</SectionTitle>
@@ -217,20 +208,17 @@ const About = () => {
             </div>
             <div className="right">
               <p>
-                MSI aims to equip Malaysian students with the knowledge, resources, and confidence to strive for well-rounded self development. By providing insights about diverse academic pathways, scholarships, and career development opportunities, we aim to broaden their horizons and inspire them to make informed and confident decisions about their future education.
-              </p>
-              <p>
-                Through this initiative, we seek to break down barriers such as lack of awareness, financial constraints, limited exposure to tertiary study options, and tips or tricks to tackle the obstacles along the academic journey. We will create an inclusive platform that connects students to a broad range of resources, guidance from scholars, and expert advice on navigating the complexities of higher education.
-              </p>
-              <p>
-                Ultimately, our goal is to cultivate a culture of exploration, ambition, and educational equity, where every student, regardless of background, has the tools and support to pursue their dreams and unleash their potential.
+              MSI aims to equip Malaysian students with the knowledge, resources, and confidence to strive for well-rounded self development. By providing insights about diverse academic pathways, scholarships, and career development opportunities, we aim to broaden their horizons and inspire them to make informed and confident decisions about their future education.
               </p>
             </div>
           </VisionRow>
           <MissionRow>
             <div className="left">
+            <p>
+              MSI was given a mission to foster a generation of curious, motivated, and globally-minded students who are equipped to thrive in an ever-evolving educational landscape. By expanding students' knowledge of further study opportunities, we hope to spark a passion for lifelong learning and personal growth, both at local and around the nation.
+              </p>
               <p>
-                MSI was given a mission to foster a generation of curious, motivated, and globally-minded students who are equipped to thrive in an ever-evolving educational landscape. By expanding students' knowledge of further study opportunities, we hope to spark a passion for lifelong learning and personal growth, both at local and around the nation.
+              Ultimately, our goal is to cultivate a culture of exploration, ambition, and educational equity, where every student, regardless of background, has the tools and support to pursue their dreams and unleash their potential.
               </p>
             </div>
             <div className="right">
