@@ -6,33 +6,49 @@ const FooterContainer = styled.footer`
   color: white;
   text-align: center;
   padding: 20px 0;
-  position: relative;
+  margin: 0;
+  position: static;
   width: 100%;
-  bottom: 0;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 const FooterContent = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Align text to start and end */
   align-items: center;
-  flex-direction: column;
-  max-width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  max-width: 1400px; /* Reduce the overall width for better spacing */
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 20px; /* Add padding to control text spacing */
 `;
 
-const FooterText = styled.p`
+const FooterTextLeft = styled.p`
   font-size: 14px;
   margin: 0;
   line-height: 1.5;
+  text-align: left;
+  flex: 1;
+
+  strong {
+    font-weight: bold;
+  }
+`;
+
+const FooterTextRight = styled.p`
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+  text-align: right;
+  flex: 1;
 `;
 
 const Footer = () => (
   <FooterContainer>
     <FooterContent>
-      <FooterText>&copy; 2024 Malaysian Student Initiative. All Rights Reserved.</FooterText>
-      <FooterText>Contact us: info@msinitiative.com | Phone: +60 123-456-789</FooterText>
+      <FooterTextLeft>
+        &copy; 2024 <strong>Malaysian Student Initiative</strong>. All Rights Reserved.
+      </FooterTextLeft>
+      <FooterTextRight>Empowering Futures Since 2024</FooterTextRight>
     </FooterContent>
   </FooterContainer>
 );

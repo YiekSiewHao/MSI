@@ -1,55 +1,93 @@
-// Contact.js
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const ContactContainer = styled.div`
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
+const ContactWrapper = styled.div`
+  padding: 10px 20px; /* Balanced padding */
+  max-width: 1400px;
+  margin: 40px auto; /* Removed bottom margin */
+  background-color: transparent; /* Set to transparent to prevent grey area */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all child elements horizontally */
+  box-sizing: border-box; /* Include padding in width/height calculations */
 `;
 
-const ContactTitle = styled.h1`
-  font-size: 32px;
-  color: #007BFF;
-  text-align: center;
+const ContactContainer = styled.div`
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const LeftSection = styled.div`
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 `;
 
-const ContactForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+const Logo = styled.img`
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
 `;
 
-const Input = styled.input`
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+const LogoText = styled.h1`
+  font-size: 24px;
+  color: #007BFF;
+  font-weight: bold;
 `;
 
-const TextArea = styled.textarea`
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
+const EmailSection = styled.div`
+  margin-top: 20px;
 `;
 
-const Button = styled.button`
-  padding: 10px 20px;
+const EmailText = styled.p`
   font-size: 16px;
-  color: white;
-  background-color: #007BFF;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: #555;
+  margin: 5px 0;
+`;
 
+const RightSection = styled.div`
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+`;
+
+const FeedbackTitle = styled.h2`
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+const FeedbackText = styled.p`
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+`;
+
+const FeedbackLink = styled.a`
+  display: inline-block;
+  font-size: 16px;
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
   &:hover {
-    background-color: #0056b3;
+    text-decoration: underline;
+    cursor: pointer;
   }
+`;
+
+const Emoji = styled.span`
+  font-size: 24px;
+  margin-left: 10px;
 `;
 
 const Contact = () => (
@@ -58,15 +96,31 @@ const Contact = () => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.7 }}
   >
-    <ContactContainer>
-      <ContactTitle>Contact Us</ContactTitle>
-      <ContactForm>
-        <Input type="text" placeholder="Your Name" required />
-        <Input type="email" placeholder="Your Email" required />
-        <TextArea rows="5" placeholder="Your Message" required></TextArea>
-        <Button type="submit">Send Message</Button>
-      </ContactForm>
-    </ContactContainer>
+    <ContactWrapper>
+      <ContactContainer>
+        <LeftSection>
+          <LogoContainer>
+            <Logo src="/assets/company_logos/Shell_logo.png" alt="Logo" />
+            <LogoText>Malaysian Student Initiative</LogoText>
+          </LogoContainer>
+          <EmailSection>
+            <EmailText>For inquiries, contact us at:</EmailText>
+            <EmailText><strong>yiekhao0301@gmail.com</strong></EmailText>
+          </EmailSection>
+        </LeftSection>
+
+        <RightSection>
+          <FeedbackTitle>We Value Your Feedback <Emoji>💬</Emoji></FeedbackTitle>
+          <FeedbackText>
+            Help us improve by sharing your thoughts!
+            Please click the link below to access our feedback form:
+          </FeedbackText>
+          <FeedbackLink href="https://forms.google.com/example" target="_blank">
+            Click Here to Send Feedback <Emoji>📩</Emoji>
+          </FeedbackLink>
+        </RightSection>
+      </ContactContainer>
+    </ContactWrapper>
   </motion.div>
 );
 
