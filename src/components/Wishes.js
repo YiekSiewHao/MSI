@@ -15,36 +15,36 @@ const WishesWrapper = styled.div`
 const WishesHeader = styled.h1`
   font-size: 32px;
   color: #007BFF;
-  margin: 0; /* Removed upper margin */
+  margin: 0;
 `;
 
 const MotivatingQuote = styled.p`
   font-size: 18px;
   color: #555;
   font-style: italic;
-  margin: 0 0 40px; /* Removed upper margin */
+  margin: 0 0 40px;
 `;
 
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
-  overflow-x: auto; /* Allow horizontal scrolling if necessary */
-  gap: 60px; /* Increased gap between cards */
-  padding: 30px 0; /* Adjusted padding for aesthetics */
+  overflow-x: auto;
+  gap: 60px;
+  padding: 30px 0;
   scroll-snap-type: x mandatory;
-  width: 100%; /* Ensure container spans full width */
-  height: 500px; /* Adjusted height for better layout */
+  width: 100%;
+  height: 550px;
 
   &::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+    display: none;
   }
 
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  scrollbar-width: none;
 `;
 
 const Card = styled(motion.div)`
-  min-width: 400px; /* Adjusted width */
-  height: 450px; /* Adjusted height */
+  min-width: 400px;
+  height: 500px;
   background-color: #f9f9f9;
   border-radius: 15px;
   perspective: 1000px;
@@ -72,14 +72,62 @@ const CardFront = styled.div`
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  background-color: rgba(20, 99, 243, 0.8);
-  color: white;
+  background-color: #ffffff;
+  color: #333;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Added for even spacing */
-  align-items: center;
   border-radius: 15px;
-  padding: 30px 20px; /* Adjusted padding for even top and bottom spacing */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+`;
+
+const ProfileImage = styled.div`
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Fixed height */
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover; /* Ensures the image fills the container */
+`;
+
+const CardContent = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+`;
+
+const Name = styled.h3`
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #007BFF;
+`;
+
+const Instagram = styled.p`
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+`;
+
+const Scholarship = styled.p`
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+`;
+
+const CourseAndUniversity = styled.p`
+  font-size: 16px;
+  color: #007BFF;
+  margin: 5px 0 10px;
+`;
+
+const WishesText = styled.p`
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0 0;
 `;
 
 const CardBack = styled.div`
@@ -97,48 +145,6 @@ const CardBack = styled.div`
   transform: rotateY(180deg);
 `;
 
-const ProfileImage = styled.div`
-  width: 120px; /* Increased image size */
-  height: 120px; /* Increased image size */
-  border-radius: 50%;
-  background-color: #ccc;
-  margin-bottom: 8px;
-`;
-
-const Name = styled.h3`
-  font-size: 20px;
-  margin-top: 3px;
-  margin-bottom: 0px; /* Reduced margin */
-`;
-
-const Instagram = styled.p`
-  font-size: 16px;
-  color: #F9F9F9; /* Instagram brand color */
-  margin-top: 0px;
-  margin-bottom: 0px; /* Further reduced margin */
-`;
-
-const Scholarship = styled.p`
-  font-size: 16px;
-  color: #FFFFFF; /* White color for visibility */
-  margin-top: 4px;
-  margin-bottom: 0px; /* Reduced margin */
-`;
-
-const CourseAndUniversity = styled.p`
-  font-size: 16px;
-  color: #FFD700; /* Gold color for visibility */
-  margin-top: 4px;
-  margin-bottom: 10px; /* Added gap below scholarship */
-`;
-
-const WishesText = styled.p`
-  font-size: 14px; /* Normal font size */
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-`;
-
 const MotivatingSentence = styled.p`
   font-size: 16px;
   text-align: center;
@@ -153,9 +159,9 @@ const Wishes = () => {
       course: 'Material Science at Oxford University',
       instagram: '@kelvinngu',
       scholarship: 'JPA Scholar',
-      wish: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt it.',
+      wish: 'It’s inspiring to see your work in empowering students to explore opportunities in higher education. Keep up the great work, and may your website guide many students towards brighter futures!',
       image: '/assets/portrait/kelvin_ngu.jpg',
-      motivatingSentence: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt productivity and cause damage to your device.Buy a genuine Adobe app — at a discount — to get the latest features and functionality, including security updates.',
+      motivatingSentence: 'You are capable of more than you realise, so don’t be afraid to take that first step. Success begins with courage—if you don’t try, you’ll never know what you can achieve.',
     },
     {
       id: 2,
@@ -163,9 +169,9 @@ const Wishes = () => {
       course: 'Chemical Engineering at Caltech',
       instagram: '@joelpang',
       scholarship: 'Shell Scholar',
-      wish: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt it.',
+      wish: 'Your dedication and perseverance are truly commendable. Best of luck in inspiring others to chase their dreams!',
       image: '/assets/portrait/joelpang.jpg',
-      motivatingSentence: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt productivity and cause damage to your device.Buy a genuine Adobe app — at a discount — to get the latest features and functionality, including security updates.',
+      motivatingSentence: 'Dream big and dare to fail. Your efforts today will pave the way for a brighter tomorrow.',
     },
     {
       id: 3,
@@ -173,9 +179,9 @@ const Wishes = () => {
       course: 'BSc Computer Science at University of Manchester',
       instagram: '@kohhuixin',
       scholarship: 'Bank Negara Malaysia Scholar',
-      wish: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt it.',
+      wish: 'Your vision for the future is inspiring. May you continue to empower others through your initiatives.',
       image: '/assets/portrait/kohhuixin.jpg',
-      motivatingSentence: 'When Adobe identifies unlicensed Adobe apps on your device, it disables them after a brief grace period. Unlicensed apps can have flaws that disrupt productivity and cause damage to your device.Buy a genuine Adobe app — at a discount — to get the latest features and functionality, including security updates.',
+      motivatingSentence: 'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.',
     },
   ];
 
@@ -190,12 +196,14 @@ const Wishes = () => {
           <Card key={wish.id}>
             <CardInner>
               <CardFront>
-                <ProfileImage style={{ backgroundImage: `url(${wish.image})`, backgroundSize: 'cover' }} />
-                <Name>{wish.name}</Name>
-                <Instagram>{wish.instagram}</Instagram>
-                <Scholarship>{wish.scholarship}</Scholarship>
-                <CourseAndUniversity>{wish.course}</CourseAndUniversity>
-                <WishesText>{wish.wish}</WishesText>
+                <ProfileImage style={{ backgroundImage: `url(${wish.image})` }} />
+                <CardContent>
+                  <Name>{wish.name}</Name>
+                  <Instagram>{wish.instagram}</Instagram>
+                  <Scholarship>{wish.scholarship}</Scholarship>
+                  <CourseAndUniversity>{wish.course}</CourseAndUniversity>
+                  <WishesText>{wish.wish}</WishesText>
+                </CardContent>
               </CardFront>
               <CardBack>
                 <MotivatingSentence>{wish.motivatingSentence}</MotivatingSentence>
