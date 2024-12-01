@@ -69,11 +69,11 @@ const TeamGrid = styled.div`
 
 const TeamMember = styled.div`
   text-align: center;
-  max-width: 250px;
+  max-width: 400px;
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #f06;
@@ -168,18 +168,18 @@ const About = () => {
         <TeamGrid>
           <TeamMember>
             <img src="/assets/portrait/siew_hao.jpg" alt="Siew Hao" />
-            <h3>Siew Hao</h3>
-            <p>Founder and visionary behind MSI, dedicated to empowering students.</p>
+            <h3>Yiek Siew Hao</h3>
+            <p>Visionary behind MSI, dedicated to empowering students.</p>
           </TeamMember>
           <TeamMember>
             <img src="/assets/portrait/kai.jpg" alt="Kai" />
-            <h3>Kai</h3>
-            <p>Co-founder with expertise in academic mentoring and event coordination.</p>
+            <h3>Siow Kai Yuan</h3>
+            <p>With expertise in academic mentoring and event coordination.</p>
           </TeamMember>
           <TeamMember>
             <img src="/assets/portrait/bryan.jpg" alt="Bryan" />
-            <h3>Bryan</h3>
-            <p>Technical lead and strategist, focused on digital solutions for education.</p>
+            <h3>Bryan Ngu Zhu Kiet</h3>
+            <p>Strategist, focused on digital solutions for education.</p>
           </TeamMember>
         </TeamGrid>
       </Section>

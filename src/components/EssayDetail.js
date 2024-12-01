@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 import essays from "../essays.json";
@@ -69,6 +69,11 @@ const EssayContent = styled.div`
 
 const EssayDetail = () => {
   const { id } = useParams(); // Get the ID from the URL
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Ensure the page starts at the top
+  }, []);
+
   const essay = essays[id]; // Fetch the corresponding essay
 
   if (!essay) {

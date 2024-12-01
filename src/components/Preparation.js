@@ -23,17 +23,32 @@ const SubHeading = styled.h2`
   text-align: center;
   margin-bottom: 20px;
 `;
+const ScholarHighlightContainer = styled.div`
+  margin-bottom: 40px;
+`;
+
+const HighlightHeader = styled.h2`
+  font-size: 24px;
+  color: #2c3e50; /* Darker neutral color */
+  margin-bottom: 10px;
+  text-align: center;
+`;
+
+const HighlightDescription = styled.p`
+  font-size: 16px;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 20px;
+`;
 
 const ScholarSection = styled(Link)`
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between text and arrow */
-  margin-bottom: 40px;
-  background-color: #f9f9f9;
-  padding: 30px;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
+  overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
 
   &:hover {
@@ -43,39 +58,43 @@ const ScholarSection = styled(Link)`
 `;
 
 const ScholarImage = styled.img`
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  object-fit: cover;
+  height: 100%;
+  max-width: 250px;
 `;
 
 const ScholarDetails = styled.div`
-  flex: 1;
-  font-size: 16px;
+  flex: 2;
+  padding: 20px;
   color: #333;
 `;
 
 const ScholarName = styled.h3`
   font-size: 22px;
+  color: #2c3e50;
   margin-bottom: 10px;
-  color: #007BFF;
 `;
 
 const ScholarMeta = styled.p`
   margin: 5px 0;
+  font-size: 14px;
+  color: #7f8c8d;
 `;
 
 const ScholarDescription = styled.p`
   margin: 10px 0;
-  color: #555;
+  font-size: 14px;
+  color: #7f8c8d;
 `;
 
 const ArrowIcon = styled(FaArrowRight)`
-  flex-shrink: 0;
-  color: #007BFF;
-  font-size: 24px;
+  color: #2c3e50;
+  font-size: 4px;
+  margin-left: auto;
+  padding: 10px; /* Add space around the arrow */
 `;
+
 
 const EssayCardContainer = styled.div`
   display: grid;
@@ -133,19 +152,24 @@ const Preparation = () => {
     <PreparationContainer>
       <PreparationTitle>Preparation Materials</PreparationTitle>
 
-      <SubHeading>Scholar Highlight</SubHeading>
-      <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
-        <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
-        <ScholarDetails>
-          <ScholarName>Koh Hui Xin</ScholarName>
-          <ScholarMeta><strong>Scholarship:</strong> Shell Scholarship</ScholarMeta>
-          <ScholarMeta><strong>Course:</strong> BSc Computer Science, University of Manchester</ScholarMeta>
-          <ScholarDescription>
-            Koh Hui Xin has contributed an excellent resource pack to help future scholars prepare effectively. Click to explore!
-          </ScholarDescription>
-        </ScholarDetails>
-        <ArrowIcon />
-      </ScholarSection>
+      <ScholarHighlightContainer>
+        <HighlightHeader>Scholar's Highlight</HighlightHeader>
+        <HighlightDescription>
+          A huge shoutout to Koh Hui Xin for contributing her resource pack to help future scholars prepare effectively. Click below to explore more!
+        </HighlightDescription>
+        <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
+          <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
+          <ScholarDetails>
+            <ScholarName>Koh Hui Xin</ScholarName>
+            <ScholarMeta><strong>Scholarship:</strong> Bank Negara Malaysia Scholarship</ScholarMeta>
+            <ScholarMeta><strong>Course:</strong> BSc Computer Science, University of Manchester</ScholarMeta>
+            <ScholarDescription>
+              Koh Hui Xin has contributed an excellent resource pack to help future scholars prepare effectively. Click to explore!
+            </ScholarDescription>
+          </ScholarDetails>
+          <ArrowIcon />
+        </ScholarSection>
+      </ScholarHighlightContainer>
 
       <SubHeading>Sample Essays</SubHeading>
       <EssayCardContainer>
