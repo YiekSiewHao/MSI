@@ -294,6 +294,111 @@ const EssayPreview = styled.div`
   }
 `;
 
+const InterviewSectionContainer = styled.div`
+  padding: 0;
+  margin-bottom: 100px;
+`;
+
+/* Interview Header */
+const InterviewHeader = styled.h2`
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 2px;
+  }
+`;
+
+/* Interview Description */
+const InterviewDescription = styled.p`
+  font-size: 18px;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+/* Interview List */
+const InterviewList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+`;
+
+/* Interview Item */
+const InterviewItem = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+`;
+
+/* Scholarship Name */
+const ScholarshipName = styled.span`
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: 600;
+`;
+
+/* Download Button */
+const DownloadButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
+/* View Button */
+/* View Button */
+const ViewButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  background-color: #28a745;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #218838;
+  }
+`;
+
+/* Button Group */
+const ButtonGroup = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+
 /* Main Component */
 const Preparation = () => {
   /* Reference to the scrollable container */
@@ -454,6 +559,77 @@ const Preparation = () => {
           </ScrollContainer>
         </ScholarHighlightContainer>
       </ContentContainer>
+
+      <InterviewSectionContainer>
+  <InterviewHeader>Interview Questions and Answers</InterviewHeader>
+  <InterviewDescription>
+    Prepare effectively for your interviews with these curated questions and answers from successful scholarship recipients.
+  </InterviewDescription>
+
+  <InterviewList>
+    <InterviewItem>
+      <ScholarshipName>Shell Scholarship</ScholarshipName>
+      <ButtonGroup>
+        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+          Download PDF
+        </DownloadButton>
+        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+          View File
+        </ViewButton>
+      </ButtonGroup>
+    </InterviewItem>
+    <InterviewItem>
+      <ScholarshipName>Petronas Scholarship</ScholarshipName>
+      <ButtonGroup>
+        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+          Download PDF
+        </DownloadButton>
+        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+          View File
+        </ViewButton>
+      </ButtonGroup>
+    </InterviewItem>
+
+    <InterviewItem>
+      <ScholarshipName>Yayasan UEM Scholarship</ScholarshipName>
+      <ButtonGroup>
+        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+          Download PDF
+        </DownloadButton>
+        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+          View File
+        </ViewButton>
+      </ButtonGroup>
+    </InterviewItem>
+
+    <InterviewItem>
+      <ScholarshipName>Yayasan Khazanah Scholarship</ScholarshipName>
+      <ButtonGroup>
+        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+          Download PDF
+        </DownloadButton>
+        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+          View File
+        </ViewButton>
+      </ButtonGroup>
+    </InterviewItem>
+
+    <InterviewItem>
+      <ScholarshipName>TNB Scholarship</ScholarshipName>
+      <ButtonGroup>
+        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+          Download PDF
+        </DownloadButton>
+        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+          View File
+        </ViewButton>
+      </ButtonGroup>
+    </InterviewItem>
+
+
+    {/* Repeat for other scholarships */}
+  </InterviewList>
+</InterviewSectionContainer>
     </PreparationContainer>
   );
 };
