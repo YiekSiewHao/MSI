@@ -76,13 +76,13 @@ const App = () => {
         onWishesClick={() => scrollToSection(wishesRef)}
         onEventsClick={() => scrollToSection(eventsRef)} // Add navigation for Events
       />
-      <Routes>
-        {/* Main Home Route */}
-        <Route
-          path="/"
-          element={
-            <>
-              <main>
+      <main>
+        <Routes>
+          {/* Main Home Route */}
+          <Route
+            path="/"
+            element={
+              <>
                 <section ref={homeRef}>
                   <Home />
                 </section>
@@ -98,19 +98,19 @@ const App = () => {
                 <section ref={contactRef}>
                   <Contact />
                 </section>
-              </main>
-              <Footer />
-            </>
-          }
-        />
-        {/* Other Pages */}
-        <Route path="/preparation" element={<Preparation />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
-        <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
-        <Route path="/essay/:id" element={<EssayDetail />} />
-        <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} /> {/* Updated route */}
+              </>
+            }
+          />
+          {/* Other Pages */}
+          <Route path="/preparation" element={<Preparation />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
+          <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
+          <Route path="/essay/:id" element={<EssayDetail />} />
+          <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} /> {/* Updated route */}
         </Routes>
+      </main>
+      <Footer /> {/* Ensure the footer is always rendered */}
     </>
   );
 };
