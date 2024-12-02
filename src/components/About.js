@@ -52,7 +52,7 @@ const TeamGrid = styled.div`
 `;
 
 const TeamMember = styled.div`
-  text-align: left;
+  text-align: center; /* Center the content */
   max-width: 350px;
   background-color: #f9f9f9;
   padding: 20px;
@@ -60,13 +60,12 @@ const TeamMember = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #007bff;
     margin-bottom: 15px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -75,7 +74,6 @@ const TeamMember = styled.div`
     font-size: 24px;
     color: #333;
     margin-bottom: 5px;
-    text-align: center;
   }
 
   p {
@@ -84,17 +82,16 @@ const TeamMember = styled.div`
     margin-bottom: 10px;
   }
 `;
-
 const SocialLinks = styled.div`
   display: flex;
-  justify-content: center; /* Center the content horizontally */
+  justify-content: center;
   margin-bottom: 15px;
 
   a {
     display: flex;
-    align-items: center; /* Align icon and text vertically */
+    align-items: center;
     color: #e1306c;
-    font-size: 16px; /* Font size for the text */
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
 
@@ -103,8 +100,8 @@ const SocialLinks = styled.div`
     }
 
     svg {
-      font-size: 24px; /* Icon size */
-      margin-right: 8px; /* Space between icon and text */
+      font-size: 24px;
+      margin-right: 8px;
     }
   }
 `;
@@ -113,16 +110,18 @@ const Quote = styled.blockquote`
   font-size: 16px;
   color: #555;
   font-style: italic;
-  margin: 20px 0 0;
+  margin: 20px auto 0;
   padding: 0 20px;
   position: relative;
+  max-width: 300px;
+  text-align: center; /* Center the quote text */
 
   &::before {
     content: open-quote;
     font-size: 32px;
     color: #007bff;
     position: absolute;
-    left: 10px;
+    left: -10px;
     top: -10px;
   }
 
@@ -131,7 +130,7 @@ const Quote = styled.blockquote`
     font-size: 32px;
     color: #007bff;
     position: absolute;
-    right: 10px;
+    right: -10px;
     bottom: -10px;
   }
 `;
@@ -261,7 +260,7 @@ const About = () => {
             <p><strong>Scholarship:</strong> Shell</p>
             <p><strong>Course:</strong> Electrical and Electronic Engineering</p>
             <Quote>
-              "Write better with EssayGuide app (on App Store and Google Play Store)"
+              Write better with EssayGuide app (on App Store and Google Play Store)
             </Quote>
           </TeamMember>
           <TeamMember>
@@ -276,7 +275,7 @@ const About = () => {
             <p><strong>Scholarship:</strong> Petronas</p>
             <p><strong>Course:</strong> Actuarial Science (Financial Risk)</p>
             <Quote>
-              "Don't be afraid to take risks if you are starting from the bottom, because you have nothing to lose."
+              Don't be afraid to take risks if you are starting from the bottom, because you have nothing to lose.
             </Quote>
           </TeamMember>
           <TeamMember>
@@ -291,7 +290,7 @@ const About = () => {
             <p><strong>Scholarship:</strong> Yayasan UEM</p>
             <p><strong>Course:</strong> Data Science</p>
             <Quote>
-              "Live a life you will remember."
+              Live a life you will remember.
             </Quote>
           </TeamMember>
         </TeamGrid>
