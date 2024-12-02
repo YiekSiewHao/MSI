@@ -79,9 +79,11 @@ const TeamMember = styled.div`
   p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced margin to decrease spacing between lines */
+    margin-top: 5px;
   }
 `;
+
 const SocialLinks = styled.div`
   display: flex;
   justify-content: center;
@@ -293,7 +295,7 @@ const About = () => {
             <p><strong>Yayasan UEM Scholar</strong></p>
             <p>Data Science</p>
             <Quote>
-              Live a life you will remember.
+            There might be a second chance, but there's definitely no second life for you. SO LIVE A LIFE YOU WILL REMEMBER.
             </Quote>
           </TeamMember>
         </TeamGrid>
