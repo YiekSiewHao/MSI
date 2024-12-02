@@ -48,7 +48,7 @@ const Footer = () => (
       <FooterTextLeft>
         &copy; 2024 <strong>Malaysian Student Initiative</strong>. All Rights Reserved.
       </FooterTextLeft>
-      <FooterTextRight>Empowering Futures Since 2024</FooterTextRight>
+      <FooterTextRight>Making a Significant Impact Since 2024</FooterTextRight>
     </FooterContent>
   </FooterContainer>
 );
