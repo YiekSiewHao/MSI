@@ -128,9 +128,14 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const handleNavigation = (onClickFunction) => {
+  const handleNavigation = (scrollToSection) => {
     setIsMobileMenuOpen(false); // Close mobile menu after navigation
-    onClickFunction();
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => scrollToSection(), 100); // Wait briefly for home page to load
+    } else {
+      scrollToSection();
+    }
   };
 
   // Define menu items

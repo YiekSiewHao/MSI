@@ -17,23 +17,27 @@ const fadeIn = keyframes`
 
 const FullWidthContainer = styled.div`
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
   position: relative;
   background: radial-gradient(circle, #1a237e, #0d0d0d); /* Space gradient */
+  overflow: hidden; /* Prevent content overflow */
 `;
 
 const CenteredContent = styled.div`
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 1;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
 `;
 
 const HomeTitle = styled.h1`
   font-family: 'Playfair Display', serif;
-  font-size: 100px;
+  font-size: 80px;
   color: #fff; /* Bright white text */
   margin-bottom: 20px;
   font-style: italic;
@@ -46,18 +50,42 @@ const HomeTitle = styled.h1`
     transform: scale(1.05);
     color: #90caf9; /* Light blue on hover */
   }
+
+  @media (max-width: 1200px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 36px;
+  }
 `;
 
 const HomeDescription = styled.p`
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 1.5;
-  color: #fff; /* Light gray for readability */
+  color: #fff; /* Bright white for readability */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker box shadow for contrast */
   max-width: 850px;
   margin: 0 auto;
   opacity: 0; /* Start hidden */
   animation: ${fadeIn} 1s ease-out 1.5s forwards; /* Animation starts 1.5s after page load */
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 // Custom Rotating Earth Component
@@ -72,46 +100,47 @@ const RotatingEarth = ({ position, scale }) => {
   return <primitive object={scene} position={position} scale={scale} />;
 };
 
-const CloudScene = () => {
-  return (
-    <Canvas
-      camera={{ position: [0, 0, 15], fov: 50 }}
-      style={{ position: 'absolute', top: 0, left: 0, zIndex: 0 }}
-    >
-      {/* Lighting */}
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 10, 10]} intensity={1} />
-
-      {/* Stars in the background */}
-      <Stars
-        radius={100} // Larger radius for a distant starfield
-        depth={50} // Depth of starfield
-        count={5000} // Number of stars
-        factor={4} // Star size factor
-        saturation={0} // Neutral color tone
-        fade
-      />
-
-      {/* Enlarged Rotating Earth */}
-      <RotatingEarth position={[0, -1, -8]} scale={0.017} />
-
-      {/* Controls for 3D view */}
-      <OrbitControls enableZoom={false} autoRotate={false} />
-    </Canvas>
-  );
-};
+const CloudScene = styled(Canvas)`
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+`;
 
 const Home = () => {
   return (
     <FullWidthContainer>
       {/* 3D Scene */}
-      <CloudScene />
+      <CloudScene camera={{ position: [0, 0, 15], fov: 50 }}>
+        {/* Lighting */}
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[10, 10, 10]} intensity={1} />
+
+        {/* Stars in the background */}
+        <Stars
+          radius={100} // Larger radius for a distant starfield
+          depth={50} // Depth of starfield
+          count={5000} // Number of stars
+          factor={4} // Star size factor
+          saturation={0} // Neutral color tone
+          fade
+        />
+
+        {/* Enlarged Rotating Earth */}
+        <RotatingEarth position={[0, -1, -8]} scale={0.017} />
+
+        {/* Controls for 3D view */}
+        <OrbitControls enableZoom={false} autoRotate={false} />
+      </CloudScene>
 
       {/* Text Content */}
       <CenteredContent>
         <HomeTitle>Welcome to MSI!</HomeTitle>
         <HomeDescription>
-          Malaysian Student Initiative aims to empower students by providing resources, information, and opportunities to achieve academic and career success.
+          Malaysian Student Initiative aims to empower students by providing resources, information,
+          and opportunities to achieve academic and career success.
         </HomeDescription>
       </CenteredContent>
     </FullWidthContainer>
