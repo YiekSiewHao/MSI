@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { FaInstagram } from 'react-icons/fa';
 
@@ -226,6 +226,9 @@ const MissionRow = styled.div`
 `;
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <AboutContainer>
       {/* About MSI Section */}
@@ -257,8 +260,8 @@ const About = () => {
                 @siew_hao
               </a>
             </SocialLinks>
-            <p><strong>Scholarship:</strong> Shell</p>
-            <p><strong>Course:</strong> Electrical and Electronic Engineering</p>
+            <p><strong>Shell Scholar</strong></p>
+            <p>Electrical and Electronic Engineering</p>
             <Quote>
               Write better with EssayGuide app (on App Store and Google Play Store)
             </Quote>
@@ -272,8 +275,8 @@ const About = () => {
                 @pumpkinsoda_0203
               </a>
             </SocialLinks>
-            <p><strong>Scholarship:</strong> Petronas</p>
-            <p><strong>Course:</strong> Actuarial Science (Financial Risk)</p>
+            <p><strong>Petronas Scholar</strong></p>
+            <p>Actuarial Science (Financial Risk)</p>
             <Quote>
               Don't be afraid to take risks if you are starting from the bottom, because you have nothing to lose.
             </Quote>
@@ -287,8 +290,8 @@ const About = () => {
                 @ngubryan
               </a>
             </SocialLinks>
-            <p><strong>Scholarship:</strong> Yayasan UEM</p>
-            <p><strong>Course:</strong> Data Science</p>
+            <p><strong>Yayasan UEM Scholar</strong></p>
+            <p>Data Science</p>
             <Quote>
               Live a life you will remember.
             </Quote>

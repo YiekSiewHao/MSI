@@ -253,6 +253,10 @@ const Preparation = () => {
   };
 
   const scholarImagePath = "/assets/portrait/kohhuixin.jpg";
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <PreparationContainer>
