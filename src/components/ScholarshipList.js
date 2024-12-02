@@ -79,7 +79,7 @@ const ScholarshipList = () => {
             )}
             <div className="content">
               <h3>{scholarship.shortName}</h3>
-              <p>{scholarship.description.substring(0, 150)}...</p>
+              <p>{scholarship.description.substring(0, 100)}...</p>
             </div>
           </ScholarshipCard>
         ))}

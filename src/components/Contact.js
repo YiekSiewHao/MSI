@@ -115,7 +115,7 @@ const Contact = () => (
             Help us improve by sharing your thoughts!
             Please click the link below to access our feedback form:
           </FeedbackText>
-          <FeedbackLink href="https://forms.google.com/example" target="_blank">
+          <FeedbackLink href="https://docs.google.com/forms/d/e/1FAIpQLScCuYVk8SD6lN4zepnNOY0MuyhziFRix77dhoT2EGdjNP-UwQ/viewform?usp=sf_link" target="_blank">
             Click Here to Send Feedback <Emoji>📩</Emoji>
           </FeedbackLink>
         </RightSection>

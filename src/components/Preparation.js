@@ -8,41 +8,85 @@ import essays from "../essays.json";
 
 /* Container for the entire Preparation section */
 const PreparationContainer = styled.div`
-  padding: 40px 20px;
+  padding: 0; /* Remove padding to allow the title to span the full width */
+`;
+
+/* New Content Container for the rest of the content */
+const ContentContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 20px;
+`;
+
+/* Title Section with stylish background */
+const TitleSection = styled.div`
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url(${(props) => props.backgroundImage});
+
+  /* Optional: Add a semi-transparent overlay if needed */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+    z-index: 0;
+  }
+
+  /* Ensure the title text appears above the overlay */
+  h1 {
+    position: relative;
+    z-index: 1;
+  }
 `;
 
 /* Main title */
 const PreparationTitle = styled.h1`
-  font-size: 28px;
-  color: #007bff;
-  text-align: center;
-  margin-bottom: 10px;
-`;
-
-/* Subheading for sections */
-const SubHeading = styled.h2`
-  font-size: 22px;
-  color: #555;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 `;
 
 /* Scholar Highlight Section */
 const ScholarHighlightContainer = styled.div`
-  margin-bottom: 40px;
+  padding: 40px 0; /* Adjusted padding */
+  margin-bottom: 20px; /* Reduced spacing */
 `;
 
+/* Custom Underlined Heading */
 const HighlightHeader = styled.h2`
-  font-size: 24px;
-  color: #2c3e50; /* Darker neutral color */
+  font-size: 28px; /* Increased font size */
+  color: #2c3e50;
   margin-bottom: 10px;
   text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust as needed */
+    transform: translateX(-50%);
+    width: 60px; /* Length of the underline */
+    height: 3px; /* Thickness */
+    background-color: #007bff; /* Blue color */
+    border-radius: 2px;
+  }
 `;
 
 const HighlightDescription = styled.p`
-  font-size: 16px;
+  font-size: 18px; /* Increased font size */
   color: #7f8c8d;
   text-align: center;
   margin-bottom: 20px;
@@ -78,36 +122,60 @@ const ScholarDetails = styled.div`
 `;
 
 const ScholarName = styled.h3`
-  font-size: 22px;
-  color: #2c3e50;
+  font-size: 24px; /* Increased font size */
+  color: #007bff; /* Changed to blue color */
   margin-bottom: 10px;
 `;
 
 const ScholarMeta = styled.p`
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 16px; /* Increased font size */
   color: #7f8c8d;
 `;
 
 const ScholarDescription = styled.p`
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 16px; /* Increased font size */
   color: #7f8c8d;
 `;
 
+/* Arrow Icon */
 const ArrowIcon = styled(FaArrowRight)`
   color: #2c3e50;
   font-size: 40px;
   margin-left: auto;
-  padding: 10px; /* Add space around the arrow */
+  padding: 10px;
 `;
 
-/* Scrolling Feature Styled Components */
+/* Filter Box */
+const FilterBox = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
 
-/* Container to hold the scrolling area and arrows */
+const FilterButton = styled.button`
+  background-color: ${(props) => (props.active ? '#007bff' : '#f1f1f1')};
+  color: ${(props) => (props.active ? '#fff' : '#333')};
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  
+  &:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+`;
+
+/* Scroll Container and Arrow Buttons */
 const ScrollContainer = styled.div`
   position: relative;
-  margin-bottom: 40px; /* Add space below the scroll area */
+  margin-bottom: 40px;
 `;
 
 /* Left and Right Arrow Buttons */
@@ -117,14 +185,14 @@ const ArrowButton = styled.div`
   transform: translateY(-50%);
   ${(props) => (props.left ? "left: -20px;" : "right: -20px;")}
   background: rgba(255, 255, 255, 0.7);
-  width: 40px; /* Set equal width and height */
+  width: 40px;
   height: 40px;
   cursor: pointer;
   visibility: ${(props) => (props.visible ? "visible" : "hidden")};
   z-index: 1;
-  border-radius: 50%; /* Makes the square into a circle */
+  border-radius: 50%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  display: flex; /* Center the icon inside */
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -133,12 +201,9 @@ const ArrowButton = styled.div`
   }
 `;
 
-
 /* Scrollable container for the essay cards */
 const EssayCardContainer = styled.div`
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -154,8 +219,8 @@ const EssayCardContainer = styled.div`
 
 /* Individual Essay Card */
 const EssayCard = styled(Link)`
-  width: 350px;
-  flex-shrink: 0;
+  flex: 0 0 90%;
+  max-width: 300px;
   text-decoration: none;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -168,18 +233,44 @@ const EssayCard = styled(Link)`
   &:hover {
     transform: scale(1.02);
   }
+
+  @media (min-width: 600px) {
+    flex: 0 0 80%;
+    max-width: 70%;
+  }
+
+  @media (min-width: 768px) {
+    flex: 0 0 70%;
+    max-width: 60%;
+  }
+
+  @media (min-width: 1024px) {
+    flex: 0 0 60%;
+    max-width: 50%;
+  }
+
+  @media (min-width: 1440px) {
+    flex: 0 0 50%;
+    max-width: 40%;
+  }
+
+  @media (min-width: 1920px) {
+    flex: 0 0 40%;
+    max-width: 30%;
+  }
 `;
+
 
 /* Title of the Essay Card */
 const CardTitle = styled.h3`
-  font-size: 18px;
-  color: #333;
+  font-size: 20px; /* Increased font size */
+  color: #007bff; /* Changed to blue color */
   margin-bottom: 10px;
 `;
 
 /* Meta information about the essay */
 const EssayMeta = styled.div`
-  font-size: 14px;
+  font-size: 16px; /* Increased font size */
   color: #555;
   margin-bottom: 10px;
 `;
@@ -212,6 +303,15 @@ const Preparation = () => {
   const [arrowLeftVisible, setArrowLeftVisible] = useState(false);
   const [arrowRightVisible, setArrowRightVisible] = useState(true);
 
+  /* State to manage the selected scholarship filter */
+  const [selectedScholarship, setSelectedScholarship] = useState('All');
+
+  /* Extract unique scholarships from essays */
+  const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
+
+  /* Filtered essays based on selected scholarship */
+  const filteredEssays = selectedScholarship === 'All' ? essays : essays.filter(essay => essay.scholarship === selectedScholarship);
+
   /* Handle scroll event to show/hide arrows */
   const handleScroll = () => {
     const container = scrollContainerRef.current;
@@ -232,7 +332,7 @@ const Preparation = () => {
         container.removeEventListener("scroll", handleScroll);
       };
     }
-  }, []);
+  }, [filteredEssays]);
 
   /* Scroll the container to the left */
   const scrollLeft = () => {
@@ -258,74 +358,102 @@ const Preparation = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const backgroundImagePath = '/assets/preparation_wallpaper.jpg'; // Replace with your image path
+
   return (
     <PreparationContainer>
-      <PreparationTitle>Preparation Materials</PreparationTitle>
+      <TitleSection backgroundImage={backgroundImagePath}>
+        <PreparationTitle>Preparation Materials</PreparationTitle>
+      </TitleSection>
 
-      {/* Scholar Highlight Section */}
-      <ScholarHighlightContainer>
-        <HighlightHeader>Scholar's Highlight</HighlightHeader>
-        <HighlightDescription>
-          A huge shoutout to Koh Hui Xin for contributing her resource pack to
-          help future scholars prepare effectively. Click below to explore more!
-        </HighlightDescription>
-        <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
-          <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
-          <ScholarDetails>
-            <ScholarName>Koh Hui Xin</ScholarName>
-            <ScholarMeta>
-              <strong>Scholarship:</strong> Bank Negara Malaysia Scholarship
-            </ScholarMeta>
-            <ScholarMeta>
-              <strong>Course:</strong> BSc Computer Science, University of
-              Manchester
-            </ScholarMeta>
-            <ScholarDescription>
-              Koh Hui Xin has contributed an excellent resource pack to help
-              future scholars prepare effectively. Click to explore!
-            </ScholarDescription>
-          </ScholarDetails>
-          <ArrowIcon />
-        </ScholarSection>
-      </ScholarHighlightContainer>
+      <ContentContainer>
+        {/* Scholar Highlight Section */}
+        <ScholarHighlightContainer>
+          <HighlightHeader>Scholar's Highlight</HighlightHeader>
+          <HighlightDescription>
+            A huge shoutout to <strong style={{color: '#007bff'}}>Koh Hui Xin</strong> for contributing her resource pack to
+            help future scholars prepare effectively. Click below to explore more!
+          </HighlightDescription>
+          <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
+            <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
+            <ScholarDetails>
+              <ScholarName>Koh Hui Xin</ScholarName>
+              <ScholarMeta>
+                <strong>Scholarship:</strong> <span style={{color: '#007bff'}}>Bank Negara Malaysia Scholarship</span>
+              </ScholarMeta>
+              <ScholarMeta>
+                <strong>Course:</strong> <span style={{color: '#007bff'}}>BSc Computer Science, University of Manchester</span>
+              </ScholarMeta>
+              <ScholarDescription>
+                Koh Hui Xin has contributed an excellent resource pack to help
+                future scholars prepare effectively. Click to explore!
+              </ScholarDescription>
+            </ScholarDetails>
+            <ArrowIcon />
+          </ScholarSection>
+        </ScholarHighlightContainer>
 
-      {/* Sample Essays Section with Scrolling Feature */}
-      <HighlightHeader>Sample Essays</HighlightHeader>
-        <HighlightDescription>
-        Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
-        </HighlightDescription>
-      <ScrollContainer>
-        {/* Left Arrow Button */}
-        <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
-          <FaChevronLeft size={24} />
-        </ArrowButton>
+        {/* Sample Essays Section */}
+        <ScholarHighlightContainer>
+          <HighlightHeader>Sample Essays</HighlightHeader>
+          <HighlightDescription>
+            Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
+          </HighlightDescription>
 
-        {/* Scrollable Essay Cards */}
-        <EssayCardContainer ref={scrollContainerRef}>
-          {essays.map((essay, index) => (
-            <EssayCard to={`/essay/${index}`} key={index}>
-              <CardTitle>{essay.scholarship}</CardTitle>
-              <EssayMeta>
-                <strong>Author:</strong> {essay.author} | <strong>Year:</strong>{" "}
-                {essay.year}
-              </EssayMeta>
-              <EssayPreview>
-                <p>{essay.question[0]}</p>
-                <Divider />
-                <p>{essay.essay[0].slice(0, 250)}...</p>
-                <span>
-                  <strong>Read More</strong>
-                </span>
-              </EssayPreview>
-            </EssayCard>
-          ))}
-        </EssayCardContainer>
+          {/* Filter Buttons */}
+          <FilterBox>
+            <FilterButton
+              active={selectedScholarship === 'All'}
+              onClick={() => setSelectedScholarship('All')}
+            >
+              All
+            </FilterButton>
+            {scholarships.map((scholarship) => (
+              <FilterButton
+                key={scholarship}
+                active={selectedScholarship === scholarship}
+                onClick={() => setSelectedScholarship(scholarship)}
+              >
+                {scholarship}
+              </FilterButton>
+            ))}
+          </FilterBox>
 
-        {/* Right Arrow Button */}
-        <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
-          <FaChevronRight size={24} />
-        </ArrowButton>
-      </ScrollContainer>
+          {/* Scrollable Essay Cards */}
+          <ScrollContainer>
+            {/* Left Arrow Button */}
+            <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
+              <FaChevronLeft size={24} />
+            </ArrowButton>
+
+            {/* Essay Cards */}
+            <EssayCardContainer ref={scrollContainerRef}>
+              {filteredEssays.map((essay, index) => (
+                <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
+                  <CardTitle>{essay.scholarship}</CardTitle>
+                  <EssayMeta>
+                    <strong>Author:</strong> {essay.author} | <strong>Year:</strong>{" "}
+                    {essay.year}
+                  </EssayMeta>
+                  <EssayPreview>
+                    <p><strong>{essay.question[0]}</strong></p>
+                    <Divider />
+                    <p>{essay.essay[0].slice(0, 100)}...</p>
+                    <span>
+                      <strong>Read More</strong>
+                    </span>
+                  </EssayPreview>
+                </EssayCard>
+              ))}
+            </EssayCardContainer>
+
+            {/* Right Arrow Button */}
+            <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
+              <FaChevronRight size={24} />
+            </ArrowButton>
+          </ScrollContainer>
+        </ScholarHighlightContainer>
+      </ContentContainer>
     </PreparationContainer>
   );
 };

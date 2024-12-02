@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FaInstagram } from 'react-icons/fa';
 
 const WishesWrapper = styled.div`
   padding: 20px 30px;
@@ -82,12 +83,12 @@ const CardFront = styled.div`
 `;
 
 const ProfileImage = styled.div`
-  width: 100%; /* Full width of the card */
-  height: 200px; /* Fixed height */
+  width: 100%;
+  height: 200px;
   background-color: #ccc;
   background-size: cover;
   background-position: center;
-  object-fit: cover; /* Ensures the image fills the container */
+  object-fit: cover;
 `;
 
 const CardContent = styled.div`
@@ -101,15 +102,33 @@ const CardContent = styled.div`
 
 const Name = styled.h3`
   font-size: 20px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 5px;
   color: #007BFF;
 `;
 
-const Instagram = styled.p`
-  font-size: 16px;
-  color: #555;
-  margin: 0;
+const SocialLinks = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #e1306c;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #c13584;
+    }
+
+    svg {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+  }
 `;
 
 const Scholarship = styled.p`
@@ -149,6 +168,7 @@ const MotivatingSentence = styled.p`
   font-size: 16px;
   text-align: center;
   padding: 10px;
+  font-style: italic;
 `;
 
 const Wishes = () => {
@@ -158,6 +178,7 @@ const Wishes = () => {
       name: 'Kelvin Ngu',
       course: 'Material Science at Oxford University',
       instagram: '@kelvinngu',
+      instagramLink: 'https://www.instagram.com/kelvinngu',
       scholarship: 'JPA Scholar',
       wish: 'It’s inspiring to see your work in empowering students to explore opportunities in higher education. Keep up the great work, and may your website guide many students towards brighter futures!',
       image: '/assets/portrait/kelvin_ngu.jpg',
@@ -168,6 +189,7 @@ const Wishes = () => {
       name: 'Joel Pang',
       course: 'Chemical Engineering at Caltech',
       instagram: '@joelpang',
+      instagramLink: 'https://www.instagram.com/joelpang',
       scholarship: 'Shell Scholar',
       wish: 'Your dedication and perseverance are truly commendable. Best of luck in inspiring others to chase their dreams!',
       image: '/assets/portrait/joelpang.jpg',
@@ -178,6 +200,7 @@ const Wishes = () => {
       name: 'Koh Hui Xin',
       course: 'BSc Computer Science at University of Manchester',
       instagram: '@kohhuixin',
+      instagramLink: 'https://www.instagram.com/kohhuixin',
       scholarship: 'Bank Negara Malaysia Scholar',
       wish: 'Your vision for the future is inspiring. May you continue to empower others through your initiatives.',
       image: '/assets/portrait/kohhuixin.jpg',
@@ -199,8 +222,13 @@ const Wishes = () => {
                 <ProfileImage style={{ backgroundImage: `url(${wish.image})` }} />
                 <CardContent>
                   <Name>{wish.name}</Name>
-                  <Instagram>{wish.instagram}</Instagram>
-                  <Scholarship>{wish.scholarship}</Scholarship>
+                  <SocialLinks>
+                    <a href={wish.instagramLink} target="_blank" rel="noopener noreferrer">
+                      <FaInstagram />
+                      {wish.instagram}
+                    </a>
+                  </SocialLinks>
+                  <Scholarship><strong>{wish.scholarship}</strong></Scholarship>
                   <CourseAndUniversity>{wish.course}</CourseAndUniversity>
                   <WishesText>{wish.wish}</WishesText>
                 </CardContent>
