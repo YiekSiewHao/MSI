@@ -1,12 +1,13 @@
 // Header.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const HeaderContainer = styled.header`
   background-color: #007BFF;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   width: 100%;
@@ -23,20 +24,33 @@ const HeaderContent = styled.div`
 
 const TitleLink = styled(Link)`
   color: white;
-  font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s ease;
 
   &:hover {
     color: #FFD700;
   }
+
+  /* Responsive font sizes */
+  font-size: 20px;
+
+  @media (min-width: 480px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 const Nav = styled.nav`
-  display: flex;
+  @media (max-width: 768px) {
+    display: none; /* Hide navigation on small screens */
+  }
 `;
 
 const NavList = styled.ul`
@@ -62,43 +76,161 @@ const NavLink = styled.a`
   }
 `;
 
+/* Menu button for mobile */
+const MenuButton = styled.button`
+  display: none; /* Hidden by default */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block; /* Show menu button on small screens */
+  }
+`;
+
+/* Mobile navigation styles */
+const MobileNav = styled(motion.ul)`
+  position: absolute;
+  top: 100%; /* Position below the header */
+  left: 0;
+  width: 100%;
+  background-color: #007BFF;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  z-index: 999;
+`;
+
+const MobileNavItem = styled(motion.li)`
+  width: 100%;
+  text-align: center;
+`;
+
+const MobileNavLink = styled.a`
+  display: block;
+  padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+
 const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleNavigation = (scrollToSection) => {
-    if (location.pathname !== '/') {
-      navigate('/');
-      setTimeout(() => scrollToSection(), 100); // Wait briefly for home page to load
-    } else {
-      scrollToSection();
-    }
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleNavigation = (onClickFunction) => {
+    setIsMobileMenuOpen(false); // Close mobile menu after navigation
+    onClickFunction();
+  };
+
+  // Define menu items
+  const menuItems = [
+    { name: 'Home', onClick: () => handleNavigation(onHomeClick) },
+    { name: 'Scholarship List', onClick: () => handleNavigation(onScholarshipListClick) },
+    {
+      name: 'Preparation',
+      onClick: () => {
+        setIsMobileMenuOpen(false);
+        navigate('/preparation');
+      },
+    },
+    {
+      name: 'About Us',
+      onClick: () => {
+        setIsMobileMenuOpen(false);
+        navigate('/about');
+      },
+    },
+    { name: 'Contact Us', onClick: () => handleNavigation(onContactClick) },
+  ];
+
+  // Animation variants for mobile menu
+  const mobileNavVariants = {
+    open: {
+      height: 'auto',
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        when: 'beforeChildren',
+        staggerChildren: 0.05,
+      },
+    },
+    closed: {
+      height: 0,
+      opacity: 0,
+      transition: {
+        duration: 0.3,
+        when: 'afterChildren',
+      },
+    },
+  };
+
+  const mobileNavItemVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.2,
+      },
+    },
+    closed: {
+      opacity: 0,
+      y: -20,
+      transition: {
+        duration: 0.2,
+      },
+    },
   };
 
   return (
     <HeaderContainer>
       <HeaderContent>
         <TitleLink to="/">Malaysian Student Initiative</TitleLink>
+
+        {/* Desktop Navigation */}
         <Nav>
           <NavList>
-            <NavItem>
-              <NavLink onClick={() => handleNavigation(onHomeClick)}>Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={() => handleNavigation(onScholarshipListClick)}>Scholarship List</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={() => navigate('/preparation')}>Preparation</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={() => navigate('/about')}>About Us</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink onClick={() => handleNavigation(onContactClick)}>Contact Us</NavLink>
-            </NavItem>
+            {menuItems.map((item, index) => (
+              <NavItem key={index}>
+                <NavLink onClick={item.onClick}>{item.name}</NavLink>
+              </NavItem>
+            ))}
           </NavList>
         </Nav>
+
+        {/* Menu Button for Mobile */}
+        <MenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </MenuButton>
       </HeaderContent>
+
+      {/* Mobile Navigation */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <MobileNav
+            initial="closed"
+            animate="open"
+            exit="closed"
+            variants={mobileNavVariants}
+          >
+            {menuItems.map((item, index) => (
+              <MobileNavItem key={index} variants={mobileNavItemVariants}>
+                <MobileNavLink onClick={item.onClick}>{item.name}</MobileNavLink>
+              </MobileNavItem>
+            ))}
+          </MobileNav>
+        )}
+      </AnimatePresence>
     </HeaderContainer>
   );
 };
