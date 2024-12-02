@@ -1,15 +1,32 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useRef } from 'react';
+import styled, { keyframes } from 'styled-components';
 import { FaInstagram } from 'react-icons/fa';
 
+/* Container for the entire About section */
 const AboutContainer = styled.div`
   padding: 20px;
   max-width: 1400px;
   margin: 0 auto;
 `;
 
+/* Define the fade-in-up animation */
+const fadeInUp = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
+/* Section with animation */
 const Section = styled.section`
   margin: 60px 0;
+  opacity: 0;
+  animation: ${fadeInUp} 1s forwards;
+  animation-delay: ${(props) => props.delay || '0s'};
 `;
 
 const SectionTitle = styled.h2`
@@ -52,12 +69,15 @@ const TeamGrid = styled.div`
 `;
 
 const TeamMember = styled.div`
-  text-align: center; /* Center the content */
+  text-align: center;
   max-width: 350px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  animation: ${fadeInUp} 1s forwards;
+  animation-delay: ${(props) => props.delay || '0s'};
 
   img {
     width: 250px;
@@ -79,7 +99,7 @@ const TeamMember = styled.div`
   p {
     font-size: 16px;
     color: #666;
-    margin-bottom: 5px; /* Reduced margin to decrease spacing between lines */
+    margin-bottom: 5px;
     margin-top: 5px;
   }
 `;
@@ -116,7 +136,7 @@ const Quote = styled.blockquote`
   padding: 0 20px;
   position: relative;
   max-width: 300px;
-  text-align: center; /* Center the quote text */
+  text-align: center;
 
   &::before {
     content: open-quote;
@@ -137,7 +157,7 @@ const Quote = styled.blockquote`
   }
 `;
 
-/* Restored the previous design for Vision & Mission */
+/* Vision & Mission Wrapper */
 const VisionMissionWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -231,10 +251,49 @@ const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  // Create refs for the sections
+  const aboutRef = useRef(null);
+  const foundersRef = useRef(null);
+  const visionRef = useRef(null);
+
+  useEffect(() => {
+    const sections = [aboutRef.current, foundersRef.current, visionRef.current];
+    const options = {
+      threshold: 0.1,
+    };
+
+    const handleIntersection = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    sections.forEach(section => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.forEach(section => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <AboutContainer>
       {/* About MSI Section */}
-      <Section>
+      <Section ref={aboutRef}>
         <SectionTitle>About MSI</SectionTitle>
         <SectionContent>
           <p>
@@ -250,10 +309,10 @@ const About = () => {
       </Section>
 
       {/* Meet the Founders Section */}
-      <Section>
+      <Section ref={foundersRef} delay="0.2s">
         <SectionTitle>Meet the Founders</SectionTitle>
         <TeamGrid>
-          <TeamMember>
+          <TeamMember delay="0.4s">
             <img src="/assets/portrait/siew_hao.jpg" alt="Yiek Siew Hao" />
             <h3>Yiek Siew Hao</h3>
             <SocialLinks>
@@ -268,7 +327,7 @@ const About = () => {
               Write better with EssayGuide app (on App Store and Google Play Store)
             </Quote>
           </TeamMember>
-          <TeamMember>
+          <TeamMember delay="0.6s">
             <img src="/assets/portrait/kai.jpg" alt="Siow Kai Yuan" />
             <h3>Siow Kai Yuan</h3>
             <SocialLinks>
@@ -283,7 +342,7 @@ const About = () => {
               Don't be afraid to take risks if you are starting from the bottom, because you have nothing to lose.
             </Quote>
           </TeamMember>
-          <TeamMember>
+          <TeamMember delay="0.8s">
             <img src="/assets/portrait/bryan.jpg" alt="Bryan Ngu" />
             <h3>Bryan Ngu Zhu Kiet</h3>
             <SocialLinks>
@@ -295,14 +354,14 @@ const About = () => {
             <p><strong>Yayasan UEM Scholar</strong></p>
             <p>Data Science</p>
             <Quote>
-            There might be a second chance, but there's definitely no second life for you. SO LIVE A LIFE YOU WILL REMEMBER.
+              There might be a second chance, but there's definitely no second life for you. SO LIVE A LIFE YOU WILL REMEMBER.
             </Quote>
           </TeamMember>
         </TeamGrid>
       </Section>
 
       {/* Vision & Mission Section */}
-      <Section>
+      <Section ref={visionRef} delay="0.4s">
         <SectionTitle>Vision & Mission</SectionTitle>
         <VisionMissionWrapper>
           <VisionRow>
