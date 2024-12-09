@@ -3,6 +3,13 @@ import styled from "styled-components";
 import { FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import framer-motion
 
+// Define some breakpoints for convenience
+const breakpoints = {
+  sm: "600px",
+  md: "900px",
+  lg: "1200px",
+};
+
 const EventsWrapper = styled.div`
   padding: 20px 30px;
   max-width: 1400px;
@@ -11,12 +18,28 @@ const EventsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (max-width: ${breakpoints.lg}) {
+    padding: 15px 20px;
+  }
+
+  @media (max-width: ${breakpoints.md}) {
+    padding: 10px 15px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    padding: 5px 10px;
+  }
 `;
 
 const EventsHeader = styled.h1`
-  font-size: 32px;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   color: #007bff;
   margin: 0 0 20px;
+
+  @media (max-width: ${breakpoints.sm}) {
+    margin-bottom: 15px;
+  }
 `;
 
 const GalleryContainer = styled.div`
@@ -24,9 +47,13 @@ const GalleryContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+
+  @media (max-width: ${breakpoints.sm}) {
+    gap: 10px;
+  }
 `;
 
-const ImageCard = styled(motion.div)` // Use motion.div for animation
+const ImageCard = styled(motion.div)`
   width: 400px;
   height: 300px;
   background-size: cover;
@@ -34,9 +61,24 @@ const ImageCard = styled(motion.div)` // Use motion.div for animation
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  @media (max-width: ${breakpoints.lg}) {
+    width: 300px;
+    height: 225px;
+  }
+
+  @media (max-width: ${breakpoints.md}) {
+    width: 250px;
+    height: 180px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    width: 200px;
+    height: 150px;
+  }
 `;
 
-const Modal = styled(motion.div)` // Use motion.div for animation
+const Modal = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
@@ -50,7 +92,7 @@ const Modal = styled(motion.div)` // Use motion.div for animation
   overflow: hidden; /* Prevent content overflow */
 `;
 
-const ModalContent = styled(motion.div)` // Use motion.div for animation
+const ModalContent = styled(motion.div)`
   max-width: 80%;
   max-height: 90%;
   background: white;
@@ -60,7 +102,17 @@ const ModalContent = styled(motion.div)` // Use motion.div for animation
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  position: relative; // Add position relative for the CloseButton
+  position: relative; /* Add position relative for the CloseButton */
+
+  @media (max-width: ${breakpoints.lg}) {
+    border-radius: 15px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    border-radius: 10px;
+    max-width: 95%;
+    max-height: 95%;
+  }
 `;
 
 const CloseButton = styled.div`
@@ -81,6 +133,16 @@ const CloseButton = styled.div`
   &:hover {
     background: #0056b3;
   }
+
+  @media (max-width: ${breakpoints.md}) {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    padding: 8px;
+    font-size: 18px;
+  }
 `;
 
 const NavigationButton = styled.button`
@@ -97,14 +159,30 @@ const NavigationButton = styled.button`
   &:hover {
     color: #007bff;
   }
+
+  @media (max-width: ${breakpoints.md}) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    font-size: 24px;
+  }
 `;
 
 const LeftButton = styled(NavigationButton)`
   left: 10px;
+
+  @media (max-width: ${breakpoints.sm}) {
+    left: 5px;
+  }
 `;
 
 const RightButton = styled(NavigationButton)`
   right: 10px;
+
+  @media (max-width: ${breakpoints.sm}) {
+    right: 5px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -114,6 +192,18 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #f4f4f4; /* Light background for better visibility */
+
+  @media (max-width: ${breakpoints.lg}) {
+    height: 500px;
+  }
+
+  @media (max-width: ${breakpoints.md}) {
+    height: 400px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    height: 300px;
+  }
 `;
 
 const EventImage = styled.img`
@@ -127,6 +217,10 @@ const TextContainer = styled.div`
   padding: 10px 20px;
   background: #f9f9f9;
   border-top: 1px solid #ddd;
+
+  @media (max-width: ${breakpoints.sm}) {
+    padding: 5px 10px;
+  }
 `;
 
 const EventText = styled.p`
@@ -134,6 +228,14 @@ const EventText = styled.p`
   color: #333;
   text-align: center;
   margin: 0;
+
+  @media (max-width: ${breakpoints.md}) {
+    font-size: 14px;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    font-size: 12px;
+  }
 `;
 
 const Events = () => {

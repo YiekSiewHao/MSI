@@ -11,6 +11,14 @@ const WishesWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 15px 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 15px;
+  }
 `;
 
 const WishesHeader = styled.h1`
@@ -20,6 +28,10 @@ const WishesHeader = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 28px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
   }
 `;
 
@@ -31,6 +43,12 @@ const MotivatingQuote = styled.p`
 
   @media (max-width: 768px) {
     font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -38,13 +56,20 @@ const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; 
   gap: 60px;
   padding: 30px 0;
   width: 100%;
-  
+
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 40px;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 480px) {
+    gap: 30px;
+    padding: 15px 0;
   }
 `;
 
@@ -59,6 +84,11 @@ const Card = styled(motion.div)`
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 480px) {
+    min-width: 260px;
+    height: 450px;
   }
 `;
 
@@ -95,15 +125,24 @@ const ProfileImage = styled.div`
   background-size: cover;
   background-position: center;
   object-fit: cover;
+
+  @media (max-width: 480px) {
+    height: 180px;
+  }
 `;
 
 const CardContent = styled.div`
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
   text-align: center;
   flex-grow: 1;
+  justify-content: center;
+
+  @media (max-width: 480px) {
+    padding: 15px;
+  }
 `;
 
 const Name = styled.h3`
@@ -114,6 +153,10 @@ const Name = styled.h3`
 
   @media (max-width: 768px) {
     font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
   }
 `;
 
@@ -138,6 +181,15 @@ const SocialLinks = styled.div`
       font-size: 24px;
       margin-right: 8px;
     }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+
+      svg {
+        font-size: 20px;
+        margin-right: 6px;
+      }
+    }
   }
 `;
 
@@ -149,6 +201,10 @@ const Scholarship = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+  }
 `;
 
 const CourseAndUniversity = styled.p`
@@ -159,6 +215,11 @@ const CourseAndUniversity = styled.p`
   @media (max-width: 768px) {
     font-size: 14px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
 `;
 
 const WishesText = styled.p`
@@ -168,6 +229,11 @@ const WishesText = styled.p`
 
   @media (max-width: 768px) {
     font-size: 12px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 11px;
+    margin-top: 8px;
   }
 `;
 
@@ -184,6 +250,10 @@ const CardBack = styled.div`
   border-radius: 15px;
   padding: 20px;
   transform: rotateY(180deg);
+
+  @media (max-width: 480px) {
+    padding: 15px;
+  }
 `;
 
 const MotivatingSentence = styled.p`
@@ -194,6 +264,11 @@ const MotivatingSentence = styled.p`
 
   @media (max-width: 768px) {
     font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 13px;
+    padding: 8px;
   }
 `;
 
@@ -237,9 +312,7 @@ const Wishes = () => {
   return (
     <WishesWrapper>
       <WishesHeader>Words of Wisdom from Scholars</WishesHeader>
-      <MotivatingQuote>
-        Look at the success of our Malaysian scholars
-      </MotivatingQuote>
+      <MotivatingQuote>Look at the success of our Malaysian scholars</MotivatingQuote>
       <CardContainer>
         {wishesData.map((wish) => (
           <Card key={wish.id}>
