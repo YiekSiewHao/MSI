@@ -17,7 +17,7 @@ const fadeIn = keyframes`
 
 const FullWidthContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100); /* Use the custom vh variable */
   position: relative;
   background: radial-gradient(circle, #1a237e, #0d0d0d); /* Space gradient */
   overflow: hidden; /* Prevent content overflow */
@@ -113,13 +113,27 @@ const Home = () => {
   const [isLaptopWidth, setIsLaptopWidth] = useState(true);
 
   useEffect(() => {
+    // Set the --vh CSS variable on load and on resize
+    const setViewportHeight = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    setViewportHeight();
+    window.addEventListener('resize', setViewportHeight);
+
+    // Check width for interaction removal
     const checkWidth = () => {
       setIsLaptopWidth(window.innerWidth > 1200);
     };
 
     checkWidth();
     window.addEventListener('resize', checkWidth);
-    return () => window.removeEventListener('resize', checkWidth);
+
+    return () => {
+      window.removeEventListener('resize', setViewportHeight);
+      window.removeEventListener('resize', checkWidth);
+    };
   }, []);
 
   return (
@@ -143,10 +157,7 @@ const Home = () => {
         {/* Enlarged Rotating Earth */}
         <RotatingEarth position={[0, -1, -8]} scale={0.017} />
 
-        {/* 
-          Only render OrbitControls if screen is wider than 1200px.
-          This ensures interaction is only available on "laptop" widths.
-        */}
+        {/* Only render OrbitControls if screen is wider than 1200px. */}
         {isLaptopWidth && <OrbitControls enableZoom={false} autoRotate={false} />}
       </CloudScene>
 
