@@ -28,7 +28,7 @@ const EventsWrapper = styled.div`
   }
 
   @media (max-width: ${breakpoints.sm}) {
-    padding: 5px 10px;
+    padding: 10px 15px;
   }
 `;
 
@@ -49,7 +49,7 @@ const GalleryContainer = styled.div`
   justify-content: center;
 
   @media (max-width: ${breakpoints.sm}) {
-    gap: 10px;
+    gap: 15px;
   }
 `;
 
@@ -73,8 +73,10 @@ const ImageCard = styled(motion.div)`
   }
 
   @media (max-width: ${breakpoints.sm}) {
-    width: 200px;
-    height: 150px;
+    width: 90vw; 
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 4/3; /* Ensures a nice ratio for the image at small screens */
   }
 `;
 
@@ -89,7 +91,7 @@ const Modal = styled(motion.div)`
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  overflow: hidden; /* Prevent content overflow */
+  overflow: hidden;
 `;
 
 const ModalContent = styled(motion.div)`
@@ -102,7 +104,7 @@ const ModalContent = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  position: relative; /* Add position relative for the CloseButton */
+  position: relative;
 
   @media (max-width: ${breakpoints.lg}) {
     border-radius: 15px;
@@ -187,11 +189,11 @@ const RightButton = styled(NavigationButton)`
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 700px; /* Set a fixed height for the image container */
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4; /* Light background for better visibility */
+  background: #f4f4f4;
 
   @media (max-width: ${breakpoints.lg}) {
     height: 500px;
@@ -209,7 +211,7 @@ const ImageContainer = styled.div`
 const EventImage = styled.img`
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Ensures the image fits well within the container */
+  object-fit: contain;
 `;
 
 const TextContainer = styled.div`
@@ -296,7 +298,7 @@ const Events = () => {
         initial={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        style={{ width: "100%" }} // Ensures the motion.div takes full width
+        style={{ width: "100%" }}
       >
         <EventsHeader>Recent Events</EventsHeader>
       </motion.div>
@@ -307,12 +309,12 @@ const Events = () => {
             key={event.id}
             style={{ backgroundImage: `url(${event.image})` }}
             onClick={() => handleImageClick(index)}
-            whileHover={{ scale: 1.05 }} // Animation on hover
-            whileTap={{ scale: 0.95 }} // Animation on tap
-            whileInView={{ opacity: 1, y: 0 }} // Animate when in view
-            initial={{ opacity: 0, y: 30 }} // Initial state
-            viewport={{ once: true, amount: 0.3 }} // Trigger when 30% is visible
-            transition={{ duration: 0.5, delay: index * 0.1 }} // Staggered animation
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
           />
         ))}
       </GalleryContainer>
