@@ -74,8 +74,8 @@ const CardContainer = styled.div`
 `;
 
 const Card = styled(motion.div)`
-  min-width: 300px;
-  max-width: 400px;
+  min-width: 400px;
+  max-width: 450px;
   height: 500px;
   background-color: #f9f9f9;
   border-radius: 15px;
@@ -87,7 +87,7 @@ const Card = styled(motion.div)`
   }
 
   @media (max-width: 480px) {
-    min-width: 260px;
+    min-width: 300px;
     height: 450px;
   }
 `;
