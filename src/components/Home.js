@@ -1,12 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Stars } from '@react-three/drei';
-
-// Define breakpoints
-const breakpoints = {
-  md: '900px', // You can adjust this breakpoint as needed
-};
 
 // Animation Keyframes
 const fadeIn = keyframes`
@@ -22,15 +17,10 @@ const fadeIn = keyframes`
 
 const FullWidthContainer = styled.div`
   width: 100%;
+  min-height: 100vh;
   position: relative;
-  background: radial-gradient(circle, #1a237e, #0d0d0d);
-  overflow: hidden;
-  min-height: 100vh; /* Full screen for mobile */
-
-  /* You can adjust this as desired for larger screens */
-  @media (min-width: ${breakpoints.md}) {
-    min-height: 80vh;
-  }
+  background: radial-gradient(circle, #1a237e, #0d0d0d); /* Space gradient */
+  overflow: hidden; /* Prevent content overflow */
 `;
 
 const CenteredContent = styled.div`
@@ -48,17 +38,17 @@ const CenteredContent = styled.div`
 const HomeTitle = styled.h1`
   font-family: 'Playfair Display', serif;
   font-size: 80px;
-  color: #fff;
+  color: #fff; /* Bright white text */
   margin-bottom: 20px;
   font-style: italic;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Darker box shadow for contrast */
   transition: transform 0.3s ease;
-  opacity: 0;
-  animation: ${fadeIn} 1s ease-out 1s forwards;
+  opacity: 0; /* Start hidden */
+  animation: ${fadeIn} 1s ease-out 1s forwards; /* Animation starts after 1s */
 
   &:hover {
     transform: scale(1.05);
-    color: #90caf9;
+    color: #90caf9; /* Light blue on hover */
   }
 
   @media (max-width: 1200px) {
@@ -78,12 +68,12 @@ const HomeDescription = styled.p`
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  color: #fff;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #fff; /* Bright white for readability */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker box shadow for contrast */
   max-width: 850px;
   margin: 0 auto;
-  opacity: 0;
-  animation: ${fadeIn} 1s ease-out 1.5s forwards;
+  opacity: 0; /* Start hidden */
+  animation: ${fadeIn} 1s ease-out 1.5s forwards; /* Animation starts 1.5s after page load */
 
   @media (max-width: 1200px) {
     font-size: 20px;
@@ -98,12 +88,13 @@ const HomeDescription = styled.p`
   }
 `;
 
+// Custom Rotating Earth Component
 const RotatingEarth = ({ position, scale }) => {
-  const { scene } = useGLTF('/assets/little_planet_earth.glb');
+  const { scene } = useGLTF('/assets/little_planet_earth.glb'); // Ensure the model path is correct
 
   // Rotate the Earth
   useFrame(({ clock }) => {
-    scene.rotation.y = clock.getElapsedTime() * 0.1;
+    scene.rotation.y = clock.getElapsedTime() * 0.1; // Slow rotation
   });
 
   return <primitive object={scene} position={position} scale={scale} />;
@@ -116,14 +107,21 @@ const CloudScene = styled(Canvas)`
   width: 100%;
   height: 100%;
   z-index: 0;
-
-  /* Disable pointer events on smaller screens to prevent interaction */
-  @media (max-width: ${breakpoints.md}) {
-    pointer-events: none;
-  }
 `;
 
 const Home = () => {
+  const [isLaptopWidth, setIsLaptopWidth] = useState(true);
+
+  useEffect(() => {
+    const checkWidth = () => {
+      setIsLaptopWidth(window.innerWidth > 1200);
+    };
+
+    checkWidth();
+    window.addEventListener('resize', checkWidth);
+    return () => window.removeEventListener('resize', checkWidth);
+  }, []);
+
   return (
     <FullWidthContainer>
       {/* 3D Scene */}
@@ -145,17 +143,19 @@ const Home = () => {
         {/* Enlarged Rotating Earth */}
         <RotatingEarth position={[0, -1, -8]} scale={0.017} />
 
-        {/* Controls for 3D view (still available but won't receive input on mobile) */}
-        <OrbitControls enableZoom={false} autoRotate={false} />
+        {/* 
+          Only render OrbitControls if screen is wider than 1200px.
+          This ensures interaction is only available on "laptop" widths.
+        */}
+        {isLaptopWidth && <OrbitControls enableZoom={false} autoRotate={false} />}
       </CloudScene>
 
       {/* Text Content */}
       <CenteredContent>
         <HomeTitle>Welcome to MSI!</HomeTitle>
         <HomeDescription>
-          Malaysian Student Initiative aims to empower students by providing
-          resources, information, and opportunities to achieve academic and
-          career success.
+          Malaysian Student Initiative aims to empower students by providing resources, information,
+          and opportunities to achieve academic and career success.
         </HomeDescription>
       </CenteredContent>
     </FullWidthContainer>
