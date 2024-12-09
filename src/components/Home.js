@@ -3,6 +3,11 @@ import styled, { keyframes } from 'styled-components';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Stars } from '@react-three/drei';
 
+// Define breakpoints
+const breakpoints = {
+  md: '900px', // You can adjust this breakpoint as needed
+};
+
 // Animation Keyframes
 const fadeIn = keyframes`
   from {
@@ -17,10 +22,15 @@ const fadeIn = keyframes`
 
 const FullWidthContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
   position: relative;
-  background: radial-gradient(circle, #1a237e, #0d0d0d); /* Space gradient */
-  overflow: hidden; /* Prevent content overflow */
+  background: radial-gradient(circle, #1a237e, #0d0d0d);
+  overflow: hidden;
+  min-height: 100vh; /* Full screen for mobile */
+
+  /* You can adjust this as desired for larger screens */
+  @media (min-width: ${breakpoints.md}) {
+    min-height: 80vh;
+  }
 `;
 
 const CenteredContent = styled.div`
@@ -38,17 +48,17 @@ const CenteredContent = styled.div`
 const HomeTitle = styled.h1`
   font-family: 'Playfair Display', serif;
   font-size: 80px;
-  color: #fff; /* Bright white text */
+  color: #fff;
   margin-bottom: 20px;
   font-style: italic;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Darker box shadow for contrast */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease;
-  opacity: 0; /* Start hidden */
-  animation: ${fadeIn} 1s ease-out 1s forwards; /* Animation starts after 1s */
+  opacity: 0;
+  animation: ${fadeIn} 1s ease-out 1s forwards;
 
   &:hover {
     transform: scale(1.05);
-    color: #90caf9; /* Light blue on hover */
+    color: #90caf9;
   }
 
   @media (max-width: 1200px) {
@@ -68,12 +78,12 @@ const HomeDescription = styled.p`
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  color: #fff; /* Bright white for readability */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Darker box shadow for contrast */
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
   max-width: 850px;
   margin: 0 auto;
-  opacity: 0; /* Start hidden */
-  animation: ${fadeIn} 1s ease-out 1.5s forwards; /* Animation starts 1.5s after page load */
+  opacity: 0;
+  animation: ${fadeIn} 1s ease-out 1.5s forwards;
 
   @media (max-width: 1200px) {
     font-size: 20px;
@@ -88,13 +98,12 @@ const HomeDescription = styled.p`
   }
 `;
 
-// Custom Rotating Earth Component
 const RotatingEarth = ({ position, scale }) => {
-  const { scene } = useGLTF('/assets/little_planet_earth.glb'); // Ensure the model path is correct
+  const { scene } = useGLTF('/assets/little_planet_earth.glb');
 
   // Rotate the Earth
   useFrame(({ clock }) => {
-    scene.rotation.y = clock.getElapsedTime() * 0.1; // Slow rotation
+    scene.rotation.y = clock.getElapsedTime() * 0.1;
   });
 
   return <primitive object={scene} position={position} scale={scale} />;
@@ -107,6 +116,11 @@ const CloudScene = styled(Canvas)`
   width: 100%;
   height: 100%;
   z-index: 0;
+
+  /* Disable pointer events on smaller screens to prevent interaction */
+  @media (max-width: ${breakpoints.md}) {
+    pointer-events: none;
+  }
 `;
 
 const Home = () => {
@@ -120,18 +134,18 @@ const Home = () => {
 
         {/* Stars in the background */}
         <Stars
-          radius={100} // Larger radius for a distant starfield
-          depth={50} // Depth of starfield
-          count={5000} // Number of stars
-          factor={4} // Star size factor
-          saturation={0} // Neutral color tone
+          radius={100}
+          depth={50}
+          count={5000}
+          factor={4}
+          saturation={0}
           fade
         />
 
         {/* Enlarged Rotating Earth */}
         <RotatingEarth position={[0, -1, -8]} scale={0.017} />
 
-        {/* Controls for 3D view */}
+        {/* Controls for 3D view (still available but won't receive input on mobile) */}
         <OrbitControls enableZoom={false} autoRotate={false} />
       </CloudScene>
 
@@ -139,8 +153,9 @@ const Home = () => {
       <CenteredContent>
         <HomeTitle>Welcome to MSI!</HomeTitle>
         <HomeDescription>
-          Malaysian Student Initiative aims to empower students by providing resources, information,
-          and opportunities to achieve academic and career success.
+          Malaysian Student Initiative aims to empower students by providing
+          resources, information, and opportunities to achieve academic and
+          career success.
         </HomeDescription>
       </CenteredContent>
     </FullWidthContainer>
