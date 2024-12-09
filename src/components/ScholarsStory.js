@@ -5,7 +5,7 @@ import scholarships from '../scholarships.json';
 import { ArrowBack } from '@mui/icons-material';
 
 const StoryContainer = styled.div`
-  padding: 40px 5%; /* Padding is now percentage */
+  padding: 40px 5%;
   max-width: 1200px;
   margin: 0 auto;
   background-color: white;
@@ -20,19 +20,20 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   background-color: white;
-  padding: 0 15%; /* Padding to left and right is percentage */
-  position: relative; /* To position BackButton absolutely */
+  padding: 0 15%;
+  position: relative;
+  flex-direction: row; /* Default row for large screens */
 
   img {
-    flex: 1.7; /* Adjusted flex to make image narrower */
+    flex: 1.7;
     width: 100%;
-    max-height: 600px; /* Adjust as needed */
+    max-height: 600px;
     object-fit: cover;
   }
 
   .text-section {
-    flex: 1.2; /* Adjusted flex to make text section wider */
-    padding: 10px 20px; /* Adjusted padding */
+    flex: 1.2;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +58,31 @@ const Header = styled.div`
       color: #666;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 0 10%;
+
+    img {
+      max-height: 300px;
+    }
+
+    .text-section {
+      padding: 10px;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
 `;
 
 const BackButton = styled.button`
@@ -71,8 +97,8 @@ const BackButton = styled.button`
   align-items: center;
   transition: background-color 0.3s ease;
   position: absolute;
-  top: 20px; /* Space from top */
-  left: calc(5% + 10px); /* Move to the right, matching the padding */
+  top: 20px;
+  left: calc(5% + 10px);
 
   svg {
     margin-right: 5px;
@@ -80,6 +106,11 @@ const BackButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 `;
 
@@ -91,7 +122,7 @@ const FullWidthLine = styled.div`
 const Content = styled.div`
   width: 100%;
   max-width: 1300px;
-  padding: 0 0%; /* Padding matches Header padding */
+  padding: 0 5%;
   margin: 0 auto;
   font-size: 18px;
   color: #555;
@@ -129,8 +160,15 @@ const Content = styled.div`
     border: 1px solid #ddd;
     border-radius: 8px;
   }
-`;
 
+  @media (max-width: 768px) {
+    font-size: 16px;
+
+    h3 {
+      font-size: 22px;
+    }
+  }
+`;
 
 const ScholarsStory = () => {
   const navigate = useNavigate();

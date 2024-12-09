@@ -13,13 +13,19 @@ const FooterContainer = styled.footer`
 
 const FooterContent = styled.div`
   display: flex;
-  justify-content: space-between; /* Align text to start and end */
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap; /* Ensure responsiveness */
-  max-width: 1400px; /* Reduce the overall width for better spacing */
+  flex-wrap: wrap;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px; /* Add padding to control text spacing */
+  padding: 10px 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const FooterTextLeft = styled.p`
@@ -32,6 +38,12 @@ const FooterTextLeft = styled.p`
   strong {
     font-weight: bold;
   }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `;
 
 const FooterTextRight = styled.p`
@@ -40,6 +52,11 @@ const FooterTextRight = styled.p`
   line-height: 1.5;
   text-align: right;
   flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    text-align: center;
+  }
 `;
 
 const Footer = () => (

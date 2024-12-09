@@ -17,6 +17,10 @@ const WishesHeader = styled.h1`
   font-size: 32px;
   color: #007BFF;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 const MotivatingQuote = styled.p`
@@ -24,33 +28,35 @@ const MotivatingQuote = styled.p`
   color: #555;
   font-style: italic;
   margin: 0 0 40px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 const CardContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  overflow-x: auto;
   gap: 60px;
   padding: 30px 0;
-  scroll-snap-type: x mandatory;
   width: 100%;
-  height: 550px;
-
-  &::-webkit-scrollbar {
-    display: none;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
   }
-
-  scrollbar-width: none;
 `;
 
 const Card = styled(motion.div)`
-  min-width: 400px;
+  min-width: 300px;
+  max-width: 400px;
   height: 500px;
   background-color: #f9f9f9;
   border-radius: 15px;
   perspective: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  scroll-snap-align: center;
+
   &:hover {
     cursor: pointer;
   }
@@ -105,6 +111,10 @@ const Name = styled.h3`
   margin-top: 0;
   margin-bottom: 5px;
   color: #007BFF;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -135,18 +145,30 @@ const Scholarship = styled.p`
   font-size: 16px;
   color: #555;
   margin: 5px 0;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const CourseAndUniversity = styled.p`
   font-size: 16px;
   color: #007BFF;
   margin: 5px 0 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const WishesText = styled.p`
   font-size: 14px;
   color: #333;
   margin: 10px 0 0;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const CardBack = styled.div`
@@ -169,6 +191,10 @@ const MotivatingSentence = styled.p`
   text-align: center;
   padding: 10px;
   font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const Wishes = () => {
