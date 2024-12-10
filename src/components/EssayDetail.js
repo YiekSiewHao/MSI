@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { ArrowBack } from "@mui/icons-material";
 import essays from "../essays.json";
 
 const DetailContainer = styled.div`
@@ -9,15 +10,27 @@ const DetailContainer = styled.div`
   margin: 0 auto;
 `;
 
-const BackLink = styled(Link)`
-  display: inline-block;
-  margin-bottom: 20px;
+const BackButton = styled.button`
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
   font-size: 16px;
-  color: #007bff;
-  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  position: relative;
+  left: -10px;
+
+  svg {
+    margin-right: 5px;
+  }
 
   &:hover {
-    text-decoration: underline;
+    background-color: #0056b3;
   }
 `;
 
@@ -69,6 +82,7 @@ const EssayContent = styled.div`
 
 const EssayDetail = () => {
   const { id } = useParams(); // Get the ID from the URL
+  const navigate = useNavigate(); // Use navigate to handle back navigation
 
   useEffect(() => {
     window.scrollTo(0, 0); // Ensure the page starts at the top
@@ -80,9 +94,15 @@ const EssayDetail = () => {
     return <p>Essay not found</p>;
   }
 
+  const handleBack = () => {
+    navigate(-1); // Navigates back to the previous page
+  };
+
   return (
     <DetailContainer>
-      <BackLink to="/preparation">← Back to Preparation</BackLink>
+      <BackButton onClick={handleBack}>
+        <ArrowBack />
+      </BackButton>
       <DetailTitle>{essay.scholarship}</DetailTitle>
       <SubText>
         <strong>Author:</strong> {essay.author} | <strong>Year:</strong> {essay.year}
