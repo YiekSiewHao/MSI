@@ -18,10 +18,18 @@ const fadeIn = keyframes`
 const FullWidthContainer = styled.div`
   width: 100%;
   height: calc(var(--vh, 1vh) * 100); /* Use the custom vh variable */
+  min-height: 100vh; /* Ensure the container covers the viewport height */
   position: relative;
   background: radial-gradient(circle, #1a237e, #0d0d0d); /* Space gradient */
   overflow: hidden; /* Prevent content overflow */
+
+  /* Apply specific styling for phones */
+  @media (max-width: 768px) {
+    height: auto; /* Let height be dictated by content */
+    min-height: calc(100vh - env(safe-area-inset-bottom)); /* Account for navigation bar */
+  }
 `;
+
 
 const CenteredContent = styled.div`
   position: absolute;

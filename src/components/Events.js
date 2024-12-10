@@ -74,7 +74,7 @@ const ImageCard = styled(motion.div)`
 
   @media (max-width: ${breakpoints.sm}) {
     width: 90vw; 
-    max-width: 350px;
+    max-width: 340px;
     height: auto;
     aspect-ratio: 4/3; /* Ensures a nice ratio for the image at small screens */
   }

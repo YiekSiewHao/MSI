@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
@@ -87,7 +87,7 @@ const Card = styled(motion.div)`
   }
 
   @media (max-width: 480px) {
-    min-width: 300px;
+    min-width: 340px;
     height: 450px;
   }
 `;
@@ -99,7 +99,15 @@ const CardInner = styled.div`
   transform-style: preserve-3d;
   transition: transform 0.6s;
 
-  ${Card}:hover & {
+  /* Hover flipping for devices that support hover (e.g. desktop) */
+  @media (hover: hover) {
+    ${Card}:hover & {
+      transform: rotateY(180deg);
+    }
+  }
+
+  /* When .flipped is applied (on mobile/tap), rotate the card */
+  &.flipped {
     transform: rotateY(180deg);
   }
 `;
@@ -272,6 +280,43 @@ const MotivatingSentence = styled.p`
   }
 `;
 
+// Create a separate CardItem component
+const CardItem = ({ wish, isMobile }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    // Toggle flip state on mobile devices (no hover)
+    if (isMobile) {
+      setIsFlipped(!isFlipped);
+    }
+  };
+
+  return (
+    <Card onClick={handleCardClick}>
+      <CardInner className={isMobile && isFlipped ? 'flipped' : ''}>
+        <CardFront>
+          <ProfileImage style={{ backgroundImage: `url(${wish.image})` }} />
+          <CardContent>
+            <Name>{wish.name}</Name>
+            <SocialLinks>
+              <a href={wish.instagramLink} target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+                {wish.instagram}
+              </a>
+            </SocialLinks>
+            <Scholarship><strong>{wish.scholarship}</strong></Scholarship>
+            <CourseAndUniversity>{wish.course}</CourseAndUniversity>
+            <WishesText>{wish.wish}</WishesText>
+          </CardContent>
+        </CardFront>
+        <CardBack>
+          <MotivatingSentence>{wish.motivatingSentence}</MotivatingSentence>
+        </CardBack>
+      </CardInner>
+    </Card>
+  );
+};
+
 const Wishes = () => {
   const wishesData = [
     {
@@ -309,34 +354,16 @@ const Wishes = () => {
     },
   ];
 
+  // Check if mobile (no hover)
+  const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches;
+
   return (
     <WishesWrapper>
       <WishesHeader>Words of Wisdom from Scholars</WishesHeader>
       <MotivatingQuote>Look at the success of our Malaysian scholars</MotivatingQuote>
       <CardContainer>
         {wishesData.map((wish) => (
-          <Card key={wish.id}>
-            <CardInner>
-              <CardFront>
-                <ProfileImage style={{ backgroundImage: `url(${wish.image})` }} />
-                <CardContent>
-                  <Name>{wish.name}</Name>
-                  <SocialLinks>
-                    <a href={wish.instagramLink} target="_blank" rel="noopener noreferrer">
-                      <FaInstagram />
-                      {wish.instagram}
-                    </a>
-                  </SocialLinks>
-                  <Scholarship><strong>{wish.scholarship}</strong></Scholarship>
-                  <CourseAndUniversity>{wish.course}</CourseAndUniversity>
-                  <WishesText>{wish.wish}</WishesText>
-                </CardContent>
-              </CardFront>
-              <CardBack>
-                <MotivatingSentence>{wish.motivatingSentence}</MotivatingSentence>
-              </CardBack>
-            </CardInner>
-          </Card>
+          <CardItem key={wish.id} wish={wish} isMobile={isMobile} />
         ))}
       </CardContainer>
     </WishesWrapper>
