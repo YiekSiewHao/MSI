@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { ArrowBack } from '@mui/icons-material';
@@ -138,6 +138,10 @@ const KohHuiXinResourcePack = () => {
   const handleBack = () => {
     navigate(-1); // Navigates back to the previous page
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  
 
   return (
     <ResourceContainer>

@@ -8,6 +8,10 @@ const DetailsContainer = styled.div`
   padding: 40px 10px;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
 `;
 
 const BackButton = styled.button`
@@ -31,6 +35,12 @@ const BackButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 10px;
+    font-size: 14px;
+    left: 0;
   }
 `;
 
@@ -62,10 +72,16 @@ const BackToTopButton = styled.button`
   svg {
     font-size: 20px;
   }
+
+  @media (max-width: 480px) {
+    right: 20px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 `;
 
 const QuickListContainer = styled.div`
-  margin-bottom: 40px; /* Increased from 20px to 40px */
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -73,7 +89,7 @@ const QuickListContainer = styled.div`
 `;
 
 const QuickListItem = styled.button`
-  background-color: #4a90e2; /* Softer blue */
+  background-color: #4a90e2;
   color: white;
   border: none;
   padding: 10px 18px;
@@ -88,6 +104,11 @@ const QuickListItem = styled.button`
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 `;
 
 const Title = styled.h1`
@@ -95,6 +116,15 @@ const Title = styled.h1`
   color: #007BFF;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px;
+  }
 `;
 
 const Section = styled.div`
@@ -106,19 +136,59 @@ const Section = styled.div`
     margin-bottom: 15px;
     border-bottom: 2px solid #007BFF;
     padding-bottom: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
 
   h3 {
     font-size: 20px;
     color: #0056b3;
     margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 16px;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   p,
-  ul {
+  ul,
+  li {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   ul {
@@ -135,17 +205,21 @@ const ScholarStoriesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   gap: 20px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ScholarStoryCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distributes space between items */
+  justify-content: space-between;
   background-color: white;
   border: 1px solid #ddd;
   padding: 20px;
-  padding-right: 30px; /* Increased right padding */
-  padding-left: 20px;  /* Ensure consistent left padding */
+  padding-right: 30px;
+  padding-left: 20px;
   border-radius: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -162,38 +236,65 @@ const ScholarStoryCard = styled.div`
     margin-right: 15px;
     border-radius: 50%;
     border: 2px solid #007BFF;
+
+    @media (max-width: 480px) {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   .content {
     flex: 1;
-    margin-right: 15px; /* Space between content and arrow */
+    margin-right: 15px;
 
     h4 {
       font-size: 18px;
-      color: #007BFF;
       margin-bottom: 8px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 14px;
+      }
     }
 
     p {
       font-size: 16px;
-      color: #555;
       margin-bottom: 5px;
+
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 13px;
+      }
     }
 
     span {
       font-size: 14px;
       color: #888;
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+      }
     }
   }
 
   .arrow-icon {
     color: #007BFF;
     font-size: 24px;
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 `;
 
-const Footer = styled.footer`
-  background-color: #e6e6fa; /* Light lavender */
+const FooterSection = styled.footer`
+  background-color: #e6e6fa;
   padding: 20px;
   text-align: center;
   margin-top: 40px;
@@ -201,6 +302,10 @@ const Footer = styled.footer`
   p {
     font-size: 16px;
     color: #555;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -282,16 +387,15 @@ const ScholarshipDetails = () => {
         </BackButton>
 
         <QuickListContainer>
-  {scholarships.map((scholarshipItem) => (
-    <QuickListItem
-      key={scholarshipItem.id}
-      onClick={() => handleQuickListClick(scholarshipItem.id)}
-    >
-      {scholarshipItem.shortName}
-    </QuickListItem>
-  ))}
-</QuickListContainer>
-
+          {scholarships.map((scholarshipItem) => (
+            <QuickListItem
+              key={scholarshipItem.id}
+              onClick={() => handleQuickListClick(scholarshipItem.id)}
+            >
+              {scholarshipItem.shortName}
+            </QuickListItem>
+          ))}
+        </QuickListContainer>
 
         <Title>{name}</Title>
 
@@ -301,27 +405,26 @@ const ScholarshipDetails = () => {
         </Section>
 
         {scholars && scholars.length > 0 && (
-  <Section>
-    <h2>Scholars' Stories</h2>
-    <ScholarStoriesGrid>
-      {scholars.map((scholar, index) => (
-        <ScholarStoryCard key={index} onClick={() => handleStoryClick(scholar)}>
-          <img
-            src={scholar.contributorImage || '/default-avatar.png'}
-            alt={scholar.contributorName}
-          />
-          <div className="content">
-            <h4>{scholar.contributorName}</h4>
-            <p>{scholar.intendedCourse}</p>
-            {scholar.motivationalQuote && <span>"{scholar.motivationalQuote}"</span>}
-          </div>
-          <ArrowForward className="arrow-icon" />
-        </ScholarStoryCard>
-      ))}
-    </ScholarStoriesGrid>
-  </Section>
-)}
-
+          <Section>
+            <h2>Scholars' Stories</h2>
+            <ScholarStoriesGrid>
+              {scholars.map((scholar, index) => (
+                <ScholarStoryCard key={index} onClick={() => handleStoryClick(scholar)}>
+                  <img
+                    src={scholar.contributorImage || '/default-avatar.png'}
+                    alt={scholar.contributorName}
+                  />
+                  <div className="content">
+                    <h4>{scholar.contributorName}</h4>
+                    <p>{scholar.intendedCourse}</p>
+                    {scholar.motivationalQuote && <span>"{scholar.motivationalQuote}"</span>}
+                  </div>
+                  <ArrowForward className="arrow-icon" />
+                </ScholarStoryCard>
+              ))}
+            </ScholarStoriesGrid>
+          </Section>
+        )}
 
         <Section>
           <h2>Eligibility Criteria</h2>
@@ -380,8 +483,8 @@ const ScholarshipDetails = () => {
               <div key={index}>
                 <h4>{category}</h4>
                 <ul>
-                  {courses.map((course, subIndex) => (
-                    <li key={subIndex}>{course}</li>
+                  {courses.map((c, subIndex) => (
+                    <li key={subIndex}>{c}</li>
                   ))}
                 </ul>
               </div>
@@ -446,37 +549,38 @@ const ScholarshipDetails = () => {
         </Section>
 
         <Section>
-          {/* Check if `numberOfRecipients` contains valid data */}
-          {numberOfRecipients && (
-            numberOfRecipients.local || numberOfRecipients.overseas || numberOfRecipients['2024'] || numberOfRecipients['2023']
-          ) ? (
-            <>
-              <h2>Number of Recipients</h2>
-              {numberOfRecipients.local ? (
-                <>
-                  <p>
-                    <strong>Local:</strong> {numberOfRecipients.local}
-                  </p>
-                  <p>
-                    <strong>Overseas:</strong> {numberOfRecipients.overseas}
-                  </p>
-                </>
-              ) : (
-                <>
-                  {numberOfRecipients['2024'] && (
+          {numberOfRecipients &&
+            (numberOfRecipients.local ||
+              numberOfRecipients.overseas ||
+              numberOfRecipients['2024'] ||
+              numberOfRecipients['2023']) && (
+              <>
+                <h2>Number of Recipients</h2>
+                {numberOfRecipients.local ? (
+                  <>
                     <p>
-                      <strong>2024:</strong> {numberOfRecipients['2024']}
+                      <strong>Local:</strong> {numberOfRecipients.local}
                     </p>
-                  )}
-                  {numberOfRecipients['2023'] && (
                     <p>
-                      <strong>2023:</strong> {numberOfRecipients['2023']}
+                      <strong>Overseas:</strong> {numberOfRecipients.overseas}
                     </p>
-                  )}
-                </>
-              )}
-            </>
-          ) : null}
+                  </>
+                ) : (
+                  <>
+                    {numberOfRecipients['2024'] && (
+                      <p>
+                        <strong>2024:</strong> {numberOfRecipients['2024']}
+                      </p>
+                    )}
+                    {numberOfRecipients['2023'] && (
+                      <p>
+                        <strong>2023:</strong> {numberOfRecipients['2023']}
+                      </p>
+                    )}
+                  </>
+                )}
+              </>
+            )}
         </Section>
 
         <Section>
@@ -499,6 +603,9 @@ const ScholarshipDetails = () => {
           </BackToTopButton>
         )}
       </DetailsContainer>
+      <FooterSection>
+        <p>&copy; {new Date().getFullYear()} Your Site. All rights reserved.</p>
+      </FooterSection>
     </>
   );
 };
