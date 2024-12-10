@@ -35,8 +35,8 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
-  /* Responsive font sizes */
-  font-size: 20px;
+  /* Adjusted font sizes for better responsiveness */
+  font-size: 18px; /* Smaller default font size for phone mode */
 
   @media (min-width: 480px) {
     font-size: 24px;

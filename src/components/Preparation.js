@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import essays from "../essays.json";
 
@@ -8,7 +9,7 @@ import essays from "../essays.json";
 
 /* Container for the entire Preparation section */
 const PreparationContainer = styled.div`
-  padding: 0; /* Remove padding to allow the title to span the full width */
+  padding: 0;
 `;
 
 /* New Content Container for the rest of the content */
@@ -30,7 +31,6 @@ const TitleSection = styled.div`
   background-position: center;
   background-image: url(${(props) => props.backgroundImage});
 
-  /* Optional: Add a semi-transparent overlay if needed */
   &::before {
     content: '';
     position: absolute;
@@ -38,11 +38,10 @@ const TitleSection = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 0;
   }
 
-  /* Ensure the title text appears above the overlay */
   h1 {
     position: relative;
     z-index: 1;
@@ -56,17 +55,24 @@ const PreparationTitle = styled.h1`
   margin: 0;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 /* Scholar Highlight Section */
 const ScholarHighlightContainer = styled.div`
-  padding: 40px 0; /* Adjusted padding */
-  margin-bottom: 20px; /* Reduced spacing */
+  padding: 40px 0;
+  margin-bottom: 20px; 
 `;
 
-/* Custom Underlined Heading */
 const HighlightHeader = styled.h2`
-  font-size: 28px; /* Increased font size */
+  font-size: 28px;
   color: #2c3e50;
   margin-bottom: 10px;
   text-align: center;
@@ -76,20 +82,28 @@ const HighlightHeader = styled.h2`
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -5px; /* Adjust as needed */
+    bottom: -5px; 
     transform: translateX(-50%);
-    width: 60px; /* Length of the underline */
-    height: 3px; /* Thickness */
-    background-color: #007bff; /* Blue color */
+    width: 60px; 
+    height: 3px; 
+    background-color: #007bff;
     border-radius: 2px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
   }
 `;
 
 const HighlightDescription = styled.p`
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   color: #7f8c8d;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const ScholarSection = styled(Link)`
@@ -101,10 +115,16 @@ const ScholarSection = styled(Link)`
   text-decoration: none;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 100%;
 
   &:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
@@ -113,41 +133,69 @@ const ScholarImage = styled.img`
   object-fit: cover;
   height: 100%;
   max-width: 250px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
 `;
 
 const ScholarDetails = styled.div`
   flex: 2;
   padding: 20px;
   color: #333;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
 `;
 
 const ScholarName = styled.h3`
-  font-size: 24px; /* Increased font size */
-  color: #007bff; /* Changed to blue color */
+  font-size: 24px;
+  color: #007bff; 
   margin-bottom: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 const ScholarMeta = styled.p`
   margin: 5px 0;
-  font-size: 16px; /* Increased font size */
+  font-size: 16px; 
   color: #7f8c8d;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const ScholarDescription = styled.p`
   margin: 10px 0;
-  font-size: 16px; /* Increased font size */
+  font-size: 16px; 
   color: #7f8c8d;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
-/* Arrow Icon */
 const ArrowIcon = styled(FaArrowRight)`
   color: #2c3e50;
   font-size: 40px;
   margin-left: auto;
   padding: 10px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 
-/* Filter Box */
 const FilterBox = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -172,13 +220,11 @@ const FilterButton = styled.button`
   }
 `;
 
-/* Scroll Container and Arrow Buttons */
 const ScrollContainer = styled.div`
   position: relative;
   margin-bottom: 40px;
 `;
 
-/* Left and Right Arrow Buttons */
 const ArrowButton = styled.div`
   position: absolute;
   top: 50%;
@@ -199,9 +245,14 @@ const ArrowButton = styled.div`
   &:hover {
     background: rgba(255, 255, 255, 1);
   }
+
+  @media (max-width: 480px) {
+    width: 50px;
+    height: 50px;
+    ${(props) => (props.left ? "left: 0;" : "right: 0;")}
+  }
 `;
 
-/* Scrollable container for the essay cards */
 const EssayCardContainer = styled.div`
   display: flex;
   gap: 20px;
@@ -209,15 +260,13 @@ const EssayCardContainer = styled.div`
   scroll-behavior: smooth;
   padding: 20px 0;
 
-  /* Hide scrollbar */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
-/* Individual Essay Card */
 const EssayCard = styled(Link)`
   flex: 0 0 90%;
   max-width: 300px;
@@ -260,29 +309,32 @@ const EssayCard = styled(Link)`
   }
 `;
 
-
-/* Title of the Essay Card */
 const CardTitle = styled.h3`
-  font-size: 20px; /* Increased font size */
-  color: #007bff; /* Changed to blue color */
+  font-size: 20px; 
+  color: #007bff; 
   margin-bottom: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
-/* Meta information about the essay */
 const EssayMeta = styled.div`
-  font-size: 16px; /* Increased font size */
+  font-size: 16px; 
   color: #555;
   margin-bottom: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
-/* Divider line */
 const Divider = styled.hr`
   border: none;
   border-top: 1px solid #ddd;
   margin: 10px 0;
 `;
 
-/* Preview text of the essay */
 const EssayPreview = styled.div`
   font-size: 16px;
   color: #333;
@@ -292,14 +344,27 @@ const EssayPreview = styled.div`
   p {
     margin-bottom: 10px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 const InterviewSectionContainer = styled.div`
-  padding: 0;
+  /* Add horizontal padding that adjusts with screen size for spacing */
+  padding: 0 60px; 
   margin-bottom: 100px;
+
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
 `;
 
-/* Interview Header */
+/* For Interview Section modifications: smaller height, smaller text, maintain row layout where possible */
 const InterviewHeader = styled.h2`
   font-size: 28px;
   color: #2c3e50;
@@ -318,106 +383,138 @@ const InterviewHeader = styled.h2`
     background-color: #007bff;
     border-radius: 2px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+  }
 `;
 
-/* Interview Description */
 const InterviewDescription = styled.p`
   font-size: 18px;
   color: #7f8c8d;
   text-align: center;
   margin-bottom: 20px;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
-/* Interview List */
 const InterviewList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
 `;
 
-/* Interview Item */
 const InterviewItem = styled.li`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Stack content vertically */
+  align-items: flex-start; /* Align content to the left */
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 15px 20px;
-  margin-bottom: 15px;
+  padding: 20px; /* Adjusted padding for larger box */
+  margin-bottom: 15px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 480px) {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
 `;
 
-/* Scholarship Name */
 const ScholarshipName = styled.span`
-  font-size: 18px;
+  font-size: 22px; /* Slightly larger font for better readability */
   color: #2c3e50;
   font-weight: 600;
+  margin-bottom: 10px; /* Add spacing below the name */
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
 `;
 
-/* Download Button */
+const ButtonGroup = styled.div`
+  display: flex;
+  width: 100%; /* Ensure the group spans the full width */
+  justify-content: space-between; /* Spread buttons evenly */
+  gap: 10px; /* Add spacing between buttons */
+  margin-top: 5px; /* Add spacing between the buttons and the name */
+
+  @media (max-width: 480px) {
+    justify-content: center; /* Center buttons on smaller screens */
+  }
+`;
+
 const DownloadButton = styled.a`
   display: inline-flex;
   align-items: center;
+  justify-content: center; /* Center-align text horizontally */
   background-color: #007bff;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 15px; /* Slightly larger padding for better visibility */
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 16px; /* Balanced font size */
   transition: background-color 0.3s;
+  flex: 1; /* Make buttons equal width */
 
   &:hover {
     background-color: #0056b3;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 `;
 
-/* View Button */
-/* View Button */
 const ViewButton = styled.a`
   display: inline-flex;
   align-items: center;
+  justify-content: center; /* Center-align text horizontally */
   background-color: #28a745;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
-  margin-left: 10px;
+  padding: 10px 15px; /* Slightly larger padding for better visibility */
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 16px; /* Balanced font size */
   transition: background-color 0.3s;
+  flex: 1; /* Make buttons equal width */
 
   &:hover {
     background-color: #218838;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 `;
 
-/* Button Group */
-const ButtonGroup = styled.div`
-  display: flex;
-  align-items: center;
-`;
 
 
-/* Main Component */
+/* Motion Variants for Fade-In */
+const fadeInVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" } 
+  }
+};
+
 const Preparation = () => {
-  /* Reference to the scrollable container */
   const scrollContainerRef = useRef(null);
-
-  /* State to manage the visibility of the left and right arrows */
   const [arrowLeftVisible, setArrowLeftVisible] = useState(false);
   const [arrowRightVisible, setArrowRightVisible] = useState(true);
-
-  /* State to manage the selected scholarship filter */
   const [selectedScholarship, setSelectedScholarship] = useState('All');
 
-  /* Extract unique scholarships from essays */
   const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
-
-  /* Filtered essays based on selected scholarship */
   const filteredEssays = selectedScholarship === 'All' ? essays : essays.filter(essay => essay.scholarship === selectedScholarship);
 
-  /* Handle scroll event to show/hide arrows */
   const handleScroll = () => {
     const container = scrollContainerRef.current;
     if (container) {
@@ -427,19 +524,17 @@ const Preparation = () => {
     }
   };
 
-  /* Attach scroll event listener */
   useEffect(() => {
     const container = scrollContainerRef.current;
     if (container) {
       container.addEventListener("scroll", handleScroll);
-      handleScroll(); // Initial check
+      handleScroll();
       return () => {
         container.removeEventListener("scroll", handleScroll);
       };
     }
   }, [filteredEssays]);
 
-  /* Scroll the container to the left */
   const scrollLeft = () => {
     const container = scrollContainerRef.current;
     if (container) {
@@ -448,7 +543,6 @@ const Preparation = () => {
     }
   };
 
-  /* Scroll the container to the right */
   const scrollRight = () => {
     const container = scrollContainerRef.current;
     if (container) {
@@ -458,12 +552,12 @@ const Preparation = () => {
   };
 
   const scholarImagePath = "/assets/portrait/kohhuixin.jpg";
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const backgroundImagePath = '/assets/preparation_wallpaper.jpg'; // Replace with your image path
+  const backgroundImagePath = '/assets/preparation_wallpaper.jpg';
 
   return (
     <PreparationContainer>
@@ -471,165 +565,172 @@ const Preparation = () => {
         <PreparationTitle>Preparation Materials</PreparationTitle>
       </TitleSection>
 
-      <ContentContainer>
-        {/* Scholar Highlight Section */}
-        <ScholarHighlightContainer>
-          <HighlightHeader>Scholar's Highlight</HighlightHeader>
-          <HighlightDescription>
-            A huge shoutout to <strong style={{color: '#007bff'}}>Koh Hui Xin</strong> for contributing her resource pack to
-            help future scholars prepare effectively. Click below to explore more!
-          </HighlightDescription>
-          <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
-            <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
-            <ScholarDetails>
-              <ScholarName>Koh Hui Xin</ScholarName>
-              <ScholarMeta>
-                <strong>Scholarship:</strong> <span style={{color: '#007bff'}}>Bank Negara Malaysia Scholarship</span>
-              </ScholarMeta>
-              <ScholarMeta>
-                <strong>Course:</strong> <span style={{color: '#007bff'}}>BSc Computer Science, University of Manchester</span>
-              </ScholarMeta>
-              <ScholarDescription>
-                Koh Hui Xin has contributed an excellent resource pack to help
-                future scholars prepare effectively. Click to explore!
-              </ScholarDescription>
-            </ScholarDetails>
-            <ArrowIcon />
-          </ScholarSection>
-        </ScholarHighlightContainer>
+      {/* Fade-in for main content */}
+      <motion.div 
+        initial="hidden" 
+        animate="visible" 
+        variants={fadeInVariants}
+      >
+        <ContentContainer>
+          {/* Scholar Highlight Section */}
+          <ScholarHighlightContainer>
+            <HighlightHeader>Scholar's Highlight</HighlightHeader>
+            <HighlightDescription>
+              A huge shoutout to <strong style={{color: '#007bff'}}>Koh Hui Xin</strong> for contributing her resource pack to
+              help future scholars prepare effectively. Click below to explore more!
+            </HighlightDescription>
+            <motion.div variants={fadeInVariants}>
+              <ScholarSection to="/preparation/koh_hui_xin_resource_pack">
+                <ScholarImage src={scholarImagePath} alt="Koh Hui Xin" />
+                <ScholarDetails>
+                  <ScholarName>Koh Hui Xin</ScholarName>
+                  <ScholarMeta>
+                    <strong>Scholarship:</strong> <span style={{color: '#007bff'}}>Bank Negara Malaysia Scholarship</span>
+                  </ScholarMeta>
+                  <ScholarMeta>
+                    <strong>Course:</strong> <span style={{color: '#007bff'}}>BSc Computer Science, University of Manchester</span>
+                  </ScholarMeta>
+                  <ScholarDescription>
+                    Koh Hui Xin has contributed an excellent resource pack to help
+                    future scholars prepare effectively. Click to explore!
+                  </ScholarDescription>
+                </ScholarDetails>
+                <ArrowIcon />
+              </ScholarSection>
+            </motion.div>
+          </ScholarHighlightContainer>
 
-        {/* Sample Essays Section */}
-        <ScholarHighlightContainer>
-          <HighlightHeader>Sample Essays</HighlightHeader>
-          <HighlightDescription>
-            Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
-          </HighlightDescription>
+          {/* Sample Essays Section */}
+          <ScholarHighlightContainer>
+            <HighlightHeader>Sample Essays</HighlightHeader>
+            <HighlightDescription>
+              Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
+            </HighlightDescription>
 
-          {/* Filter Buttons */}
-          <FilterBox>
-            <FilterButton
-              active={selectedScholarship === 'All'}
-              onClick={() => setSelectedScholarship('All')}
-            >
-              All
-            </FilterButton>
-            {scholarships.map((scholarship) => (
+            {/* Filter Buttons */}
+            <FilterBox>
               <FilterButton
-                key={scholarship}
-                active={selectedScholarship === scholarship}
-                onClick={() => setSelectedScholarship(scholarship)}
+                active={selectedScholarship === 'All'}
+                onClick={() => setSelectedScholarship('All')}
               >
-                {scholarship}
+                All
               </FilterButton>
-            ))}
-          </FilterBox>
-
-          {/* Scrollable Essay Cards */}
-          <ScrollContainer>
-            {/* Left Arrow Button */}
-            <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
-              <FaChevronLeft size={24} />
-            </ArrowButton>
-
-            {/* Essay Cards */}
-            <EssayCardContainer ref={scrollContainerRef}>
-              {filteredEssays.map((essay, index) => (
-                <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
-                  <CardTitle>{essay.scholarship}</CardTitle>
-                  <EssayMeta>
-                    <strong>Author:</strong> {essay.author} | <strong>Year:</strong>{" "}
-                    {essay.year}
-                  </EssayMeta>
-                  <EssayPreview>
-                    <p><strong>{essay.question[0]}</strong></p>
-                    <Divider />
-                    <p>{essay.essay[0].slice(0, 100)}...</p>
-                    <span>
-                      <strong>Read More</strong>
-                    </span>
-                  </EssayPreview>
-                </EssayCard>
+              {scholarships.map((scholarship) => (
+                <FilterButton
+                  key={scholarship}
+                  active={selectedScholarship === scholarship}
+                  onClick={() => setSelectedScholarship(scholarship)}
+                >
+                  {scholarship}
+                </FilterButton>
               ))}
-            </EssayCardContainer>
+            </FilterBox>
 
-            {/* Right Arrow Button */}
-            <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
-              <FaChevronRight size={24} />
-            </ArrowButton>
-          </ScrollContainer>
-        </ScholarHighlightContainer>
-      </ContentContainer>
+            {/* Scrollable Essay Cards */}
+            <ScrollContainer>
+              {/* Left Arrow Button */}
+              <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
+                <FaChevronLeft size={24} />
+              </ArrowButton>
 
-      <InterviewSectionContainer>
-  <InterviewHeader>Interview Questions and Answers</InterviewHeader>
-  <InterviewDescription>
-    Prepare effectively for your interviews with these curated questions and answers from successful scholarship recipients.
-  </InterviewDescription>
+              {/* Essay Cards */}
+              <EssayCardContainer ref={scrollContainerRef}>
+                {filteredEssays.map((essay, index) => (
+                  <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
+                    <CardTitle>{essay.scholarship}</CardTitle>
+                    <EssayMeta>
+                      <strong>Author:</strong> {essay.author} | <strong>Year:</strong>{" "}
+                      {essay.year}
+                    </EssayMeta>
+                    <EssayPreview>
+                      <p><strong>{essay.question[0]}</strong></p>
+                      <Divider />
+                      <p>{essay.essay[0].slice(0, 100)}...</p>
+                      <span>
+                        <strong>Read More</strong>
+                      </span>
+                    </EssayPreview>
+                  </EssayCard>
+                ))}
+              </EssayCardContainer>
 
-  <InterviewList>
-    <InterviewItem>
-      <ScholarshipName>Shell Scholarship</ScholarshipName>
-      <ButtonGroup>
-        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
-          Download PDF
-        </DownloadButton>
-        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
-          View File
-        </ViewButton>
-      </ButtonGroup>
-    </InterviewItem>
-    <InterviewItem>
-      <ScholarshipName>Petronas Scholarship</ScholarshipName>
-      <ButtonGroup>
-        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
-          Download PDF
-        </DownloadButton>
-        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
-          View File
-        </ViewButton>
-      </ButtonGroup>
-    </InterviewItem>
+              {/* Right Arrow Button */}
+              <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
+                <FaChevronRight size={24} />
+              </ArrowButton>
+            </ScrollContainer>
+          </ScholarHighlightContainer>
+        </ContentContainer>
 
-    <InterviewItem>
-      <ScholarshipName>Yayasan UEM Scholarship</ScholarshipName>
-      <ButtonGroup>
-        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
-          Download PDF
-        </DownloadButton>
-        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
-          View File
-        </ViewButton>
-      </ButtonGroup>
-    </InterviewItem>
+        {/* Interview Section with reduced height and font sizes */}
+        <InterviewSectionContainer>
+          <InterviewHeader>Interview Questions and Answers</InterviewHeader>
+          <InterviewDescription>
+            Prepare effectively for your interviews with these curated questions and answers from successful scholarship recipients.
+          </InterviewDescription>
 
-    <InterviewItem>
-      <ScholarshipName>Yayasan Khazanah Scholarship</ScholarshipName>
-      <ButtonGroup>
-        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
-          Download PDF
-        </DownloadButton>
-        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
-          View File
-        </ViewButton>
-      </ButtonGroup>
-    </InterviewItem>
+          <InterviewList>
+            <InterviewItem>
+              <ScholarshipName>Shell Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+            <InterviewItem>
+              <ScholarshipName>Petronas Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
 
-    <InterviewItem>
-      <ScholarshipName>TNB Scholarship</ScholarshipName>
-      <ButtonGroup>
-        <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
-          Download PDF
-        </DownloadButton>
-        <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
-          View File
-        </ViewButton>
-      </ButtonGroup>
-    </InterviewItem>
+            <InterviewItem>
+              <ScholarshipName>Yayasan UEM Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
 
+            <InterviewItem>
+              <ScholarshipName>Yayasan Khazanah Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
 
-    {/* Repeat for other scholarships */}
-  </InterviewList>
-</InterviewSectionContainer>
+            <InterviewItem>
+              <ScholarshipName>TNB Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+          </InterviewList>
+        </InterviewSectionContainer>
+      </motion.div>
     </PreparationContainer>
   );
 };
