@@ -519,6 +519,10 @@ const Preparation = () => {
   const [arrowRightVisible, setArrowRightVisible] = useState(true);
   const [selectedScholarship, setSelectedScholarship] = useState('All');
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  
+
   const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
   const filteredEssays = selectedScholarship === 'All' ? essays : essays.filter(essay => essay.scholarship === selectedScholarship);
 
@@ -541,6 +545,7 @@ const Preparation = () => {
       };
     }
   }, [filteredEssays]);
+
 
   const scrollLeft = () => {
     const container = scrollContainerRef.current;
