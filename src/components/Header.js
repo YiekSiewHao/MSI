@@ -36,10 +36,10 @@ const TitleLink = styled(Link)`
   }
 
   /* Adjusted font sizes for better responsiveness */
-  font-size: 18px; /* Smaller default font size for phone mode */
+  font-size: 17px; /* Smaller default font size for phone mode */
 
   @media (min-width: 480px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   @media (min-width: 768px) {
@@ -86,7 +86,12 @@ const MenuButton = styled.button`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    display: block; /* Show menu button on small screens */
+    display: flex; /* Show menu button on small screens */
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Set a fixed height for proper alignment */
+    width: 40px;  /* Optional: give it a fixed width to be square */
+    padding: 1px 0px 1px 6px;
   }
 `;
 

@@ -138,6 +138,7 @@ const ScholarImage = styled.img`
     width: 100%;
     max-width: none;
     height: auto;
+    max-height: 300px;
   }
 `;
 
@@ -409,55 +410,60 @@ const InterviewList = styled.ul`
 
 const InterviewItem = styled.li`
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: flex-start; /* Align content to the left */
+  flex-direction: column;
+  align-items: center; /* Center-align all content */
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px; /* Adjusted padding for larger box */
+  padding: 20px;
   margin-bottom: 15px; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 480px) {
-    padding: 15px; /* Adjust padding for smaller screens */
+    padding: 15px;
   }
 `;
 
 const ScholarshipName = styled.span`
-  font-size: 22px; /* Slightly larger font for better readability */
+  font-size: 22px;
   color: #2c3e50;
   font-weight: 600;
-  margin-bottom: 10px; /* Add spacing below the name */
+  margin-bottom: 10px;
+  text-align: center; /* Always center the text */
 
   @media (max-width: 480px) {
     font-size: 18px;
-    text-align: center;
     width: 100%;
   }
 `;
 
+
 const ButtonGroup = styled.div`
   display: flex;
-  width: 100%; /* Ensure the group spans the full width */
-  justify-content: space-between; /* Spread buttons evenly */
-  gap: 10px; /* Add spacing between buttons */
-  margin-top: 5px; /* Add spacing between the buttons and the name */
+  width: 100%; 
+  gap: 10px; 
+  margin-top: 5px; 
+  max-width: 1200px;
+  
+  /* By default (mobile-first), center the buttons */
+  justify-content: center;
 
-  @media (max-width: 480px) {
-    justify-content: center; /* Center buttons on smaller screens */
+  @media (min-width: 769px) {
+    /* On larger screens (laptop/desktop), align them to the right */
+    justify-content: flex-end;
   }
 `;
 
 const DownloadButton = styled.a`
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* Center-align text horizontally */
+  justify-content: center; 
   background-color: #007bff;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 15px; /* Slightly larger padding for better visibility */
+  padding: 10px 15px;
   border-radius: 5px;
-  font-size: 16px; /* Balanced font size */
+  font-size: 16px;
   transition: background-color 0.3s;
   flex: 1; /* Make buttons equal width */
 
@@ -474,13 +480,13 @@ const DownloadButton = styled.a`
 const ViewButton = styled.a`
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* Center-align text horizontally */
+  justify-content: center; 
   background-color: #28a745;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 15px; /* Slightly larger padding for better visibility */
+  padding: 10px 15px;
   border-radius: 5px;
-  font-size: 16px; /* Balanced font size */
+  font-size: 16px;
   transition: background-color 0.3s;
   flex: 1; /* Make buttons equal width */
 
@@ -493,6 +499,7 @@ const ViewButton = styled.a`
     padding: 8px 12px;
   }
 `;
+
 
 
 
