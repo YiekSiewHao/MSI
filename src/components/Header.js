@@ -195,7 +195,7 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
     },
     closed: {
       opacity: 0,
-      y: -20,
+      y: -30,
       transition: {
         duration: 0.2,
       },
