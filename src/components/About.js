@@ -45,6 +45,10 @@ const SectionTitle = styled.h2`
     margin: 10px auto 0;
     border-radius: 2px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 
 const SectionContent = styled.div`
@@ -58,6 +62,10 @@ const SectionContent = styled.div`
   p {
     margin-bottom: 20px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 const TeamGrid = styled.div`
@@ -66,6 +74,10 @@ const TeamGrid = styled.div`
   gap: 60px;
   justify-content: center;
   margin-top: 40px;
+
+  @media (max-width: 480px) {
+    gap: 30px;
+  }
 `;
 
 const TeamMember = styled.div`
@@ -102,6 +114,23 @@ const TeamMember = styled.div`
     margin-bottom: 5px;
     margin-top: 5px;
   }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -124,6 +153,15 @@ const SocialLinks = styled.div`
     svg {
       font-size: 24px;
       margin-right: 8px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+
+      svg {
+        font-size: 20px;
+        margin-right: 6px;
+      }
     }
   }
 `;
@@ -155,6 +193,11 @@ const Quote = styled.blockquote`
     right: -10px;
     bottom: -10px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 14px;
+    max-width: 250px;
+  }
 `;
 
 /* Vision & Mission Wrapper */
@@ -165,7 +208,7 @@ const VisionMissionWrapper = styled.div`
   margin-top: 40px;
 `;
 
-const VisionRow = styled.div`
+const RowBase = styled.div`
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -174,7 +217,9 @@ const VisionRow = styled.div`
     flex: 1;
     min-width: 280px;
   }
+`;
 
+const VisionRow = styled(RowBase)`
   .left {
     background-color: #4a90e2;
     color: white;
@@ -204,18 +249,23 @@ const VisionRow = styled.div`
       line-height: 1.6;
     }
   }
+
+  @media (max-width: 480px) {
+    .left, .right {
+      padding: 20px;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
 `;
 
-const MissionRow = styled.div`
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-
-  & > div {
-    flex: 1;
-    min-width: 280px;
-  }
-
+const MissionRow = styled(RowBase)`
   .left {
     padding: 30px;
     border: 2px solid #f06;
@@ -243,6 +293,20 @@ const MissionRow = styled.div`
     h3 {
       font-size: 28px;
       margin: 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .left, .right {
+      padding: 20px;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
   }
 `;
@@ -364,6 +428,7 @@ const About = () => {
       <Section ref={visionRef} delay="0.4s">
         <SectionTitle>Vision & Mission</SectionTitle>
         <VisionMissionWrapper>
+          {/* Reordered sequence: Vision -> Text -> Mission -> Text */}
           <VisionRow>
             <div className="left">
               <h3>Vision</h3>
@@ -375,6 +440,9 @@ const About = () => {
             </div>
           </VisionRow>
           <MissionRow>
+            <div className="right">
+              <h3>Mission</h3>
+            </div>
             <div className="left">
               <p>
                 MSI's mission is to foster a generation of curious, motivated, and globally-minded students who are equipped to thrive in an ever-evolving educational landscape. By expanding students' knowledge of further study opportunities, we hope to spark a passion for lifelong learning and personal growth, both locally and around the nation.
@@ -382,9 +450,6 @@ const About = () => {
               <p>
                 Ultimately, our goal is to cultivate a culture of exploration, ambition, and educational equity, where every student, regardless of background, has the tools and support to pursue their dreams and unleash their potential.
               </p>
-            </div>
-            <div className="right">
-              <h3>Mission</h3>
             </div>
           </MissionRow>
         </VisionMissionWrapper>
