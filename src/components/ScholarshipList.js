@@ -1,25 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import scholarships from '../scholarships.json';
 
 const ListContainer = styled.div`
-  padding: 20px; /* Reduced padding */
-  max-width: 1400px; /* Increased max-width */
+  padding: 20px;
+  max-width: 1400px;
   margin: 0 auto;
+  box-sizing: border-box;
 `;
 
 const Title = styled.h1`
-  font-size: 32px; /* Increased font size */
+  font-size: 32px;
   color: #007BFF;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (max-width: 480px) {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
 `;
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted for responsive columns */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 `;
 
 const ScholarshipCard = styled.div`
@@ -59,10 +71,43 @@ const ScholarshipCard = styled.div`
       color: #555;
     }
   }
+
+  @media (max-width: 480px) {
+    padding: 10px; 
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
+
+    .content {
+      h3 {
+        font-size: 16px; 
+        margin-bottom: 8px;
+      }
+
+      p {
+        font-size: 14px; 
+      }
+    }
+  }
 `;
 
 const ScholarshipList = () => {
   const navigate = useNavigate();
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const substringLength = isMobile ? 80 : 100;
 
   const handleClick = (id) => {
     navigate(`/scholarship-detail/${id}`);
@@ -79,7 +124,7 @@ const ScholarshipList = () => {
             )}
             <div className="content">
               <h3>{scholarship.shortName}</h3>
-              <p>{scholarship.description.substring(0, 100)}...</p>
+              <p>{scholarship.description.substring(0, substringLength)}...</p>
             </div>
           </ScholarshipCard>
         ))}
