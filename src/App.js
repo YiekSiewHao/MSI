@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { createGlobalStyle } from "styled-components";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -12,11 +12,10 @@ import ScholarshipDetails from "./components/ScholarshipDetails";
 import ScholarsStory from "./components/ScholarsStory";
 import EssayDetail from "./components/EssayDetail";
 import Wishes from "./components/Wishes";
-import Events from "./components/Events"; // Import the Events component
-import Koh_hui_xin_resource_pack from "./components/Koh_hui_xin_resource_pack"; // Updated import
+import Events from "./components/Events";
+import Koh_hui_xin_resource_pack from "./components/Koh_hui_xin_resource_pack";
 import "./App.css";
 
-// Global Styles
 const GlobalStyle = createGlobalStyle`
   body {
     /* Your global styles */
@@ -27,13 +26,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// Transition effect component
 function TransitionEffect({ onComplete }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onComplete();
     }, 1000);
-
     return () => clearTimeout(timeout);
   }, [onComplete]);
 
@@ -52,7 +49,7 @@ const App = () => {
   const scholarshipListRef = useRef(null);
   const contactRef = useRef(null);
   const wishesRef = useRef(null);
-  const eventsRef = useRef(null); // Add reference for Events section
+  const eventsRef = useRef(null);
   const [showTransition, setShowTransition] = useState(true);
 
   const handleTransitionComplete = () => {
@@ -74,11 +71,10 @@ const App = () => {
         onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
         onContactClick={() => scrollToSection(contactRef)}
         onWishesClick={() => scrollToSection(wishesRef)}
-        onEventsClick={() => scrollToSection(eventsRef)} // Add navigation for Events
+        onEventsClick={() => scrollToSection(eventsRef)}
       />
       <main>
         <Routes>
-          {/* Main Home Route */}
           <Route
             path="/"
             element={
@@ -89,9 +85,6 @@ const App = () => {
                 <section ref={scholarshipListRef}>
                   <ScholarshipList />
                 </section>
-                <section ref={wishesRef}>
-                  <Wishes />
-                </section>
                 <section ref={eventsRef}>
                   <Events />
                 </section>
@@ -101,16 +94,15 @@ const App = () => {
               </>
             }
           />
-          {/* Other Pages */}
           <Route path="/preparation" element={<Preparation />} />
           <Route path="/about" element={<About />} />
           <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
           <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
           <Route path="/essay/:id" element={<EssayDetail />} />
-          <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} /> {/* Updated route */}
+          <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} />
         </Routes>
       </main>
-      <Footer /> {/* Ensure the footer is always rendered */}
+      <Footer />
     </>
   );
 };

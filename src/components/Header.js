@@ -35,8 +35,7 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
-  /* Adjusted font sizes for better responsiveness */
-  font-size: 17px; /* Smaller default font size for phone mode */
+  font-size: 17px;
 
   @media (min-width: 480px) {
     font-size: 22px;
@@ -49,7 +48,7 @@ const TitleLink = styled(Link)`
 
 const Nav = styled.nav`
   @media (max-width: 768px) {
-    display: none; /* Hide navigation on small screens */
+    display: none;
   }
 `;
 
@@ -76,9 +75,8 @@ const NavLink = styled.a`
   }
 `;
 
-/* Menu button for mobile */
 const MenuButton = styled.button`
-  display: none; /* Hidden by default */
+  display: none;
   background: none;
   border: none;
   color: white;
@@ -86,19 +84,18 @@ const MenuButton = styled.button`
   cursor: pointer;
 
   @media (max-width: 768px) {
-    display: flex; /* Show menu button on small screens */
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px; /* Set a fixed height for proper alignment */
-    width: 40px;  /* Optional: give it a fixed width to be square */
+    height: 40px;
+    width: 40px;
     padding: 1px 0px 1px 6px;
   }
 `;
 
-/* Mobile navigation styles */
 const MobileNav = styled(motion.ul)`
   position: absolute;
-  top: 100%; /* Position below the header */
+  top: 100%;
   left: 0;
   width: 100%;
   background-color: #007BFF;
@@ -127,23 +124,28 @@ const MobileNavLink = styled.a`
   }
 `;
 
-const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
+const Header = ({ 
+  onHomeClick, 
+  onScholarshipListClick, 
+  onContactClick, 
+  onWishesClick, 
+  onEventsClick 
+}) => {
   const navigate = useNavigate();
   const location = useLocation();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleNavigation = (scrollToSection) => {
-    setIsMobileMenuOpen(false); // Close mobile menu after navigation
+    setIsMobileMenuOpen(false);
     if (location.pathname !== '/') {
       navigate('/');
-      setTimeout(() => scrollToSection(), 100); // Wait briefly for home page to load
+      setTimeout(() => scrollToSection(), 100);
     } else {
       scrollToSection();
     }
   };
 
-  // Define menu items
   const menuItems = [
     { name: 'Home', onClick: () => handleNavigation(onHomeClick) },
     { name: 'Scholarship List', onClick: () => handleNavigation(onScholarshipListClick) },
@@ -164,7 +166,6 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
     { name: 'Contact Us', onClick: () => handleNavigation(onContactClick) },
   ];
 
-  // Animation variants for mobile menu
   const mobileNavVariants = {
     open: {
       height: 'auto',
@@ -195,7 +196,7 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
     },
     closed: {
       opacity: 0,
-      y: -30,
+      y: -20,
       transition: {
         duration: 0.2,
       },
@@ -207,7 +208,6 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
       <HeaderContent>
         <TitleLink to="/">Malaysian Student Initiative</TitleLink>
 
-        {/* Desktop Navigation */}
         <Nav>
           <NavList>
             {menuItems.map((item, index) => (
@@ -218,13 +218,11 @@ const Header = ({ onHomeClick, onScholarshipListClick, onContactClick }) => {
           </NavList>
         </Nav>
 
-        {/* Menu Button for Mobile */}
         <MenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </MenuButton>
       </HeaderContent>
 
-      {/* Mobile Navigation */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <MobileNav
