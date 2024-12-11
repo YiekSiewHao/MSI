@@ -1395,7 +1395,9 @@
         "contactInformation": "jasonhii0825",
         "currentStudies": "Foundation in Engineering and Science",
         "motivationalQuote": null,
-        "resumeImage": "/assets/resume/jason_resume.jpg",
+        "resumeImages": [
+          "/assets/resume/jason_resume.jpg"
+        ],
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
