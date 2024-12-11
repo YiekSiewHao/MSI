@@ -348,9 +348,9 @@ const Wishes = () => {
       instagram: '@huixinkohh',
       instagramLink: 'https://www.instagram.com/huixinkohh',
       scholarship: 'Bank Negara Malaysia Scholar',
-      wish: 'Your vision for the future is inspiring. May you continue to empower others through your initiatives.',
+      wish: 'I hope this inspires more students to take that first step toward their dreams and make use of the amazing scholarships available. With the right opportunities, anything is possible—go for it!',
       image: '/assets/portrait/kohhuixinimg.jpg',
-      motivatingSentence: 'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.',
+      motivatingSentence: 'Don’t be afraid to step out of your comfort zone and explore what’s out there. The world is full of chances to grow and succeed, but you’ll only find them if you dare to look and try.',
     },
   ];
 
