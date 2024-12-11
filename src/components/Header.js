@@ -39,19 +39,19 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%; /* Optional: for circular logos */
   object-fit: cover;
 
   @media (max-width: 768px) {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
 
   @media (max-width: 480px) {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -68,14 +68,14 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
-  font-size: 17px;
+  font-size: 15px;
 
   @media (min-width: 480px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media (min-width: 768px) {
-    font-size: 28px;
+    font-size: 26px;
   }
 `;
 
