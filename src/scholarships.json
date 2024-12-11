@@ -430,6 +430,175 @@
     ]
   },
   {
+    "id": "yuem",
+    "name": "Yayasan UEM Education Scholarship",
+    "shortName": "Yayasan UEM",
+    "description": "The YUEM Scholarship offers SPM leavers the opportunity to undergo pre-university studies at KYUEM, followed by an undergraduate degree at renowned top global universities. Scholars will have access to various Scholars Development Programmes (SDP) and, upon graduation, will work with UEM or their partner companies.",
+    "logoPlaceholder": "/assets/company_logos/uem_logo.jpg",
+    "scholarshipLevel": "global",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Excellent academic track record in Form 4 and Form 5.",
+        "Obtained a minimum of 7As (A+/As) in relevant subjects in the SPM examination."
+      ],
+      "academicQualifications": [
+        "Malaysian citizen who has completed SPM.",
+        "Candidates must not be in receipt of any other scholarships or financial aid.",
+        "Each applicant can apply for one course only."
+      ],
+      "additionalCriteria": [
+        "Active participation in co-curricular activities.",
+        "Demonstrates leadership qualities and a strong commitment to personal development.",
+        "Must meet the minimum entry requirements of the chosen course and institution."
+      ]
+    },
+    "requiredDocuments": [
+      "SPM results and Form 4/SPM Trial results.",
+      "Co-curricular certificates.",
+      "Parents or guardians' pay slips.",
+      "Certified true copies of Identity Cards (IC) for both parents and candidate.",
+      "Birth certificates of parents and candidate.",
+      "2 essays for the online application."
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Business (Finance, Business Management, Accounting, Economics)",
+        "Engineering (Civil, Mechanical, Electrical)",
+        "IT and Computer Related (Computer Science, Computer Systems and Networking, Software Engineering, Data Science, Data Engineering)",
+        "Environmental Studies (Science, Technology, Energy)"
+      ],
+      "notOffered": []
+    },
+    "countriesOffered": [
+      "Malaysia",
+      "United States",
+      "United Kingdom",
+      "Australia"
+    ],
+    "bondingDetails": {
+      "duration": "5 years (Global) & 3 years (Local)",
+      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+    },
+    "applicationTimeline": {
+      "startDate": "Immediately after SPM results announcement",
+      "endDate": "Approximately 2 weeks after SPM results announcement",
+      "note": "Applicants must be alert and apply for the scholarship on time."
+    },
+    "numberOfRecipients": {
+      "total": 4
+    },
+    "applicationLink": [
+      "https://www.uem.com.my/yayasan-education-scholarship.html"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Only shortlisted candidates will be contacted by phone.",
+      "If no response is received within 2 months from the closing date, the application is deemed unsuccessful."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Online Application",
+        "details": "Fill up the basic information and submit the required documents along with 2 essays (maximum 300 words each).",
+        "tips": [
+          "Think about your achievements and what makes you stand out before writing your essays.",
+          "Be genuine and avoid using AI for essay writing to ensure authenticity."
+        ]
+      },
+      {
+        "stage": "Video Submission",
+        "details": "Submit a video presentation answering specific questions within a 2-minute limit.",
+        "tips": [
+          "Ensure all supporting documents are certified by your school principal promptly.",
+          "Keep your video presentation clear, concise, and professional."
+        ]
+      },
+      {
+        "stage": "Online Group Interview",
+        "details": "Participate in a group discussion and individual question-answer session via Microsoft Teams.",
+        "tips": [
+          "Wear professional attire and maintain a clean background.",
+          "Stay calm, think clearly, and communicate effectively without dominating the discussion.",
+          "Avoid using AI-generated answers; be authentic in your responses."
+        ]
+      },
+      {
+        "stage": "Physical Individual Interview",
+        "details": "Attend an in-person interview to discuss your qualifications and suitability for the scholarship.",
+        "tips": [
+          "Dress professionally and present yourself neatly.",
+          "Be humble yet confident in showcasing your strengths and how you can contribute to UEM.",
+          "Demonstrate your enthusiasm and commitment to your chosen course."
+        ]
+      }
+    ],
+    "contactEmail": "scholarship.info@uemnet.com",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "NESAMANI AP VICTOR",
+        "contributorImage": "/assets/portrait/nesa_img.jpg",
+        "intendedCourse": "Computer Science",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "nesamanivictor",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Introduce yourself.",
+              "2. Where do you want to study and why?",
+              "3. Why that course?",
+              "4. Talk about your family.",
+              "5. What do you think you can bring to our company after you graduate?",
+              "6. Why do you deserve to be a YUEM Scholar?",
+              "7. Talk about your Add Maths journey that you have written in your essay.",
+              "8. Talk about your debate/public speaking experiences that you have mentioned as well.",
+              "9. Talk about your piano skills.",
+              "10. Talk about the innovation competitions you mentioned.",
+              "11. Do you like to work alone or in a group? Why?",
+              "12. Did you find it difficult to learn coding/Arduino on your own?",
+              "13. Talk about your hobbies.",
+              "14. What do you watch on YouTube online?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Focus on essay writing as it is the first impression that they will have of you, and that's the only way they evaluate candidates’ potency and eliminate candidates.",
+              "During the interview, show enthusiasm for the course you are going to pursue and be steadfast with your choice and decision.",
+              "There is no specific thing that they focus on, but try to show your unique self that others don't have."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "Online Application Stage:",
+              "- I made sure I really thought through what I wanted to write. I suggest the same to you, fellow aspiring applicants. Don't immediately start writing the essay, think about it for a day and draft it out. Make sure you are genuine with what you write. Don't use any AI for the essays, it can be detected. You want to stand out, so be authentic. Make yourself stand out!",
+              "",
+              "Stage 1 Video Submission:",
+              "- For the supporting documents, make sure you get them certified by your school principal. You need the school stamp and the signature of your principal. PLEASE get it done as soon as you receive this email from YUEM. You don't want to submit at the last minute!",
+              "",
+              "Stage 2 Online Group Interview:",
+              "i) For this online interview, wear something professional. Although it is not mentioned what you are supposed to wear, remember, you want to stand out.",
+              "ii) Since you have to turn on your camera, make sure that your background is clean. (Make sure there are no books messed up behind you or any unfolded, piled-up clothes. Everything matters as it is their first impression of you, so make it a good one.)",
+              "iii) When I saw the question that was presented to us, I honestly had no clue about what I should say and what the managers' expectations were. That was partly the reason why I decided to go after hearing other candidates’ answers. No, I did not \"use\" their answers, but I needed a clear picture of what the question was about. After hearing other candidates, I figured it out and gave a pretty good answer :) that I felt was more original and true. When answering the question, don't panic and don't rush. Answer the question calmly and use the time allocated to the max. There is no right or wrong answer for the question that was asked; it is a matter of how you think and how you communicate and convince the managers.",
+              "iv) The main manager said that he knew some candidates used ChatGPT/AI to get their answers for the question. He told us that the managers already read the AI-generated answers and have a copy right there with them. So as we spoke, they were practically cross-checking our answers. So aspiring applicants, DO NOT use AI for any interviews. Be authentic.",
+              "v) DO NOT monopolize the whole discussion session. There was a guy in my group who did this, and it was not good for us. He tried to be the \"leader.\" Don't get me wrong, you should be the leader if possible, but always make sure you are not overpowering the discussion. You want to stand out, but don't do it while putting others below you. Work together and give everyone a chance to talk and share their views. Remember, we're all in this together! Help each other out. I remember while this guy in my group monopolized the whole session, I just turned on my mic and asked the passive ones what they think about the case study. And then everyone started talking and sharing their opinions."
+            ]
+          },
+          {
+            "title": "Stage 3 Physical Individual Interview",
+            "content": [
+              "- Wear professional clothes and covered shoes. Be neat and tidy. Be calm and composed when you talk to them and brag about yourself in a humble way. You need to convince them (not by bragging toooooo much) that you are the best candidate out there to carry their company name."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "jpa-ppn",
     "name": "Program Penajaan Nasional (PPN) - JPA",
     "shortName": "JPA - PPN",
@@ -2480,175 +2649,6 @@
             "content": [
               "Based on what I heard during the interview, this scholarship is almost fully funded by the college that you applied for. Thus, I can’t assure that every interview will be conducted the same as what I had experienced before.",
               "But according to my experience (BAC 1 year FIL, 3 years UOL LLB), they want you to be honest and put them on the top of your priorities list. They most likely will choose those who can surely contribute to their college, so better do more research thoroughly on the course and the college you applied."
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "yuem",
-    "name": "Yayasan UEM Education Scholarship",
-    "shortName": "Yayasan UEM",
-    "description": "The YUEM Scholarship offers SPM leavers the opportunity to undergo pre-university studies at KYUEM, followed by an undergraduate degree at renowned top global universities. Scholars will have access to various Scholars Development Programmes (SDP) and, upon graduation, will work with UEM or their partner companies.",
-    "logoPlaceholder": "/assets/company_logos/uem_logo.jpg",
-    "scholarshipLevel": "global",
-    "eligibilityCriteria": {
-      "mainCriteria": [
-        "Excellent academic track record in Form 4 and Form 5.",
-        "Obtained a minimum of 7As (A+/As) in relevant subjects in the SPM examination."
-      ],
-      "academicQualifications": [
-        "Malaysian citizen who has completed SPM.",
-        "Candidates must not be in receipt of any other scholarships or financial aid.",
-        "Each applicant can apply for one course only."
-      ],
-      "additionalCriteria": [
-        "Active participation in co-curricular activities.",
-        "Demonstrates leadership qualities and a strong commitment to personal development.",
-        "Must meet the minimum entry requirements of the chosen course and institution."
-      ]
-    },
-    "requiredDocuments": [
-      "SPM results and Form 4/SPM Trial results.",
-      "Co-curricular certificates.",
-      "Parents or guardians' pay slips.",
-      "Certified true copies of Identity Cards (IC) for both parents and candidate.",
-      "Birth certificates of parents and candidate.",
-      "2 essays for the online application."
-    ],
-    "coursesOffered": {
-      "allowed": [
-        "Business (Finance, Business Management, Accounting, Economics)",
-        "Engineering (Civil, Mechanical, Electrical)",
-        "IT and Computer Related (Computer Science, Computer Systems and Networking, Software Engineering, Data Science, Data Engineering)",
-        "Environmental Studies (Science, Technology, Energy)"
-      ],
-      "notOffered": []
-    },
-    "countriesOffered": [
-      "Malaysia",
-      "United States",
-      "United Kingdom",
-      "Australia"
-    ],
-    "bondingDetails": {
-      "duration": "5 years (Global) & 3 years (Local)",
-      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
-    },
-    "applicationTimeline": {
-      "startDate": "Immediately after SPM results announcement",
-      "endDate": "Approximately 2 weeks after SPM results announcement",
-      "note": "Applicants must be alert and apply for the scholarship on time."
-    },
-    "numberOfRecipients": {
-      "total": 4
-    },
-    "applicationLink": [
-      "https://www.uem.com.my/yayasan-education-scholarship.html"
-    ],
-    "generalInfoLink": null,
-    "resultNotification": [
-      "Only shortlisted candidates will be contacted by phone.",
-      "If no response is received within 2 months from the closing date, the application is deemed unsuccessful."
-    ],
-    "applicationProcess": [
-      {
-        "stage": "Online Application",
-        "details": "Fill up the basic information and submit the required documents along with 2 essays (maximum 300 words each).",
-        "tips": [
-          "Think about your achievements and what makes you stand out before writing your essays.",
-          "Be genuine and avoid using AI for essay writing to ensure authenticity."
-        ]
-      },
-      {
-        "stage": "Video Submission",
-        "details": "Submit a video presentation answering specific questions within a 2-minute limit.",
-        "tips": [
-          "Ensure all supporting documents are certified by your school principal promptly.",
-          "Keep your video presentation clear, concise, and professional."
-        ]
-      },
-      {
-        "stage": "Online Group Interview",
-        "details": "Participate in a group discussion and individual question-answer session via Microsoft Teams.",
-        "tips": [
-          "Wear professional attire and maintain a clean background.",
-          "Stay calm, think clearly, and communicate effectively without dominating the discussion.",
-          "Avoid using AI-generated answers; be authentic in your responses."
-        ]
-      },
-      {
-        "stage": "Physical Individual Interview",
-        "details": "Attend an in-person interview to discuss your qualifications and suitability for the scholarship.",
-        "tips": [
-          "Dress professionally and present yourself neatly.",
-          "Be humble yet confident in showcasing your strengths and how you can contribute to UEM.",
-          "Demonstrate your enthusiasm and commitment to your chosen course."
-        ]
-      }
-    ],
-    "contactEmail": "scholarship.info@uemnet.com",
-    "contactNumber": null,
-    "scholars": [
-      {
-        "contributorName": "NESAMANI AP VICTOR",
-        "contributorImage": "/assets/portrait/nesa_img.jpg",
-        "intendedCourse": "Computer Science",
-        "currentInstitution": "Kolej Yayasan UEM",
-        "contactInformation": "nesamanivictor",
-        "currentStudies": "A-levels",
-        "motivationalQuote": null,
-        "resumeImage": null,
-        "stories": [
-          {
-            "title": "Mock-up Interview Questions and Your Answers",
-            "content": [
-              "1. Introduce yourself.",
-              "2. Where do you want to study and why?",
-              "3. Why that course?",
-              "4. Talk about your family.",
-              "5. What do you think you can bring to our company after you graduate?",
-              "6. Why do you deserve to be a YUEM Scholar?",
-              "7. Talk about your Add Maths journey that you have written in your essay.",
-              "8. Talk about your debate/public speaking experiences that you have mentioned as well.",
-              "9. Talk about your piano skills.",
-              "10. Talk about the innovation competitions you mentioned.",
-              "11. Do you like to work alone or in a group? Why?",
-              "12. Did you find it difficult to learn coding/Arduino on your own?",
-              "13. Talk about your hobbies.",
-              "14. What do you watch on YouTube online?"
-            ]
-          },
-          {
-            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
-            "content": [
-              "Focus on essay writing as it is the first impression that they will have of you, and that's the only way they evaluate candidates’ potency and eliminate candidates.",
-              "During the interview, show enthusiasm for the course you are going to pursue and be steadfast with your choice and decision.",
-              "There is no specific thing that they focus on, but try to show your unique self that others don't have."
-            ]
-          },
-          {
-            "title": "Advice and Tips to Share with Your Juniors",
-            "content": [
-              "Online Application Stage:",
-              "- I made sure I really thought through what I wanted to write. I suggest the same to you, fellow aspiring applicants. Don't immediately start writing the essay, think about it for a day and draft it out. Make sure you are genuine with what you write. Don't use any AI for the essays, it can be detected. You want to stand out, so be authentic. Make yourself stand out!",
-              "",
-              "Stage 1 Video Submission:",
-              "- For the supporting documents, make sure you get them certified by your school principal. You need the school stamp and the signature of your principal. PLEASE get it done as soon as you receive this email from YUEM. You don't want to submit at the last minute!",
-              "",
-              "Stage 2 Online Group Interview:",
-              "i) For this online interview, wear something professional. Although it is not mentioned what you are supposed to wear, remember, you want to stand out.",
-              "ii) Since you have to turn on your camera, make sure that your background is clean. (Make sure there are no books messed up behind you or any unfolded, piled-up clothes. Everything matters as it is their first impression of you, so make it a good one.)",
-              "iii) When I saw the question that was presented to us, I honestly had no clue about what I should say and what the managers' expectations were. That was partly the reason why I decided to go after hearing other candidates’ answers. No, I did not \"use\" their answers, but I needed a clear picture of what the question was about. After hearing other candidates, I figured it out and gave a pretty good answer :) that I felt was more original and true. When answering the question, don't panic and don't rush. Answer the question calmly and use the time allocated to the max. There is no right or wrong answer for the question that was asked; it is a matter of how you think and how you communicate and convince the managers.",
-              "iv) The main manager said that he knew some candidates used ChatGPT/AI to get their answers for the question. He told us that the managers already read the AI-generated answers and have a copy right there with them. So as we spoke, they were practically cross-checking our answers. So aspiring applicants, DO NOT use AI for any interviews. Be authentic.",
-              "v) DO NOT monopolize the whole discussion session. There was a guy in my group who did this, and it was not good for us. He tried to be the \"leader.\" Don't get me wrong, you should be the leader if possible, but always make sure you are not overpowering the discussion. You want to stand out, but don't do it while putting others below you. Work together and give everyone a chance to talk and share their views. Remember, we're all in this together! Help each other out. I remember while this guy in my group monopolized the whole session, I just turned on my mic and asked the passive ones what they think about the case study. And then everyone started talking and sharing their opinions."
-            ]
-          },
-          {
-            "title": "Stage 3 Physical Individual Interview",
-            "content": [
-              "- Wear professional clothes and covered shoes. Be neat and tidy. Be calm and composed when you talk to them and brag about yourself in a humble way. You need to convince them (not by bragging toooooo much) that you are the best candidate out there to carry their company name."
             ]
           }
         ]
