@@ -1,3 +1,5 @@
+// src/components/Contact.js
+
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -26,17 +28,18 @@ const ContactContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; // Changed from center to flex-start
   }
 `;
 
 const LeftSection = styled.div`
   flex: 1;
   padding: 20px;
-  text-align: left;
+  text-align: left; // Ensure left alignment
 
   @media (max-width: 768px) {
-    text-align: center;
+    /* text-align: center; */ // Commented out to maintain left alignment
+    text-align: left; // Explicitly set to left
     padding: 10px;
   }
 `;
@@ -45,11 +48,11 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  justify-content: center;
+  justify-content: flex-start; // Changed from center to flex-start
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; // Changed from center to flex-start
   }
 `;
 
@@ -98,7 +101,7 @@ const RightSection = styled.div`
   text-align: left;
 
   @media (max-width: 768px) {
-    text-align: center;
+    text-align: center; // Optionally, keep this if you want to center text on small screens
     padding: 10px;
   }
 `;

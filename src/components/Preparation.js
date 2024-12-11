@@ -1,8 +1,10 @@
+// src/components/Preparation.js
+
 import React, { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaArrowRight, FaChevronLeft, FaChevronRight, FaFileDownload, FaFileAlt } from "react-icons/fa";
 import essays from "../essays.json";
 
 /* Styled Components */
@@ -72,8 +74,8 @@ const ScholarHighlightContainer = styled.div`
 `;
 
 const HighlightHeader = styled.h2`
-  font-size: 28px;
-  color: #2c3e50;
+  font-size: 32px;  /* Increased the font size */
+  color: #000000;  /* Changed the text color to black */
   margin-bottom: 10px;
   text-align: center;
   position: relative;
@@ -202,11 +204,13 @@ const FilterBox = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const FilterButton = styled.button`
   background-color: ${(props) => (props.active ? '#007bff' : '#f1f1f1')};
   color: ${(props) => (props.active ? '#fff' : '#333')};
+  font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -352,7 +356,6 @@ const EssayPreview = styled.div`
 `;
 
 const InterviewSectionContainer = styled.div`
-  /* Add horizontal padding that adjusts with screen size for spacing */
   padding: 0 60px; 
   margin-bottom: 100px;
 
@@ -365,7 +368,6 @@ const InterviewSectionContainer = styled.div`
   }
 `;
 
-/* For Interview Section modifications: smaller height, smaller text, maintain row layout where possible */
 const InterviewHeader = styled.h2`
   font-size: 28px;
   color: #2c3e50;
@@ -437,7 +439,6 @@ const ScholarshipName = styled.span`
   }
 `;
 
-
 const ButtonGroup = styled.div`
   display: flex;
   width: 100%; 
@@ -445,11 +446,9 @@ const ButtonGroup = styled.div`
   margin-top: 5px; 
   max-width: 1200px;
   
-  /* By default (mobile-first), center the buttons */
   justify-content: center;
 
   @media (min-width: 769px) {
-    /* On larger screens (laptop/desktop), align them to the right */
     justify-content: flex-end;
   }
 `;
@@ -466,6 +465,10 @@ const DownloadButton = styled.a`
   font-size: 16px;
   transition: background-color 0.3s;
   flex: 1; /* Make buttons equal width */
+
+  svg {
+    margin-right: 5px;
+  }
 
   &:hover {
     background-color: #0056b3;
@@ -490,6 +493,10 @@ const ViewButton = styled.a`
   transition: background-color 0.3s;
   flex: 1; /* Make buttons equal width */
 
+  svg {
+    margin-right: 5px;
+  }
+
   &:hover {
     background-color: #218838;
   }
@@ -500,10 +507,6 @@ const ViewButton = styled.a`
   }
 `;
 
-
-
-
-/* Motion Variants for Fade-In */
 const fadeInVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { 
@@ -518,10 +521,20 @@ const Preparation = () => {
   const [arrowLeftVisible, setArrowLeftVisible] = useState(false);
   const [arrowRightVisible, setArrowRightVisible] = useState(true);
   const [selectedScholarship, setSelectedScholarship] = useState('All');
+  const location = useLocation();
+  const sampleEssaysRef = useRef(null);
 
+  // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);  
+
+  // Scroll to Sample Essays if the hash is present
+  useEffect(() => {
+    if (location.hash === '#sample-essays' && sampleEssaysRef.current) {
+      sampleEssaysRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
 
   const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
   const filteredEssays = selectedScholarship === 'All' ? essays : essays.filter(essay => essay.scholarship === selectedScholarship);
@@ -546,7 +559,6 @@ const Preparation = () => {
     }
   }, [filteredEssays]);
 
-
   const scrollLeft = () => {
     const container = scrollContainerRef.current;
     if (container) {
@@ -564,11 +576,6 @@ const Preparation = () => {
   };
 
   const scholarImagePath = "/assets/portrait/kohhuixinimg.jpg";
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const backgroundImagePath = '/assets/preparation_wallpaper.jpg';
 
   return (
@@ -613,65 +620,66 @@ const Preparation = () => {
           </ScholarHighlightContainer>
 
           {/* Sample Essays Section */}
-          <ScholarHighlightContainer>
-            <HighlightHeader>Sample Essays</HighlightHeader>
-            <HighlightDescription>
-              Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
-            </HighlightDescription>
+          <div id="sample-essays" ref={sampleEssaysRef}>
+            <ScholarHighlightContainer>
+              <HighlightHeader>Sample Essays</HighlightHeader>
+              <HighlightDescription>
+                Explore a curated collection of sample essays from successful scholarship applicants. These essays provide valuable insights into what makes a compelling application, helping you to craft your own standout essays.
+              </HighlightDescription>
 
-            {/* Filter Buttons */}
-            <FilterBox>
-              <FilterButton
-                active={selectedScholarship === 'All'}
-                onClick={() => setSelectedScholarship('All')}
-              >
-                All
-              </FilterButton>
-              {scholarships.map((scholarship) => (
+              {/* Filter Buttons */}
+              <FilterBox>
                 <FilterButton
-                  key={scholarship}
-                  active={selectedScholarship === scholarship}
-                  onClick={() => setSelectedScholarship(scholarship)}
+                  active={selectedScholarship === 'All'}
+                  onClick={() => setSelectedScholarship('All')}
                 >
-                  {scholarship}
+                  All
                 </FilterButton>
-              ))}
-            </FilterBox>
-
-            {/* Scrollable Essay Cards */}
-            <ScrollContainer>
-              {/* Left Arrow Button */}
-              <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
-                <FaChevronLeft size={24} />
-              </ArrowButton>
-
-              {/* Essay Cards */}
-              <EssayCardContainer ref={scrollContainerRef}>
-                {filteredEssays.map((essay, index) => (
-                  <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
-                    <CardTitle>{essay.scholarship}</CardTitle>
-                    <EssayMeta>
-                      <strong>Author:</strong> {essay.author} | <strong>Year:</strong>{" "}
-                      {essay.year}
-                    </EssayMeta>
-                    <EssayPreview>
-                      <p><strong>{essay.question[0]}</strong></p>
-                      <Divider />
-                      <p>{essay.essay[0].slice(0, 100)}...</p>
-                      <span>
-                        <strong>Read More</strong>
-                      </span>
-                    </EssayPreview>
-                  </EssayCard>
+                {scholarships.map((scholarship) => (
+                  <FilterButton
+                    key={scholarship}
+                    active={selectedScholarship === scholarship}
+                    onClick={() => setSelectedScholarship(scholarship)}
+                  >
+                    {scholarship}
+                  </FilterButton>
                 ))}
-              </EssayCardContainer>
+              </FilterBox>
 
-              {/* Right Arrow Button */}
-              <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
-                <FaChevronRight size={24} />
-              </ArrowButton>
-            </ScrollContainer>
-          </ScholarHighlightContainer>
+              {/* Scrollable Essay Cards */}
+              <ScrollContainer>
+                {/* Left Arrow Button */}
+                <ArrowButton left visible={arrowLeftVisible} onClick={scrollLeft}>
+                  <FaChevronLeft size={24} />
+                </ArrowButton>
+
+                {/* Essay Cards */}
+                <EssayCardContainer ref={scrollContainerRef}>
+                  {filteredEssays.map((essay, index) => (
+                    <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
+                      <CardTitle>{essay.scholarship}</CardTitle>
+                      <EssayMeta>
+                        <strong>Author:</strong> {essay.author} | <strong>Year:</strong> {essay.year}
+                      </EssayMeta>
+                      <EssayPreview>
+                        <p><strong>{essay.question[0]}</strong></p>
+                        <Divider />
+                        <p>{essay.essay[0].slice(0, 100)}...</p>
+                        <span>
+                          <strong>Read More</strong>
+                        </span>
+                      </EssayPreview>
+                    </EssayCard>
+                  ))}
+                </EssayCardContainer>
+
+                {/* Right Arrow Button */}
+                <ArrowButton visible={arrowRightVisible} onClick={scrollRight}>
+                  <FaChevronRight size={24} />
+                </ArrowButton>
+              </ScrollContainer>
+            </ScholarHighlightContainer>
+          </div>
         </ContentContainer>
 
         {/* Interview Section with reduced height and font sizes */}
@@ -683,23 +691,27 @@ const Preparation = () => {
 
           <InterviewList>
             <InterviewItem>
-              <ScholarshipName>Shell Scholarship</ScholarshipName>
+              <ScholarshipName>Yayasan Pelajaran Johor</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/YPJ.pdf" download>
+                  <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/YPJ.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
                   View File
                 </ViewButton>
               </ButtonGroup>
             </InterviewItem>
             <InterviewItem>
-              <ScholarshipName>Petronas Scholarship</ScholarshipName>
+              <ScholarshipName>Bank Negara Malaysia Scholarship</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/BNM.pdf" download>
+                  <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/BNM.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
                   View File
                 </ViewButton>
               </ButtonGroup>
@@ -708,10 +720,12 @@ const Preparation = () => {
             <InterviewItem>
               <ScholarshipName>Yayasan UEM Scholarship</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/YayasanUEM.pdf" download>
+                  <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/YayasanUEM.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
                   View File
                 </ViewButton>
               </ButtonGroup>
@@ -720,10 +734,40 @@ const Preparation = () => {
             <InterviewItem>
               <ScholarshipName>Yayasan Khazanah Scholarship</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/YK.pdf" download>
+                  <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/YK.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+
+            <InterviewItem>
+              <ScholarshipName>Shell Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/scholarships_file_downloads/Shell.pdf" download>
+                  <FaFileDownload />
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/scholarships_file_downloads/Shell.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+
+            <InterviewItem>
+              <ScholarshipName>ASEAN Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" download>
+                  <FaFileDownload />
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
                   View File
                 </ViewButton>
               </ButtonGroup>
@@ -732,10 +776,26 @@ const Preparation = () => {
             <InterviewItem>
               <ScholarshipName>TNB Scholarship</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="/assets/resource_pack_hui_xin.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/TNB.pdf" download>
+                  <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="/assets/resource_pack_hui_xin.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/TNB.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+
+            <InterviewItem>
+              <ScholarshipName>FGV Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/scholarships_file_downloads/FGV.pdf" download>
+                  <FaFileDownload />
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/scholarships_file_downloads/FGV.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
                   View File
                 </ViewButton>
               </ButtonGroup>

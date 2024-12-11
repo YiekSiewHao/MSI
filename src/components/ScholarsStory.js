@@ -29,28 +29,28 @@ const Header = styled.div`
   position: relative;
   flex-direction: row; /* Default row for large screens */
 
-      a.instagram-link {
-      display: flex;
-      align-items: center;
-      color: #E1306C; /* Updated color */
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
+  a.instagram-link {
+    display: flex;
+    align-items: center;
+    color: #E1306C; /* Updated color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
 
-      &:hover {
-        color: #d81b60; /* Slightly darker shade on hover */
-        transform: translateY(-2px); /* Slight upward movement on hover */
-      }
+    &:hover {
+      color: #d81b60; /* Slightly darker shade on hover */
+      transform: translateY(-2px); /* Slight upward movement on hover */
+    }
 
-      svg {
-        margin-right: 8px; /* Increased spacing from 5px to 8px */
-        font-size: 20px;
+    svg {
+      margin-right: 8px; /* Increased spacing from 5px to 8px */
+      font-size: 20px;
 
-        @media (max-width: 480px) {
-          font-size: 18px;
-        }
+      @media (max-width: 480px) {
+        font-size: 18px;
       }
     }
+  }
 
   img {
     flex: 1.7;
@@ -75,7 +75,7 @@ const Header = styled.div`
     }
 
     h1 {
-      font-size: 3rem; /* Reduced font size */
+      font-size: 2.5rem; /* Base font size for large screens */
       font-weight: bold;
       margin: 0px 0;
       color: #007BFF;
@@ -88,6 +88,7 @@ const Header = styled.div`
     }
   }
 
+  /* Existing Media Queries */
   @media (max-width: 1200px) {
     padding: 0 10%;
   }
@@ -112,7 +113,7 @@ const Header = styled.div`
       }
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.0rem; /* Reduced font size for tablets */
       }
 
       p {
@@ -120,7 +121,33 @@ const Header = styled.div`
       }
     }
   }
+
+  /* New Media Query for Small Devices */
+  @media (max-width: 480px) {
+    padding: 0 5%; /* Further reduce padding for very small screens */
+
+    img {
+      max-height: 200px; /* Further reduce image height */
+    }
+
+    .text-section {
+      padding: 8px; /* Reduce padding inside text section */
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-size: 2rem; /* Further reduced font size for smartphones */
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 `;
+
 
 const BackButton = styled.button`
   background-color: #007BFF;
@@ -464,7 +491,6 @@ const ScholarsStory = () => {
             alt={scholar.contributorName}
           />
           <div className="text-section">
-            <h2>Meet</h2>
             <h1>{scholar.contributorName}</h1>
             {scholar.contactInformation && (
                       <a

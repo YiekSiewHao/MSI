@@ -1,3 +1,5 @@
+// src/App.js
+
 import React, { useRef, useState, useEffect } from "react";
 import { createGlobalStyle } from "styled-components";
 import { Routes, Route } from "react-router-dom";
@@ -5,6 +7,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ScholarshipList from "./components/ScholarshipList";
+import Shortcut from "./components/Shortcut"; // Importing Shortcut
 import Preparation from "./components/Preparation";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -95,6 +98,9 @@ const App = () => {
                 </section>
                 <section ref={scholarshipListRef}>
                   <ScholarshipList />
+                </section>
+                <section>
+                  <Shortcut /> {/* Added Shortcut below ScholarshipList */}
                 </section>
                 <section ref={wishesRef}>
                   <Wishes />

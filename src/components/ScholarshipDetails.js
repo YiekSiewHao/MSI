@@ -68,7 +68,7 @@ const BackToTopButton = styled.button`
   gap: 8px;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
   z-index: 1000;
 
   &:hover {
@@ -85,6 +85,11 @@ const BackToTopButton = styled.button`
     transform: translateX(50%);
     font-size: 14px;
     padding: 8px 15px;
+
+    &:hover {
+      background-color: #0056b3;
+      transform: translateX(50%); /* Remove scaling on hover */
+    }
   }
 `;
 
@@ -107,6 +112,7 @@ const QuickListContainer = styled.div`
 
 // Modified QuickListItem to have smaller size on mobile and active state
 const QuickListItem = styled.button`
+  font-family: 'Poppins', sans-serif;
   background-color: #4a90e2;
   color: white;
   border: none;
@@ -417,7 +423,6 @@ const ScholarshipDetails = () => {
       <DetailsContainer>
         <BackButton onClick={handleBackToHome}>
           <ArrowBack />
-          Back to Home
         </BackButton>
         <p>Scholarship not found.</p>
       </DetailsContainer>
@@ -446,7 +451,6 @@ const ScholarshipDetails = () => {
         {/* Back Button */}
         <BackButton onClick={handleBackToHome}>
           <ArrowBack />
-          Back to Home
         </BackButton>
 
         {/* QuickListContainer with active state */}

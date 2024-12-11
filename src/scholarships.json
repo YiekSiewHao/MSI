@@ -1672,7 +1672,7 @@
     "scholars": [
       {
         "contributorName": "Lim Ethan",
-        "contributorImage": null,
+        "contributorImage": "/assets/portrait/ethan_img.jpg",
         "intendedCourse": "Chemical Engineering",
         "currentInstitution": "Kolej Yayasan UEM",
         "contactInformation": "ethanoate_ion",
@@ -2192,7 +2192,7 @@
         "contributorImage": "/assets/portrait/pou_chong.jpeg",
         "intendedCourse": "Life Science",
         "currentInstitution": "Kolej Matrikulasi Selangor",
-        "contactInformation": "",
+        "contactInformation": "pou.chong",
         "currentStudies": "Life Science",
         "motivationalQuote": null,
         "resumeImage": null,
