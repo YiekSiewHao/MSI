@@ -623,7 +623,7 @@ const Preparation = () => {
   };
 
   const scholarImagePath = "/assets/portrait/kohhuixinimg.jpg";
-  const backgroundImagePath = '/assets/preparation_wallpaper.jpg';
+  const backgroundImagePath = '/assets/preprationimage.jpg';
 
   return (
     <PreparationContainer>
