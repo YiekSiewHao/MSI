@@ -368,7 +368,7 @@ const ScholarStoryCard = styled.div`
 
 // ScholarshipDetails Component
 
-const ScholarshipDetails = () => {
+const ScholarshipDetails = ({ setScrollPosition }) => {
   const navigate = useNavigate();
   const { id } = useParams();
   const scholarship = scholarships.find((s) => s.id === id);
@@ -415,9 +415,9 @@ const ScholarshipDetails = () => {
   };
 
   const handleBackToHome = () => {
-    navigate('/');
+    navigate('/', { state: { scrollTo: 'scholarshipList' } });
   };
-
+  
   if (!scholarship) {
     return (
       <DetailsContainer>

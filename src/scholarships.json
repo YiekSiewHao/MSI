@@ -931,7 +931,7 @@
   },
   {
     "id": "kijang-bnm",
-    "name": "Kijang Scholarship (Bank Negara Malaysia)",
+    "name": "Bank Negara Malaysia Kijang Scholarship",
     "shortName": "Kijang Scholarship",
     "description": "The Kijang Scholarship is awarded to eligible individuals to pursue pre-university programmes at BNM's approved pre-university colleges. This scholarship provides tuition fees, subsistence allowance, as well as related scholarship allowances. The subsequent sponsorship to pursue an undergraduate programme is subject to the candidate meeting the Bank’s requirements.",
     "logoPlaceholder": "/assets/company_logos/bank_negara.png",
@@ -1134,7 +1134,7 @@
   {
     "id": "sarawak-energy",
     "name": "Sarawak Energy Scholarship Programme (Global)",
-    "shortName": "Sarawak Energy - Global",
+    "shortName": "Sarawak Energy: Global",
     "description": "The Sarawak Energy Scholarship Programme provides outstanding Sarawakians great opportunities to pursue Pre-U and Undergraduate studies in both local and global universities, diploma in UNITEN, and also a Post-graduate programme. Scholars are also given the opportunity to intern under SEB for 10 weeks during their 3rd year of degree, exposing them to the corporate world prior to graduation. After graduation, scholars will be bonded based on programme specification under SEB, one of the best employers in Sarawak. Restricting to only Sarawakians, Sarawak Energy aims to attract top Sarawakian talents to help realise their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy.",
     "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
     "scholarshipLevel": "global",
@@ -1296,7 +1296,7 @@
   {
     "id": "sesp-local",
     "name": "Sarawak Energy Scholarship Programme (Local)",
-    "shortName": "Sarawak Energy - Local",
+    "shortName": "Sarawak Energy: Local",
     "description": "The Sarawak Energy Scholarship Programme aims to attract top Sarawakian talents to help them realize their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy. Aligned with this, the Sarawak Energy Programme is actively looking to invest in and develop Sarawak’s brightest young talents, allowing them to pursue their studies at local and international universities. If you are a Sarawakian student who excels academically and demonstrates leadership in extracurricular activities, you are invited to apply for Sarawak Energy’s Scholarship programme.",
     "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
     "scholarshipLevel": "local",
@@ -1597,8 +1597,8 @@
   },
   {
     "id": "ytn",
-    "name": "Yayasan Tenaga Nasional (YTN) Prime Scholarship Biasiswa Terkemuka Luar Negara",
-    "shortName": "YTN Prime Scholarship",
+    "name": "Tenaga Nasional Berhad (TNB) Prime Scholarship Biasiswa Terkemuka Luar Negara",
+    "shortName": "TNB PRIME",
     "description": "Yayasan Tenaga Nasional (YTN), which was established as a trust body for TNB, continues to ensure that the company’s corporate social responsibility initiatives and efforts are met through scholarships and study loans to deserving students. Yayasan Tenaga Nasional continues to play its role in disbursing financial assistance and scholarships to help outstanding and deserving students further their studies in institutions of higher learning both locally and abroad.",
     "logoPlaceholder": "/assets/company_logos/TNB_logo.jpg",
     "scholarshipLevel": "global",
@@ -1725,7 +1725,7 @@
   {
     "id": "ykgs",
     "name": "Yayasan Khazanah Global Scholarship",
-    "shortName": "Yayasan Khazanah - Global",
+    "shortName": "Yayasan Khazanah",
     "description": "Yayasan Khazanah is a foundation under Khazanah Nasional Berhad, the sovereign wealth fund of Malaysia, aiming to grow long-term wealth for the nation. The Khazanah Global Scholarship provides opportunities for bright Malaysians to pursue A-Level studies at Kolej Yayasan UEM and undergraduate studies at leading global universities. Scholars are also provided with leadership training and job attachments at leading organizations in Malaysia.",
     "logoPlaceholder": "/assets/company_logos/Khazanah.jpg",
     "scholarshipLevel": "global",
