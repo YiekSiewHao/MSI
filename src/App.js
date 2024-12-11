@@ -62,7 +62,7 @@ const App = () => {
       scholarshipListRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [location.state]);
-  
+
   const handleTransitionComplete = () => {
     setShowTransition(false);
   };
@@ -81,8 +81,13 @@ const App = () => {
 
   // Scroll to bottom
   const scrollToBottom = () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    const scrollHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+  
+    // Scroll to bottom with smooth animation
+    window.scrollTo({ top: scrollHeight - viewportHeight, behavior: "smooth" });
   };
+
 
   const [scrollPosition, setScrollPosition] = useState(null);
 
@@ -91,12 +96,12 @@ const App = () => {
       <GlobalStyle />
       {showTransition && <TransitionEffect onComplete={handleTransitionComplete} />}
       <Header
-        onHomeClick={scrollToTop}
-        onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
-        onContactClick={scrollToBottom}
-        onWishesClick={() => scrollToSection(wishesRef)}
-        onEventsClick={() => scrollToSection(eventsRef)}
-      />
+  onHomeClick={scrollToTop}
+  onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
+  onContactClick={scrollToBottom} // Updated scrollToBottom function
+  onWishesClick={() => scrollToSection(wishesRef)}
+  onEventsClick={() => scrollToSection(eventsRef)}
+/>
       <main>
         <Routes>
         <Route 
