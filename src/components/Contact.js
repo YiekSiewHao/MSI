@@ -58,13 +58,15 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
 
   @media (max-width: 768px) {
     margin-right: 0;
     margin-bottom: 10px;
+      width: 70px;
+  height: 70px;
   }
 `;
 
