@@ -588,7 +588,7 @@ const Preparation = () => {
           <ScholarHighlightContainer>
             <HighlightHeader>Scholar's Highlight</HighlightHeader>
             <HighlightDescription>
-              A huge shoutout to <strong style={{color: '#007bff'}}>Koh Hui Xin</strong> for contributing her resource pack to
+              A huge shoutout to <strong style={{color: '#007bff'}}>Koh Hui Xin</strong> for contributing her resource pack that contains <strong style={{color: '#007bff'}}>Case Study</strong> and <strong style={{color: '#007bff'}}>Appeal Letter</strong> to
               help future scholars prepare effectively. Click below to explore more!
             </HighlightDescription>
             <motion.div variants={fadeInVariants}>
@@ -603,7 +603,7 @@ const Preparation = () => {
                     <strong>Course:</strong> <span style={{color: '#007bff'}}>BSc Computer Science, University of Manchester</span>
                   </ScholarMeta>
                   <ScholarDescription>
-                    Koh Hui Xin has contributed an excellent resource pack to help
+                    Koh Hui Xin has contributed an excellent resource pack on <strong style={{color: '#007bff'}}>Case Study</strong> and <strong style={{color: '#007bff'}}>Appeal Letter</strong> to help
                     future scholars prepare effectively. Click to explore!
                   </ScholarDescription>
                 </ScholarDetails>

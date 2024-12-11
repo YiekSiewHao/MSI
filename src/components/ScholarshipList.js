@@ -38,7 +38,7 @@ const ScholarshipCard = styled.div`
   display: flex;
   background-color: white;
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -55,6 +55,12 @@ const ScholarshipCard = styled.div`
     object-fit: cover;
     margin-right: 15px;
     border-radius: 8px;
+
+    @media (max-width: 480px) {
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+    }
   }
 
   .content {
@@ -64,33 +70,25 @@ const ScholarshipCard = styled.div`
       font-size: 20px;
       color: #007BFF;
       margin-bottom: 10px;
+
+      @media (max-width: 480px) {
+        font-size: 16px; 
+        margin-bottom: 8px;
+      }
     }
 
     p {
       font-size: 16px;
       color: #555;
+
+      @media (max-width: 480px) {
+        display: none; /* Hide description on mobile */
+      }
     }
   }
 
   @media (max-width: 480px) {
-    padding: 10px; 
-
-    img {
-      width: 60px;
-      height: 60px;
-      margin-right: 10px;
-    }
-
-    .content {
-      h3 {
-        font-size: 16px; 
-        margin-bottom: 8px;
-      }
-
-      p {
-        font-size: 14px; 
-      }
-    }
+    padding: 8px; /* Reduce padding on mobile */
   }
 `;
 
@@ -107,8 +105,6 @@ const ScholarshipList = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const substringLength = isMobile ? 80 : 100;
-
   const handleClick = (id) => {
     navigate(`/scholarship-detail/${id}`);
   };
@@ -119,12 +115,16 @@ const ScholarshipList = () => {
       <GridContainer>
         {scholarships.map((scholarship) => (
           <ScholarshipCard key={scholarship.id} onClick={() => handleClick(scholarship.id)}>
-            {scholarship.logoPlaceholder && (
+            {scholarship.logoPlaceholder ? (
               <img src={scholarship.logoPlaceholder} alt={`${scholarship.shortName} Logo`} />
+            ) : (
+              <img src="/assets/company_logos/default_logo.png" alt="Default Logo" /> /* Placeholder image */
             )}
             <div className="content">
               <h3>{scholarship.shortName}</h3>
-              <p>{scholarship.description.substring(0, substringLength)}...</p>
+              {!isMobile && (
+                <p>{scholarship.description.substring(0, 100)}...</p>
+              )}
             </div>
           </ScholarshipCard>
         ))}

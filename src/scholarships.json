@@ -136,6 +136,9 @@
         "contributorName": "Yeoh Sheng Ze",
         "contributorImage": "/assets/portrait/Sheng_Ze.jpg",
         "intendedCourse": "Mathematics / Statistics (Data Science)",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "i_am_not_shengze",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
@@ -170,6 +173,9 @@
         "contributorName": "Sarvintirran Parthiban",
         "contributorImage": "/assets/portrait/Sarvin.jpg",
         "intendedCourse": "Electrical Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "sarvin_tirran",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
@@ -205,6 +211,9 @@
         "contributorName": "Soo Jian Xing",
         "contributorImage": "/assets/portrait/Soo.JPG",
         "intendedCourse": "Accounting and Finance",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "same_jx",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
@@ -287,39 +296,46 @@
     "applicationProcess": [
       {
         "stage": "Stage 1: Online Application",
-        "details": "Prepare your resume ahead of time. Ensure your CV is easy to read, well-formatted, and professional. Highlight your best achievements with specific details (e.g., 3rd place out of how many participants, level of participation, organiser, etc.). Diversify your extracurricular activities (ECAs) to show you are an all-rounder (e.g., sports, languages, volunteering).",
+        "details": "Prepare your resume ahead of time. Personal tips to prepare a resume:",
         "tips": [
-          "Format your CV with consistent line spacing, font type, and size to make it easy on the eyes.",
-          "Focus on quality over quantity when listing achievements. Provide meaningful details.",
-          "Avoid saturating your CV with one type of activity. Display diversity in ECAs."
+          "i) Easy on the eyes: Format your CV in a presentable manner such that it is easily read by a 3rd party (check line spacing, font type and size consistency). This indicates a degree of professionalism.",
+          "ii) Quality > quantity - list out your best achievements and try to detail the experience (e.g. 3rd place out of how many participants, level of participation, organiser etc).",
+          "iii) Try to display diversity in your ECAs - If possible, try not to saturate your CV with just 1 type of activity. Diversify your portfolio to indicate that you can be an all-rounder to some extent. (e.g. sports, languages, volunteering, etc)"
         ]
       },
       {
         "stage": "Stage 2: Virtual Job Tryout and On-Demand Video Interview (ODVI)",
-        "details": "This stage includes a personality test, competency test, and video interview. It must be completed within 7 days of receiving the invitation. The personality test evaluates consistency and honesty in your answers. The competency test assesses your ability to understand and apply instructions in work situations. The video interview allows a maximum of 2 minutes to answer each question.",
+        "details": "This stage must be completed within 7 days of receiving the invitation. Virtual Job Tryout consists of a personality test and competency test. Both are untimed.",
         "tips": [
-          "For the personality test, be consistent in your answers as questions are often rephrased. Don’t lie about unrealistic things like 'I have never told a lie.'",
-          "Read the competency test instructions meticulously to ensure you understand them.",
-          "Draft your answers for the video interview and rerecord until satisfied. Ensure your audio is clear and crisp."
+          "i) Personality Test",
+          "The answers are not black-and-white right or wrong. Most answers are morally grey so this boils down to your innate personality.",
+          "The test will rephrase the exact same questions in a multitude of ways, they are trying to see whether you are consistent in your answers. So try to be consistent in your answers.",
+          "Don’t lie in questions like “I have never told a lie” or “I have never broken a promise” because who hasn’t?",
+          "Display the best version of yourself, however it is perfectly okay to indicate flaws in a personality test.",
+          "ii) Competency Test",
+          "This test is just assessing how well you understand and apply instructions in a variety of work situations. This should be fairly doable as long as you meticulously read the instructions",
+          "iii) Video Interview Maximum duration to answer each question is 2 minutes.",
+          "Tips: Draft your answer and rerecord till you are fully satisfied with the video, Fix your audio. Try to make sure your audio device produces a clear and crisp voice, as opposed to a muffled voice."
         ]
       },
       {
         "stage": "Stage 3: Phone Call",
         "details": "You may receive a call from Shell if you advance to this stage. Shell does not notify candidates in advance, so be prepared for an unexpected call. The officer will reference your CV and ask about your achievements and experiences.",
         "tips": [
-          "Be conversational and treat the call like a normal conversation.",
-          "Prepare bullet points for generic questions but avoid memorizing word-for-word.",
-          "Familiarize yourself with the details in your CV to respond confidently."
+          "Be conversational! Mine was quite chill because I treated it like a normal conversation. However, prepare draft answers for generic questions. (p.s. don’t memorise interview answers word-by-word, just bullet points!)",
+          "Remember what you wrote in your CV! The officer will reference your achievements/participations in your CV and question you about these experiences."
         ]
       },
       {
         "stage": "Stage 4: Competency-Based Interview",
-        "details": "This is a virtual interview lasting approximately 1 hour with the Scholarship Board of Trustees. Shell evaluates candidates using the CAR criteria (Capacity, Achievement, Relationships). Use the STAR method (Situation, Task, Action, Result) to explain your experiences and what you learned.",
+        "details": "Congratulations for making it this far! Shell’s application process is extremely competitive, so be proud of yourself for being shortlisted for the final interview. This is a virtual interview lasting approximately 1 hour with the Scholarship Board of Trustees.",
         "tips": [
-          "Be conversational and genuine. Engage with the interviewers by asking about their careers at Shell.",
-          "Take a few seconds to think before answering instead of blurting out responses.",
-          "Make eye contact, use hand gestures, and avoid monotony to keep the interviewers engaged.",
-          "Prepare questions about Shell, such as careers or sponsorship programmes, to show your interest."
+          "Use the STAR method to talk about your experiences, and add on what you learnt from that experience as well. Look up CAR or Capacity, Achievement, and Relationships on their website which is the criteria Shell uses to evaluate candidates. https://www.shell.com/careers/candidate-resource-centre/four-ways-to-stand-out-as-a-candidate.html",
+          "Again, be conversational! Personally, I think my interview went well because my answers sounded genuine. By the end of the interview, I was just chatting with them about their careers at Shell and I was thoroughly interested in the conversation",
+          "It is okay to take a few seconds to consider the question and formulate your response, instead of blurting it out instantaneously.",
+          "Try not to be monotonous in your tone, make eye contact with the interviewers, make hand gestures from time to time.",
+          "Online interviews can be tiring for the interviewers, so make your interview memorable for them!",
+          "Prepare questions for them regarding Shell. They might ask you whether you have any questions for them at the end. You an ask about careers at Shell, the sponsorship programme, anything to indicate that you have interest in working at Shell. Okay done yapping😌"
         ]
       }
     ],
@@ -329,8 +345,14 @@
         "contributorName": "Liyana Mohammed Rafidz",
         "contributorImage": "/assets/portrait/Liyana.jpg",
         "intendedCourse": "Data Science",
-        "motivationalQuote": "Believe in yourself!",
-        "resumeImage": "/assets/resumes/Liyana_Resume.jpg",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "liyana_rafidz",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImages": [
+          "/assets/resume/liyana_resume1.jpg",
+          "/assets/resume/liyana_resume2.jpg"
+        ],
         "stories": [
           {
             "title": "Mock-up Interview Questions and Answers",
@@ -347,20 +369,20 @@
             ]
           },
           {
-            "title": "Advice and Tips for Juniors",
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
             "content": [
-              "1. Keep track of your participations/achievements as you make your way through high school (with relevant certificates as proof) as it will be useful in crafting your resume. If you don't have a resume ready, try to get working on it early.",
-              "2. Thoroughly research the sponsorship bodies. Personally, reading the 2023 annual reports from Shell really helped me get a rough overview of Shell's global operations, their goals, and values.",
-              "3. Create a scholarship spreadsheet to track deadlines, login information, etc. It can get hectic during the application season!",
-              "4. Try to do mock interviews with family members/friends. Practicing the content of your answers and the WAY you phrase your answers is incredibly important.",
-              "5. Don't feel discouraged from applying to scholarships if you feel your academics or ECAs are not 'exemplary' enough. Scholarships care a lot about personal character and vision from an individual, as well as the knowledge/values you gain from your experiences.",
-              "6. In group interviews, be a leader when there is none, and spice the discussion up if there are many! You can take the opportunity to step up as a leader if no one seems to be leading the group, or contribute meaningfully if your group members are all very active. Don't fight other candidates for the spot of the 'leader'. Scholarships value people who can be good team leaders AND team players."
+              "1. Keep track of your participation/achievements as you make your way through high school (with relevant certificates as proof) as it will be useful in crafting your resume. If you don't have a resume ready, try to get working on it early. ",
+              "2. Thoroughly research the sponsorship bodies. Personally, reading the 2023 annual reports from Shell really helped me get a rough overview of Shell's global operations, their goals and values.",
+              "3. Create a scholarship spreadsheet to track deadlines, login information etc. It can get hectic during the application season!"
             ]
           },
           {
-            "title": "Sample Resume",
-            "content": [],
-            "resumeImage": "/assets/image1.jpg"
+            "title": "Advice and Tips for Juniors",
+            "content": [
+              "1. Try to do mock interviews with family members/friends. Practicing the content of your answers and the WAY you phrase your answers is incredibly important. ",
+              "2. Don't feel discouraged from applying to scholarships if you feel your academics or ECAs are not 'exemplary' enough. Scholarships care a lot about personal character and vision from an individual, as well as the knowledge/values you gain from your experiences.",
+              "3. In group interviews, be a leader when there is none, and spice the discussion up if there are many! You can take the opportunity to step up as a leader if no one seems to be leading the group, or contribute meaningfully if your group members are all very active. Don't fight other candidates for the spot of the 'leader'. Scholarships value people who can be good team leaders AND team players."
+            ]
           }
         ]
       },
@@ -368,6 +390,9 @@
         "contributorName": "Muhammad Danish Deniel",
         "contributorImage": "/assets/portrait/Danish_Deniel.jpeg",
         "intendedCourse": "Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "danishhdeniel",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
@@ -519,36 +544,35 @@
     "applicationProcess": [
       {
         "stage": "Stage 1: Application Stage",
-        "details": "Candidates are filtered based on their SPM results, as this program has the highest entry requirement. Only around 300 candidates (or fewer) are eligible to access the application system. After completing the application form, candidates need to complete a psychometric test and wait for the email invitation to the next stage. Essay writing is not required for the application. However, candidates must ensure their passport-size photo is compressed to the acceptable size range as specified in the system guidelines.",
+        "details": "At the first stage, many people will be filtered through their SPM results as this program has the highest entry requirement for the results. Hence, there might be approximately 300 candidates (less than 300) that are eligible to access the application system.",
         "tips": [
-          "Ensure you meet the SPM result requirements before applying.",
-          "Prepare all necessary documents, including academic transcripts and identification, in advance.",
-          "Compress your passport-size photo to the system's required size range to avoid upload errors.",
-          "Submit your application well before the deadline to avoid last-minute issues."
+          "After completing the application form, candidates need to complete a psychometric test and wait for the e-mail and be prepared for SAC. You do not need to write any essays for your application submission. But you need to compress your passport-size photo as small as possible! (The system can only accept a range of size)",
+          "Get prepared for the interview, you can search through online (Youtube etc.) to look for some general questions that might be asked by the interviewer. Please be prepared as soon as possible.",
+          "After receiving the email, you will know the date of interview as well as the location."
         ]
       },
       {
-        "stage": "Stage 2: Personality and Cognitive Assessment",
-        "details": "This stage assesses candidates' personality traits and cognitive abilities, focusing on problem-solving and critical-thinking skills. Conducted through an online platform, this assessment allows candidates to showcase their ability to think critically and make quick decisions.",
+        "stage": "Interview Process (Stage 1): Latihan Dalam Kumpulan (LDK)",
+        "details": "The group activity is subjected to the current years' arrangements, and is not guaranteed to be the same every year.",
         "tips": [
-          "Choose a quiet, distraction-free environment to complete the assessment.",
-          "Ensure your internet connection is stable and your device is fully charged.",
-          "Read all questions carefully and take your time to provide thoughtful answers.",
-          "Stay calm and composed to demonstrate your problem-solving capabilities effectively."
+          "In 2023, the group activity resembles a debate format where participants discuss a given topic. The language of communication is primarily Malay, and candidates are assigned either to support or oppose a statement.",
+          "For example, one topic could be, “Advanced technology is harmful to humanity.” Each candidate must present at least two arguments, and the presentation order is randomly determined. Candidates engage in a 10-minute discussion followed by a 15-minute presentation session. Being the last to present can be both advantageous (more preparation time) and disadvantageous (less time to present ideas). During the LDK, assessors actively engage by interrupting to ask questions, fostering a dynamic environment. They maintain a friendly demeanor, aiming to create a comfortable atmosphere for candidates.",
+          "In 2024, the LDK was structured differently for different groups, which included group presentations and discussions. This approach aimed to assess candidates' ability to articulate their ideas clearly and collaborate effectively with peers. The process:",
+          "1. Registration and short briefing.",
+          "2. You will be given a paper bag to keep your phone. Remember to keep your phone in silent mode.",
+          "3. You will be given a number and this number determines your group (4-5 members) and your group members.",
+          "4. You will enter a room with your group members, sit in a row and face 2 interviewers.",
+          "5. The interviewers will ask you questions and all the questions will be answered by every single member in the group. (The order is random)",
+          "6. Please answer the questions using the languages requested by the interviewers."
         ]
       },
       {
-        "stage": "Stage 3: Student Assessment Centre (SAC) - Interview Process",
-        "details": "The final stage involves a face-to-face assessment conducted at the SAC. It begins with registration and a short briefing. Candidates are grouped into teams of 4-5 members and participate in group activities, followed by an individual and group interview. Activities include Latihan Dalam Kumpulan (LDK), where candidates engage in either a debate or a group discussion. The format varies yearly but aims to evaluate communication skills, teamwork, and critical thinking. Candidates also answer individual questions posed by interviewers and participate in group activities under the observation of assessors. The process concludes with a follow-up interview where candidates answer questions in both Malay and English.",
+        "stage": "Interview Process (Stage 2): Follow-Up Interview",
+        "details": "After the LDK, candidates proceed to an interview session where they answer questions in both Malay and English, depending on the language used by the assessors.",
         "tips": [
-          "Arrive early (typically by 8 AM) to ensure you are ready for registration and the briefing.",
-          "Dress professionally and ensure your phone is in silent mode when stored in the provided paper bag.",
-          "Prepare for group activities by practicing debates and discussions to articulate your ideas clearly and collaborate effectively.",
-          "In the LDK, present at least two strong arguments, whether supporting or opposing the given statement.",
-          "Engage actively during group discussions and debates, balancing assertiveness with teamwork.",
-          "Practice switching between Malay and English to answer questions as requested by the assessors.",
-          "Remain confident and calm during the follow-up interview, attempting every question even if unsure.",
-          "Take advantage of the preparation time to organize your ideas before presenting."
+          "Assessors encourage candidates to attempt answers, even if they are unsure, promoting a learning environment.",
+          "The JPA interview is an excellent opportunity for candidates to demonstrate their skills and learn about the responsibilities that come with higher education and civic engagement.",
+          "Engaging in such processes can be beneficial for personal and professional development, making it highly recommended for SPM graduates."
         ]
       }
     ],
@@ -558,6 +582,9 @@
         "contributorName": "Teoh Wen Xuen",
         "contributorImage": "/assets/portrait/wen_xuan.jpg",
         "intendedCourse": "Biotechnology (Natural Sciences)",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "xuenxuen_0908",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
@@ -586,6 +613,9 @@
         "contributorName": "Verness Chia Xin Thong",
         "contributorImage": "/assets/portrait/Verness.jpeg",
         "intendedCourse": "Data Science",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "vernessc57",
+        "currentStudies": "A-levels",
         "motivationalQuote": null,
         "resumeImage": "/assets/resumes/Verness_Resume.jpg",
         "stories": [
@@ -611,6 +641,136 @@
               "4. Be yourself and do not memorize answers; focus on authentic communication.",
               "5. During discussions, show leadership while allowing others to contribute.",
               "6. Ensure proper rest and eat well before your interview."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jpa-lspm",
+    "name": "JPA-LSPM (Program Khas Lepasan Sijil Pelajaran Malaysia Dalam Negara)",
+    "shortName": "PPN - LSPM",
+    "description": "JPA which stands for 'Jabatan Perkhidmatan Awam' is Malaysia's government department that offers three types of scholarships for students who have taken the SPM examination. To be more accurate, this scholarship is actually a convertible loan where the recipients can enjoy 100% fee waiver by working under civil service for a certain period after graduation. 'Program Khas Lepasan Sijil Pelajaran Malaysia Dalam Negara' (LSPM) offers students to pursue their pre-university and undergraduate studies only in Malaysia, unless the student is joining student exchange program that does not require extra fees from JPA. LSPM offers 200 students to pursue pre-university and degree studies in local universities as listed by JPA, including public universities and private universities. Among these three JPA programmes, only LSPM allows students to study medicine, pharmacy and dentistry, hence it gives more choices to students on choosing the degree courses.",
+    "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian under 19 years old in the year of taking SPM examination",
+        "first time sitting for SPM",
+        "in good health condition",
+        "parents are not blacklisted by JPA or not subjected to legal actions by JPA"
+      ],
+      "academicQualifications": [
+        {
+          "field": "Engineering/Science and Technology/Non-Engineering/Non-Science and Technology",
+          "criteria": [
+            "Applicants must achieve at least 9 A+ grades in any subjects"
+          ]
+        }
+      ]
+    },
+    "requiredDocuments": [
+      "Parents' or Guardian's salary slips and their Tax Identification Numbers (TIN)"
+    ],
+    "coursesOffered": {
+      "(LSPM offers all courses in certain universities except education, flight training, nursing, paramedic science, professional programmes and twinning programmes.)": []
+    },
+    "countriesOffered": "For the JPA-Program Penajaan Nasional (PPN), only international academic pathways are supported, meaning recipients are sponsored to pursue their undergraduate studies at top global universities, typically among the top 20 institutions in the Quacquarelli Symonds (QS) World University Rankings. In contrast, for those seeking local educational opportunities, the JPA-Lepasan Sijil Pelajaran Malaysia (LSPM) program offers sponsorships for studies within Malaysia, ensuring students have a pathway to higher education domestically. This distinction helps ensure that top-performing students are provided with both local and global opportunities based on their qualifications and preferences.",
+    "bondingDetails": {
+      "duration": "For LSPM Programme, 1 year of degree studies in public universities indicates 1 year or bonding, while 1 year of degree studies in private universities indicates 1.5 years of bonding.",
+      "workLocation": "If the recipient works under civil service for the whole period of bonding, there will be a 100% fee waiver. 25% of loan repayment is required if the recipient works under a government-linked corporation. 50% of loan repayment is required if the recipient works under a private company in Malaysia. If the recipient works overseas, does not have a job or pursues studying for a master, there will be 100% of loan repayment required.",
+      "repaymentConditions": [
+        "Full scholarship (0% repayment) if the student serves in the Public Service after graduation.",
+        "25% repayment if the student is employed by a Government-Linked Company (GLC) after graduation.",
+        "50% repayment if the student is employed by a private sector company in Malaysia.",
+        "100% repayment if the student is employed outside Malaysia."
+      ]
+    },
+    "applicationTimeline": {
+      "startDate": "Immediately after announcement of SPM Results",
+      "endDate": "last for less than two weeks",
+      "note": "Application opens right after the announcement of SPM results and typically lasts for about 1 week."
+    },
+    "numberOfRecipients": {
+      "PPN": 20,
+      "JKPJ": 200,
+      "LSPM": 200
+    },
+    "applicationLink": "https://bmipenajaan.jpa.gov.my/ms/program-penajaan/latihan-sebelum-perkhidmatan/program-untuk-pelajar",
+    "resultNotification": [
+      "The result will be released on a certain date, you may check the result on the website.",
+      "The students can then submit an appeal letter online if the students do not successfully enrol as a recipient."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application Stage",
+        "details": "At the first stage, many people will be filtered through their SPM results as this program has the highest entry requirement for the results. Hence, there might be approximately 300 candidates (less than 300) that are eligible to access the application system.",
+        "tips": [
+          "After completing the application form, candidates need to complete a psychometric test and wait for the e-mail and be prepared for SAC. You do not need to write any essays for your application submission. But you need to compress your passport-size photo as small as possible! (The system can only accept a range of size)",
+          "Get prepared for the interview, you can search through online (Youtube etc.) to look for some general questions that might be asked by the interviewer. Please be prepared as soon as possible.",
+          "After receiving the email, you will know the date of interview as well as the location."
+        ]
+      },
+      {
+        "stage": "Interview Process (Stage 1): Latihan Dalam Kumpulan (LDK)",
+        "details": "The group activity is subjected to the current years' arrangements, and is not guaranteed to be the same every year.",
+        "tips": [
+          "In 2023, the group activity resembles a debate format where participants discuss a given topic. The language of communication is primarily Malay, and candidates are assigned either to support or oppose a statement.",
+          "For example, one topic could be, “Advanced technology is harmful to humanity.” Each candidate must present at least two arguments, and the presentation order is randomly determined. Candidates engage in a 10-minute discussion followed by a 15-minute presentation session. Being the last to present can be both advantageous (more preparation time) and disadvantageous (less time to present ideas). During the LDK, assessors actively engage by interrupting to ask questions, fostering a dynamic environment. They maintain a friendly demeanor, aiming to create a comfortable atmosphere for candidates.",
+          "In 2024, the LDK was structured differently for different groups, which included group presentations and discussions. This approach aimed to assess candidates' ability to articulate their ideas clearly and collaborate effectively with peers. The process:",
+          "1. Registration and short briefing.",
+          "2. You will be given a paper bag to keep your phone. Remember to keep your phone in silent mode.",
+          "3. You will be given a number and this number determines your group (4-5 members) and your group members.",
+          "4. You will enter a room with your group members, sit in a row and face 2 interviewers.",
+          "5. The interviewers will ask you questions and all the questions will be answered by every single member in the group. (The order is random)",
+          "6. Please answer the questions using the languages requested by the interviewers."
+        ]
+      },
+      {
+        "stage": "Interview Process (Stage 2): Follow-Up Interview",
+        "details": "After the LDK, candidates proceed to an interview session where they answer questions in both Malay and English, depending on the language used by the assessors.",
+        "tips": [
+          "Assessors encourage candidates to attempt answers, even if they are unsure, promoting a learning environment.",
+          "The JPA interview is an excellent opportunity for candidates to demonstrate their skills and learn about the responsibilities that come with higher education and civic engagement.",
+          "Engaging in such processes can be beneficial for personal and professional development, making it highly recommended for SPM graduates."
+        ]
+      }
+    ],
+    "contactEmail": "penawaranlsp@jpa.gov.my",
+    "scholars": [
+      {
+        "contributorName": "Jolin Sung Jie Lin",
+        "contributorImage": "/assets/portrait/jolinsung.jpg",
+        "intendedCourse": "Pharmacy",
+        "currentInstitution": "Sunway College",
+        "contactInformation": "sungjolin",
+        "currentStudies": "Monash University Foundation Year (MUFY)",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Answers",
+            "content": [
+              "Q: What is your hobby? ",
+              "A: I have been learning dancing ballet for more than 10 years. I actually had thought of becoming a professional dancer in future, so I consistently practise dancing at least thrice in a week. However, the biggest challenge I faced was about the height. Sometimes practice does not make perfect, I am definitely not eligible as a professional dancer, hence I started to study harder to achieve my another dream. ",
+              "Q: 2. What is your biggest weakness? ",
+              "A: I am easily convinced by others and do not know how to say 'no'. I still remember last month I went to a saloon for a haircut. They told me that if I sign up for a membership, I can enjoy a 25% discount of the total bill when I reload RM 400 into the member card. However, I regretted right after I walked out from the shop, since I realised that I would not go to the store so frequently to spend all the balances in my member account. Luckily, I have learned that I must change my way of thinking and I am trying my best to think before acting. I believe I can not only be someone who is humble to listen to others' opinions but also has rational thinking to analyse the scenario and have my own stand."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Confident, respectful, ability to communicate in Malay and English."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "i) Ability to speak Malay and English - Can speak both languages fluently as you may be asked to answer the question specifically in English or Malay",
+              "ii) Be respectful and humble - Not only show respect to the officers, but also respect every person in the room including your group members. Be open-minded to receive opinions that are different from yours, try to understand and analyse them.",
+              "iii) Patriotism - Show love to our country and willingness to serve the society",
+              "iv) Know more about yourself - Get to know your personality, your strengths and weaknesses. - Can ask your family and friends for their impressions on you so you can see yourself from different perspectives - Identify the biggest challenge you have and try to solve it",
+              "v) Set a goal - Have basic knowledge about the course you want to take in future - Aim for it, fight for it - Always have a plan B"
             ]
           }
         ]
@@ -735,7 +895,10 @@
         "contributorName": "Tan Wen Bin",
         "contributorImage": "/assets/portrait/Wen_Bin.jpeg",
         "intendedCourse": "Computer Science",
-        "motivationalQuote": "Believe in yourself and stay prepared.",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "tanwenbin0709",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
           {
@@ -811,43 +974,46 @@
       "Via email",
       "To confirm your acceptance, you must reply to the email by filling in the provided forms."
     ],
-      "applicationProcess": [
-        {
-          "stage": "Stage 1: Cognitive Ability Test (CAT)",
-          "details": "This is essentially an English and Mathematics test. There is also an extra rubric where you are required to determine patterns of given photos. There is a limited amount of time, so candidates are expected to have a high level of comprehension in a short amount of time.",
-          "tips": [
-            "Practice solving pattern-based problems to improve your visual reasoning skills.",
-            "Enhance your English comprehension and mathematical problem-solving under timed conditions.",
-            "Stay calm and focus on accuracy while managing your time effectively."
-          ]
-        },
-        {
-          "stage": "Stage 2: Video Submission + Psychometric Assessment (Factors+)",
-          "details": "Candidates who are eligible will be notified early on. In this stage, there will be a video submission. For my cohort, we were required to talk about a book or movie (Describe it, why is it significant) for not more than 2 minutes. We were also required to answer some psychometric questions that display our personality overall.",
-          "tips": [
-            "Choose a book or movie that you are genuinely passionate about and can explain with clarity.",
-            "Practice speaking clearly and concisely to fit within the 2-minute limit.",
-            "Be authentic and honest in the psychometric test to reflect your true personality."
-          ]
-        },
-        {
-          "stage": "Final Stage: 2-Day, 1-Night Stay in Lanai Kijang",
-          "details": "Candidates who are eligible will be notified early on. In this stage, candidates are required to stay in Lanai Kijang, a resort owned by Bank Negara Malaysia in Kuala Lumpur. Those who are unable will be participating in an online interview. Groups will be divided in Lanai Kijang, and you will get to have an ice-breaking session. The real game is day 2, because that's when the assessments come. There will be 3 panels assigned to each group, and they will observe you as you and your groupmates work together. There were two assessments, the first was an activity where we presented our intended courses in a creative way. The second one was a case study. For my group we had to discuss the application of AI in Tvet sectors(something like that). After lunch, there will be an individual interview, this is the finale. You will be alone with 3 panels in a room. It will take up to 30 minutes, and that is where questions of personality and ability will be given.",
-          "tips": [
-            "Engage actively in group activities and showcase your teamwork and leadership skills.",
-            "Be creative and thorough when presenting your intended courses.",
-            "Research topics like AI in various sectors to prepare for potential case studies.",
-            "Stay composed and confident during the individual interview and answer questions thoughtfully."
-          ]
-        }
-      ],    
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Cognitive Ability Test (CAT)",
+        "details": "This is essentially an English and Mathematics test. There is also an extra rubric where you are required to determine patterns of given photos. There is a limited amount of time, so candidates are expected to have a high level of comprehension in a short amount of time.",
+        "tips": [
+          "Practice solving pattern-based problems to improve your visual reasoning skills.",
+          "Enhance your English comprehension and mathematical problem-solving under timed conditions.",
+          "Stay calm and focus on accuracy while managing your time effectively."
+        ]
+      },
+      {
+        "stage": "Stage 2: Video Submission + Psychometric Assessment (Factors+)",
+        "details": "Candidates who are eligible will be notified early on. In this stage, there will be a video submission. For my cohort, we were required to talk about a book or movie (Describe it, why is it significant) for not more than 2 minutes. We were also required to answer some psychometric questions that display our personality overall.",
+        "tips": [
+          "Choose a book or movie that you are genuinely passionate about and can explain with clarity.",
+          "Practice speaking clearly and concisely to fit within the 2-minute limit.",
+          "Be authentic and honest in the psychometric test to reflect your true personality."
+        ]
+      },
+      {
+        "stage": "Final Stage: 2-Day, 1-Night Stay in Lanai Kijang",
+        "details": "Candidates who are eligible will be notified early on. In this stage, candidates are required to stay in Lanai Kijang, a resort owned by Bank Negara Malaysia in Kuala Lumpur. Those who are unable will be participating in an online interview. Groups will be divided in Lanai Kijang, and you will get to have an ice-breaking session. The real game is day 2, because that's when the assessments come. There will be 3 panels assigned to each group, and they will observe you as you and your groupmates work together. There were two assessments, the first was an activity where we presented our intended courses in a creative way. The second one was a case study. For my group we had to discuss the application of AI in Tvet sectors(something like that). After lunch, there will be an individual interview, this is the finale. You will be alone with 3 panels in a room. It will take up to 30 minutes, and that is where questions of personality and ability will be given.",
+        "tips": [
+          "Engage actively in group activities and showcase your teamwork and leadership skills.",
+          "Be creative and thorough when presenting your intended courses.",
+          "Research topics like AI in various sectors to prepare for potential case studies.",
+          "Stay composed and confident during the individual interview and answer questions thoughtfully."
+        ]
+      }
+    ],
     "contactEmail": "profiling@bnm.gov.my",
     "scholars": [
       {
         "contributorName": "Trinity Seow Kit Ye",
         "contributorImage": "/assets/portrait/Trinity.jpeg",
         "intendedCourse": "Economics",
-        "motivationalQuote": "Confidence and Authenticity",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "anc.hovies",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -888,7 +1054,10 @@
         "contributorName": "Liaw Chong Ye",
         "contributorImage": "/assets/portrait/Liaw.jpg",
         "intendedCourse": "Economics",
-        "motivationalQuote": "The ability to work as a team and also be involved during the interview.",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "layawcina",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -919,7 +1088,10 @@
         "contributorName": "Joachim Low Cher Yang",
         "contributorImage": "/assets/portrait/Joachim.jpg",
         "intendedCourse": "Accounting and Finance",
-        "motivationalQuote": "Be yourself, participate and involve yourself in the group activity, and be honest with your thoughts.",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "joaloww",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -947,6 +1119,591 @@
               "- You may also add what lessons you learned from your previous mistakes in life. Don't be afraid to share them, as they demonstrate personal growth and maturity.",
               "3. Be brave to share your thoughts to allow the interviewers to better understand you.",
               "- Ensure your thoughts are mature enough to be expressed. Avoid sharing immature thoughts, such as those related to violence, bias, or selfishness."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sarawak-energy",
+    "name": "Sarawak Energy Scholarship Programme (Global)",
+    "shortName": "Sarawak Energy - Global",
+    "description": "The Sarawak Energy Scholarship Programme provides outstanding Sarawakians great opportunities to pursue Pre-U and Undergraduate studies in both local and global universities, diploma in UNITEN, and also a Post-graduate programme. Scholars are also given the opportunity to intern under SEB for 10 weeks during their 3rd year of degree, exposing them to the corporate world prior to graduation. After graduation, scholars will be bonded based on programme specification under SEB, one of the best employers in Sarawak. Restricting to only Sarawakians, Sarawak Energy aims to attract top Sarawakian talents to help realise their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy.",
+    "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Not a recipient of any other scholarship or financial aid.",
+        "Strong leadership qualities, excellent team player, excels in both extra-curricular activities and sports.",
+        "No family member is currently a Sarawak Energy Scholarship recipient."
+      ],
+      "academicQualifications": [
+        {
+          "field": "Pre-U (Foundation or A-Levels)",
+          "criteria": [
+            "21 years old or below at the time of application",
+            "Minimum 8As in Sijil Pelajaran Malaysia (SPM) (Trial SPM results accepted for students taking SPM in 2024)"
+          ]
+        },
+        {
+          "field": "Undergraduate Programme",
+          "criteria": [
+            "24 years old or below at the time of application",
+            "Minimum 8As in SPM or 3.30 CGPA in Sijil Tinggi Persekolahan Malaysia (STPM)/Matriculation/Foundation/Diploma"
+          ]
+        }
+      ],
+      "additionalCriteria": [
+        "Participate in diverse types of extracurricular activities"
+      ]
+    },
+    "requiredDocuments": [
+      "SPM (actual / trials) / STPM / Foundation / A-levels Result",
+      "Co-curricular activities and Competition Certificates",
+      "Preferred College Tuition Fee Structure",
+      "Copy of own IC and Parent's/Guardian's IC",
+      "Copy of Parents' or Guardians' salary slips or EA form"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Technology & Digital",
+        "Computer Science",
+        "Creative Multimedia",
+        "Management",
+        "Engineering"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Educational Pharmacy",
+        "Nursing",
+        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
+      ]
+    },
+    "countriesOffered": [
+      "Both. Usually the United States or United Kingdom but YTM also sends their students to France, Germany, Korea, Japan, or Australia."
+    ],
+    "bondingDetails": {
+      "duration": "Serve for 5 years for local students and 7 years for overseas students if hired by TM Group",
+      "workLocation": "Work under SEB (mainly in Sarawak)"
+    },
+    "applicationTimeline": {
+      "startDate": "May 27, 2024",
+      "endDate": "June 6, 2024",
+      "note": "This is one of the earliest Scholarships that you can apply to after you finish your SPM, as it accepts your Trials result as well. It opens way before SPM result, roughly 1 month after SPM ends."
+    },
+    "numberOfRecipients": {
+      "total": 205,
+      "global": 5,
+      "local": 200
+    },
+    "applicationLink": "https://www.sarawakenergy.com/careers/scholarship/sarawak-energy-scholarship-programme",
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Shortlisted applicants will receive an invitation email to the interview. Both physical and online interviews are available.",
+      "After the interview, candidates will receive another email notifying the interview outcomes, whether it's rejection or acceptance.",
+      "If you receive a phone call from an officer asking for confirmation in your choice of university, especially if confirming that you're applying overseas, you're in their pool of overseas candidates."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Interview Session 1: Case Study",
+        "details": "You'll be grouped together randomly with other candidates (Pre-U & Undergrads are interviewed at the same time, so don't be surprised if you have degree students as your groupmate), and a case will be given. You'll be given 20 minutes to study the case, then come up with a Stakeholder Engagement Plan with your team in the form of a Presentation. Be a team player, analyse the situation critically and facilitate discussions among your teammates. Refrain from cutting off your teammate, and also yapping. Keep the discussions concise and constructive as time is a huge factor as well. Also, do utilise all the tools given especially maps.",
+        "tips": [
+          "Be a team player and facilitate constructive discussions.",
+          "Utilise all the tools provided, especially maps.",
+          "Keep your discussions concise and focused on the task."
+        ]
+      },
+      {
+        "stage": "Interview Session 2: Individual Interview",
+        "details": "You'll be interviewed by 2 officers. Be prepared to answer any personal and technical questions. Remember to be honest as they can tell if you're lying, it will not look good! Research properly any information regarding the company or your related course to boost your idea and confidence.",
+        "tips": [
+          "Be honest and genuine in your responses.",
+          "Research the company and your related course thoroughly.",
+          "Stay confident and composed during the interview."
+        ]
+      }
+    ],
+    "contactEmail": "scholarship@sarawakenergy.com",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Kendrick Lim Ken Lik",
+        "contributorImage": "/assets/portrait/kendrick_white.jpg",
+        "intendedCourse": "Electrical & Electronics Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "kendrickllim",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Introduce yourself",
+              "- List down roughly 3 main points you want them to know about yourself.",
+              "- My 3 points: Why am I interested in EE, My high school KK achievements, Why do I wanna pursue overseas studies under SEB.",
+              "#Your Key Selling Point",
+              "",
+              "2. Generally if your response was interesting to them, they'll prompt you a few follow-up questions.",
+              "I got asked:",
+              "- What is your take on mental health? (Cuz I talked about how I balance between studies and KK while making sure I still get to play around to keep a healthy mental state)",
+              "- If you were the new Minister of Health, what would you do differently from the current Minister of Health? (Cuz I talked about my experiences as a First Aider under St John Ambulance)",
+              "#Gauging your honesty and ability to handle sudden situations",
+              "",
+              "3. Describe a time when you solved a conflict",
+              "- Be genuine and honest here, they can tell if you're making things up",
+              "#Gauging your maturity and teamwork skills",
+              "",
+              "4. Imagine you're leading a team under SEB to build a generator in a rural area, you and your team are confronted by a local tribe keeping your team's advancements, what would you do and why?",
+              "- Try to actually imagine yourself in that situation. Remember, communication is always the key, so revolve your answer around effective communication between 2 parties",
+              "#Gauging your leadership skills and critical thinking skills",
+              "",
+              "5. If an elephant suddenly appears in your backyard, what would you do?",
+              "- There's no right or wrong answer to this question. Be as realistic as possible in your answers",
+              "#Gauging your ability to stay rational under sudden situations",
+              "",
+              "6. On a scale of 1 to 10, 1 being the lowest, 10 being the highest, how much would you rate yourself and why?",
+              "- Try to be humble but do not undermine yourself. They are looking for an honest and reflective individual who's not afraid of being transparent with others about their own shortcomings, and at the same time conscious about their own strengths."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Your own understanding of the company itself. Understand that the scholarship provider is sponsoring you a few millions for your study, not theirs, and you must prove to them that you're one of if not the best candidates out there. Research anything about the company which sparks your interest, and try to link your personal goal with the company's goal or vision. This'll show to them that you're in fact very serious and committed to not only the scholarship application but generally towards the company itself, trust me they'll mark a big green tick on you!"
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "i) Plan ahead and apply as early as possible",
+              "- Please do not procrastinate, try to complete as much application as possible at one time to prevent any piled up work",
+              "ii) Scholarship is not everything!",
+              "- It is only meant as an aid to your education, not your education itself. It is not the end of the world if you didn't land the scholarship, there's a lot of factors playing into the decisions so do not be too disappointed. You can try again maybe next year!"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesp-local",
+    "name": "Sarawak Energy Scholarship Programme (Local)",
+    "shortName": "Sarawak Energy - Local",
+    "description": "The Sarawak Energy Scholarship Programme aims to attract top Sarawakian talents to help them realize their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy. Aligned with this, the Sarawak Energy Programme is actively looking to invest in and develop Sarawak’s brightest young talents, allowing them to pursue their studies at local and international universities. If you are a Sarawakian student who excels academically and demonstrates leadership in extracurricular activities, you are invited to apply for Sarawak Energy’s Scholarship programme.",
+    "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Not a recipient of any other scholarship or financial aid.",
+        "Strong leadership qualities, excellent team player, excels in both extra-curricular activities and sports.",
+        "No family member is currently a Sarawak Energy Scholarship recipient."
+      ],
+      "academicQualifications": [
+        "Obtained a minimum 8A's in Sijil Pelajaran Malaysia (SPM) *(Trial SPM results accepted for students taking SPM in 2024)*",
+        "21 years old or below at the time of application"
+      ],
+      "additionalCriteria": []
+    },
+    "requiredDocuments": [
+      "SPM Result (Trial SPM results accepted for students taking SPM in 2024)",
+      "Certificates of Co-Curricular Activities",
+      "IC Copy of students and parents",
+      "Parents' or Guardians' salary slips or EA form",
+      "Offer letter from the university that you prefer to study at"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Electrical Engineering",
+        "Civil Engineering",
+        "Mechanical Engineering",
+        "ICT (Software Engineering / Computer Science / Information Systems)",
+        "Accounting / Finance / Commerce"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Pharmaceutical",
+        "Clinical Psychology",
+        "Food Technology",
+        "Fine Arts",
+        "Aeronautics",
+        "Other related studies"
+      ]
+    },
+    "countriesOffered": [
+      "Local public university and private university (e.g., University Malaya, Sunway University)"
+    ],
+    "bondingDetails": {
+      "duration": "The Scholar shall be bonded for employment with Sarawak Energy. Bonding time depends but the minimum requirement period is at least 3 years if you successfully graduate with your bachelor's degree.",
+      "workLocation": "Sarawak Energy"
+    },
+    "applicationTimeline": {
+      "startDate": "1 May 2024",
+      "endDate": "30 May 2024",
+      "note": "Based on the official website of the Sarawak Energy Scholarship Programme, applications for the year 2024 are open from 1 to 30 May 2024. Ensure you regularly visit the official website to stay informed and avoid outdated information."
+    },
+    "numberOfRecipients": {
+      "previousYear": 127,
+      "annually": 127
+    },
+    "applicationLink": "https://www.sarawakenergy.com/careers/scholarship/sarawak-energy-scholarship-programme",
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Via Email"
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Screening Stage",
+        "details": "Completing the Application Form and selecting the courses you wish to study. Prepare and upload your relevant and impressive certificates as part of your application. If shortlisted, bring original certificates to the interview.",
+        "tips": []
+      },
+      {
+        "stage": "Interview Session 1: Case Study",
+        "details": "You'll be grouped together randomly with other candidates (Pre-U & Undergrads are interviewed at the same time, so don't be surprised if you have degree students as your groupmate), and a case will be given. You'll be given 20 minutes to study the case, then come up with a Stakeholder Engagement Plan with your team in the form of a Presentation. Be a team player, analyse the situation critically and facilitate discussions among your teammates. Refrain from cutting off your teammate, and also yapping. Keep the discussions concise and constructive as time is a huge factor as well. Also, do utilise all the tools given especially maps.",
+        "tips": [
+          "Be a team player and facilitate constructive discussions.",
+          "Utilise all the tools provided, especially maps.",
+          "Keep your discussions concise and focused on the task."
+        ]
+      },
+      {
+        "stage": "Interview Session 2: Individual Interview",
+        "details": "You'll be interviewed by 2 officers. Be prepared to answer any personal and technical questions. Remember to be honest as they can tell if you're lying, it will not look good! Research properly any information regarding the company or your related course to boost your idea and confidence.",
+        "tips": [
+          "Be honest and genuine in your responses.",
+          "Research the company and your related course thoroughly.",
+          "Stay confident and composed during the interview."
+        ]
+      }
+    ],
+    "contactEmail": "scholarship@sarawakenergy.com",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Jason Hii Lian Cheng",
+        "contributorImage": "/assets/portrait/jason_img.jpg",
+        "intendedCourse": "Electrical and Electronics Engineering",
+        "currentInstitution": "Curtin University Malaysia",
+        "contactInformation": "jasonhii0825",
+        "currentStudies": "Foundation in Engineering and Science",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "Individual Structured Interview:",
+              "1. Self-Introduction",
+              "2. Reasons for you to apply for this scholarship",
+              "3. Why do you deserve this scholarship?",
+              "4. Why do you choose this field of study?",
+              "5. How have you demonstrated leadership",
+              "6. Describe a challenge you have faced and how you overcame it.",
+              "Tips: Choose a significant challenge and focus on the actions you took to overcome it and the lessons you learned. Highlight your resilience, problem-solving skills, and determination.",
+              "7. What will you do if you don’t receive this scholarship?",
+              "Tips: Show your determination by discussing your backup plans. Mention other scholarships you are applying for, your willingness to work part-time, or any other strategies you have to fund your education."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Please bear in mind that practice makes perfect! Try to prepare a set of mock-up interview questions and practice answering them. Focus on articulating your thoughts clearly and confidently. Additionally, do some research about the Sarawak Energy Company! Familiarize yourself with Sarawak Energy Company. Look into their mission, vision, and core values, as well as their latest projects and achievements. Understanding their current challenges and opportunities will give you valuable insight into their operations and priorities. Do talk more about how you can bring impact to the community! Think critically about how you can contribute meaningfully to the organization and the community. Be ready to discuss your unique strengths, and ideas, and how they could address specific challenges or further the company's objectives."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "I'll talk more about tips in the group discussion.",
+              "- During the group discussion, make the most of the 20-minute time limit to collaborate effectively and showcase your leadership skills. Once the time starts, take the initiative to break the ice and set the tone for the discussion. Introduce yourself briefly and encourage others to do the same to create a comfortable and cooperative atmosphere. Then, step into the role of the team leader confidently. Begin by sharing your perspective on the case study, clearly outlining your initial thoughts, observations, or ideas. This will help in setting a foundation for the discussion and inspire others to contribute.",
+              "- Encourage every team member to share their viewpoints. For instance, you can say, \"What are your thoughts on this?\" or \"Does anyone have a different perspective?\"",
+              "- Actively listening and showing appreciation for each member’s input fosters collaboration and inclusivity.",
+              "- Remember to manage your time effectively. Always keep an eye on the clock and allocate time for brainstorming, refining ideas, and preparing your presentation.",
+              "For example:",
+              "5 minutes: Discuss and brainstorm ideas.",
+              "10 minutes: Build consensus and structure the presentation.",
+              "5 minutes: Rehearse and finalize roles for the presentation.",
+              "*Work with the group to identify key points and structure the presentation logically.*",
+              "*Assign roles based on individual strengths, ensuring everyone has a part to play in the final presentation.*",
+              "Reminder: Your results don’t define your entire journey. They don’t define your potential or your future. Stay focused on the opportunity ahead and approach the interview with confidence. Success is about growth, resilience, and staying true to yourself! :)"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bcns",
+    "name": "Biasiswa Cemerlang Negeri Sabah",
+    "shortName": "BCNS",
+    "description": "The Biasiswa Cemerlang Negeri Sabah is a scholarship that is awarded to top-scoring SPM students who reside in Sabah by Yayasan Sabah. This scholarship provides an opportunity for the scholars to pursue their undergraduate studies, whether locally or abroad. Upon graduation, the scholars are encouraged to come back to Sabah to serve the state and forge a brighter future for the people of Sabah.",
+    "logoPlaceholder": "/assets/company_logos/Yayasan_Sabah_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Strong academic background",
+        "Excellent records of Co-Curriculum activities"
+      ],
+      "academicQualifications": [
+        "Obtained straight A's with a minimum of 5A+ in the recent SPM examination",
+        "Obtained A+ in Bahasa Melayu",
+        "Not exceeding 19 years of age",
+        "Citizen of Sabah"
+      ],
+      "additionalCriteria": []
+    },
+    "requiredDocuments": [
+      "Salinan Kad Pengenalan",
+      "Salinan Surat Beranak",
+      "Salinan Surat Beranak Bapa",
+      "Salinan Kad Pengenalan Bapa",
+      "Salinan Surat Beranak Ibu",
+      "Salinan Kad Pengenalan Ibu",
+      "Surat Tawaran Universiti",
+      "2 Keping Salinan Gambar Passport",
+      "Salinan Sijil SPM",
+      "Salinan slip gaji/surat tidak bekerja Ibu bapa"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Open / Student's choice"
+      ],
+      "notOffered": []
+    },
+    "countriesOffered": [
+      "Both Local and Global (examples: United Kingdom, Singapore, Australia, Canada, United States)"
+    ],
+    "bondingDetails": {
+      "duration": "No bonding",
+      "workLocation": "After graduation, the recipient is expected to apply for their job independently."
+    },
+    "applicationTimeline": {
+      "startDate": "Right after announcement of SPM Results",
+      "endDate": "31st of July",
+      "note": "This is one of the earliest Scholarships that you can apply to after you finish your SPM, as it accepts your Trials result as well. It opens way before SPM result, roughly 1 month after SPM ends."
+    },
+    "numberOfRecipients": {
+      "total": 40
+    },
+    "applicationLink": "https://ptps.sabah.gov.my/",
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Via Phone Call"
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application Process",
+        "details": "Normally, students would apply for Biasiswa Cemerlang Negeri Sabah (BCNS) through the Yayasan Sabah website. Though for my case, I was called ahead of time by an officer of Yayasan Sabah to let me know that I was selected for a candidacy evaluation for the said scholarship.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Emailing Documents Required",
+        "details": "Email the documents aforementioned to the scholarship body's email. Simple and straightforward.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Results",
+        "details": "Yayasan Sabah will take a few weeks to process all the documents sent from you and other students. Once processed, they would call you via phone call to let you know that you have secured the scholarship. An invitation would also be sent out to you via message for the awards ceremony program held in Sabah.",
+        "tips": []
+      }
+    ],
+    "contactEmail": "biasisways@ysnet.org.my",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Dominic Benjamin",
+        "contributorImage": "/assets/portrait/Dominic.webp",
+        "intendedCourse": "Chemical Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "dmncbjm",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "There are no interviews required for this scholarship."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "I believe that possessing a strong academic background and good extracurricular activities would make you stand out more than other applicants."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "1. Step Out of Your Comfort Zone",
+              "If you're an introvert like me, the thought of a scholarship interview might feel daunting. I’ve been there. For my JPA interview, I was nervous from the moment I woke up, knowing it was my first in-person interview. But then I realized something important: everyone else in that room was feeling the same nervousness. Recognizing this shifted my mindset—if we’re all feeling this, I don’t have to be perfect. Instead of letting nerves control me, I decided to make connections with other candidates. As it turned out, these were the same people in my interview session. That simple act of talking to them turned my anxiety into confidence, making the interview less intimidating.",
+              "2. Be Prepared Like a Pro",
+              "Preparation is your greatest ally. Go beyond surface-level knowledge and dive deep into the field of study you're passionate about. The more you know, the more you’ll stand out. When they ask, \"Why this field?\" your genuine interest will shine through. In today’s world, we have powerful tools at our disposal. For me, ChatGPT was a game-changer. It helped me gather relevant insights and broaden my understanding in ways that traditional research couldn’t.",
+              "3. Practice Until It's Second Nature",
+              "You've heard it before, but let me emphasize—practice is the key to mastering your speaking skills. The more you practice, the smoother you'll be, the fewer pauses you’ll make, and the faster you’ll recover from slip-ups. My friends played a crucial role, helping me with mock interviews. If you don’t have a practice partner, use your parents or even a mirror. The goal is to transform nervousness into self-assurance through repetition.",
+              "4. Stay Humble, Stay Grounded",
+              "Finally, humility goes a long way. Be confident but not arrogant. When you speak with purpose and passion, while staying true to yourself, interviewers notice. Confidence without humility can come off as overbearing, but when you balance both, you’re seen as someone with strong character and genuine intent."
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Rory Mae Stanley",
+        "contributorImage": "/assets/portrait/Rory.jpeg",
+        "intendedCourse": "Medicine",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "gburory",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "No scholarship interviews."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "In my opinion, the most crucial element to focus on during the BCNS application process is your academic plan and future career goal. You are expected to decide what course you intend to study and where to study it because KYS will not decide any of that for you. For example, if you want to take an A-level course at a certain college, you are expected to apply for that college independently. The scholarship will be effective after the college admission."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "- BCNS might not offer a grand allowance, but this scholarship is still ideal for those scholars who want to be independent on their academic path and career goals.",
+              "Lastly, to all future BCNS scholars who are planning to study at KYUEM, here are my advice and tips for you:",
+              "(a) College admission",
+              "- Although applying for college is your responsibility, don’t worry, KYS will help and guide you throughout the process. You can apply online by sending your application form to KYUEM Student Service via email at ss@kyuem.edu.my",
+              "(b) Coursebook cost",
+              "- For your information, the book allowance for BCNS is RM300 per year. However, a brand-new A-Level coursebook can cost more than RM300 each. If you can’t afford it, you may use the free digital version. You can also buy second-hand books from seniors, however, it’s on a first come first serve basis. WhatsApp groups such as KY Book Sales are one of the platforms that I use to buy second-hand books.",
+              "(c) Transportation cost",
+              "- During my first month in KYUEM, I spent more on transportation fare than food or books. Although BCNS provide a flight ticket allowance of RM800 per year, please bear in mind that you will not get this allowance in the early month of the first semester. Therefore, you need to bear all the transportation costs during college registration day, which is a flight ticket from Sabah to Selangor plus taxi or Grab fare from the airport/hotel to KYUEM. KYUEM is a bit far from Subang or KLIA Airport, so taking a taxi or Grab can cost you around RM100-RM150 per trip. However, after the registration day, you can book KYUEM transport service for cheaper transport fare to the city. Another important thing to highlight is that for those who don’t have family or close relatives in Selangor, please allocate some money to buy flight tickets to go back home during the mid-semester break because you cannot stay at the college during the compulsory leave. For example, I registered in KYUEM on 20th August 2024. Then after 3 weeks, I had to go back home to Sabah for two weeks because of the compulsory leave. So, technically for the first month of studying at KYUEM, I had spent around RM2000 for the transportation fees alone."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ytn",
+    "name": "Yayasan Tenaga Nasional (YTN) Prime Scholarship Biasiswa Terkemuka Luar Negara",
+    "shortName": "YTN Prime Scholarship",
+    "description": "Yayasan Tenaga Nasional (YTN), which was established as a trust body for TNB, continues to ensure that the company’s corporate social responsibility initiatives and efforts are met through scholarships and study loans to deserving students. Yayasan Tenaga Nasional continues to play its role in disbursing financial assistance and scholarships to help outstanding and deserving students further their studies in institutions of higher learning both locally and abroad.",
+    "logoPlaceholder": "/assets/company_logos/TNB_logo.jpg",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Able to express yourself fluently and be open to everything",
+        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports."
+      ],
+      "academicQualifications": [
+        "Obtained a minimum of 8A’s (combination of A and A+) in the recent SPM examination",
+        "Not exceeding 18 years of age at the enrollment date for the foundation studies"
+      ]
+    },
+    "requiredDocuments": [
+      "SPM result",
+      "Co-curricular activities and Competition Certificates",
+      "PAJSK Certificate"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Chemical Engineering",
+        "Environmental / Sustainability",
+        "Accounting",
+        "Electrical Engineering",
+        "Data Science and Analytics",
+        "Computer Science"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Educational Pharmacy",
+        "Nursing",
+        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
+      ]
+    },
+    "countriesOffered": [
+      "Both Local and Global (Top 20 University in the world in AUS/ UK)"
+    ],
+    "bondingDetails": {
+      "duration": "For the Year 2024 is the first batch to be bondless , not sure about the future whether they might change or not.",
+      "workLocation": null
+    },
+    "applicationTimeline": {
+      "startDate": "May 27, 2024",
+      "endDate": "June 6, 2024",
+      "note": "SPM result released: 27 May 2024. All documents and certificates must be submitted to Yayasan Pelajaran Johor office in Larkin, Johor Bahru before deadline."
+    },
+    "numberOfRecipients": {
+      "previousYear": "around 25-30",
+      "currentYear": 5
+    },
+    "applicationLink": "https://ytn.tnb.com.my",
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Via YTN socials, YTN sms, and YTN website"
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1 : Register your account.",
+        "details": "Search up the YTN website and make an account, proceed to login and fill up everything necessary.    ( Fill in before the deadline !!)",
+        "tips": [
+          "Fill in before the deadline !!"
+        ]
+      },
+      {
+        "stage": "Stage 2 :Verbal and Numerical Ability Test",
+        "details": "You are going to sit for an English and Math test, where you have to complete a number of questions in a certain amount of time.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3 : Interview (1st Selection) with Personality and Moral Reasoning Test",
+        "details": "Around 150 candidates will be selected and there will be a morning and afternoon session for the interview. Before entering the interview room, you will have to fill in some questions about your hobbies and how you would act in certain scenarios and which action you will most likely take.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4 : Interview (2nd Selection)",
+        "details": "After the 1st Interview, there will be an announcement for those who are chosen to attend the 2nd interview. This interview is quite similar to the 1st interview, just that the interviewer is different.",
+        "tips": []
+      }
+    ],
+    "contactEmail": "infoytn@tnb.com.my",
+    "contactNumber": "07-2344355",
+    "scholars": [
+      {
+        "contributorName": "Lim Ethan",
+        "contributorImage": null,
+        "intendedCourse": "Chemical Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "ethanoate_ion",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1) Please introduce yourself.",
+              "Ans: Hello everyone. I would like to thank everyone for providing me this opportunity to join this interview. My name is Lim Ethan, currently 18 years old. I'm from Melaka, coming from a family of 5, my parents and 2 younger sisters of mine. My hobbies include fencing, listening to music, singing and problem solving. I would say I excel in both academics and sports Achieving High Distinction award for the International Chemistry Quiz Award organized by the Royal Australian Chemical Institute. Besides, Achieving Distinction in Kuiz Kimia Kebangsaan Malaysia consecutive for 2 years which is 2022 and 2023 Kangaroo Mathematics and Kancil Science competition, silver bronze awards Champion award for Innovative Robotic Championship Competition Champion award for Olympiad Maths Competition at UTEM Got into Semi-Final in SUKMA fencing Competition 2022 Ranked 29 in Malaysia Open Fencing Competition Champion for State level epee fencing competition",
+              "2) Why do you want this scholarship?",
+              "Ans: First of all, in order to pursue further studies, I would need a lump sum of money to do so. But unfortunately, my parents still have to fund 2 of my sister's studies in the future. I would not want to be a cold-blooded brother and take away all their opportunities to allow them to shine. I will have to depend on this scholarship and lessen my parents' burden for my future education. Secondly, I have my own aims and goals in life. By getting this scholarship I am able to obtain a foundation for my knowledge in order to achieve what I desire, which acts as a stepping stone for me to make a positive impact to the whole world. Thirdly, this scholarship will provide me with an excellent pathway in order for me to explore and learn more. By providing me the knowledge that is necessary, I am able to continue learning from others and keep on improving myself in order to reach the peak and create a legacy that I have been aiming for.",
+              "3) Why should we choose you? Why do you deserve this?",
+              "Ans: Firstly, I have great leadership skills. During my secondary school, I was appointed as the Secretary for every club and society that I am involved in. For example, Prefectorial Board, Mathematics Club, St John Ambulance and Sports Club. The most challenging, yet the most exciting job for me is being the Secretary of the Prefectorial Board as with the name comes with great responsibility. My job as the Secretary is to be on stage in front of 1000 people every morning to make announcements and send back all the classes, sometimes being the emcee and organizing ceremonies and events and creating a duty list for all the prefects each week to ensure every inch of the school goes well in discipline. Secondly, I believe I uphold great communication skills. Guiding all the junior prefects was challenging but I enjoy it as looking at their performance fulfills me with joy and satisfaction as it means I executed my job well as a leader. This job truly elevated me by adapting, turning myself from an introvert to an extrovert, meanwhile not crossing boundaries and being respectful. Thirdly, I have a strong will which drives me and keeps me going, not allowing me to give up in honor of my brother, Eason. Getting this scholarship will be a great pathway for me in order to further my studies, keeping up my consistency in studies and solve each and every problem that I encounter with all the knowledge that I have learnt. In conclusion, I truly believe that I am able to cope and adapt with everything that comes in my way and achieve success no matter what or how."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Be true to yourself, keep calm as it's just an open conservation for them to get to know you better. Show them what you have and excel in it !!"
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "1) Understand the vision and mission of TNB, align your goals with them as they would love to see their scholars shine in specific fields and contribute back to our beloved country.",
+              "2) Express to them what you have interest in and do best in. Everyone has their specialty , you just gotta show it out ! Remember to express what you can and are planning to contribute to society.",
+              "3) Being nervous is no exception, it's bound to happen. After all, it's an interview that gives you a once in a lifetime opportunity. What I personally do is just to breathe in deeply before entering the interview room. Upon looking at their cheerful faces you wouldn't feel nervous anymore.",
+              "4) Prepare a file with certificate with all your achievements in it to present to them during the interview."
             ]
           }
         ]
@@ -1040,7 +1797,10 @@
         "contributorName": "Marissa Dhaniyah binti Ahmad Danis",
         "contributorImage": "/assets/portrait/Marissa.jpeg",
         "intendedCourse": "Data Science",
-        "motivationalQuote": "Dream big, and all the best!",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "m4riss4_dhaniyah",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -1076,6 +1836,387 @@
               "- What I learned from the experience",
               "4. Build a strong support system! The scholarship application process can be daunting, with multiple interviews often scheduled in the same week. Be prepared mentally and emotionally. Remember that you are not alone in this journey, and always seek help if you need it.",
               "5. Dream big, and all the best! If you need any help or specific interview advice for FGV, feel free to reach out to me on Instagram @m4riss4_dhaniyah!"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ytm",
+    "name": "Yayasan Telekom Malaysia",
+    "shortName": "YTM",
+    "description": "Yayasan TM (YTM) is proud to be a catalyst towards future-building for deserving Malaysian students. By pairing education and career development under the same umbrella, we equip individuals with the necessary knowledge and skills to thrive in a constantly changing environment. As a trusted partner in nation building, YTM remains committed to developing leaders of tomorrow who will drive our digital economy and Industrial Revolution 4.0.",
+    "logoPlaceholder": "/assets/company_logos/YTM_logonew.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Able to express yourself fluently and be open to everything",
+        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports."
+      ],
+      "academicQualifications": [
+        "Obtained a minimum of 8 A’s (combination of A and A+) in the recent SPM examination",
+        "Not exceeding 21 years old in year of application",
+        "Malaysian citizens and with good health condition",
+        "Active in co-curricular activities"
+      ],
+      "additionalCriteria": [
+        "Participate in diverse types of extracurricular activities"
+      ]
+    },
+    "requiredDocuments": [
+      "SPM result certificate",
+      "Co-curricular activities and Competition Certificates",
+      "PAJSK Certificate",
+      "School Leaving certificate",
+      "Parents' or Guardians' salary slips and EA form",
+      "Student's and Parents' IC copy",
+      "* All copies must be certified (CTC)"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Technology & Digital",
+        "Computer Science",
+        "Creative Multimedia",
+        "Management",
+        "Engineering"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Educational Pharmacy",
+        "Nursing",
+        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
+      ]
+    },
+    "countriesOffered": [
+      "Both. Usually the United States or United Kingdom but YTM also sends their students to France, Germany, Korea, Japan, or Australia."
+    ],
+    "bondingDetails": {
+      "duration": "Serve for 5 years for local students and 7 years for overseas students if hired by TM Group",
+      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+    },
+    "applicationTimeline": {
+      "startDate": "May 27, 2024",
+      "endDate": "June 6, 2024",
+      "note": "SPM result released: 27 May 2024. All documents and certificates must be submitted to Yayasan Pelajaran Johor office in Larkin, Johor Bahru before deadline."
+    },
+    "numberOfRecipients": {
+      "total": 190,
+      "global": 8,
+      "local": 182
+    },
+    "applicationLink": "https://ytm.tm.com.my/scholarships-future-leader#future_leaders_scholarship",
+    "generalInfoLink": "https://ytm.tm.com.my/about-us#contact_form",
+    "resultNotification": [
+      "Application status can be checked through the website provided after application",
+      "Application status may also be updated through email or phone message so check your email often"
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1 : Register your account.",
+        "details": "Search up the YTN website and make an account, proceed to login and fill up everything necessary. (Fill in before the deadline !!)",
+        "tips": [
+          "Fill in before the deadline !!"
+        ]
+      },
+      {
+        "stage": "Stage 2 :Verbal and Numerical Ability Test",
+        "details": "You are going to sit for an English and Math test, where you have to complete a number of questions in a certain amount of time.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3 : Interview( 1st Selection ) with Personality and Moral Reasoning Test",
+        "details": "Around 150 candidates will be selected and there will be a morning and afternoon session for the interview. Before entering the interview room, you will have to fill in some questions about your hobbies and how you would act in certain scenarios and which action you will most likely take.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4 : Interview (2nd Selection )",
+        "details": "After the 1st Interview, there will be an announcement for those who are chosen to attend the 2nd interview. This interview is quite similar to the 1st interview, just that the interviewer is different.",
+        "tips": []
+      }
+    ],
+    "contactEmail": "https://ytm.tm.com.my/about-us#contact_form",
+    "contactNumber": "07-2344355",
+    "scholars": [
+      {
+        "contributorName": "MUHAMMAD UMAR BIN MOHAMAD NADZRIE",
+        "contributorImage": "/assets/portrait/Umar_img.jpeg",
+        "intendedCourse": "Computer Science",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "muhmd.umr",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Introduce yourself",
+              "2. What do you know about our organisation?",
+              "3. What is your opinion towards xxx?",
+              "4. Why did you choose this course?",
+              "5. What makes you deserve this scholarship?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "There is no specific thing that I would say they focus on but try to show your unique self that others don't have."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "- Set a specific goal of what you are planning to do in the future",
+              "- Have a big dream especially on the university you are planning to go to",
+              "- Prepare yourself with the knowledge of the course that you are applying for"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "asean_pu1",
+    "name": "ASEAN Scholarship for Malaysia (Pre-University 1)",
+    "shortName": "ASEAN Scholarship",
+    "description": "The ASEAN scholarship, awarded by the Ministry of Education of Singapore, is for students from Malaysia joining Secondary 1, Secondary 3 or Pre-university 1 in selected Singapore secondary schools or junior colleges. Students will have opportunities to broaden their horizons and develop important skills such as leadership, communication and other life skills. For Pre-university 1, the scholarship will cover all school, examination, transport, allowance, and accommodation fees across the two years the student will spend studying for the Singapore-Cambridge GCE A-Level certificate. The scholarship is renewed each year based on the scholar’s performance in school.",
+    "logoPlaceholder": "/assets/company_logos/ASEAN_logo.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian nationals who fulfil all the following conditions:",
+        "- Are born on 2 Jan 2007 to 1 Jan 2010.",
+        "- Are currently in Form 5 (or similar) or have taken the 2023-2024 SPM / GCE O-Level examination.",
+        "- Are proficient in English.",
+        "- Have done consistently well in school examinations.",
+        "- Have a good record of participation in co-curricular activities."
+      ],
+      "academicQualifications": null,
+      "additionalCriteria": []
+    },
+    "requiredDocuments": [
+      "The application asks for your school’s final year examination results for all subjects for the last two years. If you have taken the national examination or GCE O-Level examination during this period, enter those results instead of your school’s final year examination results.",
+      "For instance, if you have taken the national examination this year, please enter your national examination results for this year and your school’s final year examination results for last year.",
+      "Academic and non-academic awards and achievements, as well as your CCAs.",
+      "Actual copies of the documents are only requested when shortlisted for the interview stage, including a scan of your identity document and examination results transcript."
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "N/A, the scholarship leads to the Singapore-Cambridge GCE A-Level certificate or similar qualification."
+      ],
+      "notOffered": []
+    },
+    "countriesOffered": [
+      "ASEAN countries excluding Singapore itself (the Malaysia scholarship is specifically for Malaysian students)"
+    ],
+    "bondingDetails": {
+      "duration": "No bond whatsoever",
+      "workLocation": null
+    },
+    "applicationTimeline": {
+      "startDate": "Feb 10, 2025",
+      "endDate": "June 9, 2025",
+      "note": "Last for one month after SPM results released."
+    },
+    "numberOfRecipients": {
+      "previousYear": "20+",
+      "annually": "20+"
+    },
+    "applicationLink": [
+      "https://form.gov.sg/612d8c5fccbd2e00120b2ce8",
+      "https://tgs.moe.gov.sg/prog/AS-MY-PU1/"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Via email",
+      "They will inform you that you are shortlisted for attending an interview by the college’s admissions."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Online application",
+        "details": "In the first stage, you will be filling out an online application form with information including your examination results, achievements and awards, and co-curricular activities.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Selection tests",
+        "details": "You will be notified by email if you are shortlisted for the selection tests. You are going to sit for an English test (reading comprehension and writing), Math test, and aptitude or IQ test. All this will happen in one day at a designated venue, from morning to evening.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Selection interview",
+        "details": "Based on my experience, the selection interview was held at the British Council in KL, with you speaking to the interviewers from MOE Singapore on ZOOM call on a computer in the building. It usually lasts 20 minutes, and the interviewers aim to gauge if you will be suitable to study in Singapore.",
+        "tips": []
+      }
+    ],
+    "contactEmail": "https://form.gov.sg/612d8c5fccbd2e00120b2ce8",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Tan Yi Xuan",
+        "contributorImage": "/assets/portrait/Yi_xuan_img.PNG",
+        "intendedCourse": "Philosophy, Politics & Economics (PPE)",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "xuannieyz",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Please introduce yourself.",
+              "A: Name, age, where you're from, current institution, course intended to pursue, why this scholarship?",
+              "2. Why that course of study?",
+              "A: Philosophy, Politics & Economics (PPE), because it widens my understanding of the world. Avid interest in ethics and philosophy, partook in equality vs fairness research",
+              "3. What role does your course of study play in society?",
+              "A: Philosophy, Politics & Economics (PPE) helps us understand the world, helps with decision-making, governance, justice, finance, consulting etc.",
+              "4. What are your weaknesses?",
+              "A: I'm working on breaking out of my comfort zone, by not being afraid to speak to new people, and joining debate competitions.",
+              "5. Tell me about a time you faced challenges in leadership?",
+              "A: Referenced a time where two teammates had different approaches to a task and couldn't come to an agreement. Compared democratic and authoritative leadership; \"being too democratic isn't a good thing either\", a leader has the responsibility to make the best decision in the interest of the whole team, and any personal disagreements can be resolved privately.",
+              "6. How do you deal with setbacks?",
+              "A: Referenced a time when I scored horrendously low in a Mechanics surprise test, elaborated how I bounced back, highlighted how I don't tend to spiral when I face setbacks and instead think forward to how I can resolve the issue I am facing.",
+              "7. co-curricular activities?",
+              "A: Head Prefect of my school, secretary of school's Interact Club",
+              "8. Why Singapore?",
+              "A: System rewards hard work and merit, rigorous, awarding education, fosters good character values and transferable soft and hard skills etc.",
+              "9. Any experience in boarding/living abroad?",
+              "A: Flew to New Haven and stayed at Trumbull College of Yale University for two weeks for a summer residential program alone. Currently studying at KYUEM, a boarding college, returning home only every other week.",
+              "10. How to resolve roommate issues?",
+              "A: Communicate clearly and directly, set expectations early.",
+              "11. What current world issue do you think young people today can have a hand in helping resolve?",
+              "A: Israel-Palestine conflict. The youth have such a fire and determination in them for the causes that matter to them, and with the rise of social media they have been very vocal and adamant on seeing action and change in the world for the better. Channeling this passion and stubbornness for justice into the future when they rise into governmental or charitable work would make them able to make a change."
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Your academic results, how you perform on the notoriously hard Math selection test that is rumoured to weed out the interviewees for the scholarship."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "1) Ace the selection tests.",
+              "2) Be confident in your interview and smile.",
+              "3) Provide examples and stories in your answers to the interview questions.",
+              "4) Understand what you are getting yourself into by applying for the ASEAN Scholarship (i.e. boarding/living in Singapore, studying in Singapore, Singapore's education system and curriculum) -- understand that this is your choice and that YOU yourself want this scholarship and not your parents.",
+              "5) Handle rejection with grace and a growth mindset.",
+              "6) The interviewers love asking how you overcome challenges, and how you handle the responsibilities of leadership."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "scedu",
+    "name": "Sin Chew Daily Education Fund",
+    "shortName": "Sin Chew Daily",
+    "description": "Sin Chew Daily Education Fund provides local undergraduate studies programmes to the candidates that hit their requirements. The main purpose of this scholarship is to aid needy students to further pursue their studies in local institutions.",
+    "logoPlaceholder": "/assets/company_logos/sinchew_logo_new.png",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Not bonded or in receipt of any financial aid or rewards from other educational organisations or institutions.",
+        "Students must possess good results in SPM /A-Level / STPM / UEC or other equivalent qualifications.",
+        "Students must be active in sports and extra-curricular activities."
+      ],
+      "academicQualifications": [
+        "The applicant must be a Malaysian citizen born on or after 1st January 1999.",
+        "Trial Examination results do not qualify for the scholarship award.",
+        "Each person is eligible to apply for 1 or 2 courses. If applying for 2 courses, the criteria are as follows:",
+        "a) 2 different courses from 1 university/ college.",
+        "b) 1 course from 2 different universities/ colleges."
+      ],
+      "additionalCriteria": [
+        "Students must meet the minimum requirement set by the Colleges/ Universities in order to be qualified for selection.",
+        "Different colleges, universities, and courses have different entry requirements. Please login to Sin Chew Daily Education Fund official website (https://scedufund.sinchew.com.my/) or liaise directly with the colleges or universities concerned for more details."
+      ]
+    },
+    "requiredDocuments": [
+      "SPM results",
+      "Certificates",
+      "Parents or guardians salary slips",
+      "Electricity and water bills",
+      "Identity Card",
+      "Birth certificates"
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Alot 😭"
+      ],
+      "notOffered": []
+    },
+    "countriesOffered": [
+      "Local"
+    ],
+    "bondingDetails": {
+      "duration": "No bonding",
+      "workLocation": null
+    },
+    "applicationTimeline": {
+      "startDate": "Immediately after SPM results released",
+      "endDate": "1 month after SPM results released",
+      "note": "Last for one month after SPM results released."
+    },
+    "numberOfRecipients": {
+      "previousYear": null,
+      "annually": null
+    },
+    "applicationLink": [
+      "https://scedufund.sinchew.com.my/en/reference.php",
+      "https://scedufund.sinchew.com.my/en/index.php"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Via email",
+      "They will inform you that you are shortlisted for attending an interview by the college’s admissions."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Fill the application form and submit all the supporting documents. A short essay is required.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Interview",
+        "details": "Interview will be conducted by the college’s admissions.",
+        "tips": []
+      }
+    ],
+    "contactEmail": "scedufund@sinchew.com.my",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Tung Pou Chong",
+        "contributorImage": "/assets/portrait/pou_chong.jpeg",
+        "intendedCourse": "Life Science",
+        "currentInstitution": "Kolej Matrikulasi Selangor",
+        "contactInformation": "",
+        "currentStudies": "Life Science",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Please introduce yourself?",
+              "2. Tell me more about the course you are interested in.",
+              "3. Did you apply for any other scholarship? If yes, which scholarship would you prioritize?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Focus on essay writing as it is the first impression that they will have on you, and that's the only way they evaluate candidates’ potency and eliminate the candidates.",
+              "Next, during the interview, you must show your enthusiasm for the course that you are going to pursue and be steadfast with your choice and decision."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "Based on what I heard during the interview, this scholarship is almost fully funded by the college that you applied for. Thus, I can’t assure that every interview will be conducted the same as what I had experienced before.",
+              "But according to my experience (BAC 1 year FIL, 3 years UOL LLB), they want you to be honest and put them on the top of your priorities list. They most likely will choose those who can surely contribute to their college, so better do more research thoroughly on the course and the college you applied."
             ]
           }
         ]

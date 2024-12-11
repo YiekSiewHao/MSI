@@ -1,13 +1,19 @@
+// src/components/ScholarshipDetails.js
+
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import scholarships from '../scholarships.json';
 import { ArrowBack, ArrowUpward, ArrowForward } from '@mui/icons-material';
+import { FaInstagram } from 'react-icons/fa'; // Import Instagram icon
+
+// Styled Components
 
 const DetailsContainer = styled.div`
   padding: 40px 10px;
   max-width: 1100px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
     padding: 20px 10px;
@@ -44,6 +50,7 @@ const BackButton = styled.button`
   }
 `;
 
+// Modified BackToTopButton to be responsive
 const BackToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
@@ -74,20 +81,31 @@ const BackToTopButton = styled.button`
   }
 
   @media (max-width: 480px) {
-    right: 20px;
+    right: 50%;
+    transform: translateX(50%);
     font-size: 14px;
     padding: 8px 15px;
   }
 `;
 
+// Modified QuickListContainer for better responsiveness
 const QuickListContainer = styled.div`
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    gap: 12px;
+  }
+
+  @media (max-width: 480px) {
+    gap: 10px;
+  }
 `;
 
+// Modified QuickListItem to have smaller size on mobile and active state
 const QuickListItem = styled.button`
   background-color: #4a90e2;
   color: white;
@@ -99,15 +117,29 @@ const QuickListItem = styled.button`
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
+  /* Active state styling */
+  ${(props) =>
+    props.active &&
+    css`
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    `}
+
   &:hover {
     background-color: #357ab8;
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
 
+  @media (max-width: 768px) {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
   @media (max-width: 480px) {
+    padding: 6px 14px;
     font-size: 12px;
-    padding: 8px 12px;
   }
 `;
 
@@ -208,13 +240,18 @@ const ScholarStoriesGrid = styled.div`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 `;
 
 const ScholarStoryCard = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
   border: 1px solid #ddd;
   padding: 20px;
@@ -223,6 +260,7 @@ const ScholarStoryCard = styled.div`
   border-radius: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-sizing: border-box;
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
@@ -245,11 +283,11 @@ const ScholarStoryCard = styled.div`
 
   .content {
     flex: 1;
-    margin-right: 15px;
+    margin-right: 10px;
 
     h4 {
       font-size: 18px;
-      margin-bottom: 8px;
+      margin-bottom: 4px; /* Reduced margin-bottom */
 
       @media (max-width: 768px) {
         font-size: 16px;
@@ -262,7 +300,8 @@ const ScholarStoryCard = styled.div`
 
     p {
       font-size: 16px;
-      margin-bottom: 5px;
+      margin-top: 4px;
+      margin-bottom: 4px; /* Reduced margin-bottom */
 
       @media (max-width: 768px) {
         font-size: 14px;
@@ -273,9 +312,33 @@ const ScholarStoryCard = styled.div`
       }
     }
 
+    a.instagram-link {
+      display: flex;
+      align-items: center;
+      color: #E1306C; /* Updated color */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
+
+      &:hover {
+        color: #d81b60; /* Slightly darker shade on hover */
+        transform: translateY(-2px); /* Slight upward movement on hover */
+      }
+
+      svg {
+        margin-right: 8px; /* Increased spacing from 5px to 8px */
+        font-size: 20px;
+
+        @media (max-width: 480px) {
+          font-size: 18px;
+        }
+      }
+    }
+
     span {
       font-size: 14px;
       color: #888;
+      margin-top: 4px; /* Optional: slight top margin for spacing */
 
       @media (max-width: 480px) {
         font-size: 12px;
@@ -291,23 +354,13 @@ const ScholarStoryCard = styled.div`
       font-size: 20px;
     }
   }
-`;
 
-const FooterSection = styled.footer`
-  background-color: #e6e6fa;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-
-  p {
-    font-size: 16px;
-    color: #555;
-
-    @media (max-width: 480px) {
-      font-size: 14px;
-    }
+  @media (max-width: 480px) {
+    padding: 10px; /* Reduced padding for mobile */
   }
 `;
+
+// ScholarshipDetails Component
 
 const ScholarshipDetails = () => {
   const navigate = useNavigate();
@@ -355,9 +408,17 @@ const ScholarshipDetails = () => {
     navigate(`/scholarship-detail/${scholarshipId}`);
   };
 
+  const handleBackToHome = () => {
+    navigate('/');
+  };
+
   if (!scholarship) {
     return (
       <DetailsContainer>
+        <BackButton onClick={handleBackToHome}>
+          <ArrowBack />
+          Back to Home
+        </BackButton>
         <p>Scholarship not found.</p>
       </DetailsContainer>
     );
@@ -382,14 +443,18 @@ const ScholarshipDetails = () => {
   return (
     <>
       <DetailsContainer>
-        <BackButton onClick={() => navigate(-1)}>
+        {/* Back Button */}
+        <BackButton onClick={handleBackToHome}>
           <ArrowBack />
+          Back to Home
         </BackButton>
 
+        {/* QuickListContainer with active state */}
         <QuickListContainer>
           {scholarships.map((scholarshipItem) => (
             <QuickListItem
               key={scholarshipItem.id}
+              active={scholarshipItem.id === id}
               onClick={() => handleQuickListClick(scholarshipItem.id)}
             >
               {scholarshipItem.shortName}
@@ -397,13 +462,16 @@ const ScholarshipDetails = () => {
           ))}
         </QuickListContainer>
 
+        {/* Scholarship Title */}
         <Title>{name}</Title>
 
+        {/* Description Section */}
         <Section>
           <h2>Description</h2>
           <p>{description}</p>
         </Section>
 
+        {/* Scholars' Stories Section */}
         {scholars && scholars.length > 0 && (
           <Section>
             <h2>Scholars' Stories</h2>
@@ -416,7 +484,27 @@ const ScholarshipDetails = () => {
                   />
                   <div className="content">
                     <h4>{scholar.contributorName}</h4>
-                    <p>{scholar.intendedCourse}</p>
+                    {/* Modified Contact Information to Instagram Link */}
+                    {scholar.contactInformation && (
+                      <a
+                        href={
+                          scholar.contactInformation.startsWith('@')
+                            ? `https://instagram.com/${scholar.contactInformation.slice(1)}`
+                            : scholar.contactInformation.startsWith('http')
+                            ? scholar.contactInformation
+                            : `https://instagram.com/${scholar.contactInformation}`
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="instagram-link"
+                      >
+                        <FaInstagram />
+                        {scholar.contactInformation}
+                      </a>
+                    )}
+                    <p><strong>{scholar.intendedCourse}</strong></p>
+                    <p><strong>{scholar.currentInstitution}</strong></p>
+                    <p>Current Studies:<strong> {scholar.currentStudies}</strong></p>
                     {scholar.motivationalQuote && <span>"{scholar.motivationalQuote}"</span>}
                   </div>
                   <ArrowForward className="arrow-icon" />
@@ -426,6 +514,7 @@ const ScholarshipDetails = () => {
           </Section>
         )}
 
+        {/* Eligibility Criteria Section */}
         <Section>
           <h2>Eligibility Criteria</h2>
           <h3>Main Criteria</h3>
@@ -460,6 +549,7 @@ const ScholarshipDetails = () => {
           )}
         </Section>
 
+        {/* Required Documents Section */}
         <Section>
           <h2>Required Documents</h2>
           <ul>
@@ -469,6 +559,7 @@ const ScholarshipDetails = () => {
           </ul>
         </Section>
 
+        {/* Courses Offered Section */}
         <Section>
           <h2>Courses Offered</h2>
           {Array.isArray(coursesOffered) ? (
@@ -492,6 +583,7 @@ const ScholarshipDetails = () => {
           )}
         </Section>
 
+        {/* Application Process Section */}
         <Section>
           <h2>Application Process</h2>
           <ul>
@@ -499,16 +591,19 @@ const ScholarshipDetails = () => {
               <li key={index}>
                 <h3>{step.stage}</h3>
                 <p>{step.details}</p>
-                <ul>
-                  {step.tips.map((tip, tipIndex) => (
-                    <li key={tipIndex}>{tip}</li>
-                  ))}
-                </ul>
+                {step.tips && step.tips.length > 0 && (
+                  <ul>
+                    {step.tips.map((tip, tipIndex) => (
+                      <li key={tipIndex}>{tip}</li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
         </Section>
 
+        {/* Result Notification Section */}
         <Section>
           <h2>Result Notification</h2>
           <ul>
@@ -518,6 +613,7 @@ const ScholarshipDetails = () => {
           </ul>
         </Section>
 
+        {/* Bonding Details Section */}
         <Section>
           <h2>Bonding Details</h2>
           <p>
@@ -538,6 +634,7 @@ const ScholarshipDetails = () => {
           )}
         </Section>
 
+        {/* Application Timeline Section */}
         <Section>
           <h2>Application Timeline</h2>
           <p>
@@ -548,6 +645,7 @@ const ScholarshipDetails = () => {
           </p>
         </Section>
 
+        {/* Number of Recipients Section */}
         <Section>
           {numberOfRecipients &&
             (numberOfRecipients.local ||
@@ -583,20 +681,33 @@ const ScholarshipDetails = () => {
             )}
         </Section>
 
+        {/* Application Link Section */}
         <Section>
           <h2>Application Link</h2>
           <p>
-            <a href={applicationLink} target="_blank" rel="noopener noreferrer">
-              {applicationLink}
-            </a>
+            {isValidURL(applicationLink) ? (
+              <a href={applicationLink} target="_blank" rel="noopener noreferrer">
+                Apply Here
+              </a>
+            ) : (
+              applicationLink
+            )}
           </p>
         </Section>
 
+        {/* Contact Email Section */}
         <Section>
           <h2>Contact Email</h2>
-          <p>{contactEmail}</p>
+          <p>
+            {contactEmail ? (
+              <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+            ) : (
+              'No contact email provided.'
+            )}
+          </p>
         </Section>
 
+        {/* Back To Top Button */}
         {isVisible && (
           <BackToTopButton onClick={scrollToTop}>
             <ArrowUpward /> Back To Top
@@ -605,6 +716,16 @@ const ScholarshipDetails = () => {
       </DetailsContainer>
     </>
   );
+};
+
+// Helper function to validate URLs
+const isValidURL = (string) => {
+  try {
+    new URL(string);
+    return true;
+  } catch (_) {
+    return false;
+  }
 };
 
 export default ScholarshipDetails;
