@@ -435,7 +435,7 @@ const About = () => {
             </div>
             <div className="right">
               <p>
-                MSI aims to equip Malaysian students with the knowledge, resources, and confidence to strive for well-rounded self-development. By providing insights about diverse academic pathways, scholarships, and career development opportunities, we aim to broaden their horizons and inspire them to make informed and confident decisions about their future education.
+                <strong>MSI aims to equip Malaysian students with the knowledge, resources, and confidence to strive for well-rounded self-development.</strong> By providing insights about diverse academic pathways, scholarships, and career development opportunities, we aim to broaden their horizons and inspire them to make informed and confident decisions about their future education.
               </p>
             </div>
           </VisionRow>
@@ -445,7 +445,7 @@ const About = () => {
             </div>
             <div className="left">
               <p>
-                MSI's mission is to foster a generation of curious, motivated, and globally-minded students who are equipped to thrive in an ever-evolving educational landscape. By expanding students' knowledge of further study opportunities, we hope to spark a passion for lifelong learning and personal growth, both locally and around the nation.
+                <strong>MSI's mission is to foster a generation of curious, motivated, and globally-minded students who are equipped to thrive in an ever-evolving educational landscape. </strong>By expanding students' knowledge of further study opportunities, we hope to spark a passion for lifelong learning and personal growth, both locally and around the nation.
               </p>
               <p>
                 Ultimately, our goal is to cultivate a culture of exploration, ambition, and educational equity, where every student, regardless of background, has the tools and support to pursue their dreams and unleash their potential.

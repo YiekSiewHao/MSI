@@ -163,7 +163,7 @@ const Contact = () => (
       <ContactContainer>
         <LeftSection>
           <LogoContainer>
-            <Logo src="/assets/company_logos/Shell_logo.png" alt="Logo" />
+            <Logo src="/assets/MSI_Logo.png" alt="Logo" />
             <LogoText>Malaysian Student Initiative</LogoText>
           </LogoContainer>
           <EmailSection>

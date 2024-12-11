@@ -432,7 +432,7 @@
   {
     "id": "jpa-ppn",
     "name": "Program Penajaan Nasional (PPN) - JPA",
-    "shortName": "PPN - JPA",
+    "shortName": "JPA - PPN",
     "description": "The JPA-Program Penajaan Nasional (PPN) is a highly esteemed scholarship program in Malaysia, structured as a convertible loan. It is designed for outstanding students who excel in the Sijil Pelajaran Malaysia (SPM) examination. Successful recipients of this scholarship are granted the unique opportunity to pursue their undergraduate studies at one of the top 20 universities abroad, as ranked by the Quacquarelli Symonds (QS) World University Rankings for the relevant year. This initiative aims to cultivate future leaders and innovators by providing access to world-class education.",
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
     "scholarshipLevel": "global",
@@ -653,7 +653,7 @@
   {
     "id": "jpa-lspm",
     "name": "JPA-LSPM (Program Khas Lepasan Sijil Pelajaran Malaysia Dalam Negara)",
-    "shortName": "PPN - LSPM",
+    "shortName": "JPA - LSPM",
     "description": "JPA which stands for 'Jabatan Perkhidmatan Awam' is Malaysia's government department that offers three types of scholarships for students who have taken the SPM examination. To be more accurate, this scholarship is actually a convertible loan where the recipients can enjoy 100% fee waiver by working under civil service for a certain period after graduation. 'Program Khas Lepasan Sijil Pelajaran Malaysia Dalam Negara' (LSPM) offers students to pursue their pre-university and undergraduate studies only in Malaysia, unless the student is joining student exchange program that does not require extra fees from JPA. LSPM offers 200 students to pursue pre-university and degree studies in local universities as listed by JPA, including public universities and private universities. Among these three JPA programmes, only LSPM allows students to study medicine, pharmacy and dentistry, hence it gives more choices to students on choosing the degree courses.",
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
     "scholarshipLevel": "local",
@@ -2240,7 +2240,7 @@
   {
     "id": "asean_pu1",
     "name": "ASEAN Scholarship for Malaysia (Pre-University 1)",
-    "shortName": "ASEAN Scholarship",
+    "shortName": "ASEAN",
     "description": "The ASEAN scholarship, awarded by the Ministry of Education of Singapore, is for students from Malaysia joining Secondary 1, Secondary 3 or Pre-university 1 in selected Singapore secondary schools or junior colleges. Students will have opportunities to broaden their horizons and develop important skills such as leadership, communication and other life skills. For Pre-university 1, the scholarship will cover all school, examination, transport, allowance, and accommodation fees across the two years the student will spend studying for the Singapore-Cambridge GCE A-Level certificate. The scholarship is renewed each year based on the scholar’s performance in school.",
     "logoPlaceholder": "/assets/company_logos/ASEAN_logo.png",
     "scholarshipLevel": "global",
