@@ -81,12 +81,13 @@ const App = () => {
 
   // Scroll to bottom
   const scrollToBottom = () => {
-    const scrollHeight = document.documentElement.scrollHeight;
+    const scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
     const viewportHeight = window.innerHeight;
   
-    // Scroll to bottom with smooth animation
+    // Scroll to the very bottom of the page
     window.scrollTo({ top: scrollHeight - viewportHeight, behavior: "smooth" });
   };
+  
 
 
   const [scrollPosition, setScrollPosition] = useState(null);
