@@ -120,6 +120,7 @@ const TabButton = styled.button`
   transition: background-color 0.3s;
   font-size: 16px;
   min-width: 150px;
+  font-family: 'Poppins', sans-serif;
 
   &:hover {
     background-color: #007bff;
@@ -134,13 +135,13 @@ const TabButton = styled.button`
     `}
 
   @media (max-width: 768px) {
-    padding: 8px 20px;
-    font-size: 14px;
+    padding: 14px 20px;
+    font-size: 16px;
   }
 
   @media (max-width: 480px) {
-    padding: 6px 15px;
-    font-size: 12px;
+    padding: 10px 15px;
+    font-size: 14px;
     min-width: 120px;
   }
 `;
@@ -246,7 +247,7 @@ const KohHuiXinResourcePack = () => {
 
   // Function to handle back button click
   const handleBack = () => {
-    navigate(-1); // Navigates back to the previous page
+    navigate('/preparation'); // Explicitly navigate to the Preparation page
   };
 
   // Function to handle tab changes
