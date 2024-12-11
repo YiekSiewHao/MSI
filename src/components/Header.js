@@ -68,7 +68,7 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
-  font-size: 15px;
+  font-size: 14px;
 
   @media (min-width: 480px) {
     font-size: 20px;
