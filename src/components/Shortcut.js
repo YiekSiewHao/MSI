@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
 const ShortcutContainer = styled.div`
   padding: 60px 20px;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   box-sizing: border-box;
   text-align: center;
@@ -91,7 +91,7 @@ const CardsContainer = styled.div`
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   flex-wrap: wrap;
   max-width: 100%;
   animation: fadeInUp 1s ease-out;

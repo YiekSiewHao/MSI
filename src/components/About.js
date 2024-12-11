@@ -388,7 +388,7 @@ const About = () => {
             <p><strong>Shell Scholar</strong></p>
             <p>Electrical and Electronic Engineering</p>
             <Quote>
-              Write better with EssayGuide app (on App Store and Google Play Store)
+            It's normal to feel stuck sometimes—we all need a guide. Download my app: <strong>EssayGuide</strong> :D
             </Quote>
           </TeamMember>
           <TeamMember delay="0.6s">
