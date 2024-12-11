@@ -5,6 +5,7 @@
     "shortName": "PETRONAS",
     "description": "Since 1975, Petronas has awarded education sponsorships to more than 36,000 deserving students of high academic calibre who dare to push boundaries with a performance mindset and leadership capabilities, to pursue undergraduate studies to prestigious universities either globally or locally. This continues to be pursued by PETRONAS, which focuses on nurturing the right talent that will ultimately contribute to the growth of the company, industry and nation. Upon graduation, PESP scholars will also enjoy the privilege to work with PETRONAS which provides them with many career opportunities, ranging from engineering to management which are relevant to its business operation.",
     "logoPlaceholder": "/assets/company_logos/Petronas_logo.jpg",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Malaysian Citizen aged between 17 - 19 years old during year of application",
@@ -253,6 +254,7 @@
     "shortName": "Shell",
     "description": "The Shell Scholarship Programme provides successful applicants with the chance to pursue undergraduate studies in global top-tier universities while participating in mentoring and internship programmes. Upon graduation, scholars will have the opportunity to embark on a fulfilling career in various engineering, geosciences, and commercial disciplines across the organisation’s business operations.",
     "logoPlaceholder": "/assets/company_logos/Shell_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports, etc.",
@@ -433,6 +435,7 @@
     "shortName": "PPN - JPA",
     "description": "The JPA-Program Penajaan Nasional (PPN) is a highly esteemed scholarship program in Malaysia, structured as a convertible loan. It is designed for outstanding students who excel in the Sijil Pelajaran Malaysia (SPM) examination. Successful recipients of this scholarship are granted the unique opportunity to pursue their undergraduate studies at one of the top 20 universities abroad, as ranked by the Quacquarelli Symonds (QS) World University Rankings for the relevant year. This initiative aims to cultivate future leaders and innovators by providing access to world-class education.",
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Must be a Malaysian citizen.",
@@ -653,6 +656,7 @@
     "shortName": "PPN - LSPM",
     "description": "JPA which stands for 'Jabatan Perkhidmatan Awam' is Malaysia's government department that offers three types of scholarships for students who have taken the SPM examination. To be more accurate, this scholarship is actually a convertible loan where the recipients can enjoy 100% fee waiver by working under civil service for a certain period after graduation. 'Program Khas Lepasan Sijil Pelajaran Malaysia Dalam Negara' (LSPM) offers students to pursue their pre-university and undergraduate studies only in Malaysia, unless the student is joining student exchange program that does not require extra fees from JPA. LSPM offers 200 students to pursue pre-university and degree studies in local universities as listed by JPA, including public universities and private universities. Among these three JPA programmes, only LSPM allows students to study medicine, pharmacy and dentistry, hence it gives more choices to students on choosing the degree courses.",
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
+    "scholarshipLevel": "local",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Malaysian under 19 years old in the year of taking SPM examination",
@@ -783,6 +787,7 @@
     "shortName": "YPJ",
     "description": "Biasiswa Orang Muda Johor is backed by Yayasan Pelajaran Johor. It provides successful applicants with the chance to pursue undergraduate studies in global top-tier universities. Upon graduation, scholars will have the opportunity to embark on a fulfilling career in government agencies or Government-linked companies (GLCs) linked to the Johor government.",
     "logoPlaceholder": "/assets/company_logos/YPJ_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Applicant and parents are Malaysia citizens.",
@@ -930,6 +935,7 @@
     "shortName": "Kijang Scholarship",
     "description": "The Kijang Scholarship is awarded to eligible individuals to pursue pre-university programmes at BNM's approved pre-university colleges. This scholarship provides tuition fees, subsistence allowance, as well as related scholarship allowances. The subsequent sponsorship to pursue an undergraduate programme is subject to the candidate meeting the Bank’s requirements.",
     "logoPlaceholder": "/assets/company_logos/bank_negara.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Excellent examination result: A minimum of 8As (A and A+ only) obtained for SPM examinations",
@@ -1131,6 +1137,7 @@
     "shortName": "Sarawak Energy - Global",
     "description": "The Sarawak Energy Scholarship Programme provides outstanding Sarawakians great opportunities to pursue Pre-U and Undergraduate studies in both local and global universities, diploma in UNITEN, and also a Post-graduate programme. Scholars are also given the opportunity to intern under SEB for 10 weeks during their 3rd year of degree, exposing them to the corporate world prior to graduation. After graduation, scholars will be bonded based on programme specification under SEB, one of the best employers in Sarawak. Restricting to only Sarawakians, Sarawak Energy aims to attract top Sarawakian talents to help realise their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy.",
     "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Not a recipient of any other scholarship or financial aid.",
@@ -1292,6 +1299,7 @@
     "shortName": "Sarawak Energy - Local",
     "description": "The Sarawak Energy Scholarship Programme aims to attract top Sarawakian talents to help them realize their vision of achieving sustainable growth and prosperity for Sarawak and its people by meeting the region’s need for reliable and renewable energy. Aligned with this, the Sarawak Energy Programme is actively looking to invest in and develop Sarawak’s brightest young talents, allowing them to pursue their studies at local and international universities. If you are a Sarawakian student who excels academically and demonstrates leadership in extracurricular activities, you are invited to apply for Sarawak Energy’s Scholarship programme.",
     "logoPlaceholder": "/assets/company_logos/Sarawak_Energy_logo.jpg",
+    "scholarshipLevel": "local",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Not a recipient of any other scholarship or financial aid.",
@@ -1437,6 +1445,7 @@
     "shortName": "BCNS",
     "description": "The Biasiswa Cemerlang Negeri Sabah is a scholarship that is awarded to top-scoring SPM students who reside in Sabah by Yayasan Sabah. This scholarship provides an opportunity for the scholars to pursue their undergraduate studies, whether locally or abroad. Upon graduation, the scholars are encouraged to come back to Sabah to serve the state and forge a brighter future for the people of Sabah.",
     "logoPlaceholder": "/assets/company_logos/Yayasan_Sabah_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Strong academic background",
@@ -1590,6 +1599,7 @@
     "shortName": "YTN Prime Scholarship",
     "description": "Yayasan Tenaga Nasional (YTN), which was established as a trust body for TNB, continues to ensure that the company’s corporate social responsibility initiatives and efforts are met through scholarships and study loans to deserving students. Yayasan Tenaga Nasional continues to play its role in disbursing financial assistance and scholarships to help outstanding and deserving students further their studies in institutions of higher learning both locally and abroad.",
     "logoPlaceholder": "/assets/company_logos/TNB_logo.jpg",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Able to express yourself fluently and be open to everything",
@@ -1716,6 +1726,7 @@
     "shortName": "FGV",
     "description": "The FGV Scholarship Programme 2024 offers Malaysian students the opportunity to pursue undergraduate studies at reputable higher learning institutions. The scholarship supports students in various fields, including Accounting & Finance, Business Management & Economics, Engineering, and more. This programme not only provides financial support but also nurtures leadership and academic excellence, preparing scholars for a successful future in their chosen professions.",
     "logoPlaceholder": "/assets/company_logos/FGV_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Achieved a minimum of 8A’s in the recent SPM examination",
@@ -1848,6 +1859,7 @@
     "shortName": "YTM",
     "description": "Yayasan TM (YTM) is proud to be a catalyst towards future-building for deserving Malaysian students. By pairing education and career development under the same umbrella, we equip individuals with the necessary knowledge and skills to thrive in a constantly changing environment. As a trusted partner in nation building, YTM remains committed to developing leaders of tomorrow who will drive our digital economy and Industrial Revolution 4.0.",
     "logoPlaceholder": "/assets/company_logos/YTM_logonew.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Able to express yourself fluently and be open to everything",
@@ -1982,6 +1994,7 @@
     "shortName": "ASEAN Scholarship",
     "description": "The ASEAN scholarship, awarded by the Ministry of Education of Singapore, is for students from Malaysia joining Secondary 1, Secondary 3 or Pre-university 1 in selected Singapore secondary schools or junior colleges. Students will have opportunities to broaden their horizons and develop important skills such as leadership, communication and other life skills. For Pre-university 1, the scholarship will cover all school, examination, transport, allowance, and accommodation fees across the two years the student will spend studying for the Singapore-Cambridge GCE A-Level certificate. The scholarship is renewed each year based on the scholar’s performance in school.",
     "logoPlaceholder": "/assets/company_logos/ASEAN_logo.png",
+    "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Malaysian nationals who fulfil all the following conditions:",
@@ -2115,6 +2128,7 @@
     "shortName": "Sin Chew Daily",
     "description": "Sin Chew Daily Education Fund provides local undergraduate studies programmes to the candidates that hit their requirements. The main purpose of this scholarship is to aid needy students to further pursue their studies in local institutions.",
     "logoPlaceholder": "/assets/company_logos/sinchew_logo_new.png",
+    "scholarshipLevel": "local",
     "eligibilityCriteria": {
       "mainCriteria": [
         "Not bonded or in receipt of any financial aid or rewards from other educational organisations or institutions.",

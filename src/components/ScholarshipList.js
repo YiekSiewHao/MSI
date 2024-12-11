@@ -1,8 +1,14 @@
+// src/components/ScholarshipList.js
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { FaFilter } from 'react-icons/fa';
 import scholarships from '../scholarships.json';
 
+/* Styled Components */
+
+/* Container for the entire list */
 const ListContainer = styled.div`
   padding: 20px;
   max-width: 1400px;
@@ -10,6 +16,7 @@ const ListContainer = styled.div`
   box-sizing: border-box;
 `;
 
+/* Title of the list */
 const Title = styled.h1`
   font-size: 32px;
   color: #007BFF;
@@ -22,6 +29,52 @@ const Title = styled.h1`
   }
 `;
 
+/* Container for filter buttons */
+const FilterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+`;
+
+/* Styled Filter Button */
+const FilterButton = styled.button`
+  display: flex;
+  align-items: center;
+  background-color: ${(props) => (props.active ? '#007BFF' : '#f1f1f1')};
+  color: ${(props) => (props.active ? '#ffffff' : '#333')};
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: ${(props) => (props.active ? '0 4px 12px rgba(0, 123, 255, 0.4)' : 'none')};
+
+  &:hover {
+    background-color: ${(props) => (props.active ? '#0056b3' : '#e0e0e0')};
+    transform: translateY(-2px);
+  }
+
+  svg {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 480px) {
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 0;
+  }
+`;
+
+/* Grid layout for scholarship cards */
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -34,12 +87,13 @@ const GridContainer = styled.div`
   }
 `;
 
+/* Individual Scholarship Card */
 const ScholarshipCard = styled.div`
   display: flex;
   background-color: white;
   border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
   align-items: center;
@@ -95,8 +149,13 @@ const ScholarshipCard = styled.div`
 const ScholarshipList = () => {
   const navigate = useNavigate();
 
+  /* State to manage filter selection */
+  const [filter, setFilter] = useState('All');
+
+  /* State to manage mobile view */
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
+  /* Update mobile state on window resize */
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 480);
@@ -105,15 +164,59 @@ const ScholarshipList = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  /* Handle navigation to scholarship detail */
   const handleClick = (id) => {
     navigate(`/scholarship-detail/${id}`);
   };
 
+  /* Optional: Persist filter state using sessionStorage */
+  useEffect(() => {
+    const savedFilter = sessionStorage.getItem('scholarshipFilter');
+    if (savedFilter) {
+      setFilter(savedFilter);
+    }
+  }, []);
+
+  useEffect(() => {
+    sessionStorage.setItem('scholarshipFilter', filter);
+  }, [filter]);
+
+  /* Filter scholarships based on selected filter */
+  const filteredScholarships = filter === 'All' 
+    ? scholarships 
+    : scholarships.filter(scholarship => scholarship.scholarshipLevel.toLowerCase() === filter.toLowerCase());
+
   return (
     <ListContainer>
       <Title>Available Scholarships</Title>
+
+      {/* Filter Buttons */}
+      <FilterContainer>
+        <FilterButton 
+          active={filter === 'All'} 
+          onClick={() => setFilter('All')}
+        >
+          <FaFilter />
+          All
+        </FilterButton>
+        <FilterButton 
+          active={filter === 'Global'} 
+          onClick={() => setFilter('Global')}
+        >
+          <FaFilter />
+          Global
+        </FilterButton>
+        <FilterButton 
+          active={filter === 'Local'} 
+          onClick={() => setFilter('Local')}
+        >
+          <FaFilter />
+          Local
+        </FilterButton>
+      </FilterContainer>
+
       <GridContainer>
-        {scholarships.map((scholarship) => (
+        {filteredScholarships.map((scholarship) => (
           <ScholarshipCard key={scholarship.id} onClick={() => handleClick(scholarship.id)}>
             {scholarship.logoPlaceholder ? (
               <img src={scholarship.logoPlaceholder} alt={`${scholarship.shortName} Logo`} />

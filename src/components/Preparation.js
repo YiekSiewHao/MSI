@@ -507,6 +507,7 @@ const ViewButton = styled.a`
   }
 `;
 
+/* Animation Variants */
 const fadeInVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { 
@@ -524,10 +525,36 @@ const Preparation = () => {
   const location = useLocation();
   const sampleEssaysRef = useRef(null);
 
-  // Scroll to top when component mounts
+  // Unique key for storing scroll position
+  const SCROLL_POSITION_KEY = 'preparationEssayScroll';
+
+  // Restore scroll position on component mount
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);  
+    const savedScrollLeft = sessionStorage.getItem(SCROLL_POSITION_KEY);
+    if (savedScrollLeft && scrollContainerRef.current) {
+      scrollContainerRef.current.scrollLeft = parseInt(savedScrollLeft, 10);
+    }
+  }, []);
+
+  // Save scroll position on component unmount and before page unload
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (scrollContainerRef.current) {
+        sessionStorage.setItem(SCROLL_POSITION_KEY, scrollContainerRef.current.scrollLeft);
+      }
+    };
+
+    // Save scroll position before page refresh or close
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Save scroll position when navigating away
+    return () => {
+      if (scrollContainerRef.current) {
+        sessionStorage.setItem(SCROLL_POSITION_KEY, scrollContainerRef.current.scrollLeft);
+      }
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
 
   // Scroll to Sample Essays if the hash is present
   useEffect(() => {
@@ -762,11 +789,11 @@ const Preparation = () => {
             <InterviewItem>
               <ScholarshipName>ASEAN Scholarship</ScholarshipName>
               <ButtonGroup>
-                <DownloadButton href="assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" download>
+                <DownloadButton href="/assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" download>
                   <FaFileDownload />
                   Download PDF
                 </DownloadButton>
-                <ViewButton href="assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" target="_blank" rel="noopener noreferrer">
+                <ViewButton href="/assets/scholarships_file_downloads/ASEAN_Scholarship.pdf" target="_blank" rel="noopener noreferrer">
                   <FaFileAlt />
                   View File
                 </ViewButton>
