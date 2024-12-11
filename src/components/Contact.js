@@ -48,7 +48,7 @@ const LeftSection = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   justify-content: flex-start; // Changed from center to flex-start
 
   @media (max-width: 768px) {
@@ -58,15 +58,15 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   margin-right: 15px;
 
   @media (max-width: 768px) {
     margin-right: 0;
-    margin-bottom: 10px;
-      width: 70px;
-  height: 70px;
+    margin-bottom: 0px;
+    width: 170px;
+    height: 170px;
   }
 `;
 
@@ -77,6 +77,8 @@ const LogoText = styled.h1`
 
   @media (max-width: 768px) {
     font-size: 20px;
+    margin-top:0px;
+
   }
 `;
 
@@ -89,7 +91,7 @@ const EmailSection = styled.div`
 `;
 
 const EmailText = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
   margin: 5px 0;
 
