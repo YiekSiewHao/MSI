@@ -43,7 +43,7 @@ const ResourceContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: #f8f9fa;
+  background-color: #fff;
 
   @media (max-width: 768px) {
     padding: 30px 15px;
@@ -277,7 +277,6 @@ const KohHuiXinResourcePack = () => {
         <AnimatedWrapper delay="0.2s">
           <BackButton onClick={handleBack}>
             <ArrowBack />
-            Back
           </BackButton>
         </AnimatedWrapper>
 

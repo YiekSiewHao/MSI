@@ -531,6 +531,8 @@ const Preparation = () => {
   const SCROLL_POSITION_KEY = 'preparationEssayScroll';
 
   // Restore scroll position on component mount
+
+  
   useEffect(() => {
     const savedScrollLeft = sessionStorage.getItem(SCROLL_POSITION_KEY);
     if (savedScrollLeft && scrollContainerRef.current) {
@@ -560,10 +562,21 @@ const Preparation = () => {
 
   // Scroll to Sample Essays if the hash is present
   useEffect(() => {
-    if (location.hash === '#sample-essays' && sampleEssaysRef.current) {
-      sampleEssaysRef.current.scrollIntoView({ behavior: 'smooth' });
+    // Scroll to the top if no hash is present
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+  
+    // Handle hash-based navigation
+    const targetId = location.hash.slice(1); // Remove the '#' from the hash
+    const targetElement = document.getElementById(targetId);
+  
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
+  
 
   // Extract unique scholarship names
   const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
