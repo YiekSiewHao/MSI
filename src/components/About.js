@@ -73,7 +73,7 @@ const TeamGrid = styled.div`
   flex-wrap: wrap;
   gap: 60px;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 
   @media (max-width: 480px) {
     gap: 30px;
@@ -166,6 +166,7 @@ const SocialLinks = styled.div`
   }
 `;
 
+
 const Quote = styled.blockquote`
   font-size: 16px;
   color: #555;
@@ -197,6 +198,32 @@ const Quote = styled.blockquote`
   @media (max-width: 480px) {
     font-size: 14px;
     max-width: 250px;
+  }
+`;
+
+const LogoContainer = styled.div`
+  margin: 60px 0;
+  text-align: center;
+
+  img {
+    max-width: 400px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 0px;
+  }
+
+  @media (max-width: 480px) {
+    img {
+      max-width: 200px;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top:0px;
+    }
   }
 `;
 
@@ -423,6 +450,13 @@ const About = () => {
           </TeamMember>
         </TeamGrid>
       </Section>
+
+      <LogoContainer>
+        <img src="/assets/MSI_Logo.png" alt="MSI Logo" />
+        <p>
+          Shoutout to <strong>Ibrahim Lua Ming-Zhi</strong> for designing the MSI logo. Your creativity and effort are deeply appreciated!
+        </p>
+      </LogoContainer>
 
       {/* Vision & Mission Section */}
       <Section ref={visionRef} delay="0.4s">
