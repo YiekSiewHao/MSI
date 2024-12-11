@@ -3,7 +3,7 @@
     "id": "petronas",
     "name": "PETRONAS Powering Knowledge Education Sponsorship (PESP)",
     "shortName": "PETRONAS",
-    "description": "Since 1975, PETRONAS has awarded education sponsorships to more than 36,000 deserving students of high academic calibre who dare to push boundaries with a performance mindset and leadership capabilities. The PETRONAS Powering Knowledge Education Sponsorship (PESP) is a programme for deserving SPM leavers to pursue their tertiary education at top-notch universities globally and locally. Besides providing a golden opportunity for students to further their studies, PESP also provides mentoring sessions and programmes that aim to enhance interpersonal skills and help its scholars fully develop their potential in certain industries. Upon graduation, PESP scholars will enjoy the privilege to work with PETRONAS, gaining insightful experience from more experienced and skilled staff.",
+    "description": "Since 1975, Petronas has awarded education sponsorships to more than 36,000 deserving students of high academic calibre who dare to push boundaries with a performance mindset and leadership capabilities, to pursue undergraduate studies to prestigious universities either globally or locally. This continues to be pursued by PETRONAS, which focuses on nurturing the right talent that will ultimately contribute to the growth of the company, industry and nation. Upon graduation, PESP scholars will also enjoy the privilege to work with PETRONAS which provides them with many career opportunities, ranging from engineering to management which are relevant to its business operation.",
     "logoPlaceholder": "/assets/company_logos/Petronas_logo.jpg",
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -22,7 +22,7 @@
     "requiredDocuments": [
       "Copy of applicant's IC and parents' IC (Certified True Copy)",
       "SPM results (Certified True Copy)",
-      "Co-curricular certificates (Certified True Copy)",
+      "Extra Co-curricular certificates (Certified True Copy)",
       "PAJSK Certificate (Certified True Copy)",
       "Parents' or Guardians' Salary Slip / EA form (Certified True Copy)",
       "Statutory Declaration (if any of your parents are unemployed/retired) (Certified True Copy)"
@@ -81,14 +81,14 @@
       ]
     },
     "bondingDetails": {
-      "duration": "Minimum 5 years",
-      "workLocation": "Various work stations locally or globally",
+      "duration": "1:1 Study duration to bonding duration",
+      "workLocation": null,
       "repaymentConditions": null
     },
     "applicationTimeline": {
       "startDate": "May 20, 2024",
       "endDate": "June 5, 2024",
-      "note": "Application opens right after the announcement of SPM results and lasts for about 2 weeks"
+      "note": "One week before SPM results to one week after SPM results"
     },
     "numberOfRecipients": {
       "local": 400,
@@ -103,7 +103,7 @@
     "applicationProcess": [
       {
         "stage": "Stage 1: Application Stage",
-        "details": "This stage will be open for applicants to apply starting from the day when the SPM results are announced. Take note of the application deadline and submit your application form before that. Prepare all the required information and documents as stated in the scholarship guidelines.",
+        "details": "This stage will be open for applicants to apply starting from the day when SPM result is announced. Take note of the application deadline and submit your application form before that. Prepare every information and document required to apply for the scholarship as stated in the guideline.",
         "tips": [
           "Monitor the SPM result announcement date and set a reminder for the application deadline.",
           "Gather all required documents in advance, such as academic transcripts, certificates, and identification.",
@@ -121,12 +121,12 @@
       },
       {
         "stage": "Stage 3: Student Potential Assessment (SPA)",
-        "details": "In this final stage, applicants participate in face-to-face interviews with PETRONAS staff. Emphasizing leadership and interpersonal skills, this stage includes two presentation rounds. The first is an individual presentation, where candidates are given about 15 minutes to prepare a 5-to-8-minute presentation based on a given prompt. The second is a group discussion revolving around the same topic, providing candidates an opportunity to showcase leadership skills. A Q&A session with interviewers may follow if time permits.",
+        "details": "The final stage in which applicants are required to participate in face-to-face interviews with staffs from PETRONAS. As PETRONAS emphasises on candidates’ leadership and interpersonal skills, there will be two rounds of presentation which enable the interviewers to seek for the candidates that possess the qualities that they are finding for.",
         "tips": [
-          "Practice delivering concise and clear presentations to effectively communicate your ideas.",
+          "The first round, after a short introduction session, is an individual presentation which candidates will be given around 15 minutes to prepare for a 5-to-8-minute long presentation for a given prompt.",
+          "The second round is a group discussion session revolving around the same topic as the previous round. This is the time when candidates can truly showcase their leadership skills. After that, there might be a Q&A session with the interviewers if there are plenty of time left.",
           "During the group discussion, balance asserting your opinions with listening to others to demonstrate leadership and teamwork.",
-          "Prepare examples of past leadership experiences to share if asked during the Q&A session.",
-          "Dress professionally and maintain a confident yet approachable demeanor throughout the interview."
+          "Prepare examples of past leadership experiences to share if asked during the Q&A session. Good luck, future scholars!"
         ]
       }
     ],
@@ -136,7 +136,7 @@
         "contributorName": "Yeoh Sheng Ze",
         "contributorImage": "/assets/portrait/Sheng_Ze.jpg",
         "intendedCourse": "Mathematics / Statistics (Data Science)",
-        "motivationalQuote": "Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.",
+        "motivationalQuote": null,
         "resumeImage": null,
         "stories": [
           {

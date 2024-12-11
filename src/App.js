@@ -96,6 +96,9 @@ const App = () => {
                 <section ref={scholarshipListRef}>
                   <ScholarshipList />
                 </section>
+                <section ref={wishesRef}>
+                  <Wishes />
+                </section>
                 <section ref={eventsRef}>
                   <Events />
                 </section>

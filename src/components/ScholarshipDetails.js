@@ -603,9 +603,6 @@ const ScholarshipDetails = () => {
           </BackToTopButton>
         )}
       </DetailsContainer>
-      <FooterSection>
-        <p>&copy; {new Date().getFullYear()} Your Site. All rights reserved.</p>
-      </FooterSection>
     </>
   );
 };

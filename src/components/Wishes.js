@@ -346,7 +346,7 @@ const Wishes = () => {
       name: 'Koh Hui Xin',
       course: 'BSc Computer Science at University of Manchester',
       instagram: '@kohhuixin',
-      instagramLink: 'https://www.instagram.com/kohhuixin',
+      instagramLink: 'https://www.instagram.com/kohhuixinimg',
       scholarship: 'Bank Negara Malaysia Scholar',
       wish: 'Your vision for the future is inspiring. May you continue to empower others through your initiatives.',
       image: '/assets/portrait/kohhuixin.jpg',

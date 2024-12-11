@@ -563,7 +563,7 @@ const Preparation = () => {
     }
   };
 
-  const scholarImagePath = "/assets/portrait/kohhuixin.jpg";
+  const scholarImagePath = "/assets/portrait/kohhuixinimg.jpg";
 
   useEffect(() => {
     window.scrollTo(0, 0);
