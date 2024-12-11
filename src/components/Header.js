@@ -1,9 +1,10 @@
-// Header.js
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+
+/* Styled Components */
 
 const HeaderContainer = styled.header`
   background-color: #007BFF;
@@ -20,6 +21,38 @@ const HeaderContent = styled.div`
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right:5px;
+
+    @media (max-width: 768px) {
+  padding-right:3px;
+  }
+
+  @media (max-width: 480px) {
+  padding-right:0px;
+  }
+`;
+
+const Logo = styled.img`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Optional: for circular logos */
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 480px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 const TitleLink = styled(Link)`
@@ -206,7 +239,10 @@ const Header = ({
   return (
     <HeaderContainer>
       <HeaderContent>
-        <TitleLink to="/">Malaysian Student Initiative</TitleLink>
+        <LogoContainer>
+          <Logo src="/assets/MSI_Logo.png" alt="Logo" />
+          <TitleLink to="/">Malaysian Student Initiative</TitleLink>
+        </LogoContainer>
 
         <Nav>
           <NavList>
