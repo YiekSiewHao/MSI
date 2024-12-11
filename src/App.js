@@ -56,10 +56,21 @@ const App = () => {
     setShowTransition(false);
   };
 
+  // Scroll to a given section
   const scrollToSection = (ref) => {
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  // Scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // Scroll to bottom
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (
@@ -67,9 +78,9 @@ const App = () => {
       <GlobalStyle />
       {showTransition && <TransitionEffect onComplete={handleTransitionComplete} />}
       <Header
-        onHomeClick={() => scrollToSection(homeRef)}
+        onHomeClick={scrollToTop}
         onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
-        onContactClick={() => scrollToSection(contactRef)}
+        onContactClick={scrollToBottom}
         onWishesClick={() => scrollToSection(wishesRef)}
         onEventsClick={() => scrollToSection(eventsRef)}
       />
