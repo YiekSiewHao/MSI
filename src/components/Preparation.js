@@ -3,9 +3,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { FaArrowRight, FaChevronLeft, FaChevronRight, FaFileDownload, FaFileAlt } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaFileDownload, FaFileAlt } from "react-icons/fa";
 import essays from "../essays.json";
+import { motion } from "framer-motion";
 
 /* Styled Components */
 
@@ -184,7 +184,7 @@ const ScholarDescription = styled.p`
   }
 `;
 
-const ArrowIcon = styled(FaArrowRight)`
+const ArrowIcon = styled(FaChevronRight)`
   color: #2c3e50;
   font-size: 40px;
   margin-left: auto;
@@ -230,6 +230,7 @@ const ScrollContainer = styled.div`
   margin-bottom: 40px;
 `;
 
+/* Arrow Button for scrolling */
 const ArrowButton = styled.div`
   position: absolute;
   top: 50%;
@@ -355,6 +356,7 @@ const EssayPreview = styled.div`
   }
 `;
 
+/* Interview Section Styled Components */
 const InterviewSectionContainer = styled.div`
   padding: 0 60px; 
   margin-bottom: 100px;
@@ -563,8 +565,13 @@ const Preparation = () => {
     }
   }, [location]);
 
+  // Extract unique scholarship names
   const scholarships = [...new Set(essays.map((essay) => essay.scholarship))];
-  const filteredEssays = selectedScholarship === 'All' ? essays : essays.filter(essay => essay.scholarship === selectedScholarship);
+  
+  // Filter essays based on selected scholarship
+  const filteredEssays = selectedScholarship === 'All' 
+    ? essays 
+    : essays.filter(essay => essay.scholarship === selectedScholarship);
 
   const handleScroll = () => {
     const container = scrollContainerRef.current;
@@ -682,8 +689,8 @@ const Preparation = () => {
 
                 {/* Essay Cards */}
                 <EssayCardContainer ref={scrollContainerRef}>
-                  {filteredEssays.map((essay, index) => (
-                    <EssayCard to={`/essay/${index}`} key={`${essay.scholarship}-${index}`}>
+                  {filteredEssays.map((essay) => (
+                    <EssayCard to={`/essay/${essay.id}`} key={`${essay.scholarship}-${essay.id}`}>
                       <CardTitle>{essay.scholarship}</CardTitle>
                       <EssayMeta>
                         <strong>Author:</strong> {essay.author} | <strong>Year:</strong> {essay.year}

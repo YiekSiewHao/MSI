@@ -15,6 +15,7 @@ const ContactWrapper = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 768px) {
+  center
     padding: 10px;
   }
 `;
@@ -28,7 +29,7 @@ const ContactContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: center; // Changed from center to flex-start
   }
 `;
 
@@ -39,7 +40,7 @@ const LeftSection = styled.div`
 
   @media (max-width: 768px) {
     /* text-align: center; */ // Commented out to maintain left alignment
-    text-align: left; // Explicitly set to left
+    text-align: center; // Explicitly set to left
     padding: 10px;
   }
 `;
@@ -52,7 +53,7 @@ const LogoContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    align-items: flex-start; // Changed from center to flex-start
+    align-items: center; // Changed from center to flex-start
   }
 `;
 

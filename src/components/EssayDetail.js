@@ -1,13 +1,18 @@
+// src/components/EssayDetail.js
+
 import React, { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { ArrowBack } from "@mui/icons-material";
 import essays from "../essays.json";
 
+/* Styled Components */
+
 const DetailContainer = styled.div`
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;
 `;
 
 const BackButton = styled.button`
@@ -88,7 +93,7 @@ const EssayDetail = () => {
     window.scrollTo(0, 0); // Ensure the page starts at the top
   }, []);
 
-  const essay = essays[id]; // Fetch the corresponding essay
+  const essay = essays.find(e => e.id === parseInt(id, 10)); // Fetch the corresponding essay
 
   if (!essay) {
     return <p>Essay not found</p>;

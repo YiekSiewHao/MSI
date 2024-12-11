@@ -23,6 +23,11 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 30px;
 
+  @media (max-width: 768px) {
+    font-size: 28px; 
+    margin-bottom: 25px;
+  }
+
   @media (max-width: 480px) {
     font-size: 24px; 
     margin-bottom: 20px;
@@ -35,11 +40,28 @@ const FilterContainer = styled.div`
   justify-content: center;
   margin-bottom: 30px;
   gap: 20px;
-  
-  @media (max-width: 480px) {
-    flex-direction: column;
-    gap: 15px;
+  padding: 10px 0;
+
+  /* Flex-wrap behavior based on screen size */
+  @media (min-width: 769px) {
+    flex-wrap: nowrap; /* Prevent wrapping on laptop and larger screens */
   }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap; /* Allow wrapping on tablet and smaller screens */
+    justify-content: center;
+  }
+
+  /* Hide scrollbar for WebKit browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE and Edge */
+  -ms-overflow-style: none;  
+
+  /* Firefox */
+  scrollbar-width: none; 
 `;
 
 /* Styled Filter Button */
@@ -52,25 +74,30 @@ const FilterButton = styled.button`
   border-radius: 25px;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   box-shadow: ${(props) => (props.active ? '0 4px 12px rgba(0, 123, 255, 0.4)' : 'none')};
+  white-space: nowrap; /* Prevent text from wrapping */
 
   &:hover {
     background-color: ${(props) => (props.active ? '#0056b3' : '#e0e0e0')};
-    transform: translateY(-2px);
+    /* Removed transform to prevent overlapping */
   }
 
   svg {
     margin-right: 8px;
   }
 
+  @media (max-width: 768px) {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+
   @media (max-width: 480px) {
-    justify-content: center;
-    width: 100%;
     font-size: 14px;
-    padding: 12px 0;
+    padding: 6px 16px;
+    gap: 6px; /* Reduced gap between icon and text */
   }
 `;
 
@@ -81,8 +108,16 @@ const GridContainer = styled.div`
   gap: 20px;
   box-sizing: border-box;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
   @media (max-width: 480px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
   }
 `;
@@ -92,7 +127,7 @@ const ScholarshipCard = styled.div`
   display: flex;
   background-color: white;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
@@ -100,7 +135,7 @@ const ScholarshipCard = styled.div`
 
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Slight lift on hover */
   }
 
   img {
@@ -109,6 +144,12 @@ const ScholarshipCard = styled.div`
     object-fit: cover;
     margin-right: 15px;
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+      width: 70px;
+      height: 70px;
+      margin-right: 12px;
+    }
 
     @media (max-width: 480px) {
       width: 60px;
@@ -125,9 +166,14 @@ const ScholarshipCard = styled.div`
       color: #007BFF;
       margin-bottom: 10px;
 
+      @media (max-width: 768px) {
+        font-size: 18px; 
+        margin-bottom: 8px;
+      }
+
       @media (max-width: 480px) {
         font-size: 16px; 
-        margin-bottom: 8px;
+        margin-bottom: 6px;
       }
     }
 
@@ -142,7 +188,7 @@ const ScholarshipCard = styled.div`
   }
 
   @media (max-width: 480px) {
-    padding: 8px; /* Reduce padding on mobile */
+    padding: 10px; /* Reduce padding on mobile */
   }
 `;
 
@@ -192,6 +238,7 @@ const ScholarshipList = () => {
 
       {/* Filter Buttons */}
       <FilterContainer>
+        {/* Optional: Rearrange buttons to center "All" */}
         <FilterButton 
           active={filter === 'All'} 
           onClick={() => setFilter('All')}
@@ -213,15 +260,16 @@ const ScholarshipList = () => {
           <FaFilter />
           Local
         </FilterButton>
+        {/* Add more filter buttons if needed */}
       </FilterContainer>
 
       <GridContainer>
         {filteredScholarships.map((scholarship) => (
           <ScholarshipCard key={scholarship.id} onClick={() => handleClick(scholarship.id)}>
             {scholarship.logoPlaceholder ? (
-              <img src={scholarship.logoPlaceholder} alt={`${scholarship.shortName} Logo`} />
+              <img src={scholarship.logoPlaceholder} alt={`${scholarship.shortName} Logo`} loading="lazy" />
             ) : (
-              <img src="/assets/company_logos/default_logo.png" alt="Default Logo" /> /* Placeholder image */
+              <img src="/assets/company_logos/default_logo.png" alt="Default Logo" loading="lazy" /> /* Placeholder image */
             )}
             <div className="content">
               <h3>{scholarship.shortName}</h3>

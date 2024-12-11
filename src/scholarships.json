@@ -744,7 +744,7 @@
     "scholars": [
       {
         "contributorName": "Jolin Sung Jie Lin",
-        "contributorImage": "/assets/portrait/jolinsung.jpg",
+        "contributorImage": "/assets/portrait/jolinsung.JPG",
         "intendedCourse": "Pharmacy",
         "currentInstitution": "Sunway College",
         "contactInformation": "sungjolin",
@@ -1721,6 +1721,253 @@
     ]
   },
   {
+    "id": "ykgs",
+    "name": "Yayasan Khazanah Global Scholarship",
+    "shortName": "Yayasan Khazanah - Global",
+    "description": "Yayasan Khazanah is a foundation under Khazanah Nasional Berhad, the sovereign wealth fund of Malaysia, aiming to grow long-term wealth for the nation. The Khazanah Global Scholarship provides opportunities for bright Malaysians to pursue A-Level studies at Kolej Yayasan UEM and undergraduate studies at leading global universities. Scholars are also provided with leadership training and job attachments at leading organizations in Malaysia.",
+    "logoPlaceholder": "/assets/company_logos/Khazanah.jpg",
+    "scholarshipLevel": "global",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Possess strong leadership skills and active participation in extra-curricular, social, or voluntary activities.",
+        "Obtained a minimum of 8A+/As in the recent SPM examination, including Bahasa Melayu, English, History, and Mathematics, or at least 8As in the recent IGCSE.",
+        "Not exceeding 18 years of age at the enrollment date for the foundation studies."
+      ],
+      "academicQualifications": [
+        "Applicants must demonstrate consistent and outstanding academic achievement.",
+        "SPM and Form 4 results are mandatory, while forecast and trial results are optional."
+      ],
+      "additionalCriteria": [
+        "Participation in national or international competitions is an added advantage.",
+        "Ability to demonstrate a commitment to nation-building."
+      ]
+    },
+    "requiredDocuments": [
+      "SPM results.",
+      "Certificates of extra-curricular activities.",
+      "Parents or guardians' salary slips or EA Form. If self-employed or unemployed, provide latest financial statements or other supporting documents.",
+      "Passport-size photo taken within the last 6 months.",
+      "Certified true copies of applicants' and parents' identity cards (IC)."
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Arts and Humanities (e.g., Philosophy, History, Linguistics, Art and Design)",
+        "Engineering and Technology (e.g., Computer Science, Chemical Engineering, Civil Engineering)",
+        "Life Sciences (e.g., Biological Science, Psychology, Agriculture)",
+        "Natural Sciences (e.g., Chemistry, Geography, Mathematics, Material Science)",
+        "Social Sciences (e.g., Accounting and Finance, Sociology, Law, Business Management)"
+      ],
+      "notOffered": [
+        "Medicine",
+        "Dentistry",
+        "Veterinary Medicine",
+        "Petroleum Engineering"
+      ]
+    },
+    "countriesOffered": [
+      "United Kingdom",
+      "United States",
+      "Australia",
+      "Canada",
+      "China"
+    ],
+    "bondingDetails": {
+      "duration": "1-to-1 ratio of study period to working years",
+      "workLocation": "GLCs, GLICs, or government agencies under Khazanah Nasional Berhad"
+    },
+    "applicationTimeline": {
+      "startDate": "May 20, 2024",
+      "endDate": "June 5, 2024",
+      "note": "Ensure application and supporting documents are submitted before the deadline."
+    },
+    "numberOfRecipients": {
+      "previousYear": 24,
+      "annually": 31
+    },
+    "applicationLink": [
+      "https://www.yayasankhazanah.com.my/scholarship-programmes/khazanah-global-scholarship-programme"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Results for each stage are sent via email.",
+      "Applicants must reply to emails for further stages; failure to do so will result in disqualification."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Verbal and Numerical Test",
+        "details": "Applicants are required to take advanced logiks numerical and verbal reasoning tests. Numerical tests involve data and chart analysis, while verbal tests focus on reading comprehension.",
+        "tips": [
+          "Logiks numerical is a test on your data and chart analysis skills which requires some simple math calculation. Make sure you have everything needed (calculator, notebook, pen, etc.) with you before starting the assessment. Although the calculation is not that difficult, time constraint is the biggest challenge as there is lots of information that needs to be processed in a short time. Try your best to complete each question in around 1 minute.",
+          "Logiks verbal is a test on your reading skills and comprehension ability. You will be given 12 passages in various languages of your choice with 3 questions each passage. Try your best to complete each passage in around 2 minutes. Some questions are quite tricky so read carefully before you pick an answer.",
+          "Before you start the test, make sure you try out some questions in the link given below. Questions are really similar to the Oxford Thinking Skills Assessment (TSA) tests. https://practicetests.cubiks.com/ability-tests/advanced"
+        ]
+      },
+      {
+        "stage": "Stage 2: Personality and Moral Reasoning Test",
+        "details": "Applicants take the Cubiks Team Role Questionnaire, PAPI 3N, and Khazanah CRI to assess suitability.",
+        "tips": [
+          "There is nothing much to worry about this session. Just follow the instructions given by the assessment website and answer the questions honestly - Expect some real case scenario which you need to judge what is your reasoning behind an action",
+          "This is not a matter of right or wrong, it is all about suitability. Applicants face the Cubiks Team Role Questionnaire, Cubiks PAPI 3N & Khazanah CRI",
+          "https://www.practiceaptitudetests.com/testing-publishers/cubiks/",
+          "https://practicetests.cubiks.com/personality-assessment/papi"
+        ]
+      },
+      {
+        "stage": "Stage 3: Assessment Centre",
+        "details": "A physical session divided into a group case study and an individual interview.",
+        "tips": [
+          "Part 1 : Group Case study",
+          "For the case study, you need to work with a group of 4 to 6 individuals playing the role of Legoland Malaysia CEOs. Collaborate to select candidates for 6 director vacancies. In the first half-hour, each of you will receive 2 CVs, and read them silently for 30 minutes.",
+          "Then, you have 3 minutes each to present and suggest suitable positions for the applicants. You're provided with paper, pencil, and a calculator to jot down information shared by your peers.",
+          "Finally, 20 minutes is allocated for group discussion to decide which candidates from the CVs should fill the vacancies, ensuring all positions are filled and the budget is sufficient. Then, 1 person would summarise the group discussion made which marks the end of the group case study. They would also ask each person their opinions and feedback on Khazanah interviews.",
+          "Part 2: Individual Interview ( IN STAGE 3, GENERALLY ONLY TALKING ABOUT YOUR PAST )",
+          "They really focus on your PAST experiences, talking about your achievements, your competitions, your roles and responsibilities in school. They would also ask questions from your essay, so be sure to know everything about what you wrote in your essay."
+        ]
+      },
+      {
+        "stage": "Stage 4: Interview with YK Management",
+        "details": "Almost similar with stage 3 individual interview but it was held online. Although it is individual interview, you will still be divided into groups.",
+        "tips": [
+          "The interviewers will ask a few questions and each of you will take turn to answer the questions.",
+          "If you are too anxious to be the first one, don't worry and let others to talk first. It does not matter whether you talk first or last.",
+          "The questions asked is generally related your intended course, what makes you unique as well as your highest achievement.",
+          "Talk about something that is more special apart from academic success. And also, they might ask about your career goals in their company."
+        ]
+      },
+      {
+        "stage": "Stage 5: Interview with YK Trustees",
+        "details": "Finally, you have reached the final stage. Here, the interview process is similar to stage 4 where each of you take turns to answer questions.",
+        "tips": [
+          "The difference between stage 4 and stage 5 is just the type of questions asked.",
+          "Expect some personal-based questions including your family, your hobby and your passion.",
+          "Just tell about how all of these shaped you and make you a better person.",
+          "Be sure to not be too static and professional, and do be more personal with the Trustee, it is good to show personality."
+        ]
+      }
+    ],
+    "contactEmail": "ykselect@yayasankhazanah.com.my",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "Jordan Lee Fur Yuan",
+        "contributorImage": "/assets/portrait/jordan.jpg",
+        "intendedCourse": "Civil Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "jordan_lfy",
+        "currentStudies": "A-levels",
+        "motivationalQuote": "Leadership is not about titles, it’s about impact and influence.",
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "ESSAY. Be honest in your essay, and also make sure your essays shows REFLECT. I think it's important in YK becuase in STAGE 3, 4 & 5, they always read your essay before interviewing you, your essay would be your first impression towards the interviewer. In your INTERVIEW, speak confidently (YK USUALLY LIKE PEOPLE WHO ARE VOCAL, AND REALLY SHOW LEADERSHIP QUALITIES in their answers). Always feedback strongly."
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "i) Show leadership qualities in your answers ",
+              "YK wants future leaders, so speak confidently with poise and be sure to put your ideas forwards ",
+              "ii) Nation building mindset",
+              "Having this mindset does not mean you will get the scholarship, but it does do you good to set some intentions right. You are the person that you are today, because of the people & community that has shaped you. Be sure to include how involvement in their company can even better improve yourself as a person and a future leader. ",
+              "iii) Prepare ",
+              "company knowledge (especially in your respective fields) so that you can talk about it",
+              "Data and stuff happening around MALAYSIA and the world so you can use it as an example or case study for your answer ",
+              "Find past scholars to get their opinions and listen to the questions they get, so you can better prepare for the questions before you interview"
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Phuah Jun Xi",
+        "contributorImage": "/assets/portrait/junxi.jpg",
+        "intendedCourse": "Electrical & Electronics Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "junxi.py",
+        "currentStudies": "A-levels",
+        "motivationalQuote": "Innovation is at the heart of progress.",
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. How do you overcome life problems, stress, and manage time effectively?",
+              "2. Describe an event that showcased your leadership qualities.",
+              "3. Where do you see yourself in 5 years, 10 years?",
+              "4. How would you contribute to Malaysia?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Relax and don’t forget to smile!"
+            ]
+          },
+          {
+            "title": "Advice and Tips to share to your juniors",
+            "content": [
+              "Take it as a conversation and express your thoughts genuinely."
+            ]
+          }
+        ]
+      },
+      {
+        "contributorName": "Low Cheng Xian",
+        "contributorImage": "/assets/portrait/chengxian.jpg",
+        "intendedCourse": "Aeronautical Engineering",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "chengxian.low",
+        "currentStudies": "A-levels",
+        "motivationalQuote": "The sky is not the limit; it’s just the beginning.",
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Describe an event that showcased your leadership qualities.",
+              "Ans: During last August, my school Chinese language teacher plan to organise a Kedah state level Chinese Language Carnival. Therefore, she selected a student committee to ensure the event can be run smoothly and I am honoured to be chosen as the advisor of the committee. The event is mainly made up of two parts which is the first one, a calligraphy competition, and second one, a quiz competition. Let me just share about my role in the second part. While the quiz competition committee came out with the questions, I am responsible to check for the quality of the questions. This is my first time to hold a position as advisor, so there are a few miscommunications that cause the questions don't meet the standards required by the teacher. Luckily, after I coordinated with the committee and came out with a clearer instruction, we managed to finalise the questions and the teacher is happy with that. After all hard work, the event was a total success and most importantly, I have learnt how to communicate effectively with others and be a better leader. ",
+              "2. What is your intended course and why?",
+              "Ans: I would like to study aeronautical engineering. I have been a fan of a documentary series, named Air Crash Investigation. From this documentary, I am astonished by the highly sophisticated structure of an aircraft and how much details are needed to ensure a plane can fly safely. Even one single miscalculation or oversight that seems to be a minor error could lead to a catastrophic disaster. Although these kinds of disaster are heartbreaking, it is important for us to learn from these incidents so that everyone can fly safely. Therefore, I started to think that I would like to pursue a career related to aviation technology. It is not only because I love to solve complex problems, but also due to my passion to contribute to the improvement of this industry. For me, aviation technologies are not all about flying faster and faster. In fact, innovations on how we can make an airplane safer should be prioritised before we think about catching up the speed of sound and even light.",
+              "3. What makes Khazanah Scholarship unique compared to others?",
+              "Ans: Khazanah scholarship absolutely stands out from others when I am doing research on scholarships. One of the most significant features is the variety of courses offered. I am really surprised that most of the courses that I can think of are indeed offered by YK, including the one that I am planning to study, which is aeronautical engineering. I can't find courses like this any other scholarship. Furthermore, Khazanah also provide leadership trainings and job attachments in some of the nation's best organisations upon graduation. For me, these experiences are important to build a strong interpersonal skill as well as providing an opportunity to put what I have learnt into practice. Just like me, who planned to study aeronautical engineering, I am looking forward to entering one of Khazanah's selected portfolio companies, which is Malaysia Aviation Group. I am sure that I can learn something more extraordinary rather than just theory from the professionals there. All in all, Khazanah scholarship is exceptionally well in building talented and well-rounded leaders in Malaysia.",
+              "4. Have you ever disagreed with a teacher? How did you solve it?",
+              "Ans: Yes, I have once disagreed with my Chemistry teacher. It was during Form 4 when I received my Chemistry year end examination results. There is one essay question where I wrote something that is out of syllabus and the teacher did not award me some marks. I am pretty sure that what I had written is correct because I read it somewhere in a scientific journal. I tried to discuss with that teacher whether the answer is accepted. After doing some simple searching, we found out that the answer is indeed correct, but it somehow contradicts with the textbook used. Therefore, the teacher is unable to award any extra marks for that answer and I agreed with the teacher's decision. The teacher suggested me to answer the exams based on what is in the textbook because that is where the answer scheme is constructed. Since on, I tried my best to stick to the textbook when answering the questions in exam and keep what I have learnt outside the syllabus to myself.",
+              "5. What makes you different from other candidates?",
+              "Ans: I think what really set me apart from other candidates is that I have a deep passion in engineering field. I always enjoy reading scientific journals as well as watching documentaries in order to know more about the engineering approaches that is used to solve current issues nowadays including global warming and so on. On top of that, my passion has driven me to seek for an exciting industrial experience. After I finished my SPM examination, I managed to find a part time job in a local technology company, which is ViTrox Corporation Bhd with the help of my sister. During that period, I am exposed to some of the current technologies especially electronics and AI. What I need to do during the job is actually classify and process the input data that will be fed to AI for machine learning. It is not only the job that I have done excites me, but also what I have learnt that impact my thought. From this experience, I started to wondering on how are these related to my intended course. After some searching and reading, I am happy to find out some similarities and connections between these technologies that I am exposed to during the job with avionics in aircraft that power some crucial systems including autopilot. "
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Be yourself and be confident in yourself.",
+              "Be genuine and never lie on any of the questions.",
+              "Take time to understand the questions before responding to it. It is not that you must answer the questions immediately after it is asked, take a short time to recall and think properly before you talk.",
+              "Learn how other candidates speak during interviews and try to improve yourself from that. ",
+              "Make new friends and enjoy the interview process. You will meet a lot of lovely and kind person including your peers as well as the interviewers."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "Research Yayasan Khazanah thoroughly.",
+              "Study your intended course and its importance to Malaysia’s development.",
+              "Give clear examples and evidence to support your answers rather than just talking generally.",
+              "Use the STAR method to help you elaborate your answers, especially when you are asked about your experiences:",
+              "S: Situation - What is the situation you faced?",
+              "T: Task - What are your tasks or responsibilities?",
+              "A: Action - Give a clear flow of what you have done.",
+              "R: Results - Don't just talk about what you achieved, but also how it changed or shaped you/made you better.",
+              "Focus on your personal development and growth.",
+              "Keep up-to-date with recent global and local issues and think critically about solutions.",
+              "It's just a matter of suitability, not ability, so don't be sad if you don't get it. Just enjoy it as a part of learning. Wish you all the best!"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "fgv-scholarship-programme",
     "name": "FGV Scholarship Programme",
     "shortName": "FGV",
@@ -2231,6 +2478,175 @@
             "content": [
               "Based on what I heard during the interview, this scholarship is almost fully funded by the college that you applied for. Thus, I can’t assure that every interview will be conducted the same as what I had experienced before.",
               "But according to my experience (BAC 1 year FIL, 3 years UOL LLB), they want you to be honest and put them on the top of your priorities list. They most likely will choose those who can surely contribute to their college, so better do more research thoroughly on the course and the college you applied."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yuem",
+    "name": "Yayasan UEM Education Scholarship",
+    "shortName": "Yayasan UEM",
+    "description": "The YUEM Scholarship offers SPM leavers the opportunity to undergo pre-university studies at KYUEM, followed by an undergraduate degree at renowned top global universities. Scholars will have access to various Scholars Development Programmes (SDP) and, upon graduation, will work with UEM or their partner companies.",
+    "logoPlaceholder": "/assets/company_logos/uem_logo.jpg",
+    "scholarshipLevel": "global",
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Excellent academic track record in Form 4 and Form 5.",
+        "Obtained a minimum of 7As (A+/As) in relevant subjects in the SPM examination."
+      ],
+      "academicQualifications": [
+        "Malaysian citizen who has completed SPM.",
+        "Candidates must not be in receipt of any other scholarships or financial aid.",
+        "Each applicant can apply for one course only."
+      ],
+      "additionalCriteria": [
+        "Active participation in co-curricular activities.",
+        "Demonstrates leadership qualities and a strong commitment to personal development.",
+        "Must meet the minimum entry requirements of the chosen course and institution."
+      ]
+    },
+    "requiredDocuments": [
+      "SPM results and Form 4/SPM Trial results.",
+      "Co-curricular certificates.",
+      "Parents or guardians' pay slips.",
+      "Certified true copies of Identity Cards (IC) for both parents and candidate.",
+      "Birth certificates of parents and candidate.",
+      "2 essays for the online application."
+    ],
+    "coursesOffered": {
+      "allowed": [
+        "Business (Finance, Business Management, Accounting, Economics)",
+        "Engineering (Civil, Mechanical, Electrical)",
+        "IT and Computer Related (Computer Science, Computer Systems and Networking, Software Engineering, Data Science, Data Engineering)",
+        "Environmental Studies (Science, Technology, Energy)"
+      ],
+      "notOffered": []
+    },
+    "countriesOffered": [
+      "Malaysia",
+      "United States",
+      "United Kingdom",
+      "Australia"
+    ],
+    "bondingDetails": {
+      "duration": "5 years (Global) & 3 years (Local)",
+      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+    },
+    "applicationTimeline": {
+      "startDate": "Immediately after SPM results announcement",
+      "endDate": "Approximately 2 weeks after SPM results announcement",
+      "note": "Applicants must be alert and apply for the scholarship on time."
+    },
+    "numberOfRecipients": {
+      "total": 4
+    },
+    "applicationLink": [
+      "https://www.uem.com.my/yayasan-education-scholarship.html"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Only shortlisted candidates will be contacted by phone.",
+      "If no response is received within 2 months from the closing date, the application is deemed unsuccessful."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Online Application",
+        "details": "Fill up the basic information and submit the required documents along with 2 essays (maximum 300 words each).",
+        "tips": [
+          "Think about your achievements and what makes you stand out before writing your essays.",
+          "Be genuine and avoid using AI for essay writing to ensure authenticity."
+        ]
+      },
+      {
+        "stage": "Video Submission",
+        "details": "Submit a video presentation answering specific questions within a 2-minute limit.",
+        "tips": [
+          "Ensure all supporting documents are certified by your school principal promptly.",
+          "Keep your video presentation clear, concise, and professional."
+        ]
+      },
+      {
+        "stage": "Online Group Interview",
+        "details": "Participate in a group discussion and individual question-answer session via Microsoft Teams.",
+        "tips": [
+          "Wear professional attire and maintain a clean background.",
+          "Stay calm, think clearly, and communicate effectively without dominating the discussion.",
+          "Avoid using AI-generated answers; be authentic in your responses."
+        ]
+      },
+      {
+        "stage": "Physical Individual Interview",
+        "details": "Attend an in-person interview to discuss your qualifications and suitability for the scholarship.",
+        "tips": [
+          "Dress professionally and present yourself neatly.",
+          "Be humble yet confident in showcasing your strengths and how you can contribute to UEM.",
+          "Demonstrate your enthusiasm and commitment to your chosen course."
+        ]
+      }
+    ],
+    "contactEmail": "scholarship.info@uemnet.com",
+    "contactNumber": null,
+    "scholars": [
+      {
+        "contributorName": "NESAMANI AP VICTOR",
+        "contributorImage": "/assets/portrait/nesa_img.jpg",
+        "intendedCourse": "Computer Science",
+        "currentInstitution": "Kolej Yayasan UEM",
+        "contactInformation": "nesamanivictor",
+        "currentStudies": "A-levels",
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": [
+          {
+            "title": "Mock-up Interview Questions and Your Answers",
+            "content": [
+              "1. Introduce yourself.",
+              "2. Where do you want to study and why?",
+              "3. Why that course?",
+              "4. Talk about your family.",
+              "5. What do you think you can bring to our company after you graduate?",
+              "6. Why do you deserve to be a YUEM Scholar?",
+              "7. Talk about your Add Maths journey that you have written in your essay.",
+              "8. Talk about your debate/public speaking experiences that you have mentioned as well.",
+              "9. Talk about your piano skills.",
+              "10. Talk about the innovation competitions you mentioned.",
+              "11. Do you like to work alone or in a group? Why?",
+              "12. Did you find it difficult to learn coding/Arduino on your own?",
+              "13. Talk about your hobbies.",
+              "14. What do you watch on YouTube online?"
+            ]
+          },
+          {
+            "title": "What do you believe is the most crucial element to focus on during the scholarship interview or application process?",
+            "content": [
+              "Focus on essay writing as it is the first impression that they will have of you, and that's the only way they evaluate candidates’ potency and eliminate candidates.",
+              "During the interview, show enthusiasm for the course you are going to pursue and be steadfast with your choice and decision.",
+              "There is no specific thing that they focus on, but try to show your unique self that others don't have."
+            ]
+          },
+          {
+            "title": "Advice and Tips to Share with Your Juniors",
+            "content": [
+              "Online Application Stage:",
+              "- I made sure I really thought through what I wanted to write. I suggest the same to you, fellow aspiring applicants. Don't immediately start writing the essay, think about it for a day and draft it out. Make sure you are genuine with what you write. Don't use any AI for the essays, it can be detected. You want to stand out, so be authentic. Make yourself stand out!",
+              "",
+              "Stage 1 Video Submission:",
+              "- For the supporting documents, make sure you get them certified by your school principal. You need the school stamp and the signature of your principal. PLEASE get it done as soon as you receive this email from YUEM. You don't want to submit at the last minute!",
+              "",
+              "Stage 2 Online Group Interview:",
+              "i) For this online interview, wear something professional. Although it is not mentioned what you are supposed to wear, remember, you want to stand out.",
+              "ii) Since you have to turn on your camera, make sure that your background is clean. (Make sure there are no books messed up behind you or any unfolded, piled-up clothes. Everything matters as it is their first impression of you, so make it a good one.)",
+              "iii) When I saw the question that was presented to us, I honestly had no clue about what I should say and what the managers' expectations were. That was partly the reason why I decided to go after hearing other candidates’ answers. No, I did not \"use\" their answers, but I needed a clear picture of what the question was about. After hearing other candidates, I figured it out and gave a pretty good answer :) that I felt was more original and true. When answering the question, don't panic and don't rush. Answer the question calmly and use the time allocated to the max. There is no right or wrong answer for the question that was asked; it is a matter of how you think and how you communicate and convince the managers.",
+              "iv) The main manager said that he knew some candidates used ChatGPT/AI to get their answers for the question. He told us that the managers already read the AI-generated answers and have a copy right there with them. So as we spoke, they were practically cross-checking our answers. So aspiring applicants, DO NOT use AI for any interviews. Be authentic.",
+              "v) DO NOT monopolize the whole discussion session. There was a guy in my group who did this, and it was not good for us. He tried to be the \"leader.\" Don't get me wrong, you should be the leader if possible, but always make sure you are not overpowering the discussion. You want to stand out, but don't do it while putting others below you. Work together and give everyone a chance to talk and share their views. Remember, we're all in this together! Help each other out. I remember while this guy in my group monopolized the whole session, I just turned on my mic and asked the passive ones what they think about the case study. And then everyone started talking and sharing their opinions."
+            ]
+          },
+          {
+            "title": "Stage 3 Physical Individual Interview",
+            "content": [
+              "- Wear professional clothes and covered shoes. Be neat and tidy. Be calm and composed when you talk to them and brag about yourself in a humble way. You need to convince them (not by bragging toooooo much) that you are the best candidate out there to carry their company name."
             ]
           }
         ]
