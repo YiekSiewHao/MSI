@@ -58,6 +58,7 @@ const Header = styled.div`
     max-height: 400px; /* Reduced max-height for better responsiveness */
     object-fit: cover;
     border-radius: 10px;
+    /* Existing properties remain unchanged */
   }
 
   .text-section {
@@ -146,7 +147,15 @@ const Header = styled.div`
       }
     }
   }
+
+  /* New Media Query for Large Screens (Greater than 1600px) */
+  @media (min-width: 1600px) {
+    img {
+      object-position: center 45%; /* Slight downward shift */
+    }
+  }
 `;
+
 
 
 const BackButton = styled.button`
