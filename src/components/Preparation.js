@@ -833,6 +833,20 @@ const Preparation = () => {
                 </ViewButton>
               </ButtonGroup>
             </InterviewItem>
+            
+            <InterviewItem>
+              <ScholarshipName>JPA Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/scholarships_file_downloads/JPA.pdf" download>
+                  <FaFileDownload />
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/scholarships_file_downloads/JPA.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
 
             <InterviewItem>
               <ScholarshipName>FGV Scholarship</ScholarshipName>
@@ -842,6 +856,20 @@ const Preparation = () => {
                   Download PDF
                 </DownloadButton>
                 <ViewButton href="/assets/scholarships_file_downloads/FGV.pdf" target="_blank" rel="noopener noreferrer">
+                  <FaFileAlt />
+                  View File
+                </ViewButton>
+              </ButtonGroup>
+            </InterviewItem>
+
+            <InterviewItem>
+              <ScholarshipName>Sarawak Energy Scholarship</ScholarshipName>
+              <ButtonGroup>
+                <DownloadButton href="/assets/scholarships_file_downloads/Sarawak_Energy.pdf" download>
+                  <FaFileDownload />
+                  Download PDF
+                </DownloadButton>
+                <ViewButton href="/assets/scholarships_file_downloads/Sarawak_Energy.pdf" target="_blank" rel="noopener noreferrer">
                   <FaFileAlt />
                   View File
                 </ViewButton>

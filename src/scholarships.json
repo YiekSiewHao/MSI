@@ -1101,7 +1101,7 @@
   {
     "id": "kijang-bnm",
     "name": "Bank Negara Malaysia Kijang Scholarship",
-    "shortName": "Kijang Scholarship",
+    "shortName": "Bank Negara",
     "description": "The Kijang Scholarship is awarded to eligible individuals to pursue pre-university programmes at BNM's approved pre-university colleges. This scholarship provides tuition fees, subsistence allowance, as well as related scholarship allowances. The subsequent sponsorship to pursue an undergraduate programme is subject to the candidate meeting the Bank’s requirements.",
     "logoPlaceholder": "/assets/company_logos/bank_negara.png",
     "scholarshipLevel": "global",
@@ -1227,7 +1227,7 @@
       },
       {
         "contributorName": "Liaw Chong Ye",
-        "contributorImage": "/assets/portrait/Liaw.jpg",
+        "contributorImage": "/assets/portrait/liawchongye.jpg",
         "intendedCourse": "Economics",
         "currentInstitution": "Kolej Yayasan UEM",
         "contactInformation": "layawcina",
@@ -1612,7 +1612,7 @@
   {
     "id": "bcns",
     "name": "Biasiswa Cemerlang Negeri Sabah",
-    "shortName": "BCNS",
+    "shortName": "Yayasan Sabah",
     "description": "The Biasiswa Cemerlang Negeri Sabah is a scholarship that is awarded to top-scoring SPM students who reside in Sabah by Yayasan Sabah. This scholarship provides an opportunity for the scholars to pursue their undergraduate studies, whether locally or abroad. Upon graduation, the scholars are encouraged to come back to Sabah to serve the state and forge a brighter future for the people of Sabah.",
     "logoPlaceholder": "/assets/company_logos/Yayasan_Sabah_logo.png",
     "scholarshipLevel": "global",
