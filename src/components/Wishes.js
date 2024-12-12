@@ -322,7 +322,7 @@ const Wishes = () => {
     {
       id: 1,
       name: 'Kelvin Ngu',
-      course: 'Material Science at Oxford University',
+      course: 'Material Science at University of Oxford',
       instagram: '@kelvinnzh',
       instagramLink: 'https://www.instagram.com/kelvinnzh',
       scholarship: 'JPA Scholar',
@@ -333,7 +333,7 @@ const Wishes = () => {
     {
       id: 2,
       name: 'Joel Pang',
-      course: 'Chemical Engineering at Caltech',
+      course: 'Chemical Engineering at California Institute of Technology',
       instagram: '@joelllpang',
       instagramLink: 'https://www.instagram.com/joelllpang',
       scholarship: 'Shell Scholar',
