@@ -141,7 +141,10 @@
         "contactInformation": "i_am_not_shengze",
         "currentStudies": "A-levels",
         "motivationalQuote": null,
-        "resumeImage": null,
+        "resumeImages": [
+          "/assets/resume/sheng_ze_resume1.jpg",
+          "/assets/resume/sheng_ze_resume2.jpg"
+        ],
         "stories": [
           {
             "title": "Mock-up Interview Questions and Answers",
@@ -1565,7 +1568,7 @@
         "currentStudies": "Foundation in Engineering and Science",
         "motivationalQuote": null,
         "resumeImages": [
-          "/assets/resume/jason_resume.jpg"
+          "/assets/resume/jason_hii_resume.jpg"
         ],
         "stories": [
           {
@@ -2229,6 +2232,9 @@
         "contactInformation": "m4riss4_dhaniyah",
         "currentStudies": "A-levels",
         "motivationalQuote": null,
+        "resumeImages": [
+          "/assets/resume/marissa_resume.jpg"
+        ],
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -2375,7 +2381,10 @@
         "contactInformation": "muhmd.umr",
         "currentStudies": "A-levels",
         "motivationalQuote": null,
-        "resumeImage": null,
+        "resumeImages": [
+          "/assets/resume/umar_resume1.jpg",
+          "/assets/resume/umar_resume2.jpg"
+        ],
         "stories": [
           {
             "title": "Mock-up Interview Questions and Your Answers",
@@ -2572,12 +2581,7 @@
       "Identity Card",
       "Birth certificates"
     ],
-    "coursesOffered": {
-      "allowed": [
-        "Alot 😭"
-      ],
-      "notOffered": []
-    },
+    "coursesOffered": null,
     "countriesOffered": [
       "Local"
     ],
