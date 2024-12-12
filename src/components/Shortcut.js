@@ -1,14 +1,11 @@
 // src/components/Shortcut.js
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
-import { FaFileAlt, FaChartBar, FaEnvelope, FaClipboardList } from 'react-icons/fa'; // Added new icon for Interview Card
+import styled, { createGlobalStyle } from 'styled-components';
+import { FaFileAlt, FaChartBar, FaEnvelope, FaClipboardList } from 'react-icons/fa';
 
 // Global Font Import
-import { createGlobalStyle } from 'styled-components';
-
-// Global Styles to include Google Fonts
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -22,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
 /* Styled Components */
 
 const ShortcutContainer = styled.div`
+  font-family: 'Poppins', sans-serif;
   padding: 60px 20px;
   max-width: 1500px;
   margin: 0 auto;
@@ -30,7 +28,6 @@ const ShortcutContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0; 
 
   @media (max-width: 768px) {
     padding: 40px 15px;
@@ -39,15 +36,6 @@ const ShortcutContainer = styled.div`
   @media (max-width: 480px) {
     padding: 30px 15px;
   }
-  
-  &.show {
-    animation: fadeInUp 1s ease-out forwards;
-  }
-
-  @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
 `;
 
 // Heading for the Shortcut component
@@ -55,8 +43,7 @@ const Heading = styled.h2`
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: #2c3e50;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-weight: 600;
 
   @media (max-width: 768px) {
@@ -94,7 +81,6 @@ const CardsContainer = styled.div`
   gap: 40px;
   flex-wrap: wrap;
   max-width: 100%;
-  animation: fadeInUp 1s ease-out;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -112,7 +98,7 @@ const CardsContainer = styled.div`
   }
 `;
 
-// Individual Card styled as a Link
+// Individual Card styled as a Button
 const Card = styled.button`
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
@@ -167,10 +153,9 @@ const CardIcon = styled.div`
 const CardTitle = styled.h3`
   font-size: 20px;
   color: #007bff;
-  margin-bottom: 5px;
-  margin-top: 0px;
+  margin: 0 0 5px 0;
   font-weight: 600;
-  text-align:left;
+  text-align: left;
 
   @media (max-width: 768px) {
     font-size: 18px;
@@ -189,7 +174,7 @@ const CardDescription = styled.p`
   color: #555;
   margin: 0;
   font-weight: 400;
-  text-align:left;
+  text-align: left;
 
   @media (max-width: 768px) {
     font-size: 14px;
@@ -202,7 +187,6 @@ const CardDescription = styled.p`
 
 const Shortcut = () => {
   const navigate = useNavigate();
-  const [isVisible, setIsVisible] = useState(false);
 
   const handleSampleEssaysClick = () => {
     navigate('/preparation#sample-essays');
@@ -220,23 +204,10 @@ const Shortcut = () => {
     navigate('/preparation#interview-questions-answers');
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-    observer.observe(document.querySelector('#shortcut-section'));
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <>
       <GlobalStyle />
-      <ShortcutContainer id="shortcut-section" className={isVisible ? 'show' : ''}>
+      <ShortcutContainer id="shortcut-section">
         <Heading>Resource Pack</Heading>
         <HeadingDescription>
           The MSI Resource Pack provides essential materials to help you prepare for scholarship applications, including essays, case studies, and appeal letters.

@@ -1,3 +1,5 @@
+// src/components/Header.js
+
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
@@ -27,14 +29,14 @@ const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-right:5px;
+  padding-right: 5px;
 
-    @media (max-width: 768px) {
-  padding-right:3px;
+  @media (max-width: 768px) {
+    padding-right: 3px;
   }
 
   @media (max-width: 480px) {
-  padding-right:0px;
+    padding-right: 0px;
   }
 `;
 
@@ -157,12 +159,50 @@ const MobileNavLink = styled.a`
   }
 `;
 
-const Header = ({ 
-  onHomeClick, 
-  onScholarshipListClick, 
-  onContactClick, 
-  onWishesClick, 
-  onEventsClick 
+// Animation Variants for Mobile Navigation
+const mobileNavVariants = {
+  open: {
+    height: 'auto',
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      when: 'beforeChildren',
+      staggerChildren: 0.05,
+    },
+  },
+  closed: {
+    height: 0,
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      when: 'afterChildren',
+    },
+  },
+};
+
+const mobileNavItemVariants = {
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.2,
+    },
+  },
+  closed: {
+    opacity: 0,
+    y: -20,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
+const Header = ({
+  onHomeClick,
+  onScholarshipListClick,
+  onContactClick,
+  onWishesClick,
+  onEventsClick,
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -173,7 +213,7 @@ const Header = ({
     setIsMobileMenuOpen(false);
     if (location.pathname !== '/') {
       navigate('/');
-      setTimeout(() => scrollToSection(), 100);
+      setTimeout(() => scrollToSection(), 100); // Slight delay to ensure page has navigated
     } else {
       scrollToSection();
     }
@@ -199,51 +239,17 @@ const Header = ({
     { name: 'Contact Us', onClick: () => handleNavigation(onContactClick) },
   ];
 
-  const mobileNavVariants = {
-    open: {
-      height: 'auto',
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        when: 'beforeChildren',
-        staggerChildren: 0.05,
-      },
-    },
-    closed: {
-      height: 0,
-      opacity: 0,
-      transition: {
-        duration: 0.3,
-        when: 'afterChildren',
-      },
-    },
-  };
-
-  const mobileNavItemVariants = {
-    open: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.2,
-      },
-    },
-    closed: {
-      opacity: 0,
-      y: -20,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-
   return (
     <HeaderContainer>
       <HeaderContent>
         <LogoContainer>
+          {/* Logo Image */}
           <Logo src="/assets/MSI_Logo.png" alt="Logo" />
+          {/* Title Link - Clicking this redirects to home page */}
           <TitleLink to="/">Malaysian Student Initiative</TitleLink>
         </LogoContainer>
 
+        {/* Desktop Navigation */}
         <Nav>
           <NavList>
             {menuItems.map((item, index) => (
@@ -254,11 +260,13 @@ const Header = ({
           </NavList>
         </Nav>
 
+        {/* Mobile Menu Button */}
         <MenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </MenuButton>
       </HeaderContent>
 
+      {/* Mobile Navigation Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <MobileNav
