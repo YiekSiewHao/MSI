@@ -454,7 +454,7 @@ const About = () => {
       <LogoContainer>
         <img src="/assets/MSI_Logo.png" alt="MSI Logo" />
         <p>
-          Shoutout to <strong>Ibrahim Lua Ming-Zhi</strong> for designing the MSI logo. Your creativity and effort are deeply appreciated!
+          Shoutout to <strong>Ibrahim Lua Ming-Zhi</strong> and <strong>Eleanor Ting Pik En</strong> for designing the MSI logo. Your creativity and effort are deeply appreciated!
         </p>
       </LogoContainer>
 
