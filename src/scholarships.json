@@ -348,7 +348,7 @@
     "scholars": [
       {
         "contributorName": "Liyana Mohammed Rafidz",
-        "contributorImage": "/assets/portrait/Liyana.jpg",
+        "contributorImage": "/assets/portrait/liyana.jpg",
         "intendedCourse": "Data Science",
         "currentInstitution": "Kolej Yayasan UEM",
         "contactInformation": "liyana_rafidz",
@@ -464,13 +464,12 @@
       "2 essays for the online application."
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Business (Finance, Business Management, Accounting, Economics)",
         "Engineering (Civil, Mechanical, Electrical)",
         "IT and Computer Related (Computer Science, Computer Systems and Networking, Software Engineering, Data Science, Data Engineering)",
         "Environmental Studies (Science, Technology, Energy)"
-      ],
-      "notOffered": []
+      ]
     },
     "countriesOffered": [
       "Malaysia",
@@ -480,7 +479,7 @@
     ],
     "bondingDetails": {
       "duration": "5 years (Global) & 3 years (Local)",
-      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+      "workLocation": null
     },
     "applicationTimeline": {
       "startDate": "Immediately after SPM results announcement",
@@ -916,7 +915,7 @@
     "scholars": [
       {
         "contributorName": "Jolin Sung Jie Lin",
-        "contributorImage": "/assets/portrait/jolinsung.JPG",
+        "contributorImage": "/assets/portrait/jolinsungnew.jpg",
         "intendedCourse": "Pharmacy",
         "currentInstitution": "Sunway College",
         "contactInformation": "sungjolin",
@@ -999,12 +998,12 @@
       "Application form (instruction given in the website)."
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Engineering & Technical",
         "Science & Technology",
         "Social Science: Political Science / International Relations, Finance / Banking, Accounting / Taxation, Economics, Psychology"
       ],
-      "notOffered": [
+      "Courses Not Offered": [
         "Medicine",
         "Dentistry",
         "Educational Pharmacy",
@@ -1344,19 +1343,22 @@
       "Copy of Parents' or Guardians' salary slips or EA form"
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Technology & Digital",
         "Computer Science",
         "Creative Multimedia",
         "Management",
         "Engineering"
       ],
-      "notOffered": [
+      "Courses Not Offered": [
         "Medicine",
         "Dentistry",
-        "Educational Pharmacy",
-        "Nursing",
-        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
+        "Pharmaceutical",
+        "Clinical Psychology",
+        "Food Technology",
+        "Fine Arts",
+        "Aeronautics",
+        "and other related studies"
       ]
     },
     "countriesOffered": [
@@ -1492,14 +1494,14 @@
       "Offer letter from the university that you prefer to study at"
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Electrical Engineering",
         "Civil Engineering",
         "Mechanical Engineering",
         "ICT (Software Engineering / Computer Science / Information Systems)",
         "Accounting / Finance / Commerce"
       ],
-      "notOffered": [
+      "Courses Not Offered": [
         "Medicine",
         "Dentistry",
         "Pharmaceutical",
@@ -1645,10 +1647,9 @@
       "Salinan slip gaji/surat tidak bekerja Ibu bapa"
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Open / Student's choice"
-      ],
-      "notOffered": []
+      ]
     },
     "countriesOffered": [
       "Both Local and Global (examples: United Kingdom, Singapore, Australia, Canada, United States)"
@@ -1789,20 +1790,13 @@
       "PAJSK Certificate"
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Chemical Engineering",
         "Environmental / Sustainability",
         "Accounting",
         "Electrical Engineering",
         "Data Science and Analytics",
         "Computer Science"
-      ],
-      "notOffered": [
-        "Medicine",
-        "Dentistry",
-        "Educational Pharmacy",
-        "Nursing",
-        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
       ]
     },
     "countriesOffered": [
@@ -1814,8 +1808,7 @@
     },
     "applicationTimeline": {
       "startDate": "May 27, 2024",
-      "endDate": "June 6, 2024",
-      "note": "SPM result released: 27 May 2024. All documents and certificates must be submitted to Yayasan Pelajaran Johor office in Larkin, Johor Bahru before deadline."
+      "endDate": "June 6, 2024"
     },
     "numberOfRecipients": {
       "previousYear": "around 25-30",
@@ -1923,14 +1916,14 @@
       "Certified true copies of applicants' and parents' identity cards (IC)."
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Arts and Humanities (e.g., Philosophy, History, Linguistics, Art and Design)",
         "Engineering and Technology (e.g., Computer Science, Chemical Engineering, Civil Engineering)",
         "Life Sciences (e.g., Biological Science, Psychology, Agriculture)",
         "Natural Sciences (e.g., Chemistry, Geography, Mathematics, Material Science)",
         "Social Sciences (e.g., Accounting and Finance, Sociology, Law, Business Management)"
       ],
-      "notOffered": [
+      "Courses Not Offered": [
         "Medicine",
         "Dentistry",
         "Veterinary Medicine",
@@ -2285,8 +2278,7 @@
     "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Able to express yourself fluently and be open to everything",
-        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports."
+        "Participate in diverse types of extracurricular activities"
       ],
       "academicQualifications": [
         "Obtained a minimum of 8 A’s (combination of A and A+) in the recent SPM examination",
@@ -2308,36 +2300,29 @@
       "* All copies must be certified (CTC)"
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "Technology & Digital",
         "Computer Science",
         "Creative Multimedia",
         "Management",
         "Engineering"
-      ],
-      "notOffered": [
-        "Medicine",
-        "Dentistry",
-        "Educational Pharmacy",
-        "Nursing",
-        "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
       ]
     },
     "countriesOffered": [
-      "Both. Usually the United States or United Kingdom but YTM also sends their students to France, Germany, Korea, Japan, or Australia."
+      "Both. Usually the United States or United Kingdom but YTM also send their students to France, Germany, Korea, Japan, or Australia."
     ],
     "bondingDetails": {
       "duration": "Serve for 5 years for local students and 7 years for overseas students if hired by TM Group",
-      "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
+      "workLocation": null
     },
     "applicationTimeline": {
       "startDate": "May 27, 2024",
-      "endDate": "June 6, 2024",
-      "note": "SPM result released: 27 May 2024. All documents and certificates must be submitted to Yayasan Pelajaran Johor office in Larkin, Johor Bahru before deadline."
+      "endDate": "June 3, 2024",
+      "note": "(Right after announcement of SPM Results and last for one week)(subject to change)"
     },
     "numberOfRecipients": {
-      "total": 190,
-      "global": 8,
+      "total": 190 ,
+      "overseas": 8,
       "local": 182
     },
     "applicationLink": "https://ytm.tm.com.my/scholarships-future-leader#future_leaders_scholarship",
@@ -2348,25 +2333,19 @@
     ],
     "applicationProcess": [
       {
-        "stage": "Stage 1 : Register your account.",
-        "details": "Search up the YTN website and make an account, proceed to login and fill up everything necessary. (Fill in before the deadline !!)",
+        "stage": "Stage 1 : Logiks General Test",
+        "details": "In the first stage, applicants will be answering English, Math and Pattern test, where there will be multiple questions for each component to be answered in specific amount of time. ",
         "tips": [
-          "Fill in before the deadline !!"
         ]
       },
       {
-        "stage": "Stage 2 :Verbal and Numerical Ability Test",
-        "details": "You are going to sit for an English and Math test, where you have to complete a number of questions in a certain amount of time.",
+        "stage": "Stage 2: Documents Submission",
+        "details": "In this stage, applicants need to submit the essential documents including resume, video resume and a personal statement.",
         "tips": []
       },
       {
-        "stage": "Stage 3 : Interview( 1st Selection ) with Personality and Moral Reasoning Test",
-        "details": "Around 150 candidates will be selected and there will be a morning and afternoon session for the interview. Before entering the interview room, you will have to fill in some questions about your hobbies and how you would act in certain scenarios and which action you will most likely take.",
-        "tips": []
-      },
-      {
-        "stage": "Stage 4 : Interview (2nd Selection )",
-        "details": "After the 1st Interview, there will be an announcement for those who are chosen to attend the 2nd interview. This interview is quite similar to the 1st interview, just that the interviewer is different.",
+        "stage": "Stage 3 : Interview",
+        "details": "The interview will be held online but subject to change.",
         "tips": []
       }
     ],
@@ -2387,13 +2366,10 @@
         ],
         "stories": [
           {
-            "title": "Mock-up Interview Questions and Your Answers",
+            "title": "Tips on answering YTM interview questions:",
             "content": [
-              "1. Introduce yourself",
-              "2. What do you know about our organisation?",
-              "3. What is your opinion towards xxx?",
-              "4. Why did you choose this course?",
-              "5. What makes you deserve this scholarship?"
+              "Stay true to what you say. It is best to show who you really are rather than trying to impress the panel.",
+              "YTM interview session is not like the typical type of interview, so do expect the unexpected questions."
             ]
           },
           {
@@ -2440,10 +2416,9 @@
       "Actual copies of the documents are only requested when shortlisted for the interview stage, including a scan of your identity document and examination results transcript."
     ],
     "coursesOffered": {
-      "allowed": [
+      "Courses Offered": [
         "N/A, the scholarship leads to the Singapore-Cambridge GCE A-Level certificate or similar qualification."
-      ],
-      "notOffered": []
+      ]
     },
     "countriesOffered": [
       "ASEAN countries excluding Singapore itself (the Malaysia scholarship is specifically for Malaysian students)"

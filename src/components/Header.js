@@ -40,6 +40,14 @@ const LogoContainer = styled.div`
   }
 `;
 
+// New Styled Component for Logo Link
+const LogoLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+`;
+
+// Modified Logo Image
 const Logo = styled.img`
   width: 50px;
   height: 50px;
@@ -57,6 +65,7 @@ const Logo = styled.img`
   }
 `;
 
+// Modified TitleLink to include onClick
 const TitleLink = styled(Link)`
   color: white;
   font-weight: 600;
@@ -243,10 +252,15 @@ const Header = ({
     <HeaderContainer>
       <HeaderContent>
         <LogoContainer>
-          {/* Logo Image */}
-          <Logo src="/assets/MSI_Logo.png" alt="Logo" />
-          {/* Title Link - Clicking this redirects to home page */}
-          <TitleLink to="/">Malaysian Student Initiative</TitleLink>
+          {/* Logo Link - Redirects to Home and Scrolls to Top */}
+          <LogoLink to="/" onClick={() => handleNavigation(onHomeClick)}>
+            <Logo src="/assets/MSI_Logo.png" alt="Logo" />
+          </LogoLink>
+
+          {/* Title Link - Redirects to Home and Scrolls to Top */}
+          <TitleLink to="/" onClick={() => handleNavigation(onHomeClick)}>
+            Malaysian Student Initiative
+          </TitleLink>
         </LogoContainer>
 
         {/* Desktop Navigation */}

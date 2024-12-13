@@ -3,6 +3,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { FaInstagram } from 'react-icons/fa'; // Imported Instagram Icon
+
+/* Styled Components */
 
 const ContactWrapper = styled.div`
   padding: 10px 20px;
@@ -15,7 +18,6 @@ const ContactWrapper = styled.div`
   box-sizing: border-box;
 
   @media (max-width: 768px) {
-  center
     padding: 10px;
   }
 `;
@@ -40,7 +42,7 @@ const LeftSection = styled.div`
 
   @media (max-width: 768px) {
     /* text-align: center; */ // Commented out to maintain left alignment
-    text-align: center; // Explicitly set to left
+    text-align: center; // Explicitly set to center for mobile
     padding: 10px;
   }
 `;
@@ -78,9 +80,52 @@ const LogoText = styled.h1`
   @media (max-width: 768px) {
     font-size: 20px;
     margin-top:0px;
-
   }
 `;
+
+const SocialLinks = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #e1306c; /* Instagram's brand color for icon and username */
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #c13584; /* Darker shade on hover */
+    }
+
+    /* Styling the span inside the a tag */
+    span {
+      color: #555; /* Neutral color for the introductory text */
+      margin-right: 8px; /* Space between text and icon */
+      font-weight: normal; /* Ensure the text isn't bold */
+    }
+
+    svg {
+      font-size: 24px;
+      /* Removed margin-left since we're adding margin-right to the span */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+
+      span {
+        margin-right: 6px; /* Adjusted spacing for smaller screens */
+      }
+
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+`;
+
 
 const EmailSection = styled.div`
   margin-top: 20px;
@@ -115,20 +160,12 @@ const FeedbackTitle = styled.h2`
   font-size: 20px;
   color: #333;
   margin-bottom: 10px;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
 `;
 
 const FeedbackText = styled.p`
   font-size: 16px;
   color: #555;
   margin-bottom: 20px;
-
-  @media (max-width: 768px) {
-    font-size: 14px;
-  }
 `;
 
 const FeedbackLink = styled.a`
@@ -157,6 +194,8 @@ const Emoji = styled.span`
   }
 `;
 
+/* Contact Component */
+
 const Contact = () => (
   <motion.div
     initial={{ opacity: 0, y: 50 }}
@@ -170,6 +209,20 @@ const Contact = () => (
             <Logo src="/assets/MSI_Logo.png" alt="Logo" />
             <LogoText>Malaysian Student Initiative</LogoText>
           </LogoContainer>
+
+          <SocialLinks>
+            <a
+              href="https://www.instagram.com/malaysianstudentinitiative/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow us on Instagram"
+            >
+              <span>Follow us at</span> <FaInstagram /> @malaysianstudentinitiative
+            </a>
+          </SocialLinks>
+
+
+
           <EmailSection>
             <EmailText>For inquiries, contact us at:</EmailText>
             <EmailText><strong>yiekhao0301@gmail.com</strong></EmailText>
@@ -182,7 +235,7 @@ const Contact = () => (
             Help us improve by sharing your thoughts!
             Please click the link below to access our feedback form:
           </FeedbackText>
-          <FeedbackLink href="https://docs.google.com/forms/d/e/1FAIpQLScCuYVk8SD6lN4zepnNOY0MuyhziFRix77dhoT2EGdjNP-UwQ/viewform?usp=sf_link" target="_blank">
+          <FeedbackLink href="https://docs.google.com/forms/d/e/1FAIpQLScCuYVk8SD6lN4zepnNOY0MuyhziFRix77dhoT2EGdjNP-UwQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">
             Click Here to Send Feedback <Emoji>📩</Emoji>
           </FeedbackLink>
         </RightSection>
