@@ -1,8 +1,8 @@
 // src/components/Home.js
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense, lazy } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Stars } from '@react-three/drei';
 
 // Animation Keyframes for Fade-In Effect
@@ -99,17 +99,8 @@ const HomeDescription = styled.p`
   }
 `;
 
-// Custom RotatingEarth Component
-const RotatingEarth = ({ position, scale }) => {
-  const { scene } = useGLTF('/assets/little_planet_earth.glb'); // Ensure the model path is correct
-
-  // Rotate the Earth continuously
-  useFrame(({ clock }) => {
-    scene.rotation.y = clock.getElapsedTime() * 0.1; // Slow rotation
-  });
-
-  return <primitive object={scene} position={position} scale={scale} />;
-};
+// Lazy load the RotatingEarth component
+const RotatingEarth = lazy(() => import('./RotatingEarth'));
 
 // Styled Canvas for 3D Scene
 const CloudScene = styled(Canvas)`
@@ -121,8 +112,18 @@ const CloudScene = styled(Canvas)`
   z-index: 0;
 `;
 
+// Debounce function to limit the rate at which a function can fire.
+const debounce = (func, wait) => {
+  let timeout;
+  return function (...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+};
+
 const Home = () => {
   const [isLaptopWidth, setIsLaptopWidth] = useState(true);
+  const [showEarth, setShowEarth] = useState(false);
 
   useEffect(() => {
     // Function to set the --vh CSS variable
@@ -140,15 +141,27 @@ const Home = () => {
     setViewportHeight();
     checkWidth();
 
-    // Event listeners for resize
-    window.addEventListener('resize', setViewportHeight);
-    window.addEventListener('resize', checkWidth);
+    // Debounced event listeners for resize
+    const handleResize = debounce(() => {
+      setViewportHeight();
+      checkWidth();
+    }, 200);
+
+    window.addEventListener('resize', handleResize);
 
     // Cleanup event listeners on unmount
     return () => {
-      window.removeEventListener('resize', setViewportHeight);
-      window.removeEventListener('resize', checkWidth);
+      window.removeEventListener('resize', handleResize);
     };
+  }, []);
+
+  useEffect(() => {
+    // Introduce a delay before showing the Earth to prioritize stars
+    const timer = setTimeout(() => {
+      setShowEarth(true);
+    }, 1000); // 1-second delay
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -169,11 +182,17 @@ const Home = () => {
           fade
         />
 
-        {/* Conditionally Render RotatingEarth on Larger Screens */}
-        {isLaptopWidth && <RotatingEarth position={[0, -1, -8]} scale={0.017} />}
+        {/* Conditionally Render RotatingEarth on Larger Screens after delay */}
+        {isLaptopWidth && showEarth && (
+          <Suspense fallback={null}>
+            <RotatingEarth position={[0, -1, -8]} scale={0.017} />
+          </Suspense>
+        )}
 
         {/* Only render OrbitControls if screen is wider than 1200px */}
-        {isLaptopWidth && <OrbitControls enableZoom={false} autoRotate={false} />}
+        {isLaptopWidth && showEarth && (
+          <OrbitControls enableZoom={false} autoRotate={false} />
+        )}
       </CloudScene>
 
       {/* Text Content */}

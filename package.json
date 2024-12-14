@@ -20,7 +20,8 @@
     "react-router-dom": "^6.0.0",
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.13",
-    "three": "^0.170.0"
+    "three": "^0.170.0",
+    "three-stdlib": "^2.35.2"
   },
   "scripts": {
     "start": "react-scripts start",
