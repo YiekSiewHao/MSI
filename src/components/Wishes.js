@@ -1,7 +1,11 @@
+// src/components/Home.js
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaInstagram } from 'react-icons/fa';
+
+// Styled Components
 
 const WishesWrapper = styled.div`
   padding: 20px 30px;
@@ -64,12 +68,12 @@ const CardContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 40px;
-    padding: 20px 0;
+    padding: 20px 15px; /* Added horizontal padding */
   }
 
   @media (max-width: 480px) {
     gap: 30px;
-    padding: 15px 0;
+    padding: 15px 10px; /* Increased horizontal padding for smaller screens */
   }
 `;
 
@@ -86,8 +90,15 @@ const Card = styled(motion.div)`
     cursor: pointer;
   }
 
+  @media (max-width: 768px) {
+    min-width: 360px; /* Reduced min-width for tablets */
+    max-width: 420px;
+    height: 480px;
+  }
+
   @media (max-width: 480px) {
-    min-width: 340px;
+    min-width: 100%; /* Make card full width minus padding */
+    max-width: 100%;
     height: 450px;
   }
 `;

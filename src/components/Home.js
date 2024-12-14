@@ -3,7 +3,7 @@
 import React, { useEffect, useState, Suspense, lazy } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Stars } from '@react-three/drei';
+import { OrbitControls, Stars } from '@react-three/drei';
 
 // Animation Keyframes for Fade-In Effect
 const fadeIn = keyframes`
@@ -164,6 +164,10 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // Determine Earth model properties based on screen size
+  const earthScale = isLaptopWidth ? 0.017 : 0.025; // Slightly larger on mobile
+  const earthPosition = isLaptopWidth ? [0, -1, -8] : [0, -1.5, -6];
+
   return (
     <FullWidthContainer>
       {/* 3D Scene */}
@@ -182,10 +186,10 @@ const Home = () => {
           fade
         />
 
-        {/* Conditionally Render RotatingEarth on Larger Screens after delay */}
-        {isLaptopWidth && showEarth && (
+        {/* Conditionally Render RotatingEarth on All Devices after delay */}
+        {showEarth && (
           <Suspense fallback={null}>
-            <RotatingEarth position={[0, -1, -8]} scale={0.017} />
+            <RotatingEarth position={earthPosition} scale={earthScale} />
           </Suspense>
         )}
 
