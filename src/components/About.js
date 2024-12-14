@@ -415,7 +415,7 @@ const About = () => {
             <p><strong>Shell Scholar</strong></p>
             <p>Electrical and Electronic Engineering</p>
             <Quote>
-            It's normal to feel stuck sometimes—we all need a guide. Download my app: <strong>EssayGuide</strong> :D
+              Stay curious, dream big, and believe your imagination can actually make an impact. Also, download <strong>EssayGuide</strong>!
             </Quote>
           </TeamMember>
           <TeamMember delay="0.6s">

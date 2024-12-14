@@ -337,9 +337,9 @@ const Wishes = () => {
       instagram: '@joelllpang',
       instagramLink: 'https://www.instagram.com/joelllpang',
       scholarship: 'Shell Scholar',
-      wish: 'Your dedication and perseverance are truly commendable. Best of luck in inspiring others to chase their dreams!',
+      wish: 'I wish I had these resources when I was applying to scholarships. Love your work in bridging the education gap between Malaysian students!',
       image: '/assets/portrait/joelpang.jpg',
-      motivatingSentence: 'Dream big and dare to fail. Your efforts today will pave the way for a brighter tomorrow.',
+      motivatingSentence: 'Don’t compare yourself with others, as you have your own path and story to write. Never let others be the author of your life. Have faith in yourself, sometimes being delusional (in a good way) brings you places :)',
     },
     {
       id: 3,
