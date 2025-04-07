@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { createGlobalStyle } from "styled-components";
-import { Routes, Route,useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -83,11 +83,11 @@ const App = () => {
   const scrollToBottom = () => {
     const scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
     const viewportHeight = window.innerHeight;
-  
+
     // Scroll to the very bottom of the page
     window.scrollTo({ top: scrollHeight - viewportHeight, behavior: "smooth" });
   };
-  
+
 
 
   const [scrollPosition, setScrollPosition] = useState(null);
@@ -97,45 +97,45 @@ const App = () => {
       <GlobalStyle />
       {showTransition && <TransitionEffect onComplete={handleTransitionComplete} />}
       <Header
-  onHomeClick={scrollToTop}
-  onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
-  onContactClick={scrollToBottom} // Updated scrollToBottom function
-  onWishesClick={() => scrollToSection(wishesRef)}
-  onEventsClick={() => scrollToSection(eventsRef)}
-/>
+        onHomeClick={scrollToTop}
+        onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
+        onContactClick={scrollToBottom} // Updated scrollToBottom function
+        onWishesClick={() => scrollToSection(wishesRef)}
+        onEventsClick={() => scrollToSection(eventsRef)}
+      />
       <main>
         <Routes>
-        <Route 
-  path="/" 
-  element={
-    <>
-      <section ref={homeRef}>
-        <Home />
-      </section>
-      <section ref={scholarshipListRef}>
-        <ScholarshipList />
-      </section>
-      <section>
-        <Shortcut />
-      </section>
-      <section ref={wishesRef}>
-        <Wishes />
-      </section>
-      <section ref={eventsRef}>
-        <Events />
-      </section>
-      <section ref={contactRef}>
-        <Contact />
-      </section>
-    </>
-  } 
-  onLoad={() => {
-    if (scrollPosition) {
-      scholarshipListRef.current.scrollIntoView({ behavior: "smooth" });
-      setScrollPosition(null); // Reset after using it
-    }
-  }}
-/>
+          <Route
+            path="/"
+            element={
+              <>
+                <section ref={homeRef}>
+                  <Home />
+                </section>
+                <section ref={scholarshipListRef}>
+                  <ScholarshipList />
+                </section>
+                <section>
+                  <Shortcut />
+                </section>
+                <section ref={wishesRef}>
+                  <Wishes />
+                </section>
+                <section ref={eventsRef}>
+                  <Events />
+                </section>
+                <section ref={contactRef}>
+                  <Contact />
+                </section>
+              </>
+            }
+            onLoad={() => {
+              if (scrollPosition) {
+                scholarshipListRef.current.scrollIntoView({ behavior: "smooth" });
+                setScrollPosition(null); // Reset after using it
+              }
+            }}
+          />
 
           <Route path="/preparation" element={<Preparation />} />
           <Route path="/about" element={<About />} />
@@ -143,10 +143,10 @@ const App = () => {
           <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
           <Route path="/essay/:id" element={<EssayDetail />} />
           <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} />
-          <Route 
-  path="/scholarship-detail/:id" 
-  element={<ScholarshipDetails setScrollPosition={setScrollPosition} />} 
-/>
+          <Route
+            path="/scholarship-detail/:id"
+            element={<ScholarshipDetails setScrollPosition={setScrollPosition} />}
+          />
         </Routes>
       </main>
       <Footer />
