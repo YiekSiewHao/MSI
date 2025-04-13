@@ -212,6 +212,7 @@ const Section = styled.div`
   p,
   ul,
   li {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #555;
     line-height: 1.6;
