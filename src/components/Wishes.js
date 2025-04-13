@@ -337,7 +337,7 @@ const Wishes = () => {
       instagram: '@kelvinnzh',
       instagramLink: 'https://www.instagram.com/kelvinnzh',
       scholarship: 'JPA Scholar',
-      wish: 'It’s inspiring to see your work in empowering students to explore opportunities in higher education. Keep up the great work, and may your website guide many students towards brighter futures!',
+      wish: 'It’s inspiring to see your work in empowering students to explore opportunities in higher education. Keep up the great work, and may your website guide many students towards brighter futures! ',
       image: '/assets/portrait/kelvin_ngu.jpg',
       motivatingSentence: 'You are capable of more than you realise, so don’t be afraid to take that first step. Success begins with courage—if you don’t try, you’ll never know what you can achieve.',
     },
