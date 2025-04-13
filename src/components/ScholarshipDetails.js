@@ -50,7 +50,6 @@ const BackButton = styled.button`
   }
 `;
 
-// Modified BackToTopButton to be responsive
 const BackToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
@@ -93,7 +92,6 @@ const BackToTopButton = styled.button`
   }
 `;
 
-// Modified QuickListContainer for better responsiveness
 const QuickListContainer = styled.div`
   margin-bottom: 40px;
   display: flex;
@@ -110,7 +108,6 @@ const QuickListContainer = styled.div`
   }
 `;
 
-// Modified QuickListItem to have smaller size on mobile and active state
 const QuickListItem = styled.button`
   font-family: 'Poppins', sans-serif;
   background-color: #4a90e2;
@@ -123,7 +120,6 @@ const QuickListItem = styled.button`
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-  /* Active state styling */
   ${(props) =>
     props.active &&
     css`

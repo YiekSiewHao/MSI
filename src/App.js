@@ -7,11 +7,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import ScholarshipList from "./components/ScholarshipList";
-import Shortcut from "./components/Shortcut"; // Importing Shortcut
+import ProgramList from "./components/ProgramList";
+import ProgramDetails from "./components/ProgramDetails"; // Ensure this is imported
+import ScholarshipDetails from "./components/ScholarshipDetails"; // Ensure this is imported
+import Shortcut from "./components/Shortcut";
 import Preparation from "./components/Preparation";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import ScholarshipDetails from "./components/ScholarshipDetails";
 import ScholarsStory from "./components/ScholarsStory";
 import EssayDetail from "./components/EssayDetail";
 import Wishes from "./components/Wishes";
@@ -21,76 +23,56 @@ import "./App.css";
 
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    /* Your global styles */
-  }
-
-  * {
-    box-sizing: border-box;
-  }
+  body { /* Add necessary global styles */ margin: 0; font-family: sans-serif; /* Example */ }
+  * { box-sizing: border-box; }
 `;
 
+// Simple placeholder for TransitionEffect if needed, or remove if not used
 function TransitionEffect({ onComplete }) {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      onComplete();
-    }, 1000);
-    return () => clearTimeout(timeout);
-  }, [onComplete]);
-
-  return (
-    <div className="transition-overlay">
-      <div className="line color1"></div>
-      <div className="line color2"></div>
-      <div className="line color3"></div>
-      <div className="line color4"></div>
-    </div>
-  );
+    useEffect(() => { onComplete(); }, [onComplete]); // Immediately complete for now
+    return null; // Or your actual transition JSX
 }
 
 const App = () => {
   const location = useLocation();
   const homeRef = useRef(null);
   const scholarshipListRef = useRef(null);
+  const programListRef = useRef(null);
   const contactRef = useRef(null);
   const wishesRef = useRef(null);
   const eventsRef = useRef(null);
-  const [showTransition, setShowTransition] = useState(true);
+  const [showTransition, setShowTransition] = useState(false); // Start false or manage as needed
+  const [scrollPosition, setScrollPosition] = useState(null); // For scholarship scroll state
 
   useEffect(() => {
-    if (location.state?.scrollTo === 'scholarshipList' && scholarshipListRef.current) {
-      scholarshipListRef.current.scrollIntoView({ behavior: 'smooth' });
+    // Logic for scrolling based on state (e.g., from back button)
+    if (location.state?.scrollTo) {
+      let targetRef;
+      switch (location.state.scrollTo) {
+        case 'scholarshipList': targetRef = scholarshipListRef; break;
+        case 'programList': targetRef = programListRef; break;
+        // Add other cases if needed
+        default: targetRef = null;
+      }
+      if (targetRef?.current) {
+        targetRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Clear the state after scrolling
+        window.history.replaceState({}, document.title)
+      }
     }
-  }, [location.state]);
+  }, [location.state]); // Rerun when location state changes
 
-  const handleTransitionComplete = () => {
-    setShowTransition(false);
-  };
+  const handleTransitionComplete = () => setShowTransition(false);
 
-  // Scroll to a given section
   const scrollToSection = (ref) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+    if (ref?.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
-  // Scroll to top
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToBottom = () => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
 
-  // Scroll to bottom
-  const scrollToBottom = () => {
-    const scrollHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
-    const viewportHeight = window.innerHeight;
-
-    // Scroll to the very bottom of the page
-    window.scrollTo({ top: scrollHeight - viewportHeight, behavior: "smooth" });
-  };
-
-
-
-  const [scrollPosition, setScrollPosition] = useState(null);
 
   return (
     <>
@@ -99,54 +81,46 @@ const App = () => {
       <Header
         onHomeClick={scrollToTop}
         onScholarshipListClick={() => scrollToSection(scholarshipListRef)}
-        onContactClick={scrollToBottom} // Updated scrollToBottom function
+        onContactClick={scrollToBottom}
         onWishesClick={() => scrollToSection(wishesRef)}
         onEventsClick={() => scrollToSection(eventsRef)}
       />
-      <main>
+      <main style={{ minHeight: 'calc(100vh - 160px)' }}> {/* Ensure main takes height */}
         <Routes>
+          {/* --- Home Route with multiple sections --- */}
           <Route
             path="/"
             element={
               <>
-                <section ref={homeRef}>
-                  <Home />
-                </section>
-                <section ref={scholarshipListRef}>
-                  <ScholarshipList />
-                </section>
-                <section>
-                  <Shortcut />
-                </section>
-                <section ref={wishesRef}>
-                  <Wishes />
-                </section>
-                <section ref={eventsRef}>
-                  <Events />
-                </section>
-                <section ref={contactRef}>
-                  <Contact />
-                </section>
+                <section ref={homeRef}><Home /></section>
+                <section ref={scholarshipListRef}><ScholarshipList /></section>
+                <section ref={programListRef}><ProgramList /></section>
+                <section><Shortcut /></section>
+                <section ref={wishesRef}><Wishes /></section>
+                <section ref={eventsRef}><Events /></section>
+                <section ref={contactRef}><Contact /></section>
               </>
             }
-            onLoad={() => {
-              if (scrollPosition) {
-                scholarshipListRef.current.scrollIntoView({ behavior: "smooth" });
-                setScrollPosition(null); // Reset after using it
-              }
-            }}
           />
 
+          {/* --- Other Standalone Routes --- */}
           <Route path="/preparation" element={<Preparation />} />
           <Route path="/about" element={<About />} />
-          <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
-          <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
           <Route path="/essay/:id" element={<EssayDetail />} />
           <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} />
-          <Route
-            path="/scholarship-detail/:id"
-            element={<ScholarshipDetails setScrollPosition={setScrollPosition} />}
-          />
+
+          {/* --- Scholarship Detail Routes --- */}
+           {/* Note: Passing setScrollPosition isn't typical via Route element prop like this */}
+           {/* Manage scroll position persistence differently if needed, e.g., using state/context */}
+          <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
+          <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
+
+          {/* --- Program Detail Route (Using :programName) --- */}
+          <Route path="/program-detail/:programName" element={<ProgramDetails />} />
+
+          {/* Add a catch-all or Not Found route if desired */}
+          {/* <Route path="*" element={<NotFoundComponent />} /> */}
+
         </Routes>
       </main>
       <Footer />

@@ -63,9 +63,9 @@ const Footer = () => (
   <FooterContainer>
     <FooterContent>
       <FooterTextLeft>
-        &copy; 2024 <strong>Malaysian Student Initiative</strong>. All Rights Reserved.
+        &copy; 2025 <strong>Malaysian Student Initiative</strong>. All Rights Reserved.
       </FooterTextLeft>
-      <FooterTextRight>Making a Significant Impact Since 2024</FooterTextRight>
+      <FooterTextRight>Making a Significant Impact Since 2025</FooterTextRight>
     </FooterContent>
   </FooterContainer>
 );

@@ -1,0 +1,106 @@
+{
+    "programType": {
+      "International Transfer Program": [
+        {
+          "programName": "American Degree Transfer Program (ADTP)",
+          "logoPlaceholder": "/assets/program_logos/adp.png",
+          "entryRequirements": "5 SPM credits (including English).",
+          "subjects": [
+            "Liberal Arts",
+            "Engineering",
+            "Business"
+          ],
+          "duration": "2 years (Malaysia) + 2 years (US/Canada).",
+          "pathway": "Credit transfer to overseas universities.",
+          "accreditation": "U.S. Regional Accreditation.",
+          "institutions": [
+            "INTI",
+            "Sunway",
+            "HELP"
+          ],
+          "cost": "RM30,000–RM60,000 (Malaysia portion)"
+        }
+      ],
+      "Matriculation": [
+        {
+          "programName": "Matrikulasi (Matriculation)",
+          "logoPlaceholder": "/assets/program_logos/matrikulasi.png",
+          "entryRequirements": "Bumiputera quota priority; 5+ credits (Science/Arts).",
+          "subjects": [
+            "Science (Module I: Engineering/Medicine)",
+            "Accounting (Module II)"
+          ],
+          "duration": "1 year (intake: March).",
+          "pathway": "Direct entry to public university degrees.",
+          "accreditation": "Ministry of Education (MOE).",
+          "institutions": [
+            "Matriculation colleges (e.g., Kolej Matrikulasi Melaka)"
+          ],
+          "cost": "Subsidized (RM1,000–RM3,000)"
+        }
+      ],
+      "Pre-University Program": [
+        {
+          "programName": "Asasi (Foundation Programs)",
+          "logoPlaceholder": "/assets/program_logos/foundation.png",
+          "entryRequirements": "Minimum 5 credits in SPM (including relevant subjects, e.g., Science/Math for STEM fields).",
+          "subjects": [
+            "Science (Physics, Chemistry, Biology)",
+            "Arts (Business, Law)",
+            "Mixed"
+          ],
+          "duration": "1 year (intake: March/September)",
+          "pathway": "Direct entry to related bachelor’s degrees (e.g., Medicine, Engineering).",
+          "accreditation": "Recognized by Malaysian Qualifications Agency (MQA).",
+          "institutions": [
+            "Public universities (e.g., UM, USM, UKM)"
+          ],
+          "cost": "Government-funded (RM1,000–RM3,000)"
+        },
+        {
+          "programName": "STPM (Sijil Tinggi Persekolahan Malaysia)",
+          "logoPlaceholder": "/assets/program_logos/stpm.jpg",
+          "entryRequirements": "3–5 SPM credits.",
+          "subjects": [
+            "Science (Math, Physics)",
+            "Arts (Economics, Literature)"
+          ],
+          "duration": "1.5–2 years (intake: May)",
+          "pathway": "Accepted globally; entry to public/private universities.",
+          "accreditation": "MQA/MOE.",
+          "institutions": [
+            "Government schools"
+          ],
+          "cost": "RM100–RM500 (public schools)"
+        },
+        {
+          "programName": "A-Levels/IB/AUSMAT/SAM",
+          "logoPlaceholder": "/assets/program_logos/alevel.jpg",
+          "entryRequirements": "5 credits (SPM).",
+          "subjects": {
+            "A-Levels": [
+              "Sciences",
+              "Humanities",
+              "Math",
+              "English Literature",
+              "Music"
+            ],
+            "IB": [
+              "Broad curriculum (Theory of Knowledge, Extended Essay)"
+            ],
+            "AUSMAT/SAM": [
+              "Australian/UK curriculum"
+            ]
+          },
+          "duration": "1.5–2 years (intake: Jan/July)",
+          "pathway": "Global recognition; direct entry to international universities.",
+          "accreditation": "UK/IB/Australian boards.",
+          "institutions": [
+            "Private colleges (e.g., Taylor’s, INTI)"
+          ],
+          "cost": "RM15,000–RM40,000 (private)"
+        }
+      ]
+    }
+  }
+  
