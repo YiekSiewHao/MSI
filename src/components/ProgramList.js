@@ -9,6 +9,7 @@ import summaryImage from '../assets/summary.jpg';
 
 /* Styled Components */
 const ListContainer = styled.div`
+font-family: 'Poppins', sans-serif;
   padding: 20px;
   max-width: 1400px;
   margin: 0 auto;
@@ -16,6 +17,7 @@ const ListContainer = styled.div`
 `;
 
 const Title = styled.h1`
+font-family: 'Poppins', sans-serif;
   font-size: 32px;
   color: #007BFF;
   text-align: center;
