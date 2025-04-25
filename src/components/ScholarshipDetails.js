@@ -487,6 +487,7 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                     src={scholar.contributorImage || "/default-avatar.png"}
                     alt={scholar.contributorName}
                   />
+
                   <div className="content">
                     <h4>{scholar.contributorName}</h4>
                     {/* Modified Contact Information to Instagram Link */}
