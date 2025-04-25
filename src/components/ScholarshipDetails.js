@@ -1,11 +1,11 @@
 // src/components/ScholarshipDetails.js
 
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import styled, { css } from 'styled-components';
-import scholarships from '../scholarships.json';
-import { ArrowBack, ArrowUpward, ArrowForward } from '@mui/icons-material';
-import { FaInstagram } from 'react-icons/fa'; // Import Instagram icon
+import React, { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import styled, { css } from "styled-components";
+import scholarships from "../scholarships.json";
+import { ArrowBack, ArrowUpward, ArrowForward } from "@mui/icons-material";
+import { FaInstagram } from "react-icons/fa"; // Import Instagram icon
 
 // Styled Components
 
@@ -21,7 +21,7 @@ const DetailsContainer = styled.div`
 `;
 
 const BackButton = styled.button`
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -54,7 +54,7 @@ const BackToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
   right: 40px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -109,7 +109,7 @@ const QuickListContainer = styled.div`
 `;
 
 const QuickListItem = styled.button`
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #4a90e2;
   color: white;
   border: none;
@@ -147,7 +147,7 @@ const QuickListItem = styled.button`
 
 const Title = styled.h1`
   font-size: 32px;
-  color: #007BFF;
+  color: #007bff;
   text-align: center;
   margin-bottom: 30px;
 
@@ -166,9 +166,9 @@ const Section = styled.div`
 
   h2 {
     font-size: 24px;
-    color: #007BFF;
+    color: #007bff;
     margin-bottom: 15px;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
 
     @media (max-width: 768px) {
@@ -197,7 +197,7 @@ const Section = styled.div`
 
   h4 {
     font-size: 18px;
-    color: #007BFF;
+    color: #007bff;
     margin-bottom: 8px;
 
     @media (max-width: 768px) {
@@ -212,7 +212,7 @@ const Section = styled.div`
   p,
   ul,
   li {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: #555;
     line-height: 1.6;
@@ -276,7 +276,7 @@ const ScholarStoryCard = styled.div`
     object-fit: cover;
     margin-right: 15px;
     border-radius: 50%;
-    border: 2px solid #007BFF;
+    border: 2px solid #007bff;
 
     @media (max-width: 480px) {
       width: 60px;
@@ -318,7 +318,7 @@ const ScholarStoryCard = styled.div`
     a.instagram-link {
       display: flex;
       align-items: center;
-      color: #E1306C; /* Updated color */
+      color: #e1306c; /* Updated color */
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
@@ -350,7 +350,7 @@ const ScholarStoryCard = styled.div`
   }
 
   .arrow-icon {
-    color: #007BFF;
+    color: #007bff;
     font-size: 24px;
 
     @media (max-width: 480px) {
@@ -384,14 +384,14 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -401,7 +401,9 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
       return;
     }
 
-    const scholarSlug = scholar.contributorName.toLowerCase().replace(/\s+/g, '-');
+    const scholarSlug = scholar.contributorName
+      .toLowerCase()
+      .replace(/\s+/g, "-");
     window.scrollTo(0, 0);
     navigate(`/scholarship-detail/${id}/scholarstories/${scholarSlug}`);
   };
@@ -412,9 +414,9 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
   };
 
   const handleBackToHome = () => {
-    navigate('/', { state: { scrollTo: 'scholarshipList' } });
+    navigate("/", { state: { scrollTo: "scholarshipList" } });
   };
-  
+
   if (!scholarship) {
     return (
       <DetailsContainer>
@@ -449,7 +451,6 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
         <BackButton onClick={handleBackToHome}>
           <ArrowBack />
         </BackButton>
-
         {/* QuickListContainer with active state */}
         <QuickListContainer>
           {scholarships.map((scholarshipItem) => (
@@ -478,9 +479,12 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
             <h2>Scholars' Stories</h2>
             <ScholarStoriesGrid>
               {scholars.map((scholar, index) => (
-                <ScholarStoryCard key={index} onClick={() => handleStoryClick(scholar)}>
+                <ScholarStoryCard
+                  key={index}
+                  onClick={() => handleStoryClick(scholar)}
+                >
                   <img
-                    src={scholar.contributorImage || '/default-avatar.png'}
+                    src={scholar.contributorImage || "/default-avatar.png"}
                     alt={scholar.contributorName}
                   />
                   <div className="content">
@@ -489,9 +493,11 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                     {scholar.contactInformation && (
                       <a
                         href={
-                          scholar.contactInformation.startsWith('@')
-                            ? `https://instagram.com/${scholar.contactInformation.slice(1)}`
-                            : scholar.contactInformation.startsWith('http')
+                          scholar.contactInformation.startsWith("@")
+                            ? `https://instagram.com/${scholar.contactInformation.slice(
+                                1
+                              )}`
+                            : scholar.contactInformation.startsWith("http")
                             ? scholar.contactInformation
                             : `https://instagram.com/${scholar.contactInformation}`
                         }
@@ -503,10 +509,18 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                         {scholar.contactInformation}
                       </a>
                     )}
-                    <p><strong>{scholar.intendedCourse}</strong></p>
-                    <p><strong>{scholar.currentInstitution}</strong></p>
-                    <p>Current Studies:<strong> {scholar.currentStudies}</strong></p>
-                    {scholar.motivationalQuote && <span>"{scholar.motivationalQuote}"</span>}
+                    <p>
+                      <strong>{scholar.intendedCourse}</strong>
+                    </p>
+                    <p>
+                      <strong>{scholar.currentInstitution}</strong>
+                    </p>
+                    <p>
+                      Current Studies:<strong> {scholar.currentStudies}</strong>
+                    </p>
+                    {scholar.motivationalQuote && (
+                      <span>"{scholar.motivationalQuote}"</span>
+                    )}
                   </div>
                   <ArrowForward className="arrow-icon" />
                 </ScholarStoryCard>
@@ -514,6 +528,17 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
             </ScholarStoriesGrid>
           </Section>
         )}
+
+        {/* Application Timeline Section */}
+        <Section>
+          <h2>Application Timeline</h2>
+          <p>
+            <strong>Start Date:</strong> {applicationTimeline.startDate}
+          </p>
+          <p>
+            <strong>End Date:</strong> {applicationTimeline.endDate}
+          </p>
+        </Section>
 
         {/* Eligibility Criteria Section */}
         <Section>
@@ -528,22 +553,27 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
             <>
               <h3>Academic Qualifications</h3>
               {Array.isArray(eligibilityCriteria.academicQualifications) &&
-              typeof eligibilityCriteria.academicQualifications[0] === 'object' ? (
-                eligibilityCriteria.academicQualifications.map((qual, index) => (
-                  <div key={index}>
-                    <h4>{qual.field}</h4>
-                    <ul>
-                      {qual.criteria.map((item, subIndex) => (
-                        <li key={subIndex}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))
+              typeof eligibilityCriteria.academicQualifications[0] ===
+                "object" ? (
+                eligibilityCriteria.academicQualifications.map(
+                  (qual, index) => (
+                    <div key={index}>
+                      <h4>{qual.field}</h4>
+                      <ul>
+                        {qual.criteria.map((item, subIndex) => (
+                          <li key={subIndex}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )
+                )
               ) : (
                 <ul>
-                  {eligibilityCriteria.academicQualifications.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
+                  {eligibilityCriteria.academicQualifications.map(
+                    (item, index) => (
+                      <li key={index}>{item}</li>
+                    )
+                  )}
                 </ul>
               )}
             </>
@@ -618,10 +648,12 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
         <Section>
           <h2>Bonding Details</h2>
           <p>
-            <strong>Duration:</strong> {bondingDetails?.duration || 'Not specified'}
+            <strong>Duration:</strong>{" "}
+            {bondingDetails?.duration || "Not specified"}
           </p>
           <p>
-            <strong>Work Location:</strong> {bondingDetails?.workLocation || 'Not specified'}
+            <strong>Work Location:</strong>{" "}
+            {bondingDetails?.workLocation || "Not specified"}
           </p>
           {bondingDetails?.repaymentConditions && (
             <>
@@ -635,24 +667,13 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           )}
         </Section>
 
-        {/* Application Timeline Section */}
-        <Section>
-          <h2>Application Timeline</h2>
-          <p>
-            <strong>Start Date:</strong> {applicationTimeline.startDate}
-          </p>
-          <p>
-            <strong>End Date:</strong> {applicationTimeline.endDate}
-          </p>
-        </Section>
-
         {/* Number of Recipients Section */}
         <Section>
           {numberOfRecipients &&
             (numberOfRecipients.local ||
               numberOfRecipients.overseas ||
-              numberOfRecipients['2024'] ||
-              numberOfRecipients['2023']) && (
+              numberOfRecipients["2024"] ||
+              numberOfRecipients["2023"]) && (
               <>
                 <h2>Number of Recipients</h2>
                 {numberOfRecipients.local ? (
@@ -666,14 +687,14 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                   </>
                 ) : (
                   <>
-                    {numberOfRecipients['2024'] && (
+                    {numberOfRecipients["2024"] && (
                       <p>
-                        <strong>2024:</strong> {numberOfRecipients['2024']}
+                        <strong>2024:</strong> {numberOfRecipients["2024"]}
                       </p>
                     )}
-                    {numberOfRecipients['2023'] && (
+                    {numberOfRecipients["2023"] && (
                       <p>
-                        <strong>2023:</strong> {numberOfRecipients['2023']}
+                        <strong>2023:</strong> {numberOfRecipients["2023"]}
                       </p>
                     )}
                   </>
@@ -687,7 +708,11 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           <h2>Application Link</h2>
           <p>
             {isValidURL(applicationLink) ? (
-              <a href={applicationLink} target="_blank" rel="noopener noreferrer">
+              <a
+                href={applicationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Apply Here
               </a>
             ) : (
@@ -703,7 +728,7 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
             {contactEmail ? (
               <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
             ) : (
-              'No contact email provided.'
+              "No contact email provided."
             )}
           </p>
         </Section>
