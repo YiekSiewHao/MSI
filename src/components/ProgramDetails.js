@@ -8,6 +8,7 @@ import { ArrowBack, ArrowUpward } from '@mui/icons-material';
 
 // --- Styled Components ---
 const DetailsContainer = styled.div`
+  font-family: 'Poppins', sans-serif;
   padding: 40px 10px; max-width: 1100px; margin: 0 auto; box-sizing: border-box;
   @media (max-width: 768px) { padding: 20px 10px; }
 `;
