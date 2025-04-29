@@ -39,7 +39,6 @@ const ListHeaderImage = styled.img`
   box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Optional: subtle shadow */
 `;
 
-
 const FilterContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -159,7 +158,7 @@ const ProgramList = () => {
               )}
               <div className="content">
                 <h3>{program.programName}</h3>
-                {!isMobile && <p>{program.cost}</p>}
+                {!isMobile && <p>{program.description.substring(0, 100)}...</p>}
               </div>
             </ProgramCard>
           )) : null

@@ -68,9 +68,9 @@ const Logo = styled.img`
 // Modified TitleLink to include onClick
 const TitleLink = styled(Link)`
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -79,6 +79,7 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
 
   @media (min-width: 480px) {
@@ -110,6 +111,7 @@ const NavItem = styled.li`
 const NavLink = styled.a`
   color: white;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -124,6 +126,7 @@ const MenuButton = styled.button`
   background: none;
   border: none;
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   cursor: pointer;
 
@@ -160,6 +163,7 @@ const MobileNavLink = styled.a`
   padding: 15px 0;
   color: white;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   transition: background-color 0.3s ease;
 

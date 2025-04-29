@@ -2592,5 +2592,93 @@
         ]
       }
     ]
+  },
+  {
+    "id": "star",
+    "name": "Star Education Fund Scholarship Awards",
+    "shortName": "The Star",
+    "description": "Star Education Fund is an initiative by Star Media Group in collaboration with some of the best education institutions in Malaysia to provide higher education opportunities to deserving young Malaysians.The scholarship is not a cash award, but it covers full or partial tuition fees, depending on the course and institution. Additionally, it covers other incidental expenses as specified by the participating institutions. Please note that the coverage is limited to the courses and institutions listed on the official website.​",
+    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "March 3, 2025",
+      "endDate": "May 9, 2025",
+      "note": ""
+    },
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian citizens not more than 25 years of age.",
+        "Excel in extra-curricular activities or active in sports.",
+        "Not bonded to or in receipt of any financial aid or awards from other educational institutions or organisations."
+      ],
+      "academicQualifications": [
+        "Possess reasonably good results in SPM / UEC or equivalent (for Foundation / Diploma courses).",
+        "Possess reasonably good results in STPM / UEC or equivalent (for Degree courses).",
+        "Possess reasonably good results in bachelor’s degree (for Master’s courses).",
+        "Recipients are expected to maintain satisfactory academic progress throughout their studies.​"
+      ],
+      "additionalCriteria": [
+        "Students must meet the minimum requirement set by the Colleges/ Universities in order to be qualified for selection.",
+        "Different colleges, universities, and courses have different entry requirements. Please login to Sin Chew Daily Education Fund official website (https://scedufund.sinchew.com.my/) or liaise directly with the colleges or universities concerned for more details."
+      ]
+    },
+    "requiredDocuments": [
+      "Before filling in and submitting the e-Application form, prepare the following documents in softcopy (preferably PDF):",
+      "MyKad: Front and back on the same page.",
+      "Birth Certificate: A clear copy.",
+      "SPM / O-Level / Equivalent Examination Results: Certified true copies.",
+      "Other Relevant Academic Results: Such as STPM, UEC, A-Level, foundation, diploma, or other pre-university examination results.​"
+    ],
+    "coursesOffered": [
+      "Pre-University Programs: A-Level, Australian Matriculation, Foundation courses leading to degrees.",
+      "Diploma Programs: Various fields across participating institutions.",
+      "Degree Programs: Including direct-entry degrees in fields such as medicine and pharmacy.",
+      "Postgraduate Programs: Master’s degrees in selected disciplines.",
+      "Professional Certifications: Such as the Association of Chartered Certified Accountants (ACCA).​"
+    ],
+    "countriesOffered": ["Local"],
+    "bondingDetails": {
+      "duration": "No bonding",
+      "workLocation": null
+    },
+    "numberOfRecipients": {
+      "previousYear": null,
+      "annually": null
+    },
+    "applicationLink": [
+      "https://www.thestar.com.my/edufund"
+    ],
+    "generalInfoLink": null,
+    "resultNotification": [
+      "Only shortlisted applicants will be notified"
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Download from website listed below",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Submission",
+        "details": "Complete the form and submit it along with required documents to: \nThe Star Education Fund, Star Media Group Berhad, Menara Star, 15 Jalan 16/11 Section 16, 46350 Petaling Jaya, Selangor​",
+        "tips": []
+      }
+    ],
+    "contactEmail": "edufund@thestar.com.my",
+    "contactNumber": "03-7967 1388",
+    "scholars": [
+      {
+        "contributorName": null,
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": null,
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImage": null,
+        "stories": null
+      }
+    ]
   }
+  
 ]

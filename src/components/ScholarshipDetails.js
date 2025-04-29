@@ -436,11 +436,12 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
     coursesOffered,
     bondingDetails,
     applicationTimeline,
-    numberOfRecipients,
     applicationLink,
+    numberOfRecipients,
     resultNotification,
     applicationProcess,
     contactEmail,
+    contactNumber,
     scholars,
   } = scholarship;
 
@@ -473,24 +474,29 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           <p>{description}</p>
         </Section>
 
-        {/* Scholars' Stories Section */}
-        {scholars && scholars.length > 0 && (
-          <Section>
+        {/* Scholars' Stories Section - Conditionally Rendered */}
+        {/* Check if scholars array exists, has items, AND at least one item has a contributorName */}
+        {scholars && scholars.length > 0 && scholars.some(scholar => scholar && scholar.contributorName) && (
+          <Section> {/* This entire Section will now only render if the condition is true */}
             <h2>Scholars' Stories</h2>
             <ScholarStoriesGrid>
-              {scholars.map((scholar, index) => (
+              {/* Optional but good practice: Filter out any potentially null/empty scholar objects before mapping */}
+              {scholars.filter(scholar => scholar && scholar.contributorName).map((scholar, index) => (
                 <ScholarStoryCard
                   key={index}
                   onClick={() => handleStoryClick(scholar)}
                 >
+                  {/* Keep existing null checks for image */}
                   <img
                     src={scholar.contributorImage || "/default-avatar.png"}
-                    alt={scholar.contributorName}
+                    alt={scholar.contributorName || 'Scholar'} // Add fallback alt text
                   />
 
                   <div className="content">
+                    {/* Contributor name is guaranteed by the outer check/filter */}
                     <h4>{scholar.contributorName}</h4>
-                    {/* Modified Contact Information to Instagram Link */}
+
+                    {/* Keep existing check for contact info */}
                     {scholar.contactInformation && (
                       <a
                         href={
@@ -510,15 +516,10 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                         {scholar.contactInformation}
                       </a>
                     )}
-                    <p>
-                      <strong>{scholar.intendedCourse}</strong>
-                    </p>
-                    <p>
-                      <strong>{scholar.currentInstitution}</strong>
-                    </p>
-                    <p>
-                      Current Studies:<strong> {scholar.currentStudies}</strong>
-                    </p>
+                    {/* Add checks for other potentially null fields if needed */}
+                    {scholar.intendedCourse && <p><strong>{scholar.intendedCourse}</strong></p>}
+                    {scholar.currentInstitution && <p><strong>{scholar.currentInstitution}</strong></p>}
+                    {scholar.currentStudies && <p>Current Studies:<strong> {scholar.currentStudies}</strong></p>}
                     {scholar.motivationalQuote && (
                       <span>"{scholar.motivationalQuote}"</span>
                     )}
@@ -622,7 +623,7 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
             {applicationProcess.map((step, index) => (
               <li key={index}>
                 <h3>{step.stage}</h3>
-                <p>{step.details}</p>
+                <p style={{ whiteSpace: 'pre-line' }}>{step.details}</p>
                 {step.tips && step.tips.length > 0 && (
                   <ul>
                     {step.tips.map((tip, tipIndex) => (
@@ -730,6 +731,18 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
               <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
             ) : (
               "No contact email provided."
+            )}
+          </p>
+        </Section>
+
+        {/* Contact Number Section */}
+        <Section>
+          <h2>Contact Number</h2>
+          <p>
+            {contactNumber ? (
+              <a href={`tel:${contactNumber}`}>{contactNumber}</a>
+            ) : (
+              "No contact number provided."
             )}
           </p>
         </Section>

@@ -34,6 +34,7 @@ const Header = styled.div`
     align-items: center;
     color: #E1306C; /* Updated color */
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     transition: color 0.3s ease, transform 0.3s ease; /* Added transition for smooth hover effect */
 
@@ -70,12 +71,14 @@ const Header = styled.div`
     background-color: white;
 
     h2 {
+      font-family: 'Poppins', sans-serif;
       font-size: 2rem;
       color: #333;
       margin-bottom: 0px;
     }
 
     h1 {
+      font-family: 'Poppins', sans-serif;
       font-size: 2.5rem; /* Base font size for large screens */
       font-weight: bold;
       margin: 0px 0;
@@ -83,6 +86,7 @@ const Header = styled.div`
     }
 
     p {
+      font-family: 'Poppins', sans-serif;
       font-size: 1rem;
       margin: 3px 0;
       color: #666;
@@ -110,14 +114,17 @@ const Header = styled.div`
       padding: 10px;
 
       h2 {
+        font-family: 'Poppins', sans-serif;
         font-size: 1.5rem;
       }
 
       h1 {
+        font-family: 'Poppins', sans-serif;
         font-size: 2.0rem; /* Reduced font size for tablets */
       }
 
       p {
+        font-family: 'Poppins', sans-serif;
         font-size: 0.9rem;
       }
     }
@@ -135,14 +142,17 @@ const Header = styled.div`
       padding: 8px; /* Reduce padding inside text section */
 
       h2 {
+        font-family: 'Poppins', sans-serif;
         font-size: 1.2rem;
       }
 
       h1 {
+        font-family: 'Poppins', sans-serif;
         font-size: 2rem; /* Further reduced font size for smartphones */
       }
 
       p {
+        font-family: 'Poppins', sans-serif;
         font-size: 0.8rem;
       }
     }
@@ -164,6 +174,7 @@ const BackButton = styled.button`
   border: none;
   padding: 10px 15px;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   cursor: pointer;
   display: inline-flex;
@@ -182,6 +193,7 @@ const BackButton = styled.button`
   }
 
   @media (max-width: 768px) {
+    font-family: 'Poppins', sans-serif; 
     font-size: 14px;
     padding: 8px 12px;
     left: 5%;
@@ -198,10 +210,12 @@ const Content = styled.div`
   max-width: 1300px;
   padding: 20px 5%;
   margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   color: #555;
 
   h3 {
+    font-family: 'Poppins', sans-serif;
     font-size: 26px;
     color: #007BFF;
     margin-top: 30px;
@@ -280,9 +294,11 @@ const Content = styled.div`
   }
 
   @media (max-width: 768px) {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
 
     h3 {
+      font-family: 'Poppins', sans-serif;
       font-size: 22px;
     }
   }
@@ -337,6 +353,7 @@ const CloseButton = styled.button`
   background-color: transparent;
   border: none;
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-size: 35px;
   font-weight: bold;
   cursor: pointer;
@@ -347,11 +364,13 @@ const CloseButton = styled.button`
   }
 
   @media (max-width: 768px) {
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     right: 15px;
   }
 
   @media (max-width: 480px) {
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     right: 10px;
   }
@@ -366,6 +385,7 @@ const NavButton = styled.button`
   color: white;
   width: 40px; /* Fixed width for circular shape */
   height: 40px; /* Fixed height for circular shape */
+  font-family: 'Poppins', sans-serif;
   font-size: 20px; /* Adjusted font size */
   padding: 0; /* Remove padding to maintain circular shape */
   border-radius: 50%; /* Circular shape */
@@ -385,6 +405,7 @@ const NavButton = styled.button`
   @media (max-width: 768px) {
     width: 35px;
     height: 35px;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     ${({ direction }) =>
       direction === 'left'
@@ -395,6 +416,7 @@ const NavButton = styled.button`
   @media (max-width: 480px) {
     width: 30px;
     height: 30px;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     ${({ direction }) =>
       direction === 'left'

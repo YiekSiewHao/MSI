@@ -61,6 +61,7 @@ const BackButton = styled.button`
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 20px;
@@ -84,6 +85,7 @@ const BackButton = styled.button`
 
 // Title
 const Title = styled.h1`
+  font-family: 'Poppins', sans-serif;
   font-size: 36px;
   color: #2c3e50;
   text-align: center;
@@ -153,6 +155,7 @@ const Section = styled.div`
   h2,
   h3,
   h4 {
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     color: #007bff;
     margin-bottom: 15px;
@@ -166,6 +169,7 @@ const Section = styled.div`
 
   p {
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.8;
     margin-bottom: 15px;
@@ -181,6 +185,7 @@ const Section = styled.div`
 
     li {
       margin-bottom: 10px;
+      font-family: 'Poppins', sans-serif;
       font-size: 18px;
       line-height: 1.6;
       color: #333;
@@ -202,6 +207,7 @@ const DownloadLink = styled.a`
   text-decoration: none;
   padding: 12px 20px;
   border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: bold;
   transition: background-color 0.3s ease;

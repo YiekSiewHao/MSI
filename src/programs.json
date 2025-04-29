@@ -4,6 +4,7 @@
         {
           "programName": "American Degree Transfer Program (ADTP)",
           "logoPlaceholder": "/assets/program_logos/adp.png",
+          "description": "An American Degree Transfer Program (ADTP) is a pathway that allows students to complete the initial years of an American undergraduate degree in Malaysia before transferring to a U.S. university to finish their studies. This program exposes students to the American education system, prepares them for university life in the U.S., and provides a cost-effective way to pursue a U.S. degree.",
           "entryRequirements": "5 SPM credits (including English).",
           "subjects": [
             "Liberal Arts",
@@ -25,6 +26,7 @@
         {
           "programName": "Matrikulasi (Matriculation)",
           "logoPlaceholder": "/assets/program_logos/matrikulasi.png",
+          "description": "The Malaysian Matriculation Programme (Program Matrikulasi) is a one-year pre-university preparatory course offered by the Ministry of Education Malaysia (KPM). Established in 1998, it serves as a streamlined pathway for students to gain entry into public universities (IPTA) in fields such as science, engineering, and professional studies",
           "entryRequirements": "Bumiputera quota priority; 5+ credits (Science/Arts).",
           "subjects": [
             "Science (Module I: Engineering/Medicine)",
@@ -43,6 +45,7 @@
         {
           "programName": "Asasi (Foundation Programs)",
           "logoPlaceholder": "/assets/program_logos/foundation.png",
+          "description": "Asasi (Foundation Programs) is a pre-university preparatory course offered primarily by public universities. Designed to equip students with the necessary academic foundation for undergraduate studies, with a structured pathway that provides a clear and direct route to undergraduate studies within the same university system.",
           "entryRequirements": "Minimum 5 credits in SPM (including relevant subjects, e.g., Science/Math for STEM fields).",
           "subjects": [
             "Science (Physics, Chemistry, Biology)",
@@ -60,6 +63,7 @@
         {
           "programName": "STPM (Sijil Tinggi Persekolahan Malaysia)",
           "logoPlaceholder": "/assets/program_logos/stpm.jpg",
+          "description": "The Sijil Tinggi Persekolahan Malaysia (STPM) is a pre-university programme offering an affordable and globally recognized pathway to higher education. Distinct from other local pre-university options, STPM provides students with flexibility in subject selection and assessment, allowing them to tailor their studies to their academic strengths and interests. STPM stands out as a cost-effective, flexible, and globally acknowledged pre-university qualification, making it a compelling choice for students aiming for higher education both locally and abroad.",
           "entryRequirements": "3–5 SPM credits.",
           "subjects": [
             "Science (Math, Physics)",
@@ -76,6 +80,7 @@
         {
           "programName": "A-Levels/IB/AUSMAT/SAM",
           "logoPlaceholder": "/assets/program_logos/alevel.jpg",
+          "description": "The A-Level programme is a globally recognized pre-university qualification that offers students the flexibility to choose subjects aligned with their academic interests and career aspirations. It provides a rigorous academic foundation, facilitating entry into top universities worldwide. The programme's structure emphasizes in-depth subject knowledge and analytical skills, preparing students for the challenges of higher education.",
           "entryRequirements": "5 credits (SPM).",
           "subjects": {
             "A-Levels": [
