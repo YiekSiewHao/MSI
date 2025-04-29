@@ -196,6 +196,7 @@ const ProgramDetails = () => {
   const {
     programName: name,
     description = "No description available.",
+    pathwayDescriptions, 
     entryRequirements = "Details not specified.",
     subjects = [],
     duration = "N/A",
@@ -231,8 +232,28 @@ const ProgramDetails = () => {
         <Title>{name}</Title>
 
         {/* --- Render DYNAMIC Program Sections --- */}
-        {description && <Section><h2>Description</h2><p>{description}</p></Section>}
-        {entryRequirements && <Section><h2>Entry Requirements</h2><p>{entryRequirements}</p></Section>}
+        {(description && description !== "No description available.") || (pathwayDescriptions && typeof pathwayDescriptions === 'object' && Object.keys(pathwayDescriptions).length > 0) ? (
+          <Section>
+            <h2>Description</h2>
+            {/* Render the main overview description if it exists and isn't the default */}
+            {description && description !== "No description available." && (
+              <p>{description}</p>
+            )}
+
+            {/* Render descriptions for each pathway if pathwayDescriptions exists */}
+            {pathwayDescriptions && typeof pathwayDescriptions === 'object' && Object.entries(pathwayDescriptions).map(([pathwayName, pathwayDesc], index) => (
+              <div key={`pathway-desc-${index}`} style={{ marginTop: '20px' }}> {/* Add some space */}
+                {/* Render the pathway name as a sub-heading (using h3 style from Section) */}
+                <h4>{pathwayName}</h4>
+                {/* Render the pathway description, respecting potential newlines */}
+                {pathwayDesc && typeof pathwayDesc === 'string' && (
+                   <p style={{ whiteSpace: 'pre-line' }}>{pathwayDesc}</p>
+                )}
+              </div>
+            ))}
+          </Section>
+        ) : null}
+
         <Section><h2>Subjects</h2>{renderSubjects(subjects)}</Section>
         {duration && duration !== "N/A" && <Section><h2>Duration</h2><p>{duration}</p></Section>}
         {pathway && pathway !== "N/A" && <Section><h2>Pathway</h2><p>{pathway}</p></Section>}

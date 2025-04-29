@@ -80,7 +80,13 @@
         {
           "programName": "A-Levels/IB/AUSMAT/SAM",
           "logoPlaceholder": "/assets/program_logos/alevel.jpg",
-          "description": "The A-Level programme is a globally recognized pre-university qualification that offers students the flexibility to choose subjects aligned with their academic interests and career aspirations. It provides a rigorous academic foundation, facilitating entry into top universities worldwide. The programme's structure emphasizes in-depth subject knowledge and analytical skills, preparing students for the challenges of higher education.",
+          "description": "Globally recognized pre-university qualifications (A-Levels, IB, AUSMAT & SAM), providing flexibility and rigorous academic foundations for entry into top universities worldwide.",
+          "pathwayDescriptions": {
+            "A-Levels": "The A-Level programme is a globally recognized pre-university qualification that offers students the flexibility to choose subjects aligned with their academic interests and career aspirations. It provides a rigorous academic foundation, facilitating entry into top universities worldwide. The programme's structure emphasizes in-depth subject knowledge and analytical skills, preparing students for the challenges of higher education.",
+            "IB": "The IB Diploma Programme is an internationally acclaimed two-year pre-university course that promotes holistic education. It emphasizes critical thinking, intercultural understanding, and a well-rounded academic curriculum. Students engage in six subject areas, along with core components like the Extended Essay, Theory of Knowledge (TOK), and Creativity, Activity, Service (CAS), fostering a balanced and comprehensive educational experience.",
+            "AUSMAT": "AUSMAT, also known as the Western Australian Certificate of Education (WACE), is a pre-university programme based on the Australian education system. It offers a balanced assessment structure, combining coursework and final examinations. The programme is designed to develop independent thinking and research skills, providing a direct pathway to universities in Australia and other countries. AUSMAT is known for its flexible duration, allowing students to complete the programme in 10 months to 2 years.",
+            "SAM": "SAM, now known as SACE International, is an Australian pre-university programme that offers a comprehensive curriculum with a strong emphasis on coursework. The programme is recognized for its rigorous academic standards and provides students with the skills necessary for success in higher education. SACE International is particularly suited for students who prefer a continuous assessment approach and are aiming for universities in Australia and other countries."
+          },
           "entryRequirements": "5 credits (SPM).",
           "subjects": {
             "A-Levels": [
