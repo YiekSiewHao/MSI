@@ -25,8 +25,8 @@ const allEventsData = [
       { id: 4, image: "/assets/events_images/PhysicalOnline/EC/EC_Photo.jpg", text: "English College Johor Bahru" },
       { id: 5, image: "/assets/events_images/PhysicalOnline/MSIxPuGongYing/MSIxPugongying.jpg", text: "MSI x 蒲公英 x 青团运 x 雪隆张氏工会" },
       { id: 6, image: "/assets/events_images/PhysicalOnline/National_Scholarship_Talk/National_Talk.jpg", text: "National Educational Pathways & Scholarship Talk" },
-      { id: 19, image: "/assets/events_images/PhysicalOnline/community_1.jpg", text: "SIEW HAO EVENT" },
-      { id: 20, image: "/assets/events_images/PhysicalOnline/community_2.jpg", text: "WEN BIN EVENT" },
+      { id: 19, image: "/assets/events_images/PhysicalOnline/SMKBintulu/SMKbintulu.jpg", text: "SMK Bintulu" },
+      { id: 20, image: "/assets/events_images/PhysicalOnline/SMKBintulu/SMKbintulufake.jpg", text: "Johor Tuition Centre" },
     ]
   },
   {
