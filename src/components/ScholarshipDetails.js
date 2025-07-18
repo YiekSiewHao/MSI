@@ -21,7 +21,7 @@ const DetailsContainer = styled.div`
 `;
 
 const BackButton = styled.button`
-  background-color: #007bff;
+  background-color: #017bffff;
   color: white;
   border: none;
   padding: 10px 15px;
