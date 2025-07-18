@@ -1,357 +1,288 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { motion } from "framer-motion"; // Import framer-motion
+import { motion, AnimatePresence } from "framer-motion";
 
-// Define some breakpoints for convenience
-const breakpoints = {
-  sm: "600px",
-  md: "900px",
-  lg: "1200px",
-};
+// Keyframes for continuous horizontal scrolling
+const scrollLeft = keyframes`
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+`;
 
-const EventsWrapper = styled.div`
-  padding: 20px 30px;
-  max-width: 1400px;
-  margin: 16px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+const scrollRight = keyframes`
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+`;
 
-  @media (max-width: ${breakpoints.lg}) {
-    padding: 15px 20px;
-  }
+// --- DATA STRUCTURE ---
+const allEventsData = [
+  {
+    title: "Physical & Online Events",
+    events: [
+      { id: 1, image: "/assets/events_images/PhysicalOnline/chs/chsgroupphoto.jpg", text: "Catholic High School, Petaling Jaya" },
+      { id: 2, image: "/assets/events_images/PhysicalOnline/SHS/SHS_Photo.jpg", text: "SMK Sacred Heart, Sarawak" },
+      { id: 3, image: "/assets/events_images/PhysicalOnline/Puteri/Puteri_Photo.jpg", text: "SMK Seri Puteri, Perak" },
+      { id: 4, image: "/assets/events_images/PhysicalOnline/EC/EC_Photo.jpg", text: "English College Johor Bahru" },
+      { id: 5, image: "/assets/events_images/PhysicalOnline/MSIxPuGongYing/MSIxPugongying.jpg", text: "MSI x 蒲公英 x 青团运 x 雪隆张氏工会" },
+      { id: 6, image: "/assets/events_images/PhysicalOnline/National_Scholarship_Talk/National_Talk.jpg", text: "National Educational Pathways & Scholarship Talk" },
+      { id: 19, image: "/assets/events_images/PhysicalOnline/community_1.jpg", text: "SIEW HAO EVENT" },
+      { id: 20, image: "/assets/events_images/PhysicalOnline/community_2.jpg", text: "WEN BIN EVENT" },
+    ]
+  },
+  {
+    title: "Community Outreach Programs",
+    events: [
+      { id: 7, image: "/assets/events_images/Community/Redcrescent1.jpg", text: "Give Hope Now" },
+      { id: 8, image: "/assets/events_images/Community/Redcrescent2.jpg", text: "Hope for Sabah & Sarawak" },
+      { id: 9, image: "/assets/events_images/Community/Redcrescent3.jpg", text: "Rebuild with Generosity" },
+      { id: 10, image: "/assets/events_images/Community/Redcrescent4.png", text: "RM 1,354 Raised!" },
+      { id: 11, image: "/assets/events_images/Community/Redcrescent5.png", text: "Why Donate?" },
+      { id: 12, image: "/assets/events_images/Community/Redcrescent6.png", text: "Impact of Donation" },
+    ]
+  },
+];
 
-  @media (max-width: ${breakpoints.md}) {
-    padding: 10px 15px;
-  }
+// --- STYLED COMPONENTS ---
 
-  @media (max-width: ${breakpoints.sm}) {
-    padding: 10px 15px;
-  }
+const EventsWrapper = styled.section`
+  padding: 80px 0;
+  background: #ffffff;
+  position: relative;
+  overflow-x: hidden;
 `;
 
 const EventsHeader = styled.h1`
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   color: #007bff;
+  font-weight: 700;
   margin: 0 0 20px;
-
-  @media (max-width: ${breakpoints.sm}) {
-    margin-bottom: 15px;
-  }
+  text-align: center;
 `;
 
-const GalleryContainer = styled.div`
+const SubHeader = styled.p`
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: #555;
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 700px;
+  line-height: 1.6;
+  padding: 0 20px;
+`;
+
+const AllRowsContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+`;
 
-  @media (max-width: ${breakpoints.sm}) {
-    gap: 15px;
+const RowTitle = styled.h3`
+  font-size: 18px;
+  font-weight: 700;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+`;
+
+const RowTrackWrapper = styled.div`
+  position: relative;
+  &:nth-of-type(2) { margin-left: -10%; }
+`;
+
+const ScrollingTrack = styled.div`
+  display: flex;
+  width: 333%;
+  animation: ${props => (props.direction === 'left' ? scrollLeft : scrollRight)} ${props => props.speed}s linear infinite;
+`;
+
+const PolaroidCard = styled(motion.div)`
+  width: 250px;
+  margin: 0 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+  &:nth-of-type(4n+1) { transform: rotate(1.5deg); }
+  &:nth-of-type(4n+2) { transform: rotate(-2deg); }
+  &:nth-of-type(4n+3) { transform: rotate(2.5deg); }
+  &:nth-of-type(4n+4) { transform: rotate(-1deg); }
+  &:hover {
+    transform: scale(1.05) rotate(0deg) !important;
+    filter: drop-shadow(0 15px 25px rgba(74, 144, 226, 0.2));
+    z-index: 10;
   }
 `;
 
-const ImageCard = styled(motion.div)`
-  width: 400px;
-  height: 300px;
+const Image = styled.div`
+  width: 100%;
+  height: 160px;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-  @media (max-width: ${breakpoints.lg}) {
-    width: 300px;
-    height: 225px;
-  }
-
-  @media (max-width: ${breakpoints.md}) {
-    width: 250px;
-    height: 180px;
-  }
-
-  @media (max-width: ${breakpoints.sm}) {
-    width: 90vw; 
-    max-width: 340px;
-    height: auto;
-    aspect-ratio: 4/3; /* Ensures a nice ratio for the image at small screens */
-  }
+  margin-bottom: 15px;
 `;
 
-const Modal = styled(motion.div)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow: hidden;
+const TextCaption = styled.p`
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+`;
+
+// --- MODAL STYLES (UPDATED) ---
+const ModalBackdrop = styled(motion.div)`
+  position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); display: flex; justify-content: center; align-items: center; z-index: 1000; padding: 20px;
 `;
 
 const ModalContent = styled(motion.div)`
-  max-width: 80%;
-  max-height: 90%;
-  background: white;
-  border-radius: 20px;
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 95vh;
+  background: #fff;
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   position: relative;
-
-  @media (max-width: ${breakpoints.lg}) {
-    border-radius: 15px;
-  }
-
-  @media (max-width: ${breakpoints.sm}) {
-    border-radius: 10px;
-    max-width: 95%;
-    max-height: 95%;
-  }
 `;
 
-const CloseButton = styled.div`
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: #007bff;
-  color: white;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1001;
-
-  &:hover {
-    background: #0056b3;
-  }
-
-  @media (max-width: ${breakpoints.md}) {
-    padding: 10px;
-    font-size: 20px;
-  }
-
-  @media (max-width: ${breakpoints.sm}) {
-    padding: 8px;
-    font-size: 18px;
-  }
+const CloseButton = styled.button`
+  position: absolute; top: 10px; right: 10px; background: rgba(0, 0, 0, 0.4); backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.2); color: white; font-size: 16px; cursor: pointer; z-index: 1002; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: background-color 0.3s ease, transform 0.3s ease;
+  &:hover { background: rgba(0, 0, 0, 0.6); transform: scale(1.1); }
 `;
 
-const NavigationButton = styled.button`
+// UPDATED: Added responsive styles for the navigation buttons
+const ModalNavButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: white;
-  font-size: 36px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
   cursor: pointer;
   z-index: 1001;
+  padding: 20px 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 
   &:hover {
-    color: #007bff;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
   }
 
-  @media (max-width: ${breakpoints.md}) {
-    font-size: 30px;
+  &.left { left: 20px; }
+  &.right { right: 20px; }
+
+  /* Tablet Styles */
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 15px 12px;
   }
 
-  @media (max-width: ${breakpoints.sm}) {
-    font-size: 24px;
-  }
-`;
-
-const LeftButton = styled(NavigationButton)`
-  left: 10px;
-
-  @media (max-width: ${breakpoints.sm}) {
-    left: 5px;
-  }
-`;
-
-const RightButton = styled(NavigationButton)`
-  right: 10px;
-
-  @media (max-width: ${breakpoints.sm}) {
-    right: 5px;
+  /* Phone Styles */
+  @media (max-width: 480px) {
+    font-size: 18px;
+    padding: 12px 9px;
+    &.left { left: 10px; }
+    &.right { right: 10px; }
   }
 `;
 
 const ImageContainer = styled.div`
-  width: 100%;
-  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f4f4;
-
-  @media (max-width: ${breakpoints.lg}) {
-    height: 500px;
-  }
-
-  @media (max-width: ${breakpoints.md}) {
-    height: 400px;
-  }
-
-  @media (max-width: ${breakpoints.sm}) {
-    height: 300px;
-  }
+  position: relative;
+  background: #222;
 `;
 
-const EventImage = styled.img`
+const ModalImage = styled.img`
+  display: block;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 85vh;
   object-fit: contain;
 `;
 
 const TextContainer = styled.div`
-  width: 100%;
-  padding: 10px 20px;
-  background: #f9f9f9;
+  padding: 15px 30px;
+  background: #f1f1f1;
+  text-align: center;
   border-top: 1px solid #ddd;
-
-  @media (max-width: ${breakpoints.sm}) {
-    padding: 5px 10px;
-  }
 `;
 
 const EventText = styled.p`
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-  margin: 0;
-
-  @media (max-width: ${breakpoints.md}) {
-    font-size: 14px;
-  }
-
-  @media (max-width: ${breakpoints.sm}) {
-    font-size: 12px;
-  }
+  font-size: 16px; color: #333; margin: 0; font-weight: 500;
 `;
 
+// --- MAIN COMPONENT ---
 const Events = () => {
-  const [selectedIndex, setSelectedIndex] = useState(null);
-
-  const eventsData = [
-    {
-      id: 1,
-      image: "assets/events_images/chs/chszacpicture.jpg",
-      text: "Catholic High School - Presentation",
-    },
-    {
-      id: 2,
-      image: "/assets/events_images/chs/chsgroupphoto.jpg",
-      text: "Thank you Catholic High School!",
-    },
-    {
-      id: 3,
-      image: "/assets/events_images/chs/qnasession.jpg",
-      text: "Q&A Session",
-    },
-    {
-      id: 4,
-      image: "/assets/events_images/chs/thechsteam.jpg",
-      text: "Group Photo - Yiek, Zac, Sheng Ze, Jordan",
-    },
-    {
-      id: 5,
-      image: "/assets/events_images/chs/chsgroup.jpg",
-      text: "Receiving awards from CHS",
-    },
-  ];
-
-  const handleImageClick = (index) => {
-    setSelectedIndex(index);
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const flatEvents = allEventsData.flatMap(row => row.events);
+  const handleImageClick = (event) => setSelectedEvent(event);
+  const handleCloseModal = () => setSelectedEvent(null);
+  const handleNav = (direction) => {
+    const currentIndex = flatEvents.findIndex(e => e.id === selectedEvent.id);
+    const nextIndex = direction === 'next' ? (currentIndex + 1) % flatEvents.length : (currentIndex - 1 + flatEvents.length) % flatEvents.length;
+    setSelectedEvent(flatEvents[nextIndex]);
   };
-
-  const handleCloseModal = () => {
-    setSelectedIndex(null);
-  };
-
-  const handlePrevImage = () => {
-    setSelectedIndex((prevIndex) =>
-      prevIndex === 0 ? eventsData.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNextImage = () => {
-    setSelectedIndex((prevIndex) =>
-      prevIndex === eventsData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  
+  const speeds = [30, 28];
+  const directions = ['left', 'right'];
 
   return (
     <EventsWrapper>
-      <motion.div
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 50 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7 }}
-        style={{ width: "100%" }}
-      >
-        <EventsHeader>Recent Events</EventsHeader>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" />
+      <motion.div whileInView={{opacity:1,y:0}} initial={{opacity:0,y:50}} viewport={{once:!0}} transition={{duration:.8,ease:"easeOut"}}>
+        <EventsHeader>Photo Gallery</EventsHeader>
+        <SubHeader>A visual timeline of our key moments, events, and collaborations that have shaped our mission.</SubHeader>
       </motion.div>
-
-      <GalleryContainer>
-        {eventsData.map((event, index) => (
-          <ImageCard
-            key={event.id}
-            style={{ backgroundImage: `url(${event.image})` }}
-            onClick={() => handleImageClick(index)}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-          />
+      <AllRowsContainer>
+        {allEventsData.map((row, rowIndex) => (
+          <div key={rowIndex}>
+            <RowTitle>{row.title}</RowTitle>
+            <RowTrackWrapper>
+              <ScrollingTrack speed={speeds[rowIndex]} direction={directions[rowIndex]}>
+                {[...row.events, ...row.events].map((event, eventIndex) => (
+                  <PolaroidCard key={`${rowIndex}-${event.id}-${eventIndex}`} onClick={() => handleImageClick(event)}>
+                    <Image style={{ backgroundImage: `url(${event.image})` }} />
+                    <TextCaption>{event.text}</TextCaption>
+                  </PolaroidCard>
+                ))}
+              </ScrollingTrack>
+            </RowTrackWrapper>
+          </div>
         ))}
-      </GalleryContainer>
-
-      {selectedIndex !== null && (
-        <Modal
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <ModalContent
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0.8 }}
-            transition={{ duration: 0.3 }}
-          >
-            <CloseButton onClick={handleCloseModal}>
-              <FaTimes />
-            </CloseButton>
-            <LeftButton onClick={handlePrevImage}>
-              <FaChevronLeft />
-            </LeftButton>
-            <ImageContainer>
-              <EventImage
-                src={eventsData[selectedIndex].image}
-                alt="Event"
-              />
-            </ImageContainer>
-            <TextContainer>
-              <EventText>{eventsData[selectedIndex].text}</EventText>
-            </TextContainer>
-            <RightButton onClick={handleNextImage}>
-              <FaChevronRight />
-            </RightButton>
-          </ModalContent>
-        </Modal>
-      )}
+      </AllRowsContainer>
+      <AnimatePresence>
+        {selectedEvent && (
+          <ModalBackdrop initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} onClick={handleCloseModal}>
+            <ModalContent initial={{scale:.9,opacity:0}} animate={{scale:1,opacity:1}} exit={{scale:.9,opacity:0}} transition={{duration:.2}} onClick={e=>e.stopPropagation()}>
+              <ImageContainer>
+                <ModalImage src={selectedEvent.image} alt={selectedEvent.text} />
+                <ModalNavButton className="left" onClick={()=>handleNav("prev")}><FaChevronLeft/></ModalNavButton>
+                <ModalNavButton className="right" onClick={()=>handleNav("next")}><FaChevronRight/></ModalNavButton>
+              </ImageContainer>
+              {selectedEvent.text && (
+                <TextContainer>
+                  <EventText>{selectedEvent.text}</EventText>
+                </TextContainer>
+              )}
+              <CloseButton onClick={handleCloseModal}><FaTimes/></CloseButton>
+            </ModalContent>
+          </ModalBackdrop>
+        )}
+      </AnimatePresence>
     </EventsWrapper>
   );
 };

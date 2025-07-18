@@ -225,7 +225,7 @@ const Contact = () => (
 
           <EmailSection>
             <EmailText>For inquiries, contact us at:</EmailText>
-            <EmailText><strong>yiekhao0301@gmail.com</strong></EmailText>
+            <EmailText><strong>malaysianstudentinitiativemy@gmail.com</strong></EmailText>
           </EmailSection>
         </LeftSection>
 

@@ -1,5 +1,3 @@
-// src/components/Header.js
-
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
@@ -40,18 +38,16 @@ const LogoContainer = styled.div`
   }
 `;
 
-// New Styled Component for Logo Link
 const LogoLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
 `;
 
-// Modified Logo Image
 const Logo = styled.img`
   width: 50px;
   height: 50px;
-  border-radius: 50%; /* Optional: for circular logos */
+  border-radius: 50%;
   object-fit: cover;
 
   @media (max-width: 768px) {
@@ -65,7 +61,7 @@ const Logo = styled.img`
   }
 `;
 
-// Modified TitleLink to include onClick
+// UPDATED: Title font sizes have been reduced
 const TitleLink = styled(Link)`
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -79,20 +75,19 @@ const TitleLink = styled(Link)`
     color: #FFD700;
   }
 
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 12px; /* Was 14px */
 
   @media (min-width: 480px) {
-    font-size: 20px;
+    font-size: 18px; /* Was 20px */
   }
 
   @media (min-width: 768px) {
-    font-size: 26px;
+    font-size: 22px; /* Was 26px */
   }
 `;
 
 const Nav = styled.nav`
-  @media (max-width: 768px) {
+  @media (max-width: 992px) { /* Changed breakpoint for more space */
     display: none;
   }
 `;
@@ -130,7 +125,7 @@ const MenuButton = styled.button`
   font-size: 28px;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) { /* Changed breakpoint for more space */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +167,6 @@ const MobileNavLink = styled.a`
   }
 `;
 
-// Animation Variants for Mobile Navigation
 const mobileNavVariants = {
   open: {
     height: 'auto',
@@ -194,25 +188,14 @@ const mobileNavVariants = {
 };
 
 const mobileNavItemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.2,
-    },
-  },
-  closed: {
-    opacity: 0,
-    y: -20,
-    transition: {
-      duration: 0.2,
-    },
-  },
+  open: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  closed: { opacity: 0, y: -20, transition: { duration: 0.2 } },
 };
 
 const Header = ({
   onHomeClick,
   onScholarshipListClick,
+  onProgramListClick, // <-- 1. ADD THIS NEW PROP
   onContactClick,
   onWishesClick,
   onEventsClick,
@@ -226,15 +209,17 @@ const Header = ({
     setIsMobileMenuOpen(false);
     if (location.pathname !== '/') {
       navigate('/');
-      setTimeout(() => scrollToSection(), 100); // Slight delay to ensure page has navigated
+      setTimeout(() => scrollToSection(), 100);
     } else {
       scrollToSection();
     }
   };
 
+  // UPDATED: Added "Programs" to the menu
   const menuItems = [
     { name: 'Home', onClick: () => handleNavigation(onHomeClick) },
     { name: 'Scholarship List', onClick: () => handleNavigation(onScholarshipListClick) },
+    { name: 'Programs', onClick: () => handleNavigation(onProgramListClick) }, // <-- 2. ADD THIS NEW MENU ITEM
     {
       name: 'Preparation',
       onClick: () => {
@@ -256,18 +241,14 @@ const Header = ({
     <HeaderContainer>
       <HeaderContent>
         <LogoContainer>
-          {/* Logo Link - Redirects to Home and Scrolls to Top */}
           <LogoLink to="/" onClick={() => handleNavigation(onHomeClick)}>
             <Logo src="/assets/MSI_Logo.png" alt="Logo" />
           </LogoLink>
-
-          {/* Title Link - Redirects to Home and Scrolls to Top */}
           <TitleLink to="/" onClick={() => handleNavigation(onHomeClick)}>
             Malaysian Student Initiative
           </TitleLink>
         </LogoContainer>
 
-        {/* Desktop Navigation */}
         <Nav>
           <NavList>
             {menuItems.map((item, index) => (
@@ -278,13 +259,11 @@ const Header = ({
           </NavList>
         </Nav>
 
-        {/* Mobile Menu Button */}
         <MenuButton onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
         </MenuButton>
       </HeaderContent>
 
-      {/* Mobile Navigation Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <MobileNav
