@@ -20,13 +20,13 @@ const allEventsData = [
     title: "Physical & Online Events",
     events: [
       { id: 1, image: "/assets/events_images/PhysicalOnline/chs/chsgroupphoto.jpg", text: "Catholic High School, Petaling Jaya" },
-      { id: 2, image: "/assets/events_images/PhysicalOnline/SHS/SHS_Photo.jpg", text: "SMK Sacred Heart, Sarawak" },
+      { id: 2, image: "/assets/events_images/PhysicalOnline/SHS/SHS_Photo.JPG", text: "SMK Sacred Heart, Sarawak" },
       { id: 3, image: "/assets/events_images/PhysicalOnline/Puteri/Puteri_Photo.jpg", text: "SMK Seri Puteri, Perak" },
-      { id: 4, image: "/assets/events_images/PhysicalOnline/EC/EC_Photo.jpg", text: "English College Johor Bahru" },
+      { id: 4, image: "/assets/events_images/PhysicalOnline/EC/EC_Photo.JPG", text: "English College Johor Bahru" },
       { id: 5, image: "/assets/events_images/PhysicalOnline/MSIxPuGongYing/MSIxPugongying.jpg", text: "MSI x 蒲公英 x 青团运 x 雪隆张氏工会" },
       { id: 6, image: "/assets/events_images/PhysicalOnline/National_Scholarship_Talk/National_Talk.jpg", text: "National Educational Pathways & Scholarship Talk" },
-      { id: 19, image: "/assets/events_images/PhysicalOnline/SMKBintulu/SMKbintulu.jpg", text: "SMK Bintulu" },
-      { id: 20, image: "/assets/events_images/PhysicalOnline/SMKBintulu/SMKbintulufake.jpg", text: "Johor Tuition Centre" },
+      { id: 19, image: "/assets/events_images/PhysicalOnline/SMKBintulu/SMKbintulu.jpg", text: "A+ Tutorial Class, Bintulu" },
+      { id: 20, image: "/assets/events_images/PhysicalOnline/Johor_tuition/Johor_Tuition.jpg", text: "SKOR ALFA Tuition Centre, Johor" },
     ]
   },
   {
