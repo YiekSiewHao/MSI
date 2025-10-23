@@ -414,7 +414,7 @@ const About = () => {
               </a>
             </SocialLinks>
             <p><strong>Shell Scholar</strong></p>
-            <p>Electrical and Electronic Engineering</p>
+            <p>Mechanical Engineering</p>
             <Quote>
               Stay curious, dream big, and believe your imagination can actually make an impact. Also, download <strong>EssayGuide</strong>!
             </Quote>
