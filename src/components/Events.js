@@ -139,7 +139,8 @@ const ModalBackdrop = styled(motion.div)`
 `;
 
 const ModalContent = styled(motion.div)`
-  width: auto;
+  width: 90vw;  /* Fixed width */
+  max-width: 1200px;
   height: auto;
   max-width: 95vw;
   max-height: 95vh;
@@ -159,7 +160,7 @@ const CloseButton = styled.button`
 
 // UPDATED: Added responsive styles for the navigation buttons
 const ModalNavButton = styled.button`
-  position: absolute;
+  position: fixed;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.3);
@@ -204,7 +205,9 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  background: #222;
+  background: #222;  /* Black background for letterboxing */
+  min-height: 400px;  /* Minimum height */
+  width: 100%;
 `;
 
 const ModalImage = styled.img`
@@ -228,14 +231,22 @@ const EventText = styled.p`
 // --- MAIN COMPONENT ---
 const Events = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const flatEvents = allEventsData.flatMap(row => row.events);
   const handleImageClick = (event) => setSelectedEvent(event);
   const handleCloseModal = () => setSelectedEvent(null);
   const handleNav = (direction) => {
-    const currentIndex = flatEvents.findIndex(e => e.id === selectedEvent.id);
-    const nextIndex = direction === 'next' ? (currentIndex + 1) % flatEvents.length : (currentIndex - 1 + flatEvents.length) % flatEvents.length;
-    setSelectedEvent(flatEvents[nextIndex]);
-  };
+  // Find which category the current event belongs to
+  const currentCategory = allEventsData.find(row => 
+    row.events.some(e => e.id === selectedEvent.id)
+  );
+  
+  const categoryEvents = currentCategory.events;
+  const currentIndex = categoryEvents.findIndex(e => e.id === selectedEvent.id);
+  const nextIndex = direction === 'next' 
+    ? (currentIndex + 1) % categoryEvents.length 
+    : (currentIndex - 1 + categoryEvents.length) % categoryEvents.length;
+  
+  setSelectedEvent(categoryEvents[nextIndex]);
+};
   
   const speeds = [30, 28];
   const directions = ['left', 'right'];
