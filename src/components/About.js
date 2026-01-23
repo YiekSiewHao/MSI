@@ -416,7 +416,7 @@ const About = () => {
             <p><strong>Shell Scholar</strong></p>
             <p>Mechanical Engineering</p>
             <Quote>
-              Stay curious, dream big, and believe your imagination can actually make an impact. Also, download <strong>EssayGuide</strong>!
+              Stay curious, dream big, and believe your imagination can actually make an impact. Also, download <strong>EssayGuide</strong> !
             </Quote>
           </TeamMember>
           <TeamMember delay="0.6s">
