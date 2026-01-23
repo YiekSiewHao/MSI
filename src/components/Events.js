@@ -207,7 +207,7 @@ const ImageContainer = styled.div`
   position: relative;
   background: #222;  /* Black background for letterboxing */
   min-height: 400px;  /* Minimum height */
-  width: 100%;
+  width: 100%;
 `;
 
 const ModalImage = styled.img`
