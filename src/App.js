@@ -106,7 +106,7 @@ const App = () => {
           <Route path="/essay/:id" element={<EssayDetail />} />
           <Route path="/preparation/koh_hui_xin_resource_pack" element={<Koh_hui_xin_resource_pack />} />
           <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
-          <Route path="/scholarship-detail/:id/scholarstories/:scholarName" element={<ScholarsStory />} />
+          <Route path="/scholarship-detail/:id/scholarstories/:scholarSlug" element={<ScholarsStory />} />
           <Route path="/program-detail/:programName" element={<ProgramDetails />} />
         </Routes>
       </main>

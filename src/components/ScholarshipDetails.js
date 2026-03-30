@@ -367,162 +367,120 @@ const ScholarStoryCard = styled.div`
 
 const ScholarshipDetails = ({ setScrollPosition }) => {
   const navigate = useNavigate();
-  const { id } = useParams();
-  const scholarship = scholarships.find((s) => s.id === id);
+  const { id, scholarSlug } = useParams(); // Make sure it is scholarSlug, not scholarName
   const [isVisible, setIsVisible] = useState(false);
 
+  // 1. Find the scholarship data
+  const scholarship = scholarships.find((s) => s.id === id);
+
+  // 2. All Hooks must be at the top
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 200) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 200);
     };
-
     window.addEventListener("scroll", toggleVisibility);
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
+  // 3. Navigation and Scroll Handlers
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleStoryClick = (scholar) => {
-    if (!scholar?.contributorName) {
-      console.error("Scholar's name is undefined:", scholar);
-      return;
-    }
-
-    const scholarSlug = scholar.contributorName
-      .toLowerCase()
-      .replace(/\s+/g, "-");
-    window.scrollTo(0, 0);
-    navigate(`/scholarship-detail/${id}/scholarstories/${scholarSlug}`);
-  };
-
-  const handleQuickListClick = (scholarshipId) => {
-    window.scrollTo(0, 0);
-    navigate(`/scholarship-detail/${scholarshipId}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleBackToHome = () => {
     navigate("/", { state: { scrollTo: "scholarshipList" } });
   };
 
+  const handleQuickListClick = (scholarshipId) => {
+    navigate(`/scholarship-detail/${scholarshipId}`);
+  };
+
+  const handleStoryClick = (scholar) => {
+    if (!scholar?.contributorName) return;
+    const scholarSlug = scholar.contributorName.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/scholarship-detail/${id}/scholarstories/${scholarSlug}`);
+  };
+
+  // 4. THE SAFETY GUARD
   if (!scholarship) {
     return (
       <DetailsContainer>
         <BackButton onClick={handleBackToHome}>
-          <ArrowBack />
+          <ArrowBack /> Back to Home
         </BackButton>
-        <p>Scholarship not found.</p>
+        <div style={{ textAlign: 'center', padding: '50px' }}>
+          <h2>Scholarship not found.</h2>
+          <p>We couldn't find a scholarship with the ID: {id}</p>
+        </div>
       </DetailsContainer>
     );
   }
 
+  // 5. Destructure safely 
   const {
     name,
     description,
     eligibilityCriteria,
     requiredDocuments,
+    fullBreakdownofCoverage,
     coursesOffered,
     bondingDetails,
     applicationTimeline,
     applicationLink,
     numberOfRecipients,
-    resultNotification,
+    ResultNotification,
     applicationProcess,
     contactEmail,
     contactNumber,
     scholars,
+    FAQs,
   } = scholarship;
 
   return (
     <>
       <DetailsContainer>
-        {/* Back Button */}
         <BackButton onClick={handleBackToHome}>
           <ArrowBack />
         </BackButton>
-        {/* QuickListContainer with active state */}
+
         <QuickListContainer>
-          {scholarships.map((scholarshipItem) => (
+          {scholarships.map((item) => (
             <QuickListItem
-              key={scholarshipItem.id}
-              active={scholarshipItem.id === id}
-              onClick={() => handleQuickListClick(scholarshipItem.id)}
+              key={item.id}
+              active={item.id === id}
+              onClick={() => handleQuickListClick(item.id)}
             >
-              {scholarshipItem.shortName}
+              {item.shortName}
             </QuickListItem>
           ))}
         </QuickListContainer>
 
-        {/* Scholarship Title */}
         <Title>{name}</Title>
 
-        {/* Description Section */}
         <Section>
           <h2>Description</h2>
           <p>{description}</p>
         </Section>
 
-        {/* Scholars' Stories Section - Conditionally Rendered */}
-        {/* Check if scholars array exists, has items, AND at least one item has a contributorName */}
-        {scholars && scholars.length > 0 && scholars.some(scholar => scholar && scholar.contributorName) && (
-          <Section> {/* This entire Section will now only render if the condition is true */}
+        {/* Scholars' Stories */}
+        {scholars?.length > 0 && (
+          <Section>
             <h2>Scholars' Stories</h2>
             <ScholarStoriesGrid>
-              {/* Optional but good practice: Filter out any potentially null/empty scholar objects before mapping */}
-              {scholars.filter(scholar => scholar && scholar.contributorName).map((scholar, index) => (
-                <ScholarStoryCard
-                  key={index}
-                  onClick={() => handleStoryClick(scholar)}
-                >
-                  {/* Keep existing null checks for image */}
-                  <img
-                    src={scholar.contributorImage || "/default-avatar.png"}
-                    alt={scholar.contributorName || 'Scholar'} // Add fallback alt text
-                  />
-
+              {scholars.filter(s => s.contributorName).map((scholar, index) => (
+                <ScholarStoryCard key={index} onClick={() => handleStoryClick(scholar)}>
+                  <img src={scholar.contributorImage || "/default-avatar.png"} alt={scholar.contributorName} />
                   <div className="content">
-                    {/* Contributor name is guaranteed by the outer check/filter */}
                     <h4>{scholar.contributorName}</h4>
-
-                    {/* Keep existing check for contact info */}
                     {scholar.contactInformation && (
-                      <a
-                        href={
-                          scholar.contactInformation.startsWith("@")
-                            ? `https://instagram.com/${scholar.contactInformation.slice(
-                                1
-                              )}`
-                            : scholar.contactInformation.startsWith("http")
-                            ? scholar.contactInformation
-                            : `https://instagram.com/${scholar.contactInformation}`
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="instagram-link"
-                      >
-                        <FaInstagram />
-                        {scholar.contactInformation}
-                      </a>
+                      <div className="instagram-link"><FaInstagram style={{marginRight: '5px'}}/> {scholar.contactInformation}</div>
                     )}
-                    {/* Add checks for other potentially null fields if needed */}
-                    {scholar.intendedCourse && <p><strong>{scholar.intendedCourse}</strong></p>}
-                    {scholar.currentInstitution && <p><strong>{scholar.currentInstitution}</strong></p>}
-                    {scholar.currentStudies && <p>Current Studies:<strong> {scholar.currentStudies}</strong></p>}
-                    {scholar.motivationalQuote && (
-                      <span>"{scholar.motivationalQuote}"</span>
-                    )}
+                    <p><strong>{scholar.intendedCourse}</strong></p>
+                    <span>{scholar.currentInstitution}</span>
                   </div>
                   <ArrowForward className="arrow-icon" />
                 </ScholarStoryCard>
@@ -531,68 +489,92 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           </Section>
         )}
 
-        {/* Application Timeline Section */}
         <Section>
           <h2>Application Timeline</h2>
-          <p>
-            <strong>Start Date:</strong> {applicationTimeline.startDate}
-          </p>
-          <p>
-            <strong>End Date:</strong> {applicationTimeline.endDate}
-          </p>
+          <p><strong>Start Date:</strong> {applicationTimeline?.startDate}</p>
+          <p><strong>End Date:</strong> {applicationTimeline?.endDate}</p>
+          {applicationTimeline?.note && <p><i>*{applicationTimeline.note}</i></p>}
         </Section>
 
-        {/* Eligibility Criteria Section */}
         <Section>
           <h2>Eligibility Criteria</h2>
+
+          {/* Safety Check 1: Main Criteria */}
           <h3>Main Criteria</h3>
           <ul>
-            {eligibilityCriteria.mainCriteria.map((item, index) => (
+            {(eligibilityCriteria?.mainCriteria || []).map((item, index) => (
               <li key={index}>{item}</li>
-            ))}
+           ))}
           </ul>
-          {eligibilityCriteria.academicQualifications && (
+
+          {/* Safety Check 2: Academic Qualifications */}
+          {eligibilityCriteria?.academicQualifications && (
             <>
               <h3>Academic Qualifications</h3>
-              {Array.isArray(eligibilityCriteria.academicQualifications) &&
-              typeof eligibilityCriteria.academicQualifications[0] ===
-                "object" ? (
-                eligibilityCriteria.academicQualifications.map(
-                  (qual, index) => (
-                    <div key={index}>
-                      <h4>{qual.field}</h4>
-                      <ul>
-                        {qual.criteria.map((item, subIndex) => (
-                          <li key={subIndex}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )
-                )
-              ) : (
-                <ul>
-                  {eligibilityCriteria.academicQualifications.map(
-                    (item, index) => (
-                      <li key={index}>{item}</li>
-                    )
-                  )}
-                </ul>
-              )}
+              <ul>
+                {(eligibilityCriteria.academicQualifications || []).map((item, index) => {
+                  if (typeof item === 'object' && item !== null) {
+                    return (
+                      <li key={index} style={{ listStyle: 'none', marginBottom: '15px' }}>
+                        <strong>{item.field}</strong>
+                        <ul>
+                          {(item.criteria || []).map((subItem, subIndex) => (
+                            <li key={subIndex}>{subItem}</li>
+                          ))}
+                        </ul>
+                      </li>
+                    );
+                  }
+                  // Handles simple strings
+                  return <li key={index}>{item}</li>;
+                })}
+              </ul>
+            </>
+          )}
+
+          {/* Safety Check 3: Additional Criteria */}
+          {eligibilityCriteria?.additionalCriteria && (
+            <>
+              <h3>Additional Criteria</h3>
+              <ul>
+                {(eligibilityCriteria.additionalCriteria || []).map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </>
           )}
         </Section>
 
-        {/* Required Documents Section */}
         <Section>
           <h2>Required Documents</h2>
           <ul>
-            {requiredDocuments.map((doc, index) => (
+            {(requiredDocuments || []).map((doc, index) => (
               <li key={index}>{doc}</li>
             ))}
           </ul>
         </Section>
 
-        {/* Courses Offered Section */}
+        <Section>
+         <h2>Full Breakdown of Coverage</h2>
+          <ul>
+            {(fullBreakdownofCoverage || []).map((item, index) => {
+              if (typeof item === 'object' && item !== null) {
+                return (
+                  <li key={index} style={{ listStyle: 'none', marginBottom: '15px', marginLeft: '-20px' }}>
+                    <strong>{item.title}</strong>
+                    <ul style={{ marginTop: '5px' }}>
+                      {(item.details || []).map((detail, dIndex) => (
+                        <li key={dIndex}>{detail}</li>
+                      ))}
+                    </ul>
+                  </li>
+                );
+             }
+              return <li key={index} style={{ marginBottom: '8px' }}>{item}</li>;
+            })}
+          </ul>
+        </Section>
+
         <Section>
           <h2>Courses Offered</h2>
           {Array.isArray(coursesOffered) ? (
@@ -602,152 +584,151 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
               ))}
             </ul>
           ) : (
-            coursesOffered &&
-            Object.entries(coursesOffered).map(([category, courses], index) => (
+            coursesOffered && Object.entries(coursesOffered).map(([category, list], index) => (
               <div key={index}>
                 <h4>{category}</h4>
                 <ul>
-                  {courses.map((c, subIndex) => (
-                    <li key={subIndex}>{c}</li>
-                  ))}
-                </ul>
-              </div>
-            ))
-          )}
-        </Section>
-
-        {/* Application Process Section */}
-        <Section>
-          <h2>Application Process</h2>
-          <ul>
-            {applicationProcess.map((step, index) => (
-              <li key={index}>
-                <h3>{step.stage}</h3>
-                <p style={{ whiteSpace: 'pre-line' }}>{step.details}</p>
-                {step.tips && step.tips.length > 0 && (
-                  <ul>
-                    {step.tips.map((tip, tipIndex) => (
-                      <li key={tipIndex}>{tip}</li>
-                    ))}
-                  </ul>
+                  {Array.isArray(list) ? (
+                    list.map((course, i) => <li key={i}>{course}</li>)
+                ) : (
+                  <li>{list}</li>
                 )}
-              </li>
-            ))}
-          </ul>
-        </Section>
+              </ul>
+            </div>
+          ))
+        )}
+      </Section>
 
-        {/* Result Notification Section */}
+      <Section>
+        <h2>Application Process</h2>
+        {(applicationProcess || []).map((step, index) => (
+          <div key={index} style={{marginBottom: '20px'}}>
+           <h3>{step.stage}</h3>
+           <p>{step.details}</p>
+            {step.tips && (
+              <ul>
+                {(step.tips || []).map((tip, i) => <li key={i}>{tip}</li>)}
+              </ul>
+            )}
+          </div>
+        ))}
+      </Section>
+
+      {ResultNotification && (
         <Section>
           <h2>Result Notification</h2>
           <ul>
-            {resultNotification.map((method, index) => (
-              <li key={index}>{method}</li>
-            ))}
-          </ul>
+            {(ResultNotification || []).map((note, i) => <li key={i}>{note}</li>)}
+         </ul>
         </Section>
+      )}
 
-        {/* Bonding Details Section */}
+        {bondingDetails && (
+          <Section>
+            <h2>Bonding Details</h2>
+           <ul>
+             {bondingDetails?.duration && (
+                <li><strong>Duration:</strong> {bondingDetails.duration}</li>
+              )}
+              {bondingDetails.workLocation && (
+                <li><strong>Work Location:</strong> {bondingDetails.workLocation}</li>
+              )}
+              {bondingDetails?.repaymentConditions && (
+                <li style={{ listStyle: 'none', marginTop: '10px', marginLeft: '-20px' }}>
+                  <strong>Repayment Conditions:</strong>
+                 <ul style={{ marginTop: '5px' }}>
+                    {Array.isArray(bondingDetails.repaymentConditions) ? (
+                     // If it's the new Array format
+                     bondingDetails.repaymentConditions.map((condition, index) => (
+                        <li key={index} style={{ marginBottom: '5px' }}>{condition}</li>
+                      ))
+                   ) : (
+                      // Fallback: If it's still a single string
+                      <li>{bondingDetails.repaymentConditions}</li>
+                   )}
+                 </ul>
+                </li>
+             )}
+            </ul>
+          </Section>
+        )}
+
+        {numberOfRecipients && (
+          <Section>
+            <h2>Number of Recipients</h2>
+            <ul>
+              {/* CASE 1: Simple Array */}
+              {Array.isArray(numberOfRecipients) ? (
+                numberOfRecipients.map((text, index) => (
+                 <li key={index}>{text}</li>
+               ))
+             ) : (
+                /* CASE 2: Object */
+                Object.entries(numberOfRecipients).map(([key, value]) => {
+                  // 1. Define how we want the "technical" keys to look
+                 const labelMapping = {
+                   YearofInvestigation: "Year of Investigation",
+                    local: "Local Recipients",
+                    overseas: "Overseas Recipients",
+                   total: "Total",
+                    note: "Note"
+                 };
+
+                  // 2. Determine the label: Use the mapping if it exists, 
+                 // otherwise just use the key (like "2023")
+                 const displayLabel = labelMapping[key] || key;
+
+                  // 3. Render the list item
+                  return (
+                   <li key={key} style={{ marginBottom: '8px' }}>
+                     <strong>{displayLabel}:</strong> {key === 'note' ? <i>{value}</i> : value}
+                   </li>
+                 );
+               })
+             )}
+           </ul>
+         </Section>
+        )}
+
         <Section>
-          <h2>Bonding Details</h2>
-          <p>
-            <strong>Duration:</strong>{" "}
-            {bondingDetails?.duration || "Not specified"}
-          </p>
-          <p>
-            <strong>Work Location:</strong>{" "}
-            {bondingDetails?.workLocation || "Not specified"}
-          </p>
-          {bondingDetails?.repaymentConditions && (
-            <>
-              <h3>Repayment Conditions</h3>
-              <ul>
-                {bondingDetails.repaymentConditions.map((condition, index) => (
-                  <li key={index}>{condition}</li>
-                ))}
-              </ul>
-            </>
+          <h2>Contact Info</h2>
+  
+          {/* Only show Email if it exists */}
+          {contactEmail && (
+            <p>Email: <a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
           )}
-        </Section>
 
-        {/* Number of Recipients Section */}
-        <Section>
-          {numberOfRecipients &&
-            (numberOfRecipients.local ||
-              numberOfRecipients.overseas ||
-              numberOfRecipients["2024"] ||
-              numberOfRecipients["2023"]) && (
-              <>
-                <h2>Number of Recipients</h2>
-                {numberOfRecipients.local ? (
-                  <>
-                    <p>
-                      <strong>Local:</strong> {numberOfRecipients.local}
-                    </p>
-                    <p>
-                      <strong>Overseas:</strong> {numberOfRecipients.overseas}
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    {numberOfRecipients["2024"] && (
-                      <p>
-                        <strong>2024:</strong> {numberOfRecipients["2024"]}
-                      </p>
-                    )}
-                    {numberOfRecipients["2023"] && (
-                      <p>
-                        <strong>2023:</strong> {numberOfRecipients["2023"]}
-                      </p>
-                    )}
-                  </>
-                )}
-              </>
-            )}
-        </Section>
+          {/* Only show Phone if contactNumber is NOT null/empty */}
+          {contactNumber && (
+            <p>Phone: {contactNumber}</p>
+          )}
 
-        {/* Application Link Section */}
-        <Section>
-          <h2>Application Link</h2>
-          <p>
-            {isValidURL(applicationLink) ? (
-              <a
-                href={applicationLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Apply Here
+          {applicationLink && (
+            <p>
+              <a href={applicationLink} target="_blank" rel="noreferrer">
+                Apply via Official Website
               </a>
-            ) : (
-              applicationLink
-            )}
-          </p>
+            </p>
+         )}
         </Section>
 
-        {/* Contact Email Section */}
+        {FAQs && (
         <Section>
-          <h2>Contact Email</h2>
-          <p>
-            {contactEmail ? (
-              <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
-            ) : (
-              "No contact email provided."
-            )}
-          </p>
+          <h2>Frequently Asked Questions (FAQs)</h2>
+          {(FAQs || []).map((faq, index) => {
+            const [question, answer] = Object.values(faq);
+            return (
+              <div key={index} style={{ marginBottom: '20px' }}>
+                <h3 style={{ color: '#333', fontSize: '18px' }}>Q: {question}</h3>
+                <p style={{ marginLeft: '10px', borderLeft: '3px solid #007bff', paddingLeft: '15px' }}>
+                  {answer}
+                </p>
+              </div>
+            );
+          })}
         </Section>
+      )}
 
-        {/* Contact Number Section */}
-        <Section>
-          <h2>Contact Number</h2>
-          <p>
-            {contactNumber ? (
-              <a href={`tel:${contactNumber}`}>{contactNumber}</a>
-            ) : (
-              "No contact number provided."
-            )}
-          </p>
-        </Section>
-
-        {/* Back To Top Button */}
         {isVisible && (
           <BackToTopButton onClick={scrollToTop}>
             <ArrowUpward /> Back To Top

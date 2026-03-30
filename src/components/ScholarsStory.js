@@ -70,7 +70,7 @@ const Header = styled.div`
     justify-content: center;
     background-color: white;
 
-    h2 {
+     h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 2rem;
       color: #333;
@@ -79,10 +79,10 @@ const Header = styled.div`
 
     h1 {
       font-family: 'Poppins', sans-serif;
-      font-size: 2.5rem; /* Base font size for large screens */
+      font-size: 2.5rem;
       font-weight: bold;
       margin: 0px 0;
-      color: #007BFF;
+      color: #007BFF; /* Back to original Blue */
     }
 
     p {
@@ -302,6 +302,10 @@ const Content = styled.div`
       font-size: 22px;
     }
   }
+  li b {
+    font-weight: 700 !important; /* Forces the font to be bold */
+    color: #333; /* Makes it a bit darker for emphasis */
+  }
 `;
 
 // Modal Styled Components
@@ -429,74 +433,49 @@ const NavButton = styled.button`
 
 const ScholarsStory = () => {
   const navigate = useNavigate();
-  const { id, scholarName } = useParams();
+  const { id, scholarSlug } = useParams();
 
-  // Modal state
+  // 1. All State Hooks must be at the top
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentResumeIndex, setCurrentResumeIndex] = useState(0);
   const [currentResumeImages, setCurrentResumeImages] = useState([]);
 
-  // Scroll to top when component mounts
+  // 2. Data Fetching Logic
+  // Find the scholarship based on the ID from the URL
+  const scholarship = scholarships.find((s) => s.id === id);
+
+  // Find the scholar based on the slug from the URL
+  const scholar = scholarship?.scholars?.find(s => 
+    s.contributorName.toLowerCase().trim().replace(/\s+/g, "-") === scholarSlug
+  );
+
+  // 3. Side Effects (useEffect)
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Close modal on ESC key and handle navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
         setIsModalOpen(false);
       }
       if (isModalOpen) {
-        if (e.key === 'ArrowRight') {
-          goToNext();
-        }
-        if (e.key === 'ArrowLeft') {
-          goToPrev();
-        }
+        if (e.key === 'ArrowRight') goToNext();
+        if (e.key === 'ArrowLeft') goToPrev();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isModalOpen, currentResumeIndex, currentResumeImages]);
 
-  const scholarship = scholarships.find((s) => s.id === id);
-  const scholar = scholarship?.scholars?.find(
-    (s) => s.contributorName.toLowerCase().replace(/\s+/g, '-') === scholarName
-  );
-
-  if (!scholarship || !scholar) {
-    return (
-      <StoryContainer>
-        <p>Story not found.</p>
-      </StoryContainer>
-    );
-  }
-
-  const stories = scholar?.stories || [];
-
-  const renderContent = (line) => {
-    // Detect if the content is a URL
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    if (urlRegex.test(line)) {
-      return (
-        <a href={line} target="_blank" rel="noopener noreferrer">
-          {line}
-        </a>
-      );
-    }
-    return line;
-  };
-
+  // 4. Modal Navigation Functions
   const openModal = (images, index) => {
     setCurrentResumeImages(images);
     setCurrentResumeIndex(index);
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const closeModal = () => setIsModalOpen(false);
 
   const goToNext = () => {
     setCurrentResumeIndex((prevIndex) =>
@@ -509,6 +488,43 @@ const ScholarsStory = () => {
       prevIndex === 0 ? currentResumeImages.length - 1 : prevIndex - 1
     );
   };
+
+  // 1. Updated renderContent to handle BOTH bold text and URLs
+  const renderContent = (line) => {
+    if (!line || typeof line !== 'string') return "";
+
+    // This version handles:
+    // 1. Hidden spaces between stars and words
+    // 2. New lines/tabs
+    // 3. Multi-line bolding
+    let processedLine = line.replace("Personality Test", "<b>BOLD TEST</b>");
+
+    // Link detection
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    processedLine = processedLine.replace(urlRegex, (url) => {
+      return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+    });
+
+    return processedLine;
+  };
+
+  // 5. Safety Guard: If data is not found, show error screen
+  if (!scholarship || !scholar) {
+    return (
+      <StoryContainer>
+        <BackButton onClick={() => navigate(-1)}>
+          <ArrowBack />
+        </BackButton>
+        <div style={{ textAlign: 'center', marginTop: '100px' }}>
+          <h2>Story Not Found</h2>
+          <p>We couldn't find the story for {scholarSlug?.replace(/-/g, ' ')}.</p>
+        </div>
+      </StoryContainer>
+    );
+  }
+
+  // 6. Define stories after the guard
+  const stories = scholar.stories || [];
 
   return (
     <>
@@ -558,7 +574,9 @@ const ScholarsStory = () => {
               <h3>{story.title}</h3>
               <ul>
                 {story.content.map((line, idx) => (
-                  <li key={idx}>{renderContent(line)}</li>
+                  <li key={idx}>
+                    {line}
+                  </li>
                 ))}
               </ul>
             </div>

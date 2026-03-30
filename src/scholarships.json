@@ -13,15 +13,16 @@
     },
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Malaysian Citizen aged between 17 - 19 years old during year of application",
+        "Applicant must be a Malaysian citizen NOT more than 22 years old.",
         "Possess strong leadership skills and active participation (demonstrable) in extra-curricular activities",
-        "Have high integrity and humility",
-        "Not presently holding other scholarships/loans"
+        "Applicant has NO disciplinary cases or suspension throughout studies",
+        "Applicant must NOT be under any other form of sponsorships."
       ],
       "academicQualifications": [
+        "SPM of the current year",
         "UTP (Computing/Engineering): Minimum 8A- including Chemistry, Physics, and Mathematics",
-        "Local Universities (Arts): Minimum 8A- including Mathematics",
-        "Overseas Universities (Science/Engineering): Minimum 4A+ and 4A- including Chemistry, Physics, and Mathematics",
+        "Local Universities (Arts): Minimum 8A including Mathematics and CEFR (B1)",
+        "Overseas Universities (Science/Engineering): Minimum 4A+ and 4A- including Chemistry, Physics, and Mathematics and CEFR (C1)",
         "Overseas Universities (Arts/Computing): Minimum 4A+ and 4A- including Mathematics"
       ]
     },
@@ -32,6 +33,11 @@
       "PAJSK Certificate (Certified True Copy)",
       "Parents' or Guardians' Salary Slip / EA form (Certified True Copy)",
       "Statutory Declaration (if any of your parents are unemployed/retired) (Certified True Copy)"
+    ],
+    "fullBreakdownofCoverage": [
+      "Tuition fees",
+      "Allowance and Benefits",
+      "Travel"
     ],
     "coursesOffered": {
       "UTP": [
@@ -62,45 +68,20 @@
         "Software Engineering"
       ]
     },
-    "countriesOffered": {
-      "Global": [
-        "United States",
-        "United Kingdom",
-        "Australia",
-        "New Zealand",
-        "China",
-        "Japan",
-        "South Korea"
-      ],
-      "Local": [
-        "Universiti Teknologi PETRONAS",
-        "Universiti Malaya",
-        "Universiti Kebangsaan Malaysia",
-        "Universiti Putra Malaysia",
-        "Universiti Utara Malaysia",
-        "Curtin University",
-        "Swinburne University",
-        "University of Nottingham Malaysia",
-        "Sunway University",
-        "Heriot-Watt University Malaysia",
-        "University of Wollongong Malaysia"
-      ]
-    },
     "bondingDetails": {
       "duration": "1:1 Study duration to bonding duration",
       "workLocation": null,
       "repaymentConditions": null
     },
     "numberOfRecipients": {
+      "YearofInvestigation": "As at 2025",
       "local": 400,
       "overseas": 200,
       "total": 600,
       "note": "Approximately 600 successful recipients (200 overseas, 400 local)"
     },
     "applicationLink": "https://educationsponsorship.petronas.com.my/OAS",
-    "resultNotification": [
-      "An SMS will be sent to notify applicants that the application results are readily available in the official website. There will also be emails to notify applicants regarding details of assessment and interview."
-    ],
+
     "applicationProcess": [
       {
         "stage": "Stage 1: Application Stage",
@@ -131,7 +112,25 @@
         ]
       }
     ],
+    "ResultNotification": [
+      "An SMS will be sent to notify applicants that the application results are readily available in the official website. There will also be emails to notify applicants regarding details of assessment and interview."
+    ],
     "contactEmail": "edu_sponsorship@petronas.com.my",
+    "contactNumber": "03–2331 2277 / 03–2051 2277",
+    "FAQs": [
+      {
+        "Question1": "How are candidates assessed?",
+        "Answer1": "There is usually an online assessment followed by interviews for shortlisted candidates."
+      },
+      {
+        "Question2": "Can I change my course of study?",
+        "Answer2": "Any change must be approved by PETRONAS through its executive (Student Services)."
+      },
+      {
+        "Question3": "Are scholarships transferable?",
+        "Answer3": "Studying outside approved universities or changing programmes mid-course typically requires prior permission from PETRONAS."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Yeoh Sheng Ze",
@@ -277,6 +276,11 @@
       "Certificates (certified true copy)",
       "Resume (Shell requires a resume)"
     ],
+    "fullBreakdownofCoverage": [
+      "Tuition Fees",
+      "Living Expenses / maintenance allowance (subject to performance)",
+      "Books and study materials"
+    ],
     "coursesOffered": [
       "Engineering: Mechanical, Civil, Chemical, Petroleum, Electrical & Electronics, Environmental, Sustainable",
       "Sciences: Geology, Geosciences, Geomatics, Geophysics, Data Science",
@@ -287,12 +291,11 @@
       "workLocation": "Shell Malaysia",
       "repaymentConditions": null
     },
-    "numberOfRecipients": {
-      "2024": null,
-      "2023": null
-    },
-    "applicationLink": "https://www.shell.com.my/careers/students-and-graduates/scholarships.html",
-    "resultNotification": [
+    "numberOfRecipients": [
+      "Shell Malaysia does not publicly disclose the exact number of scholarship recipients each year in its press announcement, but the programme has supported over 1,500 students historically."
+    ],
+    "applicationLink": "https://www.shell.com.my/about-us/careers/students-and-graduates/scholarships.html#vanity-aHR0cHM6Ly93d3cuc2hlbGwuY29tLm15L2NhcmVlcnMvc3R1ZGVudHMtYW5kLWdyYWR1YXRlcy9zY2hvbGFyc2hpcHMuaHRtbA",
+    "ResultNotification": [
       "Online application stage: via Email",
       "Virtual Job Tryout and ODVI stage: via Phone Call (at any time by a Shell officer)",
       "Phone Call stage: via Email",
@@ -303,23 +306,23 @@
         "stage": "Stage 1: Online Application",
         "details": "Prepare your resume ahead of time. Personal tips to prepare a resume:",
         "tips": [
-          "i) Easy on the eyes: Format your CV in a presentable manner such that it is easily read by a 3rd party (check line spacing, font type and size consistency). This indicates a degree of professionalism.",
-          "ii) Quality > quantity - list out your best achievements and try to detail the experience (e.g. 3rd place out of how many participants, level of participation, organiser etc).",
-          "iii) Try to display diversity in your ECAs - If possible, try not to saturate your CV with just 1 type of activity. Diversify your portfolio to indicate that you can be an all-rounder to some extent. (e.g. sports, languages, volunteering, etc)"
+          "Easy on the eyes: Format your CV in a presentable manner such that it is easily read by a 3rd party (check line spacing, font type and size consistency). This indicates a degree of professionalism.",
+          "Quality > quantity - list out your best achievements and try to detail the experience (e.g. 3rd place out of how many participants, level of participation, organiser etc).",
+          "Try to display diversity in your ECAs - If possible, try not to saturate your CV with just 1 type of activity. Diversify your portfolio to indicate that you can be an all-rounder to some extent. (e.g. sports, languages, volunteering, etc)"
         ]
       },
       {
         "stage": "Stage 2: Virtual Job Tryout and On-Demand Video Interview (ODVI)",
         "details": "This stage must be completed within 7 days of receiving the invitation. Virtual Job Tryout consists of a personality test and competency test. Both are untimed.",
         "tips": [
-          "i) Personality Test",
+          "Personality Test:",
           "The answers are not black-and-white right or wrong. Most answers are morally grey so this boils down to your innate personality.",
           "The test will rephrase the exact same questions in a multitude of ways, they are trying to see whether you are consistent in your answers. So try to be consistent in your answers.",
           "Don’t lie in questions like “I have never told a lie” or “I have never broken a promise” because who hasn’t?",
           "Display the best version of yourself, however it is perfectly okay to indicate flaws in a personality test.",
-          "ii) Competency Test",
+          "Competency Test:",
           "This test is just assessing how well you understand and apply instructions in a variety of work situations. This should be fairly doable as long as you meticulously read the instructions",
-          "iii) Video Interview Maximum duration to answer each question is 2 minutes.",
+          "Video Interview Maximum duration to answer each question is 2 minutes.",
           "Tips: Draft your answer and rerecord till you are fully satisfied with the video, Fix your audio. Try to make sure your audio device produces a clear and crisp voice, as opposed to a muffled voice."
         ]
       },
@@ -345,6 +348,21 @@
       }
     ],
     "contactEmail": "careers@shell.com",
+    "contactNumber": null,
+    "FAQs": [
+      {
+        "Question1": "Are there academic performance requirements during scholarship? ",
+        "Answer1": "Yes. Continuing academic performance is a condition for maintaining the scholarship. Poor performance may result in withdrawal of funding."
+      },
+      {
+        "Question2": "What universities does SHELL prefer? ",
+        "Answer2": "Shell supports pre-university A-Levels at selected institutions and undergraduate studies overseas or locally at top universities, especially in the UK, US or Australia."
+      },
+      {
+        "Question3": "What if I get rejected? Can I apply again? ",
+        "Answer3": "Generally, yes, you can reapply in a future application cycle, provided you still meet the eligibility requirements that year."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Liyana Mohammed Rafidz",
@@ -468,6 +486,12 @@
       "Birth certificates of parents and candidate.",
       "2 essays for the online application."
     ],
+    "fullBreakdownofCoverage":[
+      "Tuition fees & examination fees fully covered",
+      "Medical and life insurance included",
+      "Laptop/computer allowance",
+      "Book allowance & study-related equipment stipend"
+    ],
     "coursesOffered": {
       "Courses Offered": [
         "Business (Finance, Business Management, Accounting, Economics)",
@@ -476,24 +500,16 @@
         "Environmental Studies (Science, Technology, Energy)"
       ]
     },
-    "countriesOffered": [
-      "Malaysia",
-      "United States",
-      "United Kingdom",
-      "Australia"
-    ],
     "bondingDetails": {
       "duration": "5 years (Global) & 3 years (Local)",
       "workLocation": null
     },
-    "numberOfRecipients": {
-      "total": 4
-    },
-    "applicationLink": [
-      "https://www.uem.com.my/yayasan-education-scholarship.html"
+    "numberOfRecipients": [
+      "No exact figure"
     ],
+    "applicationLink": null,
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Only shortlisted candidates will be contacted by phone.",
       "If no response is received within 2 months from the closing date, the application is deemed unsuccessful."
     ],
@@ -535,6 +551,20 @@
     ],
     "contactEmail": "scholarship.info@uemnet.com",
     "contactNumber": null,
+    "FAQs":[
+      {
+        "Question1": "Do I need to mail supporting documents?",
+        "Answer1": "No. Only during interview will you need to bring original certificates – documents are not mailed during application."
+      },
+      {
+        "Question2": "Can I edit my application after submission?",
+        "Answer2": "Before submitting, you can review/edit. Once SUBMITTED, editing is not allowed."
+      },
+      {
+        "Question3": "When will I hear about my application status?",
+        "Answer3": "Only shortlisted candidates will be contacted (often by phone). If you don’t hear back within ~2 months after closing date, your application is usually considered unsuccessful."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "NESAMANI AP VICTOR",
@@ -661,6 +691,18 @@
       "Recent passport-sized photograph",
       "Any additional supporting documents (e.g., co-curricular certificates) (subject to current requirements)"
     ],
+    "fullBreakdownofCoverage": [
+      "Preparatory Studies (e.g., A-Levels or equivalent) leading to degree pathways.",
+      "Undergraduate Degree Programme tuition and associated costs.",
+      {
+        "title": "Allowances such as:",
+        "details": ["Tuition fees", "Accommodation", "Living expenses", "Other study-related expenses (Exact amounts vary by year and university / country)"]
+      },
+      {
+        "title": "University Focus:",
+        "details": ["Top-ranked universities in the UK & USA (QS, THE, ARWU)"]
+      }
+    ],
     "coursesOffered": {
       "Engineering/Science and Technology": [
         "Aerospace Engineering",
@@ -685,7 +727,6 @@
         "Creative Writing"
       ]
     },
-    "countriesOffered": ["United States", "United Kingdom", "Australia"],
     "bondingDetails": {
       "duration": "Convertible loan (conditions apply)",
       "workLocation": null,
@@ -697,13 +738,8 @@
       ]
     },
 
-    "numberOfRecipients": {
-      "local": null,
-      "overseas": null,
-      "total": 20
-    },
-    "applicationLink": "https://bmipenajaan.jpa.gov.my/ms",
-    "resultNotification": [
+    "numberOfRecipients": null,
+    "ResultNotification": [
       "Applicants can check their application results through a dedicated link provided on the official Jabatan Perkhidmatan Awam (JPA) website.",
       "An email will be sent for successful candidates to attend the Student Assessment Centre (SAC).",
       "Final results will be released approximately 1 month after the SAC session via the portal."
@@ -744,6 +780,20 @@
       }
     ],
     "contactEmail": "lspln.bmi@jpa.gov.my",
+    "FAQs": [
+      {
+        "Question1": "What is the difference between scholarship and loan?",
+        "Answer1": "PPN is technically a convertible loan. You receive funding during study but may need to repay part or all of it after graduation if employment conditions are not met. Full conversion (no repayment) typically requires serving in the Malaysian public sector."
+      },
+      {
+        "Question2": "Can I choose any university or course? ",
+        "Answer2": "You generally choose from a pre-defined list of top institutions (especially for overseas study) and courses approved by JPA. Options may include engineering, science, social science, etc. Decisions depend on ranking criteria and fields allowed each cycle."
+      },
+      {
+        "Question3": "Is there a bond or service obligation? ",
+        "Answer3": "Instead of a traditional bond, the convertible loan model ties your loan conversion to your employment sector. Working in public service usually secures full conversion (similar to a bond)."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Teoh Wen Xuen",
@@ -845,10 +895,17 @@
     "requiredDocuments": [
       "Parents' or Guardian's salary slips and their Tax Identification Numbers (TIN)"
     ],
-    "coursesOffered": {
-      "(LSPM offers all courses in certain universities except education, flight training, nursing, paramedic science, professional programmes and twinning programmes.)": []
-    },
-    "countriesOffered": "For the JPA-Program Penajaan Nasional (PPN), only international academic pathways are supported, meaning recipients are sponsored to pursue their undergraduate studies at top global universities, typically among the top 20 institutions in the Quacquarelli Symonds (QS) World University Rankings. In contrast, for those seeking local educational opportunities, the JPA-Lepasan Sijil Pelajaran Malaysia (LSPM) program offers sponsorships for studies within Malaysia, ensuring students have a pathway to higher education domestically. This distinction helps ensure that top-performing students are provided with both local and global opportunities based on their qualifications and preferences.",
+    "coursesOffered": [
+      "(LSPM offers all courses in certain universities except education, flight training, nursing, paramedic science, professional programmes and twinning programmes.)"
+    ],
+    "fullBreakdownofCoverage":[
+      "Academic and Tuition",
+      {
+        "title": "Allowance and Financial Support:",
+        "details": ["Typical funding (varies per year) may include:", "Living allowance (e.g., approximately RM530 per month if accommodation provided and pocket money ~RM200 in some cycles).", "Accommodation support or allowance if staying in approved housing."]
+      },
+      "Study-related costs"
+    ],
     "bondingDetails": {
       "duration": "For LSPM Programme, 1 year of degree studies in public universities indicates 1 year or bonding, while 1 year of degree studies in private universities indicates 1.5 years of bonding.",
       "workLocation": "If the recipient works under civil service for the whole period of bonding, there will be a 100% fee waiver. 25% of loan repayment is required if the recipient works under a government-linked corporation. 50% of loan repayment is required if the recipient works under a private company in Malaysia. If the recipient works overseas, does not have a job or pursues studying for a master, there will be 100% of loan repayment required.",
@@ -859,13 +916,11 @@
         "100% repayment if the student is employed outside Malaysia."
       ]
     },
-    "numberOfRecipients": {
-      "PPN": 20,
-      "JKPJ": 200,
-      "LSPM": 200
-    },
-    "applicationLink": "https://bmipenajaan.jpa.gov.my/ms/program-penajaan/latihan-sebelum-perkhidmatan/program-untuk-pelajar",
-    "resultNotification": [
+    "numberOfRecipients": [
+      "About 200 outstanding SPM students are offered this sponsorship per year (e.g., for the 2025 intake)"
+    ],
+    "applicationLink": null,
+    "ResultNotification": [
       "The result will be released on a certain date, you may check the result on the website.",
       "The students can then submit an appeal letter online if the students do not successfully enrol as a recipient."
     ],
@@ -905,6 +960,21 @@
       }
     ],
     "contactEmail": "penawaranlsp@jpa.gov.my",
+    "contactNumber": "603-8000 8000",
+    "FAQs": [
+      {
+        "Question1": "What exact is this scholarship? ",
+        "Answer1": "It’s a tuition + living support sponsorship for top SPM achievers, covering pre-university to degree studies at approved institutions in Malaysia."
+      },
+      {
+        "Question2": "Is it fully free? ",
+        "Answer2": "Yes and no. The sponsorship is a Convertible Loan (Pinjaman Boleh Ubah): funding is given during study, but how much you must repay later (if any) depends on your post-graduation employment and JPA rules."
+      },
+      {
+        "Question3": "If I don't want this, can I accept others?",
+        "Answer3": "Yes. LSPM recipients can choose to decline and pursue other educational or sponsorship options but must follow JPA’s acceptance procedures and deadlines posted online."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Jolin Sung Jie Lin",
@@ -994,6 +1064,9 @@
       "Letter of support from the school (if applicable).",
       "Application form (instruction given in the website)."
     ],
+    "fullBreakdownofCoverage": [
+      "YPJ does not always publish a single central “scholarship package” document. Coverage varies by programme and year, and exact rates/allowances are detailed in the official offer letters/invitations"
+    ],
     "coursesOffered": {
       "Courses Offered": [
         "Engineering & Technical",
@@ -1008,20 +1081,16 @@
         "Courses requiring licences such as aviation licences and professional courses such as ACCA and CLP"
       ]
     },
-    "countriesOffered": [
-      "The world's 20 best universities as listed in the Times Higher Education (THE) World University Rankings, Quacquarelli Symonds (QS) World University Rankings, and / or Academic Ranking of World Universities (ARWU) based on university ranking."
-    ],
     "bondingDetails": {
       "duration": "5 years",
       "workLocation": "Any government agency or GLC related to Johor government (could be in any state and not necessarily in Johor)."
     },
     "numberOfRecipients": {
-      "2023": 3,
-      "2024": 6
+      "2023": "3",
+      "2024": "6"
     },
-    "applicationLink": "https://prolims.gov.my/",
-    "generalInfoLink": "https://portal.ypj.gov.my/biasiswa-orang-muda-johor/",
-    "resultNotification": [
+    "applicationLink": null,
+    "ResultNotification": [
       "Applicants will be notified via SMS to attend the assessment session.",
       "Recipients will be notified through phone call."
     ],
@@ -1057,7 +1126,21 @@
       }
     ],
     "contactEmail": "biasiswapelajaran@ypj.gov.my",
-    "contactNumber": "07-2344355",
+    "contactNumber": "607-2344355",
+    "FAQs": [
+      {
+        "Question1": "What kind of financial support does YPJ provide?",
+        "Answer1": "YPJ offers scholarships, grants, educational loans (often interest-free), registration assistance, and equipment aid (like laptops) to eligible Johor students."
+      },
+      {
+        "Question2": "Are there income limits?",
+        "Answer2": "Some programmes (like scholarships and certain support grants) target B40/B-income families but not all YPJ awards have strict income caps."
+      },
+      {
+        "Question3": "Do I need to payback the scholarship?",
+        "Answer3": ["Scholarships (e.g., BKDO, BOMJ) do not require repayment.", "Some other loans from YPJ may be interest-free but require eventual repayment under specific terms (usually detailed in the loan agreement)."]
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Tan Wen Bin",
@@ -1105,10 +1188,13 @@
     },
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Excellent examination result: A minimum of 8As (A and A+ only) obtained for SPM examinations",
-        "Strong leadership qualities, proven teamwork capabilities, outstanding performance in extra-curricular activities",
-        "Exceptional interpersonal skills",
+        "Excellent examination result: A minimum of 8As...",
         "Not exceeding 19 years of age"
+      ],
+      "additionalCriteria": [
+        "Strong leadership qualities and teamwork",
+        "Outstanding performance in extra-curricular activities",
+        "Exceptional interpersonal skills"
       ]
     },
     "requiredDocuments": [
@@ -1116,6 +1202,16 @@
       "SPM Result",
       "Certificates",
       "Parents' or Guardians' salary slips or EA form"
+    ],
+    "fullBreakdownofCoverage": [
+      {
+        "title": "Core Academic Costs",
+        "details": ["100% tuition fees waived for pre-university or undergraduate programmes.", "Living allowance / subsistence allowance throughout the study period."]
+      },
+      {
+        "title": "Other Allowances & Support",
+        "details": ["Related scholarship allowances (may include study materials, allowances)."]
+      }
     ],
     "coursesOffered": [
       "Economics",
@@ -1128,16 +1224,15 @@
       "Data Science",
       "Computer Science"
     ],
-    "countriesOffered": ["Both Local and Global"],
     "bondingDetails": {
       "duration": "Scholars will be required to serve their employment bond with BNM (i.e. ratio of one year of study to two years of service).",
       "workLocation": "Bank Negara Malaysia headquarters or other relevant locations"
     },
-    "numberOfRecipients": {
-      "2024": 30
-    },
+    "numberOfRecipients": [
+      "No exact figure"
+    ],
     "applicationLink": "https://www.bnm.gov.my/careers/scholarships",
-    "resultNotification": [
+    "ResultNotification": [
       "Via email",
       "To confirm your acceptance, you must reply to the email by filling in the provided forms."
     ],
@@ -1172,6 +1267,21 @@
       }
     ],
     "contactEmail": "profiling@bnm.gov.my",
+    "contactNumber": "603-2698-8044",
+    "FAQs": [
+      {
+        "Question1": "Can I study overseas with this scholarship?",
+        "Answer1": "Yes. In several years Bank Negara has approved overseas study placements for scholars and covers tuition and related costs in those cases."
+      },
+      {
+        "Question2": "How do I apply?",
+        "Answer2": "Applications are usually opened annually online via the BNM careers/scholarships portal during a specified window (often around April–May). Shortlisted candidates are invited for assessment."
+      },
+      {
+        "Question3": "What happens after I graduate?",
+        "Answer3": "Graduates are expected to join Bank Negara Malaysia for the bonded period. BNM provides structured career development opportunities in central banking roles."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Trinity Seow Kit Ye",
@@ -1325,9 +1435,6 @@
             "Minimum 8As in SPM or 3.30 CGPA in Sijil Tinggi Persekolahan Malaysia (STPM)/Matriculation/Foundation/Diploma"
           ]
         }
-      ],
-      "additionalCriteria": [
-        "Participate in diverse types of extracurricular activities"
       ]
     },
     "requiredDocuments": [
@@ -1336,6 +1443,16 @@
       "Preferred College Tuition Fee Structure",
       "Copy of own IC and Parent's/Guardian's IC",
       "Copy of Parents' or Guardians' salary slips or EA form"
+    ],
+    "fullBreakdownofCoverage": [
+      {
+        "title": "Academic Funding",
+        "details": ["100% tuition fee waiver for eligible full-time programmes at approved universities (local or overseas).", "Coverage available for pre-university (e.g., Foundation/A-Levels), undergraduate, and postgraduate (Master’s/PhD) studies (with specific eligibility per level)."]
+      },
+      {
+        "title": "Financial and Living Support",
+        "details": ["Monthly subsistence/stipend allowances to help with living expenses.", "Additional support such as digital allowance (introduced in recent years) to better meet students’ learning needs."]
+      }
     ],
     "coursesOffered": {
       "Courses Offered": [
@@ -1356,21 +1473,16 @@
         "and other related studies"
       ]
     },
-    "countriesOffered": [
-      "Both. Usually the United States or United Kingdom but YTM also sends their students to France, Germany, Korea, Japan, or Australia."
-    ],
     "bondingDetails": {
       "duration": "Serve for 5 years for local students and 7 years for overseas students if hired by TM Group",
       "workLocation": "Work under SEB (mainly in Sarawak)"
     },
-    "numberOfRecipients": {
-      "total": 205,
-      "global": 5,
-      "local": 200
-    },
+    "numberOfRecipients": [
+      "140 Sarawakian students awarded scholarships in 2025, selected from a competitive pool of 1,756 applicants."
+    ],
     "applicationLink": "https://www.sarawakenergy.com/careers/scholarship/sarawak-energy-scholarship-programme",
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Shortlisted applicants will receive an invitation email to the interview. Both physical and online interviews are available.",
       "After the interview, candidates will receive another email notifying the interview outcomes, whether it's rejection or acceptance.",
       "If you receive a phone call from an officer asking for confirmation in your choice of university, especially if confirming that you're applying overseas, you're in their pool of overseas candidates."
@@ -1397,6 +1509,20 @@
     ],
     "contactEmail": "scholarship@sarawakenergy.com",
     "contactNumber": null,
+    "FAQs": [
+      {
+        "Question1": "Is this scholarship only for Sarawakians?",
+        "Answer1": "Yes. Priority and eligibility are generally for students with Sarawak identity."
+      },
+      {
+        "Question2": "Do I have to work for Sarawak Energy after graduating?",
+        "Answer2": "A bond or service obligation is normally part of the scholarship, especially for overseas study sponsors — many past scholars have gone on to work with Sarawak Energy."
+      },
+      {
+        "Question3": "Are interships part of the scholarship?",
+        "Answer3": "Yes. Internship opportunities are part of the development plan for scholars, helping to build practical skills."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Kendrick Lim Ken Lik",
@@ -1469,8 +1595,7 @@
       "academicQualifications": [
         "Obtained a minimum 8A's in Sijil Pelajaran Malaysia (SPM) *(Trial SPM results accepted for students taking SPM in 2024)*",
         "21 years old or below at the time of application"
-      ],
-      "additionalCriteria": []
+      ]
     },
     "requiredDocuments": [
       "SPM Result (Trial SPM results accepted for students taking SPM in 2024)",
@@ -1478,6 +1603,12 @@
       "IC Copy of students and parents",
       "Parents' or Guardians' salary slips or EA form",
       "Offer letter from the university that you prefer to study at"
+    ],
+    "fullBreakdownofCoverage": [
+      "Full tuition fee coverage for approved degree programmes.",
+      "Subsistence / monthly living allowance.",
+      "Internship and professional development opportunities during study.",
+      "Mentorship and engagement with Sarawak Energy’s talent pipeline."
     ],
     "coursesOffered": {
       "Courses Offered": [
@@ -1498,20 +1629,17 @@
         "Other related studies"
       ]
     },
-    "countriesOffered": [
-      "Local public university and private university (e.g., University Malaya, Sunway University)"
-    ],
     "bondingDetails": {
       "duration": "The Scholar shall be bonded for employment with Sarawak Energy. Bonding time depends but the minimum requirement period is at least 3 years if you successfully graduate with your bachelor's degree.",
       "workLocation": "Sarawak Energy"
     },
-    "numberOfRecipients": {
-      "previousYear": 127,
-      "annually": 127
-    },
+    "numberOfRecipients": [
+      "140 scholarship awards were given in 2025 (pre-U, undergraduate and postgraduate).",
+      "A portion (~20%) of 2025 recipients came from rural project communities, implying a strong local presence."
+    ],
     "applicationLink": "https://www.sarawakenergy.com/careers/scholarship/sarawak-energy-scholarship-programme",
     "generalInfoLink": null,
-    "resultNotification": ["Via Email"],
+    "ResultNotification": ["Via Email"],
     "applicationProcess": [
       {
         "stage": "Stage 1: Screening Stage",
@@ -1539,6 +1667,20 @@
     ],
     "contactEmail": "scholarship@sarawakenergy.com",
     "contactNumber": null,
+    "FAQs": [
+      {
+        "Question1": "Is the local scholarship different from the global one?",
+        "Answer1": "No. Sarawak Energy one scholarship programme funds both local and overseas study. Candidates are selected under one umbrella scheme and then placed in study destinations that may be in Malaysia or abroad based on eligibility and preference."
+      },
+      {
+        "Question2": "Do I need a job offer to apply?",
+        "Answer2": "No. You apply as a student before or during your course; job placement or internship opportunities may be offered later as part of career development support."
+      },
+      {
+        "Question3": "Is there a service bond?",
+        "Answer3": "Often, yes. Scholars may be expected to consider employment with Sarawak Energy after graduation or fulfill service commitments, depending on the terms of the scholarship letter."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Jason Hii Lian Cheng",

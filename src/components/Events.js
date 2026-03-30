@@ -253,7 +253,7 @@ const Events = () => {
 
   return (
     <EventsWrapper>
-      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet"/>
       <motion.div whileInView={{opacity:1,y:0}} initial={{opacity:0,y:50}} viewport={{once:!0}} transition={{duration:.8,ease:"easeOut"}}>
         <EventsHeader>Photo Gallery</EventsHeader>
         <SubHeader>A visual timeline of our key moments, events, and collaborations that have shaped our mission.</SubHeader>
