@@ -446,7 +446,7 @@ const KohHuiXinResourcePack = () => {
             <AppealLetterSection>
           {/* Part 2: Appeal Letter Example */}
           <Section>
-            <h2>Part 2: Appeal Letter Example</h2>
+            <h2>Part 2: Appeal Letter Example.</h2>
             <p>
               <strong>Tips to increase your chance of appealing:</strong>
               <br />
