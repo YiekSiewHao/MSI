@@ -193,19 +193,23 @@ const ProgramDetails = () => {
   }
 
   // Destructure program-specific details
-  const {
+    const {
     programName: name,
     description = "No description available.",
-    pathwayDescriptions, 
+    // Ensure this is here!
+    pathwayDescriptions = {}, 
     entryRequirements = "Details not specified.",
-    subjects = [],
     duration = "N/A",
-    pathway = "N/A",
-    accreditation = "N/A",
+    // Mapping 'prograssion' typo from JSON to 'pathway' variable
+    progression = "N/A", 
     institutions = [],
     cost = "N/A",
-  } = program;
+    CareerPathway: careerPathway = [],
+    Limitation: limitation = "N/A",
+    Bestfor: bestFor = "N/A"
+   } = program || {}; // Adding || {} prevents crashing if program is null
 
+    const safeDescription = description ?? "No description available.";
 
   return (
     <>
@@ -232,103 +236,75 @@ const ProgramDetails = () => {
         <Title>{name}</Title>
 
         {/* --- Render DYNAMIC Program Sections --- */}
-        {(description && description !== "No description available.") || (pathwayDescriptions && typeof pathwayDescriptions === 'object' && Object.keys(pathwayDescriptions).length > 0) ? (
+        {/* Check if we have ANY reason to show this section */}
+        {(description || (pathwayDescriptions && Object.keys(pathwayDescriptions).length > 0)) ? (
           <Section>
             <h2>Description</h2>
-            {/* Render the main overview description if it exists and isn't the default */}
+            
+            {/* 1. The Main Description - Full text for Details page */}
             {description && description !== "No description available." && (
-              <p>{description}</p>
+              <p style={{ whiteSpace: 'pre-line', marginBottom: '20px' }}>
+                {description}
+              </p>
             )}
 
-            {/* Render descriptions for each pathway if pathwayDescriptions exists */}
-            {pathwayDescriptions && typeof pathwayDescriptions === 'object' && Object.entries(pathwayDescriptions).map(([pathwayName, pathwayDesc], index) => (
-              <div key={`pathway-desc-${index}`} style={{ marginTop: '20px' }}> {/* Add some space */}
-                {/* Render the pathway name as a sub-heading (using h3 style from Section) */}
-                <h4>{pathwayName}</h4>
-                {/* Render the pathway description, respecting potential newlines */}
-                {pathwayDesc && typeof pathwayDesc === 'string' && (
-                   <p style={{ whiteSpace: 'pre-line' }}>{pathwayDesc}</p>
-                )}
-              </div>
-            ))}
+            {/* 2. Specific Pathways */}
+            {pathwayDescriptions && typeof pathwayDescriptions === 'object' && 
+              Object.entries(pathwayDescriptions).map(([pathwayName, pathwayDesc], index) => (
+                <div key={`pathway-desc-${index}`} style={{ marginTop: '15px' }}>
+                  <h4 style={{ color: '#0056b3', marginBottom: '5px' }}>{pathwayName}</h4>
+                  {pathwayDesc && (
+                    <p style={{ whiteSpace: 'pre-line' }}>{pathwayDesc}</p>
+                  )}
+                </div>
+              ))
+            }
           </Section>
         ) : null}
 
-        <Section><h2>Subjects</h2>{renderSubjects(subjects)}</Section>
+        {/* Entry Requirements Section */}
+        {entryRequirements && entryRequirements !== "Details not specified." && (
+          <Section>
+            <h2>Entry Requirements</h2>
+            <p>{entryRequirements}</p>
+          </Section>
+        )}
+
         {duration && duration !== "N/A" && <Section><h2>Duration</h2><p>{duration}</p></Section>}
-        {pathway && pathway !== "N/A" && <Section><h2>Pathway</h2><p>{pathway}</p></Section>}
-        {accreditation && accreditation !== "N/A" && <Section><h2>Accreditation</h2><p>{accreditation}</p></Section>}
+        {progression && progression !== "N/A" && <Section><h2>Progression</h2><p>{progression}</p></Section>}
         {Array.isArray(institutions) && institutions.length > 0 && (
           <Section><h2>Institutions</h2><ul>{institutions.map((inst, idx) => <li key={`inst-${idx}`}>{inst}</li>)}</ul></Section>
         )}
         {cost && cost !== "N/A" && <Section><h2>Cost</h2><p>{cost}</p></Section>}
         {/* ============================================= */}
 
-
-        {/* === STATIC KEY CONSIDERATIONS SECTION (Integrated) === */}
-        <Section>
-            <h2>Key Considerations & General Info</h2>
-
-            {/* Entry Requirements Notes */}
-            <h3>Entry Requirements Notes</h3>
+        {/* Career Pathways */}
+        {Array.isArray(careerPathway) && careerPathway.length > 0 && (
+          <Section>
+            <h2>Career Pathways</h2>
             <ul>
-                <li><b>STEM Programs:</b> Often require SPM credits in Math, Additional Math, Physics, Chemistry/Biology.</li>
-                <li><b>Law/Medicine Degrees:</b> Usually require specific Pre-U programs (Foundation, STPM, A-Levels, IB) with high CGPA (e.g., 3.5+).</li>
-                <li><b>Teaching:</b> May require SPM credit in Bahasa Malaysia + MUET (check specific program).</li>
+              {careerPathway.map((path, idx) => <li key={`career-${idx}`}>{path}</li>)}
             </ul>
+          </Section>
+        )}
 
-            {/* Accreditation */}
-            <h3>Accreditation</h3>
-            <ul>
-                <li><b>Local Recognition:</b> Look for MQA (Malaysian Qualifications Agency) or MOE (Ministry of Education) approval.</li>
-                <li><b>Global Recognition:</b> Relevant for programs like IB, A-Levels (Cambridge), ADTP (U.S. Regional Boards).</li>
-            </ul>
+        {/* Limitations */}
+        {limitation && limitation !== "N/A" && (
+          <Section>
+            <h2>Limitations</h2>
+            <p style={{ color: '#d32f2f', fontWeight: '500' }}>{limitation}</p>
+          </Section>
+        )}
 
-            {/* Institutions Overview */}
-            <h3>Institutions Overview</h3>
-            <ul>
-                <li><b>Public (IPTA):</b> e.g., UM, UPM, UiTM. Often subsidized fees, competitive entry.</li>
-                <li><b>Private (IPTS):</b> e.g., Taylor’s, Sunway, INTI, Monash Malaysia, AIMST. Wider range, variable fees.</li>
-            </ul>
-
-            {/* Cost Comparison Table */}
-            <h3>Cost Comparison (General Estimates)</h3>
-            <table>
-                <thead><tr><th>Program Type</th><th>Public (RM)</th><th>Private (RM)</th></tr></thead>
-                <tbody>
-                    <tr><td>Foundation / Asasi / Matrikulasi</td><td>1,000 - 3,000</td><td>10,000 - 25,000</td></tr>
-                    <tr><td>Diploma</td><td>5,000 - 10,000</td><td>15,000 - 30,000</td></tr>
-                    <tr><td>A-Level / IB / AUSMAT / SAM</td><td>N/A (Govt Schools minimal for STPM)</td><td>15,000 - 40,000+</td></tr>
-                    <tr><td>ADTP (Malaysia portion)</td><td>N/A</td><td>30,000 - 60,000</td></tr>
-                </tbody>
-            </table>
-            <p><small><i>Note: Fees for specialized private colleges (e.g., KYUEM, KTJ for A-Levels/IB) can be significantly higher.</i></small></p>
-
-            {/* Pathway to Degree */}
-            <h3>Pathway to Degree</h3>
-            <ul>
-                <li><b>Direct Entry (Year 1):</b> Typically Foundation, Matrikulasi, A-Levels, IB, STPM.</li>
-                <li><b>Advanced Standing / Bridging:</b> Diploma (often Year 2 entry), ADTP/SAM/AUSMAT (credit transfer).</li>
-            </ul>
-
-            {/* Career Alignment Examples */}
-            <h3>Career Alignment Examples</h3>
-            <ul>
-                <li><b>Medicine:</b> Asasi/Matrikulasi (Science) → MBBS degree.</li>
-                <li><b>Engineering:</b> STPM/Diploma/Foundation (Eng/Sci) → Bachelor’s degree.</li>
-                <li><b>Law:</b> A-Levels/IB/Foundation (Arts/Law) → LLB degree.</li>
-            </ul>
-
-            {/* Final Tips */}
-            <h3>Final Tips</h3>
-            <ul>
-                <li><b>Funding:</b> Explore scholarships (JPA, MARA, etc.) and PTPTN loans.</li>
-                <li><b>Deadlines:</b> Apply early, especially for public programs (e.g., UPU around March/April).</li>
-                <li><b>Recognition:</b> Always verify MQA accreditation for local degree pathways.</li>
-            </ul>
-        </Section>
-        {/* ===================================================== */}
-
+        {/* Best For */}
+        {bestFor && bestFor !== "N/A" && (
+          <Section>
+            <div style={{ backgroundColor: '#e3f2fd', padding: '15px', borderRadius: '8px', borderLeft: '5px solid #2196f3' }}>
+              <h2 style={{ marginTop: 0 }}>Best For</h2>
+              <p>{bestFor}</p>
+            </div>
+          </Section>
+        )}
 
         {/* Back To Top Button */}
         {isVisible && (<BackToTopButton onClick={scrollToTop}><ArrowUpward /> Back To Top</BackToTopButton>)}
@@ -337,4 +313,4 @@ const ProgramDetails = () => {
   );
 };
 
-export default ProgramDetails;
+ export default ProgramDetails;

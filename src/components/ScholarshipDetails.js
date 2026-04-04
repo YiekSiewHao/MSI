@@ -502,23 +502,13 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           {/* Safety Check 1: Main Criteria */}
           <h3>Main Criteria</h3>
           <ul>
-            {(eligibilityCriteria?.mainCriteria || []).map((item, index) => (
-              <li key={index}>{item}</li>
-           ))}
-          </ul>
-
-          {/* Safety Check 2: Academic Qualifications */}
-          {eligibilityCriteria?.academicQualifications && (
-            <>
-              <h3>Academic Qualifications</h3>
-              <ul>
-                {(eligibilityCriteria.academicQualifications || []).map((item, index) => {
+            {(eligibilityCriteria.mainCriteria || []).map((item, index) => {
                   if (typeof item === 'object' && item !== null) {
                     return (
-                      <li key={index} style={{ listStyle: 'none', marginBottom: '15px' }}>
-                        <strong>{item.field}</strong>
+                      <li key={index} style={{ listStyle: 'none', marginBottom: '15px', marginLeft: '-20px' }}>
+                        <strong>{item.title}</strong>
                         <ul>
-                          {(item.criteria || []).map((subItem, subIndex) => (
+                          {(item.detail || []).map((subItem, subIndex) => (
                             <li key={subIndex}>{subItem}</li>
                           ))}
                         </ul>
@@ -529,8 +519,65 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                   return <li key={index}>{item}</li>;
                 })}
               </ul>
-            </>
-          )}
+
+          {/* Safety Check 2: Academic Qualifications */}
+            {eligibilityCriteria?.academicQualifications && (
+              <div style={{ marginTop: '20px' }}>
+                <h3>Academic Qualifications</h3>
+               <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '10px' }}>
+                  <thead>
+                   <tr style={{ backgroundColor: '#f8f9fa', borderBottom: '2px solid #dee2e6' }}>
+                     <th style={{ textAlign: 'left', padding: '12px', border: '1px solid #dee2e6' }}>Field of Study</th>
+                      <th style={{ textAlign: 'left', padding: '12px', border: '1px solid #dee2e6' }}>Requirements</th>
+                   </tr>
+                 </thead>
+           <tbody>
+              {(eligibilityCriteria.academicQualifications || []).map((item, index) => {
+                const isHeader = typeof item === 'string';
+
+                return (
+                  <tr key={index} style={isHeader ? { backgroundColor: '#f0f7ff' } : {}}>
+                   {isHeader ? (
+                      /* --- FULL WIDTH HEADER ROW --- */
+                      <td 
+                        colSpan="2" 
+                        style={{ 
+                          padding: '12px', 
+                          border: '1px solid #dee2e6', 
+                          fontWeight: 'bold', 
+                          color: '#0056b3',
+                          fontSize: '1.1rem' 
+                        }}
+                      >
+                        {item}
+                      </td>
+                    ) : (
+                      /* --- STANDARD DATA ROW --- */
+                      <>
+                        <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
+                          <ul style={{ margin: 0, paddingLeft: '20px', fontWeight: '600', color: '#444' }}>
+                           {typeof item.field === 'string' 
+                              ? item.field.split(',').map((f, i) => f.trim() && <li key={i}>{f.trim()}</li>)
+                              : (item.field || []).map((f, i) => <li key={i}>{f}</li>)
+                            }
+                          </ul>
+                        </td>
+                        <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
+                          <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                           {(item.criteria || []).map((sub, i) => (
+                             <li key={i} style={{ marginBottom: '4px' }}>{sub}</li>
+                            ))}
+                          </ul>
+                        </td>
+                       </>
+                    )}
+                  </tr>
+                );
+              })}
+            </tbody>
+        </table>
+       </div>
+      )}
 
           {/* Safety Check 3: Additional Criteria */}
           {eligibilityCriteria?.additionalCriteria && (

@@ -219,6 +219,7 @@ const Header = ({
   const menuItems = [
     { name: 'Home', onClick: () => handleNavigation(onHomeClick) },
     { name: 'Scholarship List', onClick: () => handleNavigation(onScholarshipListClick) },
+    { name: 'Alumni', onClick: () => handleNavigation(() => navigate('/alumni')) },
     { name: 'Programs', onClick: () => handleNavigation(onProgramListClick) }, // <-- 2. ADD THIS NEW MENU ITEM
     {
       name: 'Preparation',

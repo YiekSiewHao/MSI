@@ -1,115 +1,116 @@
 {
     "programType": {
-      "International Transfer Program": [
-        {
-          "programName": "American Degree Transfer Program (ADTP)",
-          "logoPlaceholder": "/assets/program_logos/adp.png",
-          "description": "An American Degree Transfer Program (ADTP) is a pathway that allows students to complete the initial years of an American undergraduate degree in Malaysia before transferring to a U.S. university to finish their studies. This program exposes students to the American education system, prepares them for university life in the U.S., and provides a cost-effective way to pursue a U.S. degree.",
-          "entryRequirements": "5 SPM credits (including English).",
-          "subjects": [
-            "Liberal Arts",
-            "Engineering",
-            "Business"
-          ],
-          "duration": "2 years (Malaysia) + 2 years (US/Canada).",
-          "pathway": "Credit transfer to overseas universities.",
-          "accreditation": "U.S. Regional Accreditation.",
-          "institutions": [
-            "INTI",
-            "Sunway",
-            "HELP"
-          ],
-          "cost": "RM30,000–RM60,000 (Malaysia portion)"
-        }
-      ],
       "Matriculation": [
         {
-          "programName": "Matrikulasi (Matriculation)",
+          "programName": "Malaysian Matriculation (KPM)",
           "logoPlaceholder": "/assets/program_logos/matrikulasi.png",
-          "description": "The Malaysian Matriculation Programme (Program Matrikulasi) is a one-year pre-university preparatory course offered by the Ministry of Education Malaysia (KPM). Established in 1998, it serves as a streamlined pathway for students to gain entry into public universities (IPTA) in fields such as science, engineering, and professional studies",
-          "entryRequirements": "Bumiputera quota priority; 5+ credits (Science/Arts).",
-          "subjects": [
-            "Science (Module I: Engineering/Medicine)",
-            "Accounting (Module II)"
-          ],
-          "duration": "1 year (intake: March).",
-          "pathway": "Direct entry to public university degrees.",
-          "accreditation": "Ministry of Education (MOE).",
+          "description": "1-year fast track foundation by Ministry of Education",
+          "entryRequirements": "Strong SPM results; quota-based selection",
+          "duration": "1 year (2 semesters)",
+          "progression": "Mainly Malaysian public universities via UPU",
           "institutions": [
-            "Matriculation colleges (e.g., Kolej Matrikulasi Melaka)"
+            "Universiti Sains Malaysia", "Universiti Teknologi Malaysia", "Universiti Malaysia Sarawak", "Universiti Teknologi MARA"
           ],
-          "cost": "Subsidized (RM1,000–RM3,000)"
+          "Bestfor": "Students targeting public univerisites; science stream students",
+          "CareerPathway": ["Engineering", "Pharmacy", "Dentistry", "Science", "Accounting"],
+          "Limitation": "Recognised by 56 oversea universities; competitive entry",
+          "cost": "Highly subsidised (very affortable)"
         }
       ],
       "Pre-University Program": [
         {
           "programName": "Asasi (Foundation Programs)",
           "logoPlaceholder": "/assets/program_logos/foundation.png",
-          "description": "Asasi (Foundation Programs) is a pre-university preparatory course offered primarily by public universities. Designed to equip students with the necessary academic foundation for undergraduate studies, with a structured pathway that provides a clear and direct route to undergraduate studies within the same university system.",
-          "entryRequirements": "Minimum 5 credits in SPM (including relevant subjects, e.g., Science/Math for STEM fields).",
-          "subjects": [
-            "Science (Physics, Chemistry, Biology)",
-            "Arts (Business, Law)",
-            "Mixed"
-          ],
-          "duration": "1 year (intake: March/September)",
-          "pathway": "Direct entry to related bachelor’s degrees (e.g., Medicine, Engineering).",
-          "accreditation": "Recognized by Malaysian Qualifications Agency (MQA).",
+          "description": "University-speicifc foundation programmes",
+          "entryRequirements": "Good SPM results (usually credit in relevant subjects)",
+          "duration": "1 year",
+          "progression": "Usually priority entry into same university",
           "institutions": [
-            "Public universities (e.g., UM, USM, UKM)"
+            "Universiti Malaya (PASUM)", "Universiti Sains Islam Malaysia", "Universiti Putra Malaysia", "Universiti Teknologi Malaysia", "Universiti Malaysia Sabah"
           ],
-          "cost": "Government-funded (RM1,000–RM3,000)"
+          "Bestfor": "Students certain about ONE university, medicine, engineering, Islamic studies tracks",
+          "cost": "Subsidised (RM5k - RM15k approx.)",
+          "Limitation": "Limited transfer Flexibility"
         },
         {
-          "programName": "STPM (Sijil Tinggi Persekolahan Malaysia)",
+          "programName": "STPM (Form 6)",
           "logoPlaceholder": "/assets/program_logos/stpm.jpg",
-          "description": "The Sijil Tinggi Persekolahan Malaysia (STPM) is a pre-university programme offering an affordable and globally recognized pathway to higher education. Distinct from other local pre-university options, STPM provides students with flexibility in subject selection and assessment, allowing them to tailor their studies to their academic strengths and interests. STPM stands out as a cost-effective, flexible, and globally acknowledged pre-university qualification, making it a compelling choice for students aiming for higher education both locally and abroad.",
-          "entryRequirements": "3–5 SPM credits.",
-          "subjects": [
-            "Science (Math, Physics)",
-            "Arts (Economics, Literature)"
-          ],
-          "duration": "1.5–2 years (intake: May)",
-          "pathway": "Accepted globally; entry to public/private universities.",
-          "accreditation": "MQA/MOE.",
-          "institutions": [
-            "Government schools"
-          ],
-          "cost": "RM100–RM500 (public schools)"
+          "description": "Malaysia's national Pre-U (equivalent standard to A-Levels)",
+          "entryRequirements": "SPM with minimum pass in Bahasa Melayu and Sejarah; competitive schools may require stronger results",
+          "duration": "1.5 years (3 semesters)",
+          "progression": "All Malaysian public universities, most private universities, recognised in UK, Australia, Singapore and more",
+          "institutions": ["Universiti Malaya", "Universiti Kebangsaan Malaysia", "Universiti Putra Malaysia", "National University of Singapore", "University of Melbourne"],
+          "cost": "Very Low (public school fees only)",
+          "CareerPathway": ["Medicine", "Engineering", "Law", "Accounting", "Social Sciences and more"],
+          "Limitation": "Academically rigorous; heavily exam based",
+          "Bestfor": "Budget-conscious students, strong exam performers, students who wants wide recognition"
         },
         {
-          "programName": "A-Levels/IB/AUSMAT/SAM",
+          "programName": "A-levels",
+          "description": null,
           "logoPlaceholder": "/assets/program_logos/alevel.jpg",
-          "description": "Globally recognized pre-university qualifications (A-Levels, IB, AUSMAT & SAM), providing flexibility and rigorous academic foundations for entry into top universities worldwide.",
-          "pathwayDescriptions": {
-            "A-Levels": "The A-Level programme is a globally recognized pre-university qualification that offers students the flexibility to choose subjects aligned with their academic interests and career aspirations. It provides a rigorous academic foundation, facilitating entry into top universities worldwide. The programme's structure emphasizes in-depth subject knowledge and analytical skills, preparing students for the challenges of higher education.",
-            "IB": "The IB Diploma Programme is an internationally acclaimed two-year pre-university course that promotes holistic education. It emphasizes critical thinking, intercultural understanding, and a well-rounded academic curriculum. Students engage in six subject areas, along with core components like the Extended Essay, Theory of Knowledge (TOK), and Creativity, Activity, Service (CAS), fostering a balanced and comprehensive educational experience.",
-            "AUSMAT": "AUSMAT, also known as the Western Australian Certificate of Education (WACE), is a pre-university programme based on the Australian education system. It offers a balanced assessment structure, combining coursework and final examinations. The programme is designed to develop independent thinking and research skills, providing a direct pathway to universities in Australia and other countries. AUSMAT is known for its flexible duration, allowing students to complete the programme in 10 months to 2 years.",
-            "SAM": "SAM, now known as SACE International, is an Australian pre-university programme that offers a comprehensive curriculum with a strong emphasis on coursework. The programme is recognized for its rigorous academic standards and provides students with the skills necessary for success in higher education. SACE International is particularly suited for students who prefer a continuous assessment approach and are aiming for universities in Australia and other countries."
-          },
-          "entryRequirements": "5 credits (SPM).",
-          "subjects": {
-            "A-Levels": [
-              "Sciences",
-              "Humanities",
-              "Math",
-              "English Literature",
-              "Music"
-            ],
-            "IB": [
-              "Broad curriculum (Theory of Knowledge, Extended Essay)"
-            ],
-            "AUSMAT/SAM": [
-              "Australian/UK curriculum"
-            ]
-          },
-          "duration": "1.5–2 years (intake: Jan/July)",
-          "pathway": "Global recognition; direct entry to international universities.",
-          "accreditation": "UK/IB/Australian boards.",
+          "entryRequirements": "Minimum 5 credits in SPM",
+          "duration": "1.5-2 years",
+          "progression": ["UK", "Singapore", "Australia", "Hong Kong", "Malaysia and more"],
           "institutions": [
-            "Private colleges (e.g., Taylor’s, INTI)"
+            "Kolej Yayasan UEM", "Taylor's College", "Sunway College", "HELP University", "INTI International College Subang", "Methodist College Kuala Lumpur"
           ],
-          "cost": "RM15,000–RM40,000 (private)"
+          "CareerPathway": ["Medicine", "Law", "Engineering", "Economics"],
+          "Limitation": "Exam heavy; can be academically stressful",
+          "cost": "RM25k - RM100k"
+        },
+        {
+          "programName": "International Baccalaureate (IB Diploma)",
+          "description": null,
+          "logoPlaceholder": "/assets/program_logos/IB.png",
+          "entryRequirements": "Minimum 5 credits in SPM",
+          "duration": "2 years",
+          "progression": ["UK", "USA", "Australia", "Europe"],
+          "institutions": [
+            "Sunway College", "The International School of Kuala Lumpur", "Garden International School", "Nexus International School", "IGB International School", "Fairview International School", "Raffles American School"
+          ],
+          "Bestfor": "All-rounder students, critical thinking + coursework learners",
+          "Limitation": "Heavy workload; expensive",
+          "cost": "RM80k - RM120k+"
+        },
+        {
+          "programName": "Australian Matriculation (AUSMAT / SACE)",
+          "description": null,
+          "logoPlaceholder": "/assets/program_logos/AUSMAT.png",
+          "duration": "1 year",
+          "progression": ["University of Sydney", "Monash University"],
+          "institutions": [
+            "Sunway College", "Taylor's College", " INTI International College Subang", "MAHSA Universityl", "International Islamic University Malaysia", "KDU University College"
+          ],
+          "Bestfor": "Coursework-based learners, students targeting Australia",
+          "Limitation": "Heavy workload; expensive",
+          "cost": "RM30k - RM50k"
+        }
+      ],
+      "Diploma":[
+        {
+          "programName": "Polytechnic Diploma",
+          "description": null,
+          "logoPlaceholder": "/assets/program_logos/polytechnic diploma.jpg",
+          "duration": "3 years",
+          "progression": "Direct Year 2 degree entry in many universities",
+          "institutions": [
+            "Politeknik Sultan Salahuddin Abdul Aziz Shah", "Politeknik Ungku Omar"
+          ],
+          "Bestfor": "Practical learners, Engineering, IT, Hospitality",
+          "cost": "Low (public polytechnics)"
+        },
+        {
+          "programName": "Private Diploma Programmes",
+          "description": null,
+          "logoPlaceholder": "/assets/program_logos/Private diploma programme.png",
+          "duration": "2-3 years",
+          "progression": "Direct into degree (same institution or transfer)",
+          "institutions": [
+            "SEGi University", "Management of Science University (MSU)", "Asia Pacific University of Technology & Innovation", "UCSI University"
+          ],
+          "Bestfor": "Career-focused students, Bussiness, IT, Mass Comm, Hospitality",
+          "cost": "Ranges based on University and Programme"
         }
       ]
     }

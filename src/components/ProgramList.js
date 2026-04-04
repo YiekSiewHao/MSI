@@ -138,9 +138,9 @@ const ProgramList = () => {
       {/* Filter Buttons */}
       <FilterContainer>
          <FilterButton active={filter === 'All'} onClick={() => setFilter('All')}><FaFilter /> All</FilterButton>
-         <FilterButton active={filter === 'International Transfer Program'} onClick={() => setFilter('International Transfer Program')}><FaFilter /> International Transfer Program</FilterButton>
          <FilterButton active={filter === 'Matriculation'} onClick={() => setFilter('Matriculation')}><FaFilter /> Matriculation</FilterButton>
          <FilterButton active={filter === 'Pre-University Program'} onClick={() => setFilter('Pre-University Program')}><FaFilter /> Pre-University Program</FilterButton>
+         <FilterButton active={filter === 'Diploma'} onClick={() => setFilter('Diploma')}><FaFilter />Diploma</FilterButton>
       </FilterContainer>
 
       {/* Program Grid */}
@@ -158,7 +158,12 @@ const ProgramList = () => {
               )}
               <div className="content">
                 <h3>{program.programName}</h3>
-                {!isMobile && <p>{program.description.substring(0, 100)}...</p>}
+                {!isMobile && <p>
+                                {program.description 
+                                  ? program.description.substring(0, 100) + "..." 
+                                  : "No description available."
+                                }
+                              </p>}
               </div>
             </ProgramCard>
           )) : null

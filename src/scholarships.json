@@ -7,23 +7,46 @@
     "logoPlaceholder": "/assets/company_logos/Petronas_logo.jpg",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "April 24, 2025",
-      "endDate": "April 30, 2025",
-      "note": "One week before SPM results to one week after SPM results"
+      "startDate": "31/03/2026 (12PM)",
+      "endDate": "10/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Applicant must be a Malaysian citizen NOT more than 22 years old.",
-        "Possess strong leadership skills and active participation (demonstrable) in extra-curricular activities",
-        "Applicant has NO disciplinary cases or suspension throughout studies",
-        "Applicant must NOT be under any other form of sponsorships."
+        "SPM 2025 candidate",
+        "Malaysian citizen aged between 16-19 years old in 2026",
+        "Strong leadership skills and active participation (demostrable) in extra-curricular activities",
+        {
+          "title": "Minimum Academic Requirement",
+          "detail": ["Only grades A and A+ will be counted towards the total number of A grades.", "Grade A- will not be counted towards the minimum academic requirement."]
+        }
       ],
       "academicQualifications": [
-        "SPM of the current year",
-        "UTP (Computing/Engineering): Minimum 8A- including Chemistry, Physics, and Mathematics",
-        "Local Universities (Arts): Minimum 8A including Mathematics and CEFR (B1)",
-        "Overseas Universities (Science/Engineering): Minimum 4A+ and 4A- including Chemistry, Physics, and Mathematics and CEFR (C1)",
-        "Overseas Universities (Arts/Computing): Minimum 4A+ and 4A- including Mathematics"
+        "Local Programme",
+        {
+          "field": ["Chemical Engineering", "Mechanical Engineering", "Electrical & Electronic Engineering", "Civil Engineering", "Petroleum Engineering", "Integrated Engineering (UTP)", "Mechatronic Engineering", "Petroleum Geoscience", "Applied Chemistry", "Architecture"],
+          "criteria": ["Min 8 subjects at grade A/A+ only, which includes the following subjects:", "Physics", "Chemistry", "Mathematics", "Min CEFR B1"]
+        },
+        {
+          "field": ["Computer Science", "Software Engineering", "Data Science"],
+          "criteria": ["Min 8 subjects at grade A/A+ only, which includes the following subjects:", "Mathematics", "Additional Mathematics", "Min CEFR B1"]
+        },
+        {
+          "field": ["Accounting / Finance", "Economics", "Marketing", "Actuarial Science (Financial Risk)", "Psychology / Sociology (org. Behaviour)", "Law", "Real Estate / Property Management"],
+          "criteria": ["Min 8 subjects at grade A/A+ only, which includes Mathematics", "Min CEFR B1"]
+        },
+        "Overseas Programme",
+        {
+          "field": ["Chemical Engineering", "Mechanical Engineering", "Electrical & Electronic Engineering", "Petroleum Engineering", "Mechatronic Engineering", "Marine Engineering", "Maritime Engineering", "naval Engineering", "Geoscience / Geology / Geophysics", "Applied Chemistry"],
+          "criteria": ["Min 4 subjects at grade A+ and 4 subjects at grade A, which includes the following subjects:", "Physics", "Chemistry", "Mathematics; and", "Additional Mathematics at A+", "Min CEFR C1"]
+        },
+        {
+          "field": ["Data Science", "Actuarial Science (Financial Risk)", "Mathematics, Statistics and Economics", "Accounting / Finance", "Economics", "Marketing", "Psychology / Sociology (Org. Behaviour)"],
+          "criteria": ["Min 4 subjects at grade A+ and 4 subjects at grade A, which includes the following subjects:", "Mathematics", "Additional Mathematics", "Min CEFR C1"]
+        },
+        {
+          "field": "Law",
+          "criteria": ["Min 4 subjects at grade A+ and 4 subjects at grade A, which includes Mathematics", "Min CEFR C1"]
+        }
       ]
     },
     "requiredDocuments": [
@@ -258,8 +281,8 @@
     "logoPlaceholder": "/assets/company_logos/Shell_logo.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "April 24, 2025",
-      "endDate": "May 14, 2025"
+      "startDate": "31/03/2026",
+      "endDate": "14/04/2026"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -458,9 +481,8 @@
     "logoPlaceholder": "/assets/company_logos/uem_logo.jpg",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "April 24, 2025",
-      "endDate": "May 12, 2025",
-      "note": "Applicants must be alert and apply for the scholarship on time."
+      "startDate": "31/03/2026",
+      "endDate": "12/04/2026"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -507,7 +529,7 @@
     "numberOfRecipients": [
       "No exact figure"
     ],
-    "applicationLink": null,
+    "applicationLink": "https://www.uem.com.my/yayasan-scholarship",
     "generalInfoLink": null,
     "ResultNotification": [
       "Only shortlisted candidates will be contacted by phone.",
@@ -636,9 +658,8 @@
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "28 April, 2025",
-      "endDate": "11 May, 2025",
-      "note": "Application opens right after the announcement of SPM results and typically lasts for about 1 week."
+      "startDate": "03/04/2026 (3PM)",
+      "endDate": "16/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -872,9 +893,8 @@
     "logoPlaceholder": "/assets/company_logos/JPA_logo.png",
     "scholarshipLevel": "local",
     "applicationTimeline": {
-      "startDate": "April 28, 2025",
-      "endDate": "May 11, 2025",
-      "note": "Application opens right after the announcement of SPM results and typically lasts for about 1 week."
+      "startDate": "03/04/2026 (3PM)",
+      "endDate": "16/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -1023,8 +1043,8 @@
     "logoPlaceholder": "/assets/company_logos/YPJ_logo.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "May 1, 2025",
-      "endDate": "May 20, 2025"
+      "startDate": "01/05/2026",
+      "endDate": "20/05/2026"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -1183,8 +1203,8 @@
     "logoPlaceholder": "/assets/company_logos/bank_negara.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
-      "startDate": "April 21, 2025",
-      "endDate": "May 4, 2025"
+      "startDate": "18/03/2026",
+      "endDate": "08/04/2026"
     },
     "eligibilityCriteria": {
       "mainCriteria": [

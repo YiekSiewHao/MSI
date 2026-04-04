@@ -19,6 +19,7 @@ import Stats from "./components/Stats";
 import Events from "./components/Events";
 import Koh_hui_xin_resource_pack from "./components/Koh_hui_xin_resource_pack";
 import "./App.css";
+import AlumniGallery from './components/AlumniGallery';
 
 const GlobalStyle = createGlobalStyle`
   body { margin: 0; font-family: sans-serif; }
@@ -108,6 +109,7 @@ const App = () => {
           <Route path="/scholarship-detail/:id" element={<ScholarshipDetails />} />
           <Route path="/scholarship-detail/:id/scholarstories/:scholarSlug" element={<ScholarsStory />} />
           <Route path="/program-detail/:programName" element={<ProgramDetails />} />
+          <Route path="/alumni" element={<AlumniGallery />} />
         </Routes>
       </main>
       <Footer />
