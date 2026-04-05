@@ -499,96 +499,101 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
         <Section>
           <h2>Eligibility Criteria</h2>
 
-          {/* Safety Check 1: Main Criteria */}
+          {/* 1. Main Criteria */}
           <h3>Main Criteria</h3>
           <ul>
             {(eligibilityCriteria.mainCriteria || []).map((item, index) => {
-                  if (typeof item === 'object' && item !== null) {
-                    return (
-                      <li key={index} style={{ listStyle: 'none', marginBottom: '15px', marginLeft: '-20px' }}>
-                        <strong>{item.title}</strong>
-                        <ul>
-                          {(item.detail || []).map((subItem, subIndex) => (
-                            <li key={subIndex}>{subItem}</li>
-                          ))}
-                        </ul>
-                      </li>
-                    );
-                  }
-                  // Handles simple strings
-                  return <li key={index}>{item}</li>;
-                })}
-              </ul>
-
-          {/* Safety Check 2: Academic Qualifications */}
-            {eligibilityCriteria?.academicQualifications && (
-              <div style={{ marginTop: '20px' }}>
-                <h3>Academic Qualifications</h3>
-               <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '10px' }}>
-                  <thead>
-                   <tr style={{ backgroundColor: '#f8f9fa', borderBottom: '2px solid #dee2e6' }}>
-                     <th style={{ textAlign: 'left', padding: '12px', border: '1px solid #dee2e6' }}>Field of Study</th>
-                      <th style={{ textAlign: 'left', padding: '12px', border: '1px solid #dee2e6' }}>Requirements</th>
-                   </tr>
-                 </thead>
-           <tbody>
-              {(eligibilityCriteria.academicQualifications || []).map((item, index) => {
-                const isHeader = typeof item === 'string';
-
+              if (typeof item === 'object' && item !== null) {
                 return (
-                  <tr key={index} style={isHeader ? { backgroundColor: '#f0f7ff' } : {}}>
-                   {isHeader ? (
-                      /* --- FULL WIDTH HEADER ROW --- */
-                      <td 
-                        colSpan="2" 
-                        style={{ 
-                          padding: '12px', 
-                          border: '1px solid #dee2e6', 
-                          fontWeight: 'bold', 
-                          color: '#0056b3',
-                          fontSize: '1.1rem' 
-                        }}
-                      >
-                        {item}
-                      </td>
-                    ) : (
-                      /* --- STANDARD DATA ROW --- */
-                      <>
-                        <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
-                          <ul style={{ margin: 0, paddingLeft: '20px', fontWeight: '600', color: '#444' }}>
-                           {typeof item.field === 'string' 
-                              ? item.field.split(',').map((f, i) => f.trim() && <li key={i}>{f.trim()}</li>)
-                              : (item.field || []).map((f, i) => <li key={i}>{f}</li>)
-                            }
-                          </ul>
-                        </td>
-                        <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
-                          <ul style={{ margin: 0, paddingLeft: '20px' }}>
-                           {(item.criteria || []).map((sub, i) => (
-                             <li key={i} style={{ marginBottom: '4px' }}>{sub}</li>
-                            ))}
-                          </ul>
-                        </td>
-                       </>
-                    )}
-                  </tr>
+                  <li key={index} style={{ listStyle: 'none', marginBottom: '15px', marginLeft: '-20px' }}>
+                    <strong>{item.title}</strong>
+                    <ul>
+                      {(item.detail || []).map((subItem, subIndex) => (
+                        <li key={subIndex}>{subItem}</li>
+                      ))}
+                    </ul>
+                  </li>
                 );
-              })}
-            </tbody>
-        </table>
-       </div>
-      )}
+              }
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
 
-          {/* Safety Check 3: Additional Criteria */}
+          {/* 2. Academic Qualifications (Single Block) */}
+          {eligibilityCriteria?.academicQualifications && (
+            <div style={{ marginTop: '20px' }}>
+              <h3>Academic Qualifications</h3>
+              
+              {eligibilityCriteria.displayType === 'table' ? (
+                <div style={{ overflowX: 'auto', marginBottom: '20px' }}>
+                  <table style={{ width: '100%', borderCollapse: 'collapse', border: '1px solid #dee2e6', marginTop: '10px' }}>
+                    <thead>
+                      <tr style={{ backgroundColor: '#f8f9fa' }}>
+                        <th style={{ padding: '12px', border: '1px solid #dee2e6', textAlign: 'left' }}>Field of Study</th>
+                        <th style={{ padding: '12px', border: '1px solid #dee2e6', textAlign: 'left' }}>Requirements</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {eligibilityCriteria.academicQualifications.map((item, index) => {
+                        const isHeader = typeof item === 'string';
+                        return (
+                          <tr key={index} style={isHeader ? { backgroundColor: '#f0f7ff' } : {}}>
+                            {isHeader ? (
+                              <td colSpan="2" style={{ padding: '12px', border: '1px solid #dee2e6', color: '#0056b3' }}>
+                                {item}
+                              </td>
+                            ) : (
+                              <>
+                                <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
+                                  <ul style={{ margin: 0, paddingLeft: '20px', color: '#444' }}>
+                                    {typeof item.field === 'string' 
+                                      ? item.field.split(',').map((f, i) => f.trim() && <li key={i}>{f.trim()}</li>)
+                                      : (item.field || []).map((f, i) => <li key={i}>{f}</li>)}
+                                  </ul>
+                                </td>
+                                <td style={{ padding: '12px', border: '1px solid #dee2e6', verticalAlign: 'top' }}>
+                                  <ul style={{ margin: 0, paddingLeft: '20px' }}>
+                                    {(item.criteria || []).map((sub, i) => <li key={i}>{sub}</li>)}
+                                  </ul>
+                                </td>
+                              </>
+                            )}
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div style={{ marginTop: '10px' }}>
+                  <ul style={{ paddingLeft: '20px', margin: 0 }}>
+                    {(eligibilityCriteria.academicQualifications || []).map((point, i) => (
+                      <li key={i} style={{ marginBottom: '8px', lineHeight: '1.5', color: '#333' }}>
+                        {typeof point === 'string' ? (
+                          /* Removed the length check/bolding here */
+                          point
+                        ) : (
+                          <span>
+                            {point.field}: {Array.isArray(point.criteria) ? point.criteria.join(', ') : point.criteria}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+          {/* 3. Additional Criteria */}
           {eligibilityCriteria?.additionalCriteria && (
-            <>
+            <div style={{ marginTop: '20px' }}>
               <h3>Additional Criteria</h3>
               <ul>
-                {(eligibilityCriteria.additionalCriteria || []).map((item, index) => (
+                {eligibilityCriteria.additionalCriteria.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-            </>
+            </div>
           )}
         </Section>
 
