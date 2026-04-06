@@ -1778,6 +1778,23 @@
       ],
       "additionalCriteria": []
     },
+    "fullBreakdownofCoverage": [
+      {
+        "title": "Scholarship/Sponsorship",
+        "details": ["Funds awarded based on academic merit and need (e.g., Sabah State Scholarship Award of Excellence / ABCNS and other schemes).",
+        "Covers tuition fees, and in many cases accommodation and living allowances for eligible students studying locally or overseas. Available for pre-university, undergraduate, and postgraduate levels."]
+      },
+      {
+        "title": "Bursaries & Assistance",
+        "details": ["Secondary school financial aid helping cover school expenses for students from low-income families.", 
+        "Special Assistance Scheme (SBK) targeting B40 families to reduce barriers to schooling."]
+      },
+      {
+        "title": "Study Loans & Sabah State Education Fund",
+        "details": ["Interest-free or subsidised loans for higher education.",
+        "Sabah State Education Fund (TPNS) supports students who may not receive traditional scholarships."]
+      }
+    ],
     "requiredDocuments": [
       "Salinan Kad Pengenalan",
       "Salinan Surat Beranak",
@@ -1824,7 +1841,21 @@
       }
     ],
     "contactEmail": "biasisways@ysnet.org.my",
-    "contactNumber": null,
+    "contactNumber": "60 88-421127 / 60 88-421123",
+    "FAQs": [
+      {
+        "Question1": "Who can apply?",
+        "Answer1": "Sabahan students (citizens/residents) attending schools and higher education institutions locally or abroad. Those meeting academic and/or financial eligibility criteria."
+      },
+      {
+        "Question2": "Is there a bond after the scholarship?",
+        "Answer2": "Some competitive scholarships (e.g., Sabah State Scholarship Awards) may require a service commitment or return-to-state contribution; details are provided in individual offers."
+      },
+      {
+        "Question3": "How to apply and when?",
+        "Answer3": "Applications and deadlines vary by year and award type. Students should regularly check the official Yayasan Sabah website or contact the foundation office for updates."
+      }
+    ],    
     "scholars": [
       {
         "contributorName": "Dominic Benjamin",
@@ -1913,18 +1944,25 @@
     },
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Able to express yourself fluently and be open to everything",
-        "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports."
+        "Age not exceeding 19 years old on 1 Jan 2026.",
+        "Active in co-curricular activities",
+        "Leadership qualities and characteristics",
+        "Does not have any siblings currently under YTN scholarships"
       ],
       "academicQualifications": [
-        "Obtained a minimum of 8A’s (combination of A and A+) in the recent SPM examination",
-        "Not exceeding 18 years of age at the enrollment date for the foundation studies"
+        "Pass your SPM by obtaining minimum Level B1 in English (CEFR) subject ",
+        "Minimum A in at least 8 subjects according to the requirements of your preferred field of study."
       ]
     },
     "requiredDocuments": [
       "SPM result",
       "Co-curricular activities and Competition Certificates",
       "PAJSK Certificate"
+    ],
+    "fullBreakdownofCoverage": [
+      "Full tuition fee coverage for undergraduate degrees (and foundation/pre-degree where applicable) at approved institutions (such as public universities and UNITEN).",
+      "Monthly living allowances",
+      "Study-related cost support (e.g., books, materials, travel in some years)"
     ],
     "coursesOffered": {
       "Courses Offered": [
@@ -1944,8 +1982,7 @@
       "workLocation": null
     },
     "numberOfRecipients": {
-      "previousYear": "around 25-30",
-      "currentYear": 5
+      "current year": "NO EXACT CURRENT FIGURE" 
     },
     "applicationLink": "https://ytn.tnb.com.my",
     "generalInfoLink": null,
@@ -1973,7 +2010,21 @@
       }
     ],
     "contactEmail": "infoytn@tnb.com.my",
-    "contactNumber": "07-2344355",
+    "contactNumber": "03-89247500",
+    "FAQs": [
+      {
+        "Question1": "What programmes does this scholarship support?",
+        "Answer1": "It supports undergraduate and some foundation pathways at public universities, UNITEN, and occasionally overseas universities, depending on the intake."
+      },
+      {
+        "Question2": "How competitive is it?",
+        "Answer2": "In one recent cycle, YTN received over 10,800 applications for TNB PRIME and related sponsorships, showing strong competition for limited slots (e.g., ~60 PRIME recipients in 2022)."
+      },
+      {
+        "Question3": "Are there service obligations (bond)?",
+        "Answer3": "TNB typically does not publicly require a service bond for all scholars, but specific employment opportunities or commitments with TNB (or related programmes) may be offered and detailed in individual award terms. Always check the official offer letter for conditions."
+      }
+    ],      
     "scholars": [
       {
         "contributorName": "Lim Ethan",
@@ -2049,6 +2100,12 @@
       "Passport-size photo taken within the last 6 months.",
       "Certified true copies of applicants' and parents' identity cards (IC)."
     ],
+    "fullBreakdownofCoverage": [
+      "Full tuition fees for the approved course of study",
+      "Living allowances for accommodation/lifestyle during study (varies by programme).",
+      "Leadership development & mentoring opportunities.",
+      "Round-trip economy class tickets (for selected programmes, e.g., Lestari)"
+    ],
     "coursesOffered": {
       "Courses Offered": [
         "Arts and Humanities (e.g., Philosophy, History, Linguistics, Art and Design)",
@@ -2076,7 +2133,6 @@
       "workLocation": "GLCs, GLICs, or government agencies under Khazanah Nasional Berhad"
     },
     "numberOfRecipients": {
-      "previousYear": 24,
       "annually": 31
     },
     "applicationLink": [
@@ -2141,7 +2197,24 @@
       }
     ],
     "contactEmail": "ykselect@yayasankhazanah.com.my",
-    "contactNumber": null,
+    "contactNumber": "603-2272 6300",
+    "FAQs": [
+      {
+        "Question1": "What types of scholarship exist?",
+        "Answer1": ["Khazanah Global: Prestigious award for studies (e.g., A-Levels + undergrad studies locally & abroad).",
+                    "Khazanah Watan: For foundation or local undergraduate studies.",
+                    "Khazanah Lestari: Targets postgraduate (Master’s) with sustainability focus.",
+                    "Wakalah PayNet-YK: Supports B40 Muslim students for foundation/undergraduate locally"]
+      },
+      {
+        "Question2": "Can I change my application after submitting?",
+        "Answer2": "Once submitted, applications cannot be changed via the portal."
+      },
+      {
+        "Question3": "How competitive is the scholarship?",
+        "Answer3": "YK scholarships are highly competitive, receiving thousands of applications and selecting relatively few scholars each year."
+      }
+    ], 
     "scholars": [
       {
         "contributorName": "Jordan Lee Fur Yuan",
@@ -2264,7 +2337,7 @@
     "id": "fgv-scholarship-programme",
     "name": "FGV Scholarship Programme",
     "shortName": "FGV",
-    "description": "The FGV Scholarship Programme 2025 offers Malaysian students the opportunity to pursue undergraduate studies at reputable higher learning institutions. The scholarship supports students in various fields, including Accounting & Finance, Business Management & Economics, Engineering, and more. This programme not only provides financial support but also nurtures leadership and academic excellence, preparing scholars for a successful future in their chosen professions.",
+    "description": "A corporate scholarship offered by FGV Holdings Berhad, one of Malaysia’s largest agribusiness companies focused on palm oil, food production, and related industries. It aims to support high-achieving Malaysian students, especially young SPM leavers, by funding their tertiary education and developing future leaders and professionals in local universities.",
     "logoPlaceholder": "/assets/company_logos/FGV_logo.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
@@ -2280,10 +2353,19 @@
       ]
     },
     "requiredDocuments": [
-      "SPM results",
-      "Certificates (you are recommended to bring your physical certificates during the first and final interview stages)",
-      "Candidate’s and Parents’ IC",
-      "Parents’ or Guardians’ salary slips or EA form"
+      "SPM result slip",
+      "Identity card (MYKAD) copy",
+      "Co-curricular certificates",
+      "Parents/guardian’s income documents",
+      "Other supporting certificates of achievement",
+      "Note: All required certified true copy in PDF format"
+    ],
+   "fullBreakdownofCoverage": [
+      "Full tuition fees:",
+      "Living allowances",
+      "Accommodation support",
+      "Book/stationery allowances",
+      "Other education-related allowances"
     ],
     "coursesOffered": [
       "Accounting & Finance",
@@ -2304,14 +2386,10 @@
     "numberOfRecipients": {
       "2024": 3
     },
-    "applicationLink": "No specific application link available at the moment. My advice would be to keep track of the latest scholarship updates from trusted sources.",
+    "applicationLink": "http://career.fgvholdings.com/portal",
     "resultNotification": [
-      "Shortlisted candidates receive an email with details on the first round of assessment (date, time, venue, dress code).",
-      "RSVP your attendance by the deadline.",
-      "The number of shortlisted candidates can vary each year; during my time, only 60 out of 5,600 applicants were selected for the first round.",
-      "After the assessment, FGV will call you (keep your phone on) and send an email confirming if you’ve been selected for the final interview at Wisma FGV.",
-      "Two days after the final interview, you’ll receive another phone call if you’re chosen as a scholar.",
-      "The timeline and process may vary depending on the year and individual circumstances."
+      "Only shortlisted candidates are contacted directly by email or phone.",
+      "FGV does not publish results publicly."
     ],
     "applicationProcess": [
       {
@@ -2342,7 +2420,23 @@
         ]
       }
     ],
-    "contactEmail": "",
+    "contactEmail": "careers@fgvholdings.com",
+    "contactEmail2": "fgv.enquiries@fgvholdings.com",
+    "contactNumber": "603 2789 0000 (FGV Holdings Berhad HQ)",
+    "FAQs": [
+      {
+        "Question1": "Is FGV’s scholarship only for local Malaysian universities?",
+        "Answer1": "This specific Programme is generally for local degrees but company policy may expand to international studies depending on the year."
+      },
+      {
+        "Question2": "What if I miss the deadline?",
+        "Answer2": "Late or incomplete applications are not accepted."
+      },
+      {
+        "Question3": "Are interviews part of the selection?",
+        "Answer3": "Yes, shortlisted applicants may undergo assessment and interview stages."
+      }
+    ],  
     "scholars": [
       {
         "contributorName": "Marissa Dhaniyah binti Ahmad Danis",
@@ -2398,7 +2492,7 @@
     "id": "ytm",
     "name": "Yayasan Telekom Malaysia",
     "shortName": "YTM",
-    "description": "Yayasan TM (YTM) is proud to be a catalyst towards future-building for deserving Malaysian students. By pairing education and career development under the same umbrella, we equip individuals with the necessary knowledge and skills to thrive in a constantly changing environment. As a trusted partner in nation building, YTM remains committed to developing leaders of tomorrow who will drive our digital economy and Industrial Revolution 4.0.",
+    "description": "The Yayasan TM Future Leaders Scholarship is a competitive education scholarship programme by Yayasan Telekom Malaysia (YTM) to support high-achieving Malaysian students in pursuing pre-university and undergraduate studies locally or overseas. It’s aimed at nurturing future leaders, especially in technology, digital, engineering and related fields.",
     "logoPlaceholder": "/assets/company_logos/YTM_logonew.png",
     "scholarshipLevel": "global",
     "applicationTimeline": {
@@ -2411,31 +2505,48 @@
         "Participate in diverse types of extracurricular activities"
       ],
       "academicQualifications": [
-        "Obtained a minimum of 8 A’s (combination of A and A+) in the recent SPM examination",
-        "Not exceeding 21 years old in year of application",
-        "Malaysian citizens and with good health condition",
-        "Active in co-curricular activities"
-      ],
+        "Local Programme",
+        {
+          "criteria":["Not exceed 20 years old in Dec 2026.",
+	                    "Active in co-curricular activities."]
+        },
+        "Overseas Programme",
+        {
+          "criteria": ["Obtained a minimum of 8 A+ for SPM 2025 with minimum A for Sejarah",
+                      "Compulsory subjects: Bahasa Melayu, Bahasa Inggeris, Matematik Moden",
+                      "1119-GCEO/CEFR (Min C1)",
+                      "Household income not exceeding RM30,000 per month.",
+                      "Not exceed 20 years old in Dec 2026.",
+                      "Active in co-curricular activities."]
+        }
+	],
       "additionalCriteria": [
         "Participate in diverse types of extracurricular activities"
       ]
     },
     "requiredDocuments": [
-      "SPM result certificate",
-      "Co-curricular activities and Competition Certificates",
-      "PAJSK Certificate",
-      "School Leaving certificate",
-      "Parents' or Guardians' salary slips and EA form",
-      "Student's and Parents' IC copy",
+      "Copy of applicant’s MYKAD & birth certificate",
+      "SPM result slip or latest academic transcripts",
+      "Copies of parents’ ICs",
+      "Parents’ pay slips / household income proof",
+      "Certificates of co-curricular achievements",
+      "Additional documents may be required at interview stage",
       "* All copies must be certified (CTC)"
     ],
+    "fullBreakdownofCoverage": [
+      "Full tuition fee coverage",
+      "Monthly living allowance",
+      "Practical allowance",
+      "Book, equipment & other study-related support may be included depending on the cycle",
+      "Overseas study support for selected recipients depending on course and eligibility"
+    ],
+
     "coursesOffered": {
       "Courses Offered": [
-        "Technology & Digital",
-        "Computer Science",
-        "Creative Multimedia",
-        "Management",
-        "Engineering"
+        "Engineering",
+        "Information Technology & Digital Studies",
+        "Management / Business",
+        "Creative Multimedia / Design"
       ]
     },
     "countriesOffered": [
@@ -2446,35 +2557,52 @@
       "workLocation": null
     },
     "numberOfRecipients": {
-      "total": 190,
-      "overseas": 8,
-      "local": 182
+      "total": "In 2025, 36 outstanding SPM leavers were awarded the scholarship among over 10,300 applicants"
     },
     "applicationLink": "https://ytm.tm.com.my/scholarships-future-leader#future_leaders_scholarship",
     "generalInfoLink": "https://ytm.tm.com.my/about-us#contact_form",
     "resultNotification": [
-      "Application status can be checked through the website provided after application",
-      "Application status may also be updated through email or phone message so check your email often"
+      "Applicants are notified directly via email or contact details provided.",
+      "Only shortlisted applicants typically receive updates about next stages and results."
     ],
     "applicationProcess": [
       {
-        "stage": "Stage 1 : Logiks General Test",
-        "details": "In the first stage, applicants will be answering English, Math and Pattern test, where there will be multiple questions for each component to be answered in specific amount of time. ",
+        "stage": "Stage 1 : Application",
+        "details": "Students are required to visit the official YTM site when scholarship intake opens. Students should submit the online application with all required documents.",
         "tips": []
       },
       {
-        "stage": "Stage 2: Documents Submission",
-        "details": "In this stage, applicants need to submit the essential documents including resume, video resume and a personal statement.",
+        "stage": "Stage 2: Online assessment",
+        "details": "Complete the online assessments after being notified. Students may need to submit a personal statement or video based on respective years.",
         "tips": []
       },
       {
         "stage": "Stage 3 : Interview",
-        "details": "The interview will be held online but subject to change.",
+        "details": "Chosen candidates are required to be interviewed by selection panels.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4 : Award",
+        "details": "Selected candidates will be notified to receive scholarship award.",
         "tips": []
       }
     ],
     "contactEmail": "https://ytm.tm.com.my/about-us#contact_form",
     "contactNumber": "07-2344355",
+    "FAQs": [
+      {
+        "Question1": "Which country does YTM send the students?",
+        "Answer1": "Depending on the course, typically send students to the United States, the United Kingdom, France, Germany, Korea, Japan or Australia."
+      },
+      {
+        "Question2": "What is the minimum academic achievement before we are offered a scholarship for 1st degree?",
+        "Answer2": "At least a CGPA of 3.00 or a MQA-recognised equivalent grade."
+      },
+      {
+        "Question3": "If I apply for overseas scholarship, will I be considered for local?",
+        "Answer3": "Yes, we will accept local scholarships only at MMU, subject to management approval and on a case-by-case basis."
+      }
+    ],  
     "scholars": [
       {
         "contributorName": "MUHAMMAD UMAR BIN MOHAMAD NADZRIE",
@@ -2518,38 +2646,51 @@
     "id": "asean_pu1",
     "name": "ASEAN Scholarship for Malaysia (Pre-University 1)",
     "shortName": "ASEAN",
-    "description": "The ASEAN scholarship, awarded by the Ministry of Education of Singapore, is for students from Malaysia joining Secondary 1, Secondary 3 or Pre-university 1 in selected Singapore secondary schools or junior colleges. Students will have opportunities to broaden their horizons and develop important skills such as leadership, communication and other life skills. For Pre-university 1, the scholarship will cover all school, examination, transport, allowance, and accommodation fees across the two years the student will spend studying for the Singapore-Cambridge GCE A-Level certificate. The scholarship is renewed each year based on the scholar’s performance in school.",
+    "description": "The ASEAN Scholarship is a prestigious educational award provided by the Ministry of Education (MOE), Singapore for outstanding students from ASEAN countries (including Malaysia). It enables scholars to pursue secondary or pre-university education in selected Singapore schools/junior colleges with the aim of broadening horizons, developing leadership and communication skills, and fostering regional goodwill and understanding.",
     "logoPlaceholder": "/assets/company_logos/ASEAN_logo.png",
     "scholarshipLevel": "global",
     "eligibilityCriteria": {
       "mainCriteria": [
-        "Malaysian nationals who fulfil all the following conditions:",
-        "Are born on 2 Jan 2007 to 1 Jan 2010.",
-        "Are currently in Form 5 (or similar) or have taken the 2023-2024 SPM / GCE O-Level examination.",
-        "Are proficient in English.",
-        "Have done consistently well in school examinations.",
-        "Have a good record of participation in co-curricular activities."
+        "Must be a Malaysian citizen",
+        "Proficient in English with strong exam results",
+        "Good record of co-curricular participation"
       ],
       "academicQualifications": null,
-      "additionalCriteria": []
+      "additionalCriteria": [
+      "Secondary 1 – Standard 6/Form 1 age range", 
+      "Secondary 3 – Form 2/3 age range", 
+      "Pre-University 1 – Form 5 or equivalent (SPM/O-Level) graduate"
+      ]
     },
     "requiredDocuments": [
-      "The application asks for your school’s final year examination results for all subjects for the last two years. If you have taken the national examination or GCE O-Level examination during this period, enter those results instead of your school’s final year examination results.",
-      "For instance, if you have taken the national examination this year, please enter your national examination results for this year and your school’s final year examination results for last year.",
-      "Academic and non-academic awards and achievements, as well as your CCAs.",
-      "Actual copies of the documents are only requested when shortlisted for the interview stage, including a scan of your identity document and examination results transcript."
-    ],
+      "Full academic results",
+      "Identity Card",
+      "Co-curricular certificates (sports, leadership, arts, community service)",
+      "English proficiency details",
+      "Other documents as specified in the application form (uploaded online)"
+      ],
+    "fullBreakdownofCoverage": [
+      "Annual allowance for living expenses",
+      "Hostel/boarding support", 
+      "Settling-in allowance",
+      "Return economy airfare (for East Malaysians) or transport allowance (for Peninsular Malaysians)",
+      "School fees", 
+      "Exam fees for GCE O-Level/A-Level", 
+      "Subsidised medical benefits & accident insurance"
+      ],
     "coursesOffered": {
       "Courses Offered": [
-        "N/A, the scholarship leads to the Singapore-Cambridge GCE A-Level certificate or similar qualification."
+        "Secondary 1 - 6 years up to GCE O-Levels/A-Levels",
+        "Secondary 3 - 4 years",
+        "Pre-University 1 - 2 years leading to GCE A-Levels or equivalent"
       ]
     },
     "countriesOffered": [
       "ASEAN countries excluding Singapore itself (the Malaysia scholarship is specifically for Malaysian students)"
     ],
     "bondingDetails": {
-      "duration": "No bond whatsoever",
-      "workLocation": null
+      "duration": "No formal employment bond.",
+      "note": "Scholars must maintain good conduct and academic performance to keep the scholarship each year."
     },
     "applicationTimeline": {
       "startDate": "05/01/2026",
@@ -2557,37 +2698,59 @@
       "note": "Last for one month after SPM results released."
     },
     "numberOfRecipients": {
-      "previousYear": "20+",
+      "current year": "Subject to change based on quotas and performance assessments.",
       "annually": "20+"
     },
     "applicationLink": [
-      "https://form.gov.sg/612d8c5fccbd2e00120b2ce8",
-      "https://tgs.moe.gov.sg/prog/AS-MY-PU1/"
+      "https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship"
     ],
     "generalInfoLink": null,
     "resultNotification": [
-      "Via email",
-      "They will inform you that you are shortlisted for attending an interview by the college’s admissions."
+      "Successful applicants are notified via email or other contact details provided in the application.", 
+      "Unsuccessful applicants may not receive a separate rejection email — only successful scholars are contacted."
     ],
     "applicationProcess": [
       {
         "stage": "Stage 1: Online application",
-        "details": "In the first stage, you will be filling out an online application form with information including your examination results, achievements and awards, and co-curricular activities.",
+        "details": "Submit the online application form by the deadline (no fee).",
         "tips": []
       },
       {
         "stage": "Stage 2: Selection tests",
-        "details": "You will be notified by email if you are shortlisted for the selection tests. You are going to sit for an English test (reading comprehension and writing), Math test, and aptitude or IQ test. All this will happen in one day at a designated venue, from morning to evening.",
+        "details": "Shortlisted candidates will be notified by email to attend selection tests which will be held in major Malaysian cities.",
         "tips": []
       },
       {
         "stage": "Stage 3: Selection interview",
-        "details": "Based on my experience, the selection interview was held at the British Council in KL, with you speaking to the interviewers from MOE Singapore on ZOOM call on a computer in the building. It usually lasts 20 minutes, and the interviewers aim to gauge if you will be suitable to study in Singapore.",
+        "details": "Shortlisted candidates will be notified by email to attend a selection interview.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4: Award",
+        "details": "Selected candidates will be notified by email to receive scholarship award.",
         "tips": []
       }
     ],
     "contactEmail": "https://form.gov.sg/612d8c5fccbd2e00120b2ce8",
     "contactNumber": null,
+    "FAQs": [
+      {
+        "Question1": "Do I need to pay to apply?",
+        "Answer1": "No, the ASEAN Scholarship application is free."
+      },
+      {
+        "Question2": "Are secondary scholars required to board in Singapore?",
+        "Answer2": "Yes, the school placement usually includes hostel accommodation covered by the scholarship. "
+      },
+      {
+        "Question3": "Can the scholarship be renewed?",
+        "Answer3": "Yes, annually based on academic performance and conduct. "
+      },
+      {
+        "Question4": "What happens after I complete Pre-U?",
+        "Answer4": "After pre-university, when scholars transition to tertiary education, the ASEAN Scholarship itself doesn’t automatically fund degrees unless otherwise specified by MOE or other schemes."
+      }
+    ],
     "scholars": [
       {
         "contributorName": "Tan Yi Xuan",
@@ -2651,7 +2814,7 @@
     "id": "scedu",
     "name": "Sin Chew Daily Education Fund",
     "shortName": "Sin Chew Daily",
-    "description": "Sin Chew Daily Education Fund provides local undergraduate studies programmes to the candidates that hit their requirements. The main purpose of this scholarship is to aid needy students to further pursue their studies in local institutions.",
+    "description": "The Sin Chew Daily Education Fund is a scholarship programme by Sin Chew Media Corporation Berhad designed to help poor and needy Malaysian students pursue tertiary studies (Diploma, Foundation & Degree) by providing tuition fee waivers and financial support through partner institutions. The newspaper's aims to caring for the poor or needy, and helping to upgrade the education level of the community.",
     "logoPlaceholder": "/assets/company_logos/sinchew_logo_new.png",
     "scholarshipLevel": "local",
     "applicationTimeline": {
@@ -2679,20 +2842,25 @@
     },
     "requiredDocuments": [
       "SPM results",
-      "Certificates",
-      "Parents or guardians salary slips",
-      "Electricity and water bills",
-      "Identity Card",
-      "Birth certificates"
+      "Identity card",
+      "Birth Certificate",
+      "Co-curricular certificates",
+      "Parents' or guardians' salary slip",
+      "Latest month electricity and water bills",
+      "Latest month House Rental Receipt or Tenancy Agreement",
+      "Note: All documents must be Certified True Copies"
     ],
-    "coursesOffered": null,
+    "fullBreakdownofCoverage": [
+      "Tuition fees"
+    ],
+    "coursesOffered": "https://scedufund.sinchew.com.my/en/index.php",
     "countriesOffered": ["Local"],
     "bondingDetails": {
       "duration": "No bonding",
       "workLocation": null
     },
     "numberOfRecipients": {
-      "previousYear": null,
+      "previousYear": "2025: 42 students",
       "annually": null
     },
     "applicationLink": [
@@ -2718,6 +2886,13 @@
     ],
     "contactEmail": "scedufund@sinchew.com.my",
     "contactNumber": null,
+    "FAQs": [
+      {
+        "Question1": "Link to FAQs",
+        "Answer1" : "https://scedufund.sinchew.com.my/en/faq.php"
+
+      }
+    ],  
     "scholars": [
       {
         "contributorName": "Tung Pou Chong",
@@ -2759,7 +2934,7 @@
     "id": "star",
     "name": "Star Education Fund Scholarship Awards",
     "shortName": "The Star",
-    "description": "Star Education Fund is an initiative by Star Media Group in collaboration with some of the best education institutions in Malaysia to provide higher education opportunities to deserving young Malaysians.The scholarship is not a cash award, but it covers full or partial tuition fees, depending on the course and institution. Additionally, it covers other incidental expenses as specified by the participating institutions. Please note that the coverage is limited to the courses and institutions listed on the official website.​",
+    "description": "The Star Education Fund Scholarship Awards is a corporate scholarship initiative by Star Media Group (publisher of The Star) in collaboration with various Malaysian public and private educational institutions. It aims to support deserving young Malaysians with financial assistance or tuition sponsorship for higher education including pre-university, diploma, degree, and postgraduate programmes.​",
     "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
     "scholarshipLevel": "local",
     "applicationTimeline": {
@@ -2787,9 +2962,15 @@
     "requiredDocuments": [
       "Before filling in and submitting the e-Application form, prepare the following documents in softcopy (preferably PDF):",
       "MyKad: Front and back on the same page.",
-      "Birth Certificate: A clear copy.",
-      "SPM / O-Level / Equivalent Examination Results: Certified true copies.",
-      "Other Relevant Academic Results: Such as STPM, UEC, A-Level, foundation, diploma, or other pre-university examination results.​"
+      "Birth Certificate",
+      "SPM / O-Level / STPM / UEC / A-Level / foundation / diploma, or other pre-university examination results.",
+      "Bachelor’s degree certificate and academic transcript (for Master’s application)",
+      "Testimonials and / or top 10 extra-curricular activities achievements / awards certificates",
+      "Parents’ / guardians’ latest 3 months salary slip / 2025 EA form / 2025 income tax statement / pension statement / SOCSO statement",
+      "Latest household electricity and water bills"
+    ],
+    "fullBreakdownofCoverage": [
+      "Full tuition fee sponsorship or partial tuition waiver"
     ],
     "coursesOffered": [
       "Pre-University Programs: A-Level, Australian Matriculation, Foundation courses leading to degrees.",
@@ -2817,12 +2998,12 @@
     "applicationProcess": [
       {
         "stage": "Stage 1: Application",
-        "details": "Download from website listed below",
+        "details": "Download or access the e-Application form from the official Star Education Fund site. Prepare all required document softcopies (PDF preferred). Complete and submit the e-Application before the closing date. ",
         "tips": []
       },
       {
         "stage": "Stage 2: Submission",
-        "details": "Complete the form and submit it along with required documents to: \nThe Star Education Fund, Star Media Group Berhad, Menara Star, 15 Jalan 16/11 Section 16, 46350 Petaling Jaya, Selangor​",
+        "details": "Only shortlisted applicants will proceed to further evaluation/interview stages if required. Applicants can submit up to 5 separate applications for different courses, each with a new form.​",
         "tips": []
       }
     ],
