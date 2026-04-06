@@ -1826,7 +1826,7 @@
     },
     "applicationLink": "https://ptps.sabah.gov.my/",
     "generalInfoLink": null,
-    "resultNotification": ["Via Phone Call"],
+    "ResultNotification": ["Via Phone Call"],
     "applicationProcess": [
       {
         "stage": "Stage 1: Application Process",
@@ -1990,7 +1990,7 @@
     },
     "applicationLink": "https://ytn.tnb.com.my",
     "generalInfoLink": null,
-    "resultNotification": ["Via YTN socials, YTN sms, and YTN website"],
+    "ResultNotification": ["Via YTN socials, YTN sms, and YTN website"],
     "applicationProcess": [
       {
         "stage": "Stage 1 : Register your account.",
@@ -2143,7 +2143,7 @@
       "https://www.yayasankhazanah.com.my/scholarship-programmes/khazanah-global-scholarship-programme"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Results for each stage are sent via email.",
       "Applicants must reply to emails for further stages; failure to do so will result in disqualification."
     ],
@@ -2391,7 +2391,7 @@
       "2024": 3
     },
     "applicationLink": "http://career.fgvholdings.com/portal",
-    "resultNotification": [
+    "ResultNotification": [
       "Only shortlisted candidates are contacted directly by email or phone.",
       "FGV does not publish results publicly."
     ],
@@ -2565,7 +2565,7 @@
     },
     "applicationLink": "https://ytm.tm.com.my/scholarships-future-leader#future_leaders_scholarship",
     "generalInfoLink": "https://ytm.tm.com.my/about-us#contact_form",
-    "resultNotification": [
+    "ResultNotification": [
       "Applicants are notified directly via email or contact details provided.",
       "Only shortlisted applicants typically receive updates about next stages and results."
     ],
@@ -2709,7 +2709,7 @@
       "https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Successful applicants are notified via email or other contact details provided in the application.", 
       "Unsuccessful applicants may not receive a separate rejection email — only successful scholars are contacted."
     ],
@@ -2872,7 +2872,7 @@
       "https://scedufund.sinchew.com.my/en/index.php"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Via email",
       "They will inform you that you are shortlisted for attending an interview by the college’s admissions."
     ],
@@ -2996,7 +2996,7 @@
       "https://www.thestar.com.my/edufund"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Only shortlisted applicants will be notified"
     ],
     "applicationProcess": [
@@ -3026,6 +3026,187 @@
         "stories": null
       }
     ]
+  },
+  {
+    "id": "Sime Darby",
+    "name": "Yayasan Sime Darby Scholarship",
+    "shortName": "Sime Darby",
+    "description": "Yayasan Sime Darby invites qualified undergraduate students for the September 2025 intake and first-year undergraduate students to apply for an excellence scholarship to pursue/complete their academic dreams at a reputable higher learning institution in Malaysia.​",
+    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "09/03/2026",
+      "endDate": "12/04/2026"
+    },
+    "requiredDocuments": null,
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian",
+        "Age 25 years or below.",
+        "Total monthly gross household income of RM11,000 and below."
+      ],
+      "academicQualifications": [
+        "Completed STPM/ Pre-University/ Foundation/ Local Matriculation/ Diploma with a minimum CGPA of 3.30.",
+        "Strong leadership qualities through various leadership positions in school, national and/or global competitions and/or sporting events.",
+        "Active participation in community service."
+      ]
+    },
+    "fullBreakdownofCoverage": [
+      "Tuition Fees",
+      "Monthly Allowance (Living, subsistence, accommodation)",
+      "Laptop Allowance",
+      "Book Allowance"
+    ],
+    "coursesOffered": {
+      "Business / Social Science related courses:": [
+        "Accounting & Finance",
+        "Economics"
+      ],
+      "Engineering and Technology related courses:": [
+        "Data Science",
+        "Data Analytics",
+        "Electrical & Electronic Engineering",
+        "Mechanical Engineering",
+        "Civil Engineering"
+      ],
+      "Architecture & Built Environment related courses:": [
+        "Architecture / Structural / Building",
+        "Urban & Town Planning",
+        "Sustainability",
+        "Quantity Surveying",
+        "Real Estate"
+      ]
+    },
+  "bondingDetails": {
+    "duration": "3 years",
+    "workLocation": "Sime Darby Berhad or Sime Darby Property Berhad",
+    "repaymentConditions": [
+      "Scholarship recipients will have the opportunity to undergo YSD THRIVE – Future Leaders, a comprehensive learning experience for YSD scholars towards producing high quality and well-rounded graduates.",
+      "The initiative offers tailored soft skills training, access to an e-learning platform, volunteering opportunities, mentorship and internships at Sime Darby Berhad and Sime Darby Property Berhad.",
+      "Note: Scholarship monies will be disbursed upon execution of scholarship agreement."
+    ]
+  },
+    "numberOfRecipients": null,
+    "applicationLink": [
+      "https://www.yayasansimedarby.com/scholarship-information"
+    ],
+    "generalInfoLink": null,
+    "ResultNotification": [
+      "Successful candidates are usually notified via email or phone after the selection process.",
+      "Only shortlisted applicants are contacted for interviews and further evaluation."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Visit the official scholarship application portal (YSD site) when the intake opens. Fill in the online application form before the deadline. Upload required documents."
+      },
+      {
+        "stage": "Stage 2: Interview",
+        "details": "Only shortlisted candidates will be contacted for an interview with panels.​"
+      },
+      {
+        "stage": "Stage 3: Award",
+        "details": "Only selected candidates will be notified to receive scholarship award."
+      }
+    ],
+    "contactEmail": "scholarships@sime.com",
+    "contactNumber": "03 7623 7106",
+    "scholars": null
+  },
+  {
+    "id": "TSLLSF",
+    "name": "Tan Sri Lee Loy Seng",
+    "shortName": "TSLLSF",
+    "description": "The TAN SRI LEE LOY SENG FOUNDATION is an educational foundation which among other charitable activities, award scholarships to Malaysian students irrespective of their race and religion. The scholarship is tenable for the period laid down for the course of study leading to a first degree in local institutions of higher learning and will be offered on a year-to-year basis based on successful results obtained annually.​",
+    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": null,
+    "requiredDocuments": [
+      "Passport Size Photograph",
+      "Personal Statement",
+      "University Offer Letter",
+      "Course Fee Details",
+      "Academic Results from SPM onwards",
+      "Educational / Co-curriculum Certificates",
+      "Any other Certificates of Achievement",
+      "PTPTN Approval Letter (if any)",
+      "PDPA Consent Form and Declaration by Parent/Guardian (Duly Signed)",
+      "Household Income: Latest Financial Statement of Business / Tax Filing / Salary Slip or Declaration Certified by Penghulu",
+      "Current EPF Statement",
+      "Household Expenditure (if any): House Instalment / Rental receipt",
+      "Loan repayment (Car/Motor-bike/Appliances)",
+      "Transport expenses",
+      "Education expenses",
+      "Latest 3 months of electricity bill, water bill and telephone bill (1st page only)"
+    ],
+  "eligibilityCriteria": {
+    "displayType": "list",
+    "mainCriteria": [
+      "Malaysian citizen and resident",
+      "Show financial need for the scholarship support",
+      "Not be holding a scholarship / study loan from any other organization."
+    ],
+    "academicQualifications": [
+      "Fulfill the academic and other conditions required in taking up a place at one of the local universities or colleges",
+      "Obtain good academic results for Sijil Tinggi Pelajaran Malaysia (STPM) and Sijil Pelajaran Malaysia (SPM)",
+      "Possess a minimum Cumulative Grade Point Average (CGPA) of 2.80 and above for undergraduates who are currently studying in local colleges / universities"
+    ],
+    "additionalCriteria": [
+      "The Management Committee will consider the applicant’s financial position and academic achievements",
+      "Attributes which indicate that the applicant is likely to become an outstanding citizen",
+      "Personal qualities, character, and demonstrated exceptional leadership qualities",
+      "Achievements in non-curricular activities including sports",
+      "Achievements in community involvements and activities"
+    ]
+  },
+  "fullBreakdownofCoverage": [
+    {
+      "title": "Diploma",
+      "details": [
+        "RM7,500.00 per academic year"
+      ]
+    },
+    {
+      "title": "First Degree",
+      "details": [
+        "Between RM11,000.00 to RM12,000.00 per academic year"
+      ]
+    }
+  ],
+    "coursesOffered": [
+      "Open to students pursuing diploma or undergraduate degrees at local Malaysian institutions."
+    ],
+  "bondingDetails": ["No bomding"],
+    "numberOfRecipients": null,
+    "applicationLink": [
+      "https://www.tsllsfoundation.org/how-to-apply"
+    ],
+    "generalInfoLink": null,
+    "ResultNotification": [
+      "Only shortlisted applicants will be invited to attend an online or in-person interview within three weeks of the closing date."
+    ],
+      "applicationProcess": [
+      {
+        "stage": "Application",
+        "details": "Download the Checklist and the Declaration & PDPA Consent Form to be completed by Father / Mother / Guardian. Submit the application directly through the online portal"
+      }
+    ],
+    "contactEmail": "https://docs.google.com/forms/d/e/1FAIpQLSfE3b7zYgXSVfI5mVf15ObF26Fk0dBiyuuLGacN4Y6KsrnGcQ/viewform",
+    "contactNumber": "https://docs.google.com/forms/d/e/1FAIpQLSfE3b7zYgXSVfI5mVf15ObF26Fk0dBiyuuLGacN4Y6KsrnGcQ/viewform",
+    "FAQs": [
+      {
+        "Question1": "Who can apply for the Tan Sri Lee Loy Seng Scholarship?",
+        "Answer1": "Malaysian citizens who demonstrate financial need and are pursuing local diploma or first degree studies with valid admission or offer are eligible."
+      },
+      {
+        "Question2": "Do I need to be admitted to a university before applying?",
+        "Answer2": "Yes — applicants usually must have an offer or confirmed place in a local institution’s programme."
+      },
+      {
+        "Question3": "Is there a bond after graduation?",
+        "Answer3": "No employment bond is typically required for this foundation scholarship."
+      }
+    ],
+    "scholars": null
   }
-  
 ]

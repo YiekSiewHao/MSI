@@ -597,14 +597,17 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           )}
         </Section>
 
-        <Section>
-          <h2>Required Documents</h2>
-          <ul>
-            {(requiredDocuments || []).map((doc, index) => (
-              <li key={index}>{doc}</li>
-            ))}
-          </ul>
-        </Section>
+        {/* Only render the entire section if requiredDocuments has data */}
+        {requiredDocuments && requiredDocuments.length > 0 && (
+          <Section>
+            <h2>Required Documents</h2>
+            <ul>
+              {requiredDocuments.map((doc, index) => (
+                <li key={index}>{doc}</li>
+              ))}
+            </ul>
+          </Section>
+        )}
 
         <Section>
          <h2>Full Breakdown of Coverage</h2>
@@ -675,32 +678,45 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
         </Section>
       )}
 
-        {bondingDetails && (
+       {bondingDetails && (
           <Section>
             <h2>Bonding Details</h2>
-           <ul>
-             {bondingDetails?.duration && (
-                <li><strong>Duration:</strong> {bondingDetails.duration}</li>
+            <ul>
+              {/* 1. Duration */}
+              {bondingDetails?.duration && (
+                <li style={{ listStyle: 'none', marginBottom: '10px', marginLeft: '-20px' }}>
+                  <strong>Duration:</strong>
+                  <ul style={{ marginTop: '5px' }}>
+                    <li>{bondingDetails.duration}</li>
+                  </ul>
+                </li>
               )}
-              {bondingDetails.workLocation && (
-                <li><strong>Work Location:</strong> {bondingDetails.workLocation}</li>
+
+              {/* 2. Work Location */}
+              {bondingDetails?.workLocation && (
+                <li style={{ listStyle: 'none', marginBottom: '10px', marginLeft: '-20px' }}>
+                  <strong>Work Location:</strong>
+                  <ul style={{ marginTop: '5px' }}>
+                    <li>{bondingDetails.workLocation}</li>
+                  </ul>
+                </li>
               )}
+
+              {/* 3. Repayment Conditions */}
               {bondingDetails?.repaymentConditions && (
-                <li style={{ listStyle: 'none', marginTop: '10px', marginLeft: '-20px' }}>
+                <li style={{ listStyle: 'none', marginBottom: '10px', marginLeft: '-20px' }}>
                   <strong>Repayment Conditions:</strong>
-                 <ul style={{ marginTop: '5px' }}>
+                  <ul style={{ marginTop: '5px' }}>
                     {Array.isArray(bondingDetails.repaymentConditions) ? (
-                     // If it's the new Array format
-                     bondingDetails.repaymentConditions.map((condition, index) => (
+                      bondingDetails.repaymentConditions.map((condition, index) => (
                         <li key={index} style={{ marginBottom: '5px' }}>{condition}</li>
                       ))
-                   ) : (
-                      // Fallback: If it's still a single string
+                    ) : (
                       <li>{bondingDetails.repaymentConditions}</li>
-                   )}
-                 </ul>
+                    )}
+                  </ul>
                 </li>
-             )}
+              )}
             </ul>
           </Section>
         )}
