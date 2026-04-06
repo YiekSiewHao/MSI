@@ -271,7 +271,17 @@ const ProgramDetails = () => {
         )}
 
         {duration && duration !== "N/A" && <Section><h2>Duration</h2><p>{duration}</p></Section>}
-        {progression && progression !== "N/A" && <Section><h2>Progression</h2><p>{progression}</p></Section>}
+        {/* --- PROGRESSION SECTION --- */}
+        {progression && (
+          <Section>
+            <h2>Progression</h2>
+            <ul>
+              {(Array.isArray(progression) ? progression : [progression]).map((inst, idx) => (
+                <li key={`inst-${idx}`}>{inst}</li>
+              ))}
+            </ul>
+          </Section>
+        )}
         {Array.isArray(institutions) && institutions.length > 0 && (
           <Section><h2>Institutions</h2><ul>{institutions.map((inst, idx) => <li key={`inst-${idx}`}>{inst}</li>)}</ul></Section>
         )}

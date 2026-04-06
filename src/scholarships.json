@@ -11,6 +11,7 @@
       "endDate": "10/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
+      "displayType": "table",
       "mainCriteria": [
         "SPM 2025 candidate",
         "Malaysian citizen aged between 16-19 years old in 2026",
@@ -662,6 +663,7 @@
       "endDate": "16/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
+      "displayType": "table",
       "mainCriteria": [
         "Must be a Malaysian citizen.",
         "Applicants must be free from chronic, contagious, or any conditions that require ongoing treatment and must be certified as healthy enough to complete their studies.",
@@ -897,6 +899,7 @@
       "endDate": "16/04/2026 (5PM)"
     },
     "eligibilityCriteria": {
+      "displayType": "table",
       "mainCriteria": [
         "Malaysian under 19 years old in the year of taking SPM examination",
         "first time sitting for SPM",
@@ -1435,6 +1438,7 @@
       "note": "This is one of the earliest Scholarships that you can apply to after you finish your SPM, as it accepts your Trials result as well. It opens way before SPM result, roughly 1 month after SPM ends."
     },
     "eligibilityCriteria": {
+      "displayType": "table",
       "mainCriteria": [
         "Not a recipient of any other scholarship or financial aid.",
         "Strong leadership qualities, excellent team player, excels in both extra-curricular activities and sports.",
