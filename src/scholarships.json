@@ -2648,7 +2648,7 @@
   },
   {
     "id": "asean_pu1",
-    "name": "ASEAN Scholarship for Malaysia (Pre-University 1)",
+    "name": "ASEAN Scholarship for Malaysia",
     "shortName": "ASEAN",
     "description": "The ASEAN Scholarship is a prestigious educational award provided by the Ministry of Education (MOE), Singapore for outstanding students from ASEAN countries (including Malaysia). It enables scholars to pursue secondary or pre-university education in selected Singapore schools/junior colleges with the aim of broadening horizons, developing leadership and communication skills, and fostering regional goodwill and understanding.",
     "logoPlaceholder": "/assets/company_logos/ASEAN_logo.png",
@@ -2857,7 +2857,11 @@
     "fullBreakdownofCoverage": [
       "Tuition fees"
     ],
-    "coursesOffered": "https://scedufund.sinchew.com.my/en/index.php",
+    "coursesOffered":  {
+      "Courses Offered": [
+        "https://scedufund.sinchew.com.my/en/index.php"
+      ]
+    },
     "countriesOffered": ["Local"],
     "bondingDetails": {
       "duration": "No bonding",
@@ -3002,7 +3006,7 @@
     "applicationProcess": [
       {
         "stage": "Stage 1: Application",
-        "details": "Download or access the e-Application form from the official Star Education Fund site. Prepare all required document softcopies (PDF preferred). Complete and submit the e-Application before the closing date. ",
+        "details": "Download or access the e-Application form from the official Star Education Fund site. Prepare all required document softcopies (PDF preferred). Complete and submit the e-Application before the closing date.",
         "tips": []
       },
       {
@@ -3026,6 +3030,438 @@
         "stories": null
       }
     ]
+  },
+  {
+    "id": "astro",
+    "name": "Astro Scholarship Programme",
+    "shortName": "Astro",
+    "description": "The ASTRO scholarship programme aims to provide bright and deserving individuals from the B40 group with the skills, knowledge, values, and attitudes to become future leaders. Pre-university students will be funded in pursuing their first-degree course in eligible fields of study in local Malaysian institutions.",
+    "logoPlaceholder": "/assets/company_logos/astro_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "06/05/2026",
+      "endDate": "30/06/2026"
+    },
+    "eligibilityCriteria": {
+      "displayType": "text",
+      "mainCriteria": [
+        "A Malaysian IC holder",
+        "Commencing or currently undergoing first full-time degree programme",
+        "Total monthly combined household income of RM5,250 and below",
+        "Willing to serve Astro Group for a specified term upon graduation",
+        "Not bonded or not presently holding any financial assistance from other organisations and/or institution",
+        "Min 3A’s for STPM / A-Levels or min CGPA 3.3 for Matriculation / Foundation / Diploma",
+        "Strong leadership qualities through active participation in extra-curricular activities, community service, and/or sports events"
+      ],
+      "academicQualifications": []
+    },
+    "requiredDocuments": ["Varies each year"],
+    "fullBreakdownofCoverage": [
+      "Total scholarship amount not exceeding RM40,000 per annum",
+      "Tuition fees, living expenses, and a one-off device claim",
+      "Internship opportunity in Astro Group"
+    ],
+    "coursesOffered": {
+      "Local": [
+        "IT / Computer Science / Software Engineering / Cloud Architecture",
+        "Data Science / Mathematical Science",
+        "Finance / Accounting / Economics",
+        "Marketing / Marketing Communication / Communication Media Studies",
+        "Business Studies / Business Administration",
+        "Art and Design",
+        "Journalism / Broadcasting",
+        "Mass Communication / Public Relation",
+        "Human Resource"
+      ],
+      "Overseas": []
+    },
+    "bondingDetails": {
+      "duration": "1 year bond for every 1 year of study",
+      "workLocation": "Astro Group",
+      "repaymentConditions": null
+    },
+    "numberOfRecipients": {
+      "YearofInvestigation": "2025",
+      "local": 13,
+      "overseas": 0,
+      "total": 13,
+      "note": "13 students awarded in 2025"
+    },
+    "applicationLink": "https://careers.astro.com.my/scholarship",
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Candidates apply via Workday, where applications will be screened to ensure basic criteria are fulfilled.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Online Assessment",
+        "details": "Shortlisted candidates will be invited to take part in Astro's online assessments.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Interview",
+        "details": "Shortlisted candidates will receive an email invitation for an interview.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4: Offer",
+        "details": "Successful candidates will undergo a final background check. Upon confirmation, a Scholarship Agreement will be offered.",
+        "tips": []
+      },
+      {
+        "stage": "Stage 5: Award",
+        "details": "Successful candidates will be notified and invited to celebrate their achievements at the Astro Scholarship Award Ceremony.",
+        "tips": []
+      }
+    ],
+    "ResultNotification": [
+      "Results are typically communicated via email or phone to shortlisted candidates after evaluations.",
+      "Only shortlisted applicants are usually contacted for interview or further assessment."
+    ],
+    "contactEmail": "scholarship@astro.com.my",
+    "contactNumber": "03-9543 3838",
+    "FAQs": [],
+    "scholars": [
+      {
+        "contributorName": "Adibah Hassan",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Adibah Hassan",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      },
+      {
+        "contributorName": "Lisaa Kamal",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: LISAA KAMAL",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      }
+    ]
+  },
+
+  {
+    "id": "maxis",
+    "name": "Maxis Scholarship Programme",
+    "shortName": "Maxis",
+    "description": "Maxis is committed to developing tech-savvy, forward-thinking leaders. Through the Maxis Scholarship Programme, they empower high-potential young Malaysians to achieve their academic ambitions while driving meaningful progress.",
+    "logoPlaceholder": "/assets/company_logos/maxis_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "",
+      "endDate": ""
+    },
+    "eligibilityCriteria": {
+      "displayType": "text",
+      "mainCriteria": [
+        "Malaysian citizens aged between 18 to 23",
+        "Have obtained admission into a recognised higher education institution in Malaysia",
+        "Currently enrolled in or undertaking first or second year of undergraduate or postgraduate studies",
+        "Not holding any financial assistance from other organisations",
+        "Minimum CGPA 3.5 or equivalent",
+        "Excellent command of English",
+        "Strong leadership and extracurricular involvement",
+        "Strong communication and interpersonal skills",
+        "Resilient, determined, and driven mindset"
+      ],
+      "academicQualifications": []
+    },
+    "requiredDocuments": [
+      "Academic transcripts",
+      "University acceptance letter",
+      "Parents’ income proof",
+      "MyKad copy",
+      "CV",
+      "Tuition fee invoice"
+    ],
+    "fullBreakdownofCoverage": [
+      "Tuition fees",
+      "Living expenses",
+      "Internship opportunities at Maxis"
+    ],
+    "coursesOffered": {
+      "Local": [
+        "Engineering (Network, Telecommunications, Software, Mechanical, Electrical, Electronic)",
+        "Technology (AI, Cloud Computing, Computer Science, Cybersecurity, Data Science, IT)",
+        "Mathematics / Statistics / Actuarial Science",
+        "Accounting / Finance / Economics"
+      ],
+      "Overseas": []
+    },
+    "bondingDetails": {
+      "duration": "Subject to study duration",
+      "workLocation": "Maxis",
+      "repaymentConditions": null
+    },
+    "numberOfRecipients": {
+      "YearofInvestigation": "2024",
+      "local": 16,
+      "overseas": 0,
+      "total": 16,
+      "note": "346 students awarded from 2006–2024"
+    },
+    "applicationLink": "https://www.maxis.com.my/en/about-maxis/career/maxis-scholarship-programme/",
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Submit online application and documents",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Digital Interview",
+        "details": "Pre-recorded video interview",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Assessment",
+        "details": "Evaluation of problem-solving and leadership",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4: Final Interview",
+        "details": "Interview with senior management",
+        "tips": []
+      },
+      {
+        "stage": "Stage 5: Award",
+        "details": "Scholarship award ceremony",
+        "tips": []
+      }
+    ],
+    "ResultNotification": ["Only shortlisted candidates will be notified via email"],
+    "contactEmail": "scholar@maxis.com.my",
+    "contactNumber": null,
+    "FAQs": [],
+    "scholars": [
+      {
+        "contributorName": "Larpp Heeng Thong",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Larpp Heeng Thong",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      }
+    ]
+  },
+
+  {
+    "id": "axiata",
+    "name": "Axiata Foundation All-Bestari Scholarship",
+    "shortName": "Axiata",
+    "description": "Axiata Foundation invites high-potential students from underprivileged backgrounds to pursue pre-university education at local public institutions.",
+    "logoPlaceholder": "/assets/company_logos/axiata_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "31/03/2026",
+      "endDate": "10/05/2026"
+    },
+    "eligibilityCriteria": {
+      "displayType": "text",
+      "mainCriteria": [
+        "Malaysian citizen",
+        "Aged 19 and below",
+        "Household income RM4,850 and below",
+        "Minimum 6As in SPM"
+      ],
+      "academicQualifications": []
+    },
+    "requiredDocuments": [
+      "SPM result slip",
+      "MyKad copy",
+      "Proof of income",
+      "Admission letter",
+      "Supporting certificates"
+    ],
+    "fullBreakdownofCoverage": [
+      "Tuition fees",
+      "Living expenses",
+      "Allowances"
+    ],
+    "coursesOffered": {
+      "Local": ["Foundation and matriculation at public universities"],
+      "Overseas": []
+    },
+    "bondingDetails": {
+      "duration": "No bond",
+      "workLocation": null,
+      "repaymentConditions": null
+    },
+    "numberOfRecipients": {
+      "YearofInvestigation": "",
+      "local": "",
+      "overseas": 0,
+      "total": "",
+      "note": "Varies yearly"
+    },
+    "applicationLink": "https://www.axiata-foundation.com/education/equity-in-education-fund/application",
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Online application submission",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Assessment",
+        "details": "Online aptitude tests",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Interview",
+        "details": "Final interview and conditional offer",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4: Confirmation",
+        "details": "Offer confirmation after meeting requirements",
+        "tips": []
+      }
+    ],
+    "ResultNotification": ["Via email or phone"],
+    "contactEmail": "axiatafoundation@axiata.com",
+    "contactNumber": null,
+    "FAQs": [],
+    "scholars": [
+      {
+        "contributorName": "Shazaryna Nur Tasha",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Shazaryna Nur Tasha",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      }
+    ]
+  },
+
+  {
+    "id": "cimb_asean",
+    "name": "CIMB ASEAN Scholarship",
+    "shortName": "CIMB",
+    "description": "A prestigious fully funded scholarship supporting ASEAN students to pursue higher education locally or overseas while preparing future leaders in banking.",
+    "logoPlaceholder": "/assets/company_logos/cimb_logo.png",
+    "scholarshipLevel": "global",
+    "applicationTimeline": {
+      "startDate": "April 2026",
+      "endDate": ""
+    },
+    "eligibilityCriteria": {
+      "displayType": "text",
+      "mainCriteria": [
+        "Age 25 and below",
+        "Aspire to work in banking/finance",
+        "Not holding other bonded scholarships",
+        "Strong academic results (e.g. 8As SPM / CGPA 3.5)"
+      ],
+      "academicQualifications": []
+    },
+    "requiredDocuments": [
+      "No documents required at initial stage",
+      "Original certificates required if shortlisted"
+    ],
+    "fullBreakdownofCoverage": [
+      "Tuition fees",
+      "Accommodation",
+      "Living allowance",
+      "Laptop allowance",
+      "Airfare (overseas)",
+      "Internship & mentorship"
+    ],
+    "coursesOffered": {
+      "Local": [
+        "Business, Finance, Economics",
+        "Engineering & Sciences",
+        "Social Sciences",
+        "Data & Digital"
+      ],
+      "Overseas": ["Same fields at top universities"]
+    },
+    "bondingDetails": {
+      "duration": "Local: 1:1, Overseas: 2:1 (max 5 years)",
+      "workLocation": "CIMB Group",
+      "repaymentConditions": "Repayment required if bond is broken"
+    },
+    "numberOfRecipients": {
+      "YearofInvestigation": "2025",
+      "local": "",
+      "overseas": "",
+      "total": 11,
+      "note": "11 students in 2025"
+    },
+    "applicationLink": "https://www.cimb.com/en/careers/students/cimb-asean-scholarship.html",
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Screening",
+        "details": "Application and verification",
+        "tips": []
+      },
+      {
+        "stage": "Stage 2: Case Study",
+        "details": "Virtual group case study",
+        "tips": []
+      },
+      {
+        "stage": "Stage 3: Assessment Centre",
+        "details": "Interview + bootcamp",
+        "tips": []
+      },
+      {
+        "stage": "Stage 4: Final Interview",
+        "details": "Interview with senior management",
+        "tips": []
+      }
+    ],
+    "ResultNotification": ["Via email"],
+    "contactEmail": "cimbaseanscholarship@cimb.com",
+    "contactNumber": null,
+    "FAQs": [],
+    "scholars": [
+      {
+        "contributorName": "Hannah Safiyah",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Hannah Safiyah",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      },
+      {
+        "contributorName": "Sharvvind Ganesan",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Sharvvind Ganesan",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      },
+      {
+        "contributorName": "Hasya Amalin Hizamel",
+        "contributorImage": null,
+        "intendedCourse": null,
+        "currentInstitution": null,
+        "contactInformation": "LinkedIn: Hasya Amalin Hizamel",
+        "currentStudies": null,
+        "motivationalQuote": null,
+        "resumeImages": [],
+        "stories": []
+      }
+    ]
   }
-  
 ]
+
