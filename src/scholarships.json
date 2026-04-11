@@ -290,7 +290,7 @@
         "Strong leadership skills and active participation in extracurricular activities such as societies and clubs, sports, etc.",
         "Not presently holding other scholarships/loans",
         "Consistently strong academic achievements",
-        "Minimum 8As (A/A+) in Sijil Pelajaran Malaysia (SPM) OR Excellent O-level grades at IGCSE (A*/A)",
+        "Minimum 8As (A/A+) in Sijil Pelajaran Malaysia (SPM) OR Excellent O-level grades at IGCSE (A*/A).",
         "Before applying, ensure you are eligible to work in the country where the scholarship program is offered.",
         "Willing to pursue A-levels at a selected boarding institution."
       ]
@@ -1207,7 +1207,7 @@
     "scholarshipLevel": "global",
     "applicationTimeline": {
       "startDate": "18/03/2026",
-      "endDate": "08/04/2026"
+      "endDate": "12/04/2026"
     },
     "eligibilityCriteria": {
       "mainCriteria": [
@@ -1826,7 +1826,7 @@
     },
     "applicationLink": "https://ptps.sabah.gov.my/",
     "generalInfoLink": null,
-    "resultNotification": ["Via Phone Call"],
+    "ResultNotification": ["Via Phone Call"],
     "applicationProcess": [
       {
         "stage": "Stage 1: Application Process",
@@ -1990,7 +1990,7 @@
     },
     "applicationLink": "https://ytn.tnb.com.my",
     "generalInfoLink": null,
-    "resultNotification": ["Via YTN socials, YTN sms, and YTN website"],
+    "ResultNotification": ["Via YTN socials, YTN sms, and YTN website"],
     "applicationProcess": [
       {
         "stage": "Stage 1 : Register your account.",
@@ -2143,7 +2143,7 @@
       "https://www.yayasankhazanah.com.my/scholarship-programmes/khazanah-global-scholarship-programme"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Results for each stage are sent via email.",
       "Applicants must reply to emails for further stages; failure to do so will result in disqualification."
     ],
@@ -2391,7 +2391,7 @@
       "2024": 3
     },
     "applicationLink": "http://career.fgvholdings.com/portal",
-    "resultNotification": [
+    "ResultNotification": [
       "Only shortlisted candidates are contacted directly by email or phone.",
       "FGV does not publish results publicly."
     ],
@@ -2565,7 +2565,7 @@
     },
     "applicationLink": "https://ytm.tm.com.my/scholarships-future-leader#future_leaders_scholarship",
     "generalInfoLink": "https://ytm.tm.com.my/about-us#contact_form",
-    "resultNotification": [
+    "ResultNotification": [
       "Applicants are notified directly via email or contact details provided.",
       "Only shortlisted applicants typically receive updates about next stages and results."
     ],
@@ -2709,7 +2709,7 @@
       "https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarship"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Successful applicants are notified via email or other contact details provided in the application.", 
       "Unsuccessful applicants may not receive a separate rejection email — only successful scholars are contacted."
     ],
@@ -2876,7 +2876,7 @@
       "https://scedufund.sinchew.com.my/en/index.php"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Via email",
       "They will inform you that you are shortlisted for attending an interview by the college’s admissions."
     ],
@@ -3000,7 +3000,7 @@
       "https://www.thestar.com.my/edufund"
     ],
     "generalInfoLink": null,
-    "resultNotification": [
+    "ResultNotification": [
       "Only shortlisted applicants will be notified"
     ],
     "applicationProcess": [
@@ -3032,6 +3032,189 @@
     ]
   },
   {
+    "id": "TSLLSF",
+    "name": "Tan Sri Lee Loy Seng",
+    "shortName": "TSLLSF",
+    "description": "The TAN SRI LEE LOY SENG FOUNDATION is an educational foundation which among other charitable activities, award scholarships to Malaysian students irrespective of their race and religion. The scholarship is tenable for the period laid down for the course of study leading to a first degree in local institutions of higher learning and will be offered on a year-to-year basis based on successful results obtained annually.​",
+    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": null,
+    "requiredDocuments": [
+      "Passport Size Photograph",
+      "Personal Statement",
+      "University Offer Letter",
+      "Course Fee Details",
+      "Academic Results from SPM onwards",
+      "Educational / Co-curriculum Certificates",
+      "Any other Certificates of Achievement",
+      "PTPTN Approval Letter (if any)",
+      "PDPA Consent Form and Declaration by Parent/Guardian (Duly Signed)",
+      "Household Income: Latest Financial Statement of Business / Tax Filing / Salary Slip or Declaration Certified by Penghulu",
+      "Current EPF Statement",
+      "Household Expenditure (if any): House Instalment / Rental receipt",
+      "Loan repayment (Car/Motor-bike/Appliances)",
+      "Transport expenses",
+      "Education expenses",
+      "Latest 3 months of electricity bill, water bill and telephone bill (1st page only)"
+    ],
+  "eligibilityCriteria": {
+    "displayType": "list",
+    "mainCriteria": [
+      "Malaysian citizen and resident",
+      "Show financial need for the scholarship support",
+      "Not be holding a scholarship / study loan from any other organization."
+    ],
+    "academicQualifications": [
+      "Fulfill the academic and other conditions required in taking up a place at one of the local universities or colleges",
+      "Obtain good academic results for Sijil Tinggi Pelajaran Malaysia (STPM) and Sijil Pelajaran Malaysia (SPM)",
+      "Possess a minimum Cumulative Grade Point Average (CGPA) of 2.80 and above for undergraduates who are currently studying in local colleges / universities"
+    ],
+    "additionalCriteria": [
+      "The Management Committee will consider the applicant’s financial position and academic achievements",
+      "Attributes which indicate that the applicant is likely to become an outstanding citizen",
+      "Personal qualities, character, and demonstrated exceptional leadership qualities",
+      "Achievements in non-curricular activities including sports",
+      "Achievements in community involvements and activities"
+    ]
+  },
+  "fullBreakdownofCoverage": [
+    {
+      "title": "Diploma",
+      "details": [
+        "RM7,500.00 per academic year"
+      ]
+    },
+    {
+      "title": "First Degree",
+      "details": [
+        "Between RM11,000.00 to RM12,000.00 per academic year"
+      ]
+    }
+  ],
+    "coursesOffered": [
+      "Open to students pursuing diploma or undergraduate degrees at local Malaysian institutions."
+    ],
+  "bondingDetails": ["No bomding"],
+    "numberOfRecipients": null,
+    "applicationLink": [
+      "https://www.tsllsfoundation.org/how-to-apply"
+    ],
+    "generalInfoLink": null,
+    "ResultNotification": [
+      "Only shortlisted applicants will be invited to attend an online or in-person interview within three weeks of the closing date."
+    ],
+      "applicationProcess": [
+      {
+        "stage": "Application",
+        "details": "Download the Checklist and the Declaration & PDPA Consent Form to be completed by Father / Mother / Guardian. Submit the application directly through the online portal"
+      }
+    ],
+    "contactEmail": "https://docs.google.com/forms/d/e/1FAIpQLSfE3b7zYgXSVfI5mVf15ObF26Fk0dBiyuuLGacN4Y6KsrnGcQ/viewform",
+    "contactNumber": "https://docs.google.com/forms/d/e/1FAIpQLSfE3b7zYgXSVfI5mVf15ObF26Fk0dBiyuuLGacN4Y6KsrnGcQ/viewform",
+    "FAQs": [
+      {
+        "Question1": "Who can apply for the Tan Sri Lee Loy Seng Scholarship?",
+        "Answer1": "Malaysian citizens who demonstrate financial need and are pursuing local diploma or first degree studies with valid admission or offer are eligible."
+      },
+      {
+        "Question2": "Do I need to be admitted to a university before applying?",
+        "Answer2": "Yes — applicants usually must have an offer or confirmed place in a local institution’s programme."
+      },
+      {
+        "Question3": "Is there a bond after graduation?",
+        "Answer3": "No employment bond is typically required for this foundation scholarship."
+      }
+    ],
+    "scholars": null
+  },
+  {  
+    "id": "Sime Darby",
+    "name": "Yayasan Sime Darby Scholarship",
+    "shortName": "Sime Darby",
+    "description": "Yayasan Sime Darby invites qualified undergraduate students for the September 2025 intake and first-year undergraduate students to apply for an excellence scholarship to pursue/complete their academic dreams at a reputable higher learning institution in Malaysia.​",
+    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "scholarshipLevel": "local",
+    "applicationTimeline": {
+      "startDate": "09/03/2026",
+      "endDate": "12/04/2026"
+    },
+    "requiredDocuments": null,
+    "eligibilityCriteria": {
+      "mainCriteria": [
+        "Malaysian",
+        "Age 25 years or below.",
+        "Total monthly gross household income of RM11,000 and below."
+      ],
+      "academicQualifications": [
+        "Completed STPM/ Pre-University/ Foundation/ Local Matriculation/ Diploma with a minimum CGPA of 3.30.",
+        "Strong leadership qualities through various leadership positions in school, national and/or global competitions and/or sporting events.",
+        "Active participation in community service."
+      ]
+    },
+    "fullBreakdownofCoverage": [
+      "Tuition Fees",
+      "Monthly Allowance (Living, subsistence, accommodation)",
+      "Laptop Allowance",
+      "Book Allowance"
+    ],
+    "coursesOffered": {
+      "Business / Social Science related courses:": [
+        "Accounting & Finance",
+        "Economics"
+      ],
+      "Engineering and Technology related courses:": [
+        "Data Science",
+        "Data Analytics",
+        "Electrical & Electronic Engineering",
+        "Mechanical Engineering",
+        "Civil Engineering"
+      ],
+      "Architecture & Built Environment related courses:": [
+        "Architecture / Structural / Building",
+        "Urban & Town Planning",
+        "Sustainability",
+        "Quantity Surveying",
+        "Real Estate"
+      ]
+    },
+  "bondingDetails": {
+    "duration": "3 years",
+    "workLocation": "Sime Darby Berhad or Sime Darby Property Berhad",
+    "repaymentConditions": [
+      "Scholarship recipients will have the opportunity to undergo YSD THRIVE – Future Leaders, a comprehensive learning experience for YSD scholars towards producing high quality and well-rounded graduates.",
+      "The initiative offers tailored soft skills training, access to an e-learning platform, volunteering opportunities, mentorship and internships at Sime Darby Berhad and Sime Darby Property Berhad.",
+      "Note: Scholarship monies will be disbursed upon execution of scholarship agreement."
+    ]
+  },
+    "numberOfRecipients": null,
+    "applicationLink": [
+      "https://www.yayasansimedarby.com/scholarship-information"
+    ],
+    "generalInfoLink": null,
+    "ResultNotification": [
+      "Successful candidates are usually notified via email or phone after the selection process.",
+      "Only shortlisted applicants are contacted for interviews and further evaluation."
+    ],
+    "applicationProcess": [
+      {
+        "stage": "Stage 1: Application",
+        "details": "Visit the official scholarship application portal (YSD site) when the intake opens. Fill in the online application form before the deadline. Upload required documents."
+      },
+      {
+        "stage": "Stage 2: Interview",
+        "details": "Only shortlisted candidates will be contacted for an interview with panels.​"
+      },
+      {
+        "stage": "Stage 3: Award",
+        "details": "Only selected candidates will be notified to receive scholarship award."
+      }
+    ],
+    "contactEmail": "scholarships@sime.com",
+    "contactNumber": "03 7623 7106",
+    "scholars": null
+  },
+  {
+
     "id": "astro",
     "name": "Astro Scholarship Programme",
     "shortName": "Astro",
@@ -3049,11 +3232,11 @@
         "Commencing or currently undergoing first full-time degree programme",
         "Total monthly combined household income of RM5,250 and below",
         "Willing to serve Astro Group for a specified term upon graduation",
-        "Not bonded or not presently holding any financial assistance from other organisations and/or institution",
-        "Min 3A’s for STPM / A-Levels or min CGPA 3.3 for Matriculation / Foundation / Diploma",
-        "Strong leadership qualities through active participation in extra-curricular activities, community service, and/or sports events"
+        "Not bonded or not presently holding any financial assistance from other organisations and/or institution"
       ],
-      "academicQualifications": []
+      "academicQualifications": ["Min 3A’s for STPM / A-Levels or min CGPA 3.3 for Matriculation / Foundation / Diploma",
+        "Strong leadership qualities through active participation in extra-curricular activities, community service, and/or sports events"
+      ]
     },
     "requiredDocuments": ["Varies each year"],
     "fullBreakdownofCoverage": [
@@ -3076,16 +3259,10 @@
       "Overseas": []
     },
     "bondingDetails": {
-      "duration": "1 year bond for every 1 year of study",
-      "workLocation": "Astro Group",
-      "repaymentConditions": null
+      "workLocation": "Employment in Astro upon graduation"
     },
     "numberOfRecipients": {
-      "YearofInvestigation": "2025",
-      "local": 13,
-      "overseas": 0,
-      "total": 13,
-      "note": "13 students awarded in 2025"
+      "local": "13 (2025)"
     },
     "applicationLink": "https://careers.astro.com.my/scholarship",
     "applicationProcess": [
@@ -3121,7 +3298,28 @@
     ],
     "contactEmail": "scholarship@astro.com.my",
     "contactNumber": "03-9543 3838",
-    "FAQs": [],
+		"FAQs": [
+			{
+				"Question": "When is the closing date for the scholarship application?",
+				"Answer": "The application period is from 6 May to 30 June 2025. All submissions must be received by 11:59 PM on 30 June 2025. Late applications will not be considered."
+			},
+			{
+				"Question": "Who is eligible to apply?",
+				"Answer": "The scholarship is open to Malaysians aged between 17 and 25 years old, with a combined household income not exceeding RM5,250 per month."
+			},
+			{
+				"Question": "Does the scholarship support overseas studies?",
+				"Answer": "No, this scholarship only supports full-time courses at institutions within Malaysia."
+			},
+			{
+				"Question": "Is there a bond with Astro after graduation?",
+				"Answer": "Yes, recipients are required to serve a bond with Astro Group equivalent to one year of employment for each year of study funded."
+			},
+			{
+				"Question": "How often do you pay out the scholarship amount and to whom?",
+				"Answer": "The agreed amount will be paid directly to scholars each semester, based on invoices or receipts submitted, throughout the duration of the studies."
+			}
+		],
     "scholars": [
       {
         "contributorName": "Adibah Hassan",
@@ -3147,7 +3345,6 @@
       }
     ]
   },
-
   {
     "id": "maxis",
     "name": "Maxis Scholarship Programme",
@@ -3165,20 +3362,22 @@
         "Malaysian citizens aged between 18 to 23",
         "Have obtained admission into a recognised higher education institution in Malaysia",
         "Currently enrolled in or undertaking first or second year of undergraduate or postgraduate studies",
-        "Not holding any financial assistance from other organisations",
-        "Minimum CGPA 3.5 or equivalent",
+        "Not presently holding any financial assistance from other organisations or institutions.",
         "Excellent command of English",
         "Strong leadership and extracurricular involvement",
         "Strong communication and interpersonal skills",
         "Resilient, determined, and driven mindset"
+
       ],
-      "academicQualifications": []
+      "academicQualifications": [
+        "Minimum CGPA 3.5 or equivalent"
+      ]
     },
     "requiredDocuments": [
       "Academic transcripts",
       "University acceptance letter",
-      "Parents’ income proof",
-      "MyKad copy",
+      "Parents’/Guardians’ income proof (1-year)",
+      "MyKad (front & back)",
       "CV",
       "Tuition fee invoice"
     ],
@@ -3197,49 +3396,84 @@
       "Overseas": []
     },
     "bondingDetails": {
-      "duration": "Subject to study duration",
       "workLocation": "Maxis",
       "repaymentConditions": null
     },
     "numberOfRecipients": {
-      "YearofInvestigation": "2024",
-      "local": 16,
-      "overseas": 0,
-      "total": 16,
+      "local": "16 (2024)",
+      "overseas": "0 (2024)",
       "note": "346 students awarded from 2006–2024"
     },
     "applicationLink": "https://www.maxis.com.my/en/about-maxis/career/maxis-scholarship-programme/",
     "applicationProcess": [
       {
         "stage": "Stage 1: Application",
-        "details": "Submit online application and documents",
+        "details": "Complete the online application form and submit the necessary documents and information.",
         "tips": []
       },
       {
         "stage": "Stage 2: Digital Interview",
-        "details": "Pre-recorded video interview",
+        "details": "Answer a few questions in a pre-recorded video interview to showcase your skills and motivation.",
         "tips": []
       },
       {
         "stage": "Stage 3: Assessment",
-        "details": "Evaluation of problem-solving and leadership",
+        "details": "Selected candidates will be invited to assessments that evaluate their problem-solving, leadership, and creative thinking skills.",
         "tips": []
       },
       {
         "stage": "Stage 4: Final Interview",
-        "details": "Interview with senior management",
+        "details": "Shortlisted candidates will meet with our Maxis senior leaders and members of our management team.",
         "tips": []
       },
       {
         "stage": "Stage 5: Award",
-        "details": "Scholarship award ceremony",
+        "details": "Successful candidates will be notified and invited to celebrate their achievements at our Scholarship Award Ceremony.",
         "tips": []
       }
     ],
-    "ResultNotification": ["Only shortlisted candidates will be notified via email"],
+    "ResultNotification": ["Shortlisted candidates are notified via email based on the contact provided in the application. ",
+      "Only shortlisted candidates will be notified via email"],
     "contactEmail": "scholar@maxis.com.my",
     "contactNumber": null,
-    "FAQs": [],
+		"FAQs": [
+			{
+				"Question": "Who can apply or the Maxis Scholarship?",
+				"Answer": "Open to all Malaysian students pursuing their undergraduate or postgraduate studies in recognised Malaysian higher education institutions. Applicants are also required to possess an unconditional offer for their academic studies by the time the scholarship is awarded."
+			},
+			{
+				"Question": "Do I need a specific pre-university qualification to apply?",
+				"Answer": "The scholarship is open to recognised pre-university qualifications, e.g: STPM, A-levels, UEC."
+			},
+			{
+				"Question": "I have obtained admission to an overseas-based university, can I apply for the Maxis Scholarship?",
+				"Answer": "The scholarship is available only to students enrolled in local universities in Malaysia that are recognized by the Malaysian Qualifications Agency (MQA)."
+			},
+			{
+				"Question": "Is application open to those pursuing specialised courses e.g. MBBS, Dentistry, Law, Business, Psychology?",
+				"Answer": "The Maxis Scholarship Programme currently supports a specific selection of undergraduate courses, including Finance, Mathematics, Engineering, and Technology."
+			},
+			{
+				"Question": "As a JPA scholar, can I still apply for the Maxis Scholarship Programme?",
+				"Answer": "Applicants must not hold any financial assistance from other organizations or institutions, including but not limited to JPA, Khazanah, Bank Negara, MyBrain, MARA, Petronas, or Shell."
+			},
+			{
+				"Question": "Can scholars opt out of the internship programme with Maxis?",
+				"Answer": "Participation in the internship programme is mandatory for all scholars. This valuable experience offers insights into the industry and helps develop essential skills, while working alongside experienced professionals at Maxis."
+			},
+			{
+				"Question": "Upon graduation, how long is the bond period with Maxis?",
+				"Answer": "Bond period is subject to the duration and country of the scholars’ studies."
+			},
+			{
+				"Question": "How will I know if I have been shortlisted?",
+				"Answer": "All shortlisted candidates will be notified via email as provided in their application. Due to the high volume of applications, only shortlisted candidates will be notified."
+			},
+			{
+				"Question": "Is there a dedicated point of contact I can reach out to for further enquiries related to the Maxis Scholarship?",
+				"Answer": "For further enquiries, contact scholar@maxis.com.my. However, please expect a delay in response due to high volume of incoming queries."
+			}
+		],
     "scholars": [
       {
         "contributorName": "Larpp Heeng Thong",
@@ -3259,7 +3493,7 @@
     "id": "axiata",
     "name": "Axiata Foundation All-Bestari Scholarship",
     "shortName": "Axiata",
-    "description": "Axiata Foundation invites high-potential students from underprivileged backgrounds to pursue pre-university education at local public institutions.",
+    "description": "Axiata Foundation invites high-potential students from underprivileged and marginalised communities backgrounds who have demonstrated excellence in their academics and beyond to apply for the All-Star Bestari Scholarship. Through the scholarship, they will be supported to pursue their pre-university education at local public institutions.",
     "logoPlaceholder": "/assets/company_logos/axiata_logo.png",
     "scholarshipLevel": "local",
     "applicationTimeline": {
@@ -3271,66 +3505,92 @@
       "mainCriteria": [
         "Malaysian citizen",
         "Aged 19 and below",
-        "Household income RM4,850 and below",
-        "Minimum 6As in SPM"
+        "From families with a monthly combined household income of RM4,850 and below",
+        "Not applicable to employees (including family members) of Axiata Group Berhad or any of its subsidiaries and key associates."
       ],
-      "academicQualifications": []
+      "academicQualifications": ["Have a minimum of 6As* in Sijil Pelajaran Malaysia (SPM)",
+      "*Includes grades of A+, A, or A- for any subjects."]
     },
     "requiredDocuments": [
       "SPM result slip",
       "MyKad copy",
-      "Proof of income",
-      "Admission letter",
-      "Supporting certificates"
+      "Proof of household income",
+      "Admission confirmation or offer letter for a foundation/matriculation programme",
+      "Other personal details and supporting certificates as requested in the online application form."
     ],
     "fullBreakdownofCoverage": [
       "Tuition fees",
       "Living expenses",
-      "Allowances"
+      "Other related allowances"
     ],
     "coursesOffered": {
-      "Local": ["Foundation and matriculation at public universities"],
+      "Local": ["All foundation and matriculation courses that are offered by local public institutions maximum of 1 year"],
       "Overseas": []
     },
     "bondingDetails": {
-      "duration": "No bond",
+      "duration":"No bond",
       "workLocation": null,
       "repaymentConditions": null
     },
     "numberOfRecipients": {
-      "YearofInvestigation": "",
-      "local": "",
-      "overseas": 0,
-      "total": "",
-      "note": "Varies yearly"
+      "note": "Vary according to quota available"
     },
     "applicationLink": "https://www.axiata-foundation.com/education/equity-in-education-fund/application",
-    "applicationProcess": [
-      {
-        "stage": "Stage 1: Application",
-        "details": "Online application submission",
-        "tips": []
-      },
-      {
-        "stage": "Stage 2: Assessment",
-        "details": "Online aptitude tests",
-        "tips": []
-      },
-      {
-        "stage": "Stage 3: Interview",
-        "details": "Final interview and conditional offer",
-        "tips": []
-      },
-      {
-        "stage": "Stage 4: Confirmation",
-        "details": "Offer confirmation after meeting requirements",
-        "tips": []
-      }
-    ],
+		"applicationProcess": [
+			{
+				"stage": "Stage 1: Online Application",
+				"details": "Submit your applications through the Axiata Foundation's website. Your application will then be screened by the Scholarship Programme team.",
+				"tips": []
+			},
+			{
+				"stage": "Stage 2: Online Assessment",
+				"details": "If you meet the eligibility requirements, you will be invited to complete a series of online assessments. These aim to measure aptitude and attitude, and entail verbal and numerical reasoning as well as personal and moral reasoning. Only shortlisted candidates will be contacted for this stage. Online assessments will take place on a rolling basis.",
+				"tips": []
+			},
+			{
+				"stage": "Stage 3: Final Interview and Conditional Offer",
+				"details": "Individual interviews will be conducted, following which conditional offers will be sent out within 30 working days. Only shortlisted candidates will be contacted for this stage. Interviews will take place on a rolling basis.",
+				"tips": []
+			},
+			{
+				"stage": "Stage 4: Offer Confirmation",
+				"details": "Your conditional offer will be confirmed upon your fulfilment of the academic requirements and your admissions to eligible educational institutions.",
+				"tips": []
+			}
+		],
     "ResultNotification": ["Via email or phone"],
     "contactEmail": "axiatafoundation@axiata.com",
     "contactNumber": null,
-    "FAQs": [],
+		"FAQs": [
+			{
+				"Question": "How many intakes of the Scholarship Programme are there per year?",
+				"Answer": "The programme has only one intake per year."
+			},
+			{
+				"Question": "What is the duration of the Scholarship Programme's coverage?",
+				"Answer": "The coverage of the scholarship is for the entirety of the educational course under the scholarship - for example, a maximum of one year for pre-university courses."
+			},
+			{
+				"Question": "What is included in the Scholarship Programme?",
+				"Answer": "The programme includes financial aid to cover tuition fees, living and other related scholarship allowances, as well as structured interventions for personal, academic and professional development."
+			},
+			{
+				"Question": "What courses and institutions are accepted under the Scholarship Programme?",
+				"Answer": "Only foundation and matriculation offered by local public institutions are accepted."
+			},
+			{
+				"Question": "Is there any cost to be borne by the recipient?",
+				"Answer": "No, you will not have to pay any fees during your scholarship period."
+			},
+			{
+				"Question": "Will there be a legally binding contract between Axiata Foundation and the recipient?",
+				"Answer": "Yes, you will be required to sign a contract and a Waiver of Liability with our governing entity, Axiata Foundation. The contract is to ensure that you attend the programme in full and adhere to all other codes of conduct set by Axiata Foundation throughout the duration of your scholarship."
+			},
+			{
+				"Question": "Will I be bonded to Axiata Group Berhad or Axiata Foundation after graduating from the programme?",
+				"Answer": "You will not be required to serve a scholarship bond at any of Axiata’s companies upon completion of your scholarship. However, you will be invited to join the Alumni Association."
+			}
+		],
     "scholars": [
       {
         "contributorName": "Shazaryna Nur Tasha",
@@ -3345,123 +3605,162 @@
       }
     ]
   },
-
   {
-    "id": "cimb_asean",
-    "name": "CIMB ASEAN Scholarship",
-    "shortName": "CIMB",
-    "description": "A prestigious fully funded scholarship supporting ASEAN students to pursue higher education locally or overseas while preparing future leaders in banking.",
-    "logoPlaceholder": "/assets/company_logos/cimb_logo.png",
-    "scholarshipLevel": "global",
-    "applicationTimeline": {
-      "startDate": "April 2026",
-      "endDate": ""
-    },
-    "eligibilityCriteria": {
-      "displayType": "text",
-      "mainCriteria": [
-        "Age 25 and below",
-        "Aspire to work in banking/finance",
-        "Not holding other bonded scholarships",
-        "Strong academic results (e.g. 8As SPM / CGPA 3.5)"
-      ],
-      "academicQualifications": []
-    },
-    "requiredDocuments": [
-      "No documents required at initial stage",
-      "Original certificates required if shortlisted"
-    ],
-    "fullBreakdownofCoverage": [
-      "Tuition fees",
-      "Accommodation",
-      "Living allowance",
-      "Laptop allowance",
-      "Airfare (overseas)",
-      "Internship & mentorship"
-    ],
-    "coursesOffered": {
-      "Local": [
-        "Business, Finance, Economics",
-        "Engineering & Sciences",
-        "Social Sciences",
-        "Data & Digital"
-      ],
-      "Overseas": ["Same fields at top universities"]
-    },
-    "bondingDetails": {
-      "duration": "Local: 1:1, Overseas: 2:1 (max 5 years)",
-      "workLocation": "CIMB Group",
-      "repaymentConditions": "Repayment required if bond is broken"
-    },
-    "numberOfRecipients": {
-      "YearofInvestigation": "2025",
-      "local": "",
-      "overseas": "",
-      "total": 11,
-      "note": "11 students in 2025"
-    },
-    "applicationLink": "https://www.cimb.com/en/careers/students/cimb-asean-scholarship.html",
-    "applicationProcess": [
-      {
-        "stage": "Stage 1: Screening",
-        "details": "Application and verification",
-        "tips": []
-      },
-      {
-        "stage": "Stage 2: Case Study",
-        "details": "Virtual group case study",
-        "tips": []
-      },
-      {
-        "stage": "Stage 3: Assessment Centre",
-        "details": "Interview + bootcamp",
-        "tips": []
-      },
-      {
-        "stage": "Stage 4: Final Interview",
-        "details": "Interview with senior management",
-        "tips": []
-      }
-    ],
-    "ResultNotification": ["Via email"],
-    "contactEmail": "cimbaseanscholarship@cimb.com",
-    "contactNumber": null,
-    "FAQs": [],
-    "scholars": [
-      {
-        "contributorName": "Hannah Safiyah",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Hannah Safiyah",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      },
-      {
-        "contributorName": "Sharvvind Ganesan",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Sharvvind Ganesan",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      },
-      {
-        "contributorName": "Hasya Amalin Hizamel",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Hasya Amalin Hizamel",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      }
-    ]
-  }
+	  "id": "cimb_asean",
+	  "name": "CIMB ASEAN Scholarship",
+	  "shortName": "CIMB",
+	  "description": "The CIMB ASEAN Scholarship is a prestigious fully funded tertiary scholarship offered by CIMB Group. It supports high-potential students from ASEAN countries to pursue undergraduate and postgraduate studies at top-tier universities (local or overseas) while developing future leaders in the financial and banking industry. Scholars also receive mentorship, internships, and structured career development opportunities within CIMB, culminating in employment upon graduation.",
+	  "logoPlaceholder": "/assets/company_logos/cimb_logo.png",
+	  "scholarshipLevel": "global",
+	  "applicationTimeline": {
+	    "startDate": "April 2026",
+	    "endDate": ""
+	  },
+	  "eligibilityCriteria": {
+	    "displayType": "text",
+	    "mainCriteria": [
+	      "Age of 25 years old and below",
+	      "Aspire to pursue a career in the financial and banking industry",
+	      "Applicants who are currently in their diploma/foundation/matriculation/pre-university programme or equivalent and are about to start their undergraduate degree",
+	      "Applicant must not be a recipient of any other scholarship that comes with contractual obligations"
+	    ],
+	    "academicQualifications": [
+	      "SPM: Obtained a minimum of 8As (combination of A and A+)",
+	      "IGCSE: at least 8As",
+	      "STPM: 3As",
+	      "International Baccalaureate (IB): 37 points",
+	      "GCE A-Level Programme: 3As",
+	      "Pre-university / Diploma / Foundation / Matriculation Programme: CGPA 3.50 / 4.00",
+	      "AUSMAT: ATAR of 80"]
+	  },
+	  "requiredDocuments": [
+	    "The initial application stage is entirely digital, so no document attachments are required at this time. However, please ensure your self-reported information is accurate. If you are shortlisted for an interview, you will be required to present the original copies of your certificates and transcripts for formal verification."
+	  ],
+	  "fullBreakdownofCoverage": [
+	    "Tuition fees",
+	    "Accomodation fee",
+	    "Living allowance",
+	    "Book & study materials allowance",
+	    "Laptop allowance",
+	    "Airfare & visa expenses (for overseas study)",
+	    "Mentorship program",
+	    "Internship opportunities"
+	  ],
+	  "coursesOffered": {
+	    " ": [
+	      "Business & marketing",
+	      "Economics",
+	      "Finance",
+	      "Sciences & engineering",
+	      "Social sciences",
+	      "Digital and data"
+	    ]
+	  },
+	  "bondingDetails": {
+	    "duration": "1 year for every year of study (local) / 2 years for every year of study (overseas). However, the bond period will not exceed the maximum of 5 years.",
+	    "workLocation": "CIMB Group"
+	  },
+	  "numberOfRecipients": {
+	    "YearofInvestigation": "2025",
+	    "total": 11
+	  },
+	  "applicationLink": "[https://www.cimb.com/en/careers/students/cimb-asean-scholarship.html](https://www.cimb.com/en/careers/students/cimb-asean-scholarship.html)",
+	  "applicationProcess": [
+	    {
+	      "stage": "Stage 1: Application and Verification",
+	      "details": "All applications are screened to ensure that the basic eligibility criteria are fulfilled. Shortlisted applicants will be invited to take part in CIMB’s online assessments.",
+	      "tips": []
+	    },
+	    {
+	      "stage": "Stage 2: Virtual Case Study",
+	      "details": "Shortlisted applicants will undergo a virtual group case study assessment.",
+	      "tips": []
+	    },
+	    {
+	      "stage": "Stage 3: Assessment Centre",
+	      "details": "Shortlisted applicants will participate in our Assessment Centre which consists of 2 parts; Structured Interview and an Assessment Bootcamp.",
+	      "tips": []
+	    },
+	    {
+	      "stage": "Stage 4: Final Interview",
+	      "details": "Shortlisted applicants will undergo a final interview with CIMB Group’s senior management.",
+	      "tips": []
+	    }
+	  ],
+	  "ResultNotification": [
+	    "Via email"
+	  ],
+	  "contactEmail": "cimbaseanscholarship@cimb.com",
+	  "contactNumber": "-",
+	  "FAQs": [
+	    {
+	      "Question": "Do I need to have been accepted by a university to apply?",
+	      "Answer": "Not necessarily, we also welcome applicants expecting acceptance from a top-tier university for their studies. However, applicants must possess an unconditional offer by the time the scholarship is awarded."
+	    },
+	    {
+	      "Question": "Do I need to be a student of Finance and Banking background?",
+	      "Answer": "Our scholarship is open to applicants from a wide variety of academic disciplines- Business & marketing, economics, finance, sciences & engineering, social sciences and digital and data related courses. However, please note that all scholars are expected to return to CIMB to serve their bond upon completion of study. As such, applicants should foresee themselves building a career in the financial and banking industry."
+	    },
+	    {
+	      "Question": "What is the coverage of the CIMB ASEAN Scholarship?",
+	      "Answer": "The CIMB ASEAN Scholarship is a full scholarship award covering all academic fees, including registration, examination and tuition fees, as well as living allowance. Other miscellaneous expenses related to airfare, visa/travel documents will also be subsidised."
+	    },
+	    {
+	      "Question": "Can I appeal if I am not shortlisted?",
+	      "Answer": "Unfortunately, no. All decisions of the selection committee will be considered final."
+	    },
+	    {
+	      "Question": "I missed the application deadline. Can I submit my application manually?",
+	      "Answer": "No. Only applications submitted by the stipulated closing date will be accepted. Any applications made after the deadline will not be considered."
+	    },
+	    {
+	      "Question": "If I do not complete the programme or fail to obtain the education qualification, do I need to repay CIMB Group?",
+	      "Answer": "Yes, you will need to reimburse all expenditure borne by CIMB Group."
+	    },
+	    {
+	      "Question": "During my application, will I need to use my results from a specific pre-university programme to apply?",
+	      "Answer": "No, we accept results from country-specific, local or international pre-university/foundation programmes or degree."
+	    },
+	    {
+	      "Question": "I have family members working in CIMB Group; can I apply for the scholarship?",
+	      "Answer": "Yes, we will accept your application as long as you are able to satisfy our basic eligibility criteria."
+	    }
+	  ],
+	  "scholars": [
+	    {
+	      "contributorName": "Hannah Safiyah",
+	      "contributorImage": null,
+	      "intendedCourse": null,
+	      "currentInstitution": null,
+	      "contactInformation": "LinkedIn: Hannah Safiyah",
+	      "currentStudies": null,
+	      "motivationalQuote": null,
+	      "resumeImages": [],
+	      "stories": []
+	    },
+	    {
+	      "contributorName": "Sharvvind Ganesan",
+	      "contributorImage": null,
+	      "intendedCourse": null,
+	      "currentInstitution": null,
+	      "contactInformation": "LinkedIn: Sharvvind Ganesan",
+	      "currentStudies": null,
+	      "motivationalQuote": null,
+	      "resumeImages": [],
+	      "stories": []
+	    },
+	    {
+	      "contributorName": "Hasya Amalin Hizamel",
+	      "contributorImage": null,
+	      "intendedCourse": null,
+	      "currentInstitution": null,
+	      "contactInformation": "LinkedIn: Hasya Amalin Hizamel",
+	      "currentStudies": null,
+	      "motivationalQuote": null,
+	      "resumeImages": [],
+	      "stories": []
+	    }
+	  ]
+	}
 ]
 
