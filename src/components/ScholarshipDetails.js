@@ -631,20 +631,45 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
         </Section>
 
         <Section>
-          <h2>Courses Offered</h2>
-          {Array.isArray(coursesOffered) ? (
-            <ul>
-              {coursesOffered.map((course, index) => (
-                <li key={index}>{course}</li>
-              ))}
-            </ul>
-          ) : (
-            coursesOffered && Object.entries(coursesOffered).map(([category, list], index) => (
-              <div key={index}>
-                <h4>{category}</h4>
-                <ul>
-                  {Array.isArray(list) ? (
-                    list.map((course, i) => <li key={i}>{course}</li>)
+        <h2>Courses Offered</h2>
+        
+        {/* Case 1: It's a direct URL string */}
+        {typeof coursesOffered === 'string' && coursesOffered.startsWith('http') ? (
+          <div style={{ 
+            padding: '15px', 
+            backgroundColor: '#f8f9fa', 
+            borderLeft: '4px solid #007bff', 
+            borderRadius: '4px',
+            marginTop: '10px' 
+          }}>
+            <p style={{ margin: 0 }}>
+              For the full list of participating colleges and courses, please visit: 
+              <br />
+              <a 
+                href={coursesOffered} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                style={{ color: '#0056b3', fontWeight: 'bold', textDecoration: 'underline', wordBreak: 'break-all' }}
+              >
+                {coursesOffered}
+              </a>
+            </p>
+          </div>
+        ) : Array.isArray(coursesOffered) ? (
+          /* Case 2: It's a simple array of strings */
+          <ul>
+            {coursesOffered.map((course, index) => (
+              <li key={index}>{course}</li>
+            ))}
+          </ul>
+        ) : (
+          /* Case 3: It's an object with categories */
+          coursesOffered && Object.entries(coursesOffered).map(([category, list], index) => (
+            <div key={index}>
+              <h4>{category}</h4>
+              <ul>
+                {Array.isArray(list) ? (
+                  list.map((course, i) => <li key={i}>{course}</li>)
                 ) : (
                   <li>{list}</li>
                 )}
@@ -785,18 +810,39 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           <h2>Frequently Asked Questions (FAQs)</h2>
           {(FAQs || []).map((faq, index) => {
             const [question, answer] = Object.values(faq);
+            
+            // Check if the answer is a URL
+            const isUrl = typeof answer === 'string' && answer.startsWith('http');
+
             return (
               <div key={index} style={{ marginBottom: '20px' }}>
                 <h3 style={{ color: '#333', fontSize: '18px' }}>Q: {question}</h3>
-                <p style={{ marginLeft: '10px', borderLeft: '3px solid #007bff', paddingLeft: '15px' }}>
-                  {answer}
-                </p>
+                
+                <div style={{ marginLeft: '10px', borderLeft: '3px solid #007bff', paddingLeft: '15px' }}>
+                  {isUrl ? (
+                    <a 
+                      href={answer} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      style={{ 
+                        display: 'inline-block',
+                        color: '#007bff', 
+                        fontWeight: 'bold', 
+                        textDecoration: 'underline',
+                        marginTop: '5px' 
+                      }}
+                    >
+                      Click here to view the full FAQs on the official website
+                    </a>
+                  ) : (
+                    <p style={{ margin: 0 }}>{answer}</p>
+                  )}
+                </div>
               </div>
             );
           })}
         </Section>
       )}
-
         {isVisible && (
           <BackToTopButton onClick={scrollToTop}>
             <ArrowUpward /> Back To Top
