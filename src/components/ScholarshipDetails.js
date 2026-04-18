@@ -489,12 +489,21 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
           </Section>
         )}
 
-        <Section>
-          <h2>Application Timeline</h2>
-          <p><strong>Start Date:</strong> {applicationTimeline?.startDate}</p>
-          <p><strong>End Date:</strong> {applicationTimeline?.endDate}</p>
-          {applicationTimeline?.note && <p><i>*{applicationTimeline.note}</i></p>}
-        </Section>
+        {/* Only render the section if applicationTimeline exists */}
+        {applicationTimeline && (
+          <Section>
+            <h2>Application Timeline</h2>
+            {applicationTimeline.startDate && (
+              <p><strong>Start Date:</strong> {applicationTimeline.startDate}</p>
+            )}
+            {applicationTimeline.endDate && (
+              <p><strong>End Date:</strong> {applicationTimeline.endDate}</p>
+            )}
+            {applicationTimeline.note && (
+              <p><i>*{applicationTimeline.note}</i></p>
+            )}
+          </Section>
+        )}
 
         <Section>
           <h2>Eligibility Criteria</h2>
@@ -763,7 +772,7 @@ const ScholarshipDetails = ({ setScrollPosition }) => {
                    YearofInvestigation: "Year of Investigation",
                     local: "Local Recipients",
                     overseas: "Overseas Recipients",
-                   total: "Total",
+                    total: "Total",
                     note: "Note"
                  };
 

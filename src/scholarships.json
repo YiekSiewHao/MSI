@@ -15,7 +15,7 @@
       "mainCriteria": [
         "SPM 2025 candidate",
         "Malaysian citizen aged between 16-19 years old in 2026",
-        "Strong leadership skills and active participation (demostrable) in extra-curricular activities",
+        "Strong leadership skills and active participation (demonstrable) in extra-curricular activities",
         {
           "title": "Minimum Academic Requirement",
           "detail": ["Only grades A and A+ will be counted towards the total number of A grades.", "Grade A- will not be counted towards the minimum academic requirement."]
@@ -1779,8 +1779,7 @@
         "Obtained A+ in Bahasa Melayu",
         "Not exceeding 19 years of age",
         "Citizen of Sabah"
-      ],
-      "additionalCriteria": []
+      ]
     },
     "fullBreakdownofCoverage": [
       {
@@ -2505,17 +2504,18 @@
       "note": "(Right after announcement of SPM Results and last for one week)(subject to change)"
     },
     "eligibilityCriteria": {
+      "displayType": "table",
       "mainCriteria": [
         "Participate in diverse types of extracurricular activities"
       ],
       "academicQualifications": [
-        "Local Programme",
         {
+          "field": "Local Programme",
           "criteria":["Not exceed 20 years old in Dec 2026.",
 	                    "Active in co-curricular activities."]
         },
-        "Overseas Programme",
         {
+          "field": "Overseas Programme",
           "criteria": ["Obtained a minimum of 8 A+ for SPM 2025 with minimum A for Sejarah",
                       "Compulsory subjects: Bahasa Melayu, Bahasa Inggeris, Matematik Moden",
                       "1119-GCEO/CEFR (Min C1)",
@@ -2868,8 +2868,7 @@
       "workLocation": null
     },
     "numberOfRecipients": {
-      "previousYear": "2025: 42 students",
-      "annually": null
+      "Previous Year": "2025: 42 students"
     },
     "applicationLink": [
       "https://scedufund.sinchew.com.my/en/reference.php",
@@ -2989,13 +2988,9 @@
     ],
     "countriesOffered": ["Local"],
     "bondingDetails": {
-      "duration": "No bonding",
-      "workLocation": null
+      "duration": "No bonding"
     },
-    "numberOfRecipients": {
-      "previousYear": null,
-      "annually": null
-    },
+    "numberOfRecipients": null,
     "applicationLink": [
       "https://www.thestar.com.my/edufund"
     ],
@@ -3017,28 +3012,15 @@
     ],
     "contactEmail": "edufund@thestar.com.my",
     "contactNumber": "03-7967 1388",
-    "scholars": [
-      {
-        "contributorName": null,
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": null,
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImage": null,
-        "stories": null
-      }
-    ]
+    "scholars": null
   },
   {
     "id": "TSLLSF",
     "name": "Tan Sri Lee Loy Seng",
     "shortName": "TSLLSF",
     "description": "The TAN SRI LEE LOY SENG FOUNDATION is an educational foundation which among other charitable activities, award scholarships to Malaysian students irrespective of their race and religion. The scholarship is tenable for the period laid down for the course of study leading to a first degree in local institutions of higher learning and will be offered on a year-to-year basis based on successful results obtained annually.​",
-    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "logoPlaceholder": "/assets/company_logos/TSLLSF_logo.jpg",
     "scholarshipLevel": "local",
-    "applicationTimeline": null,
     "requiredDocuments": [
       "Passport Size Photograph",
       "Personal Statement",
@@ -3094,7 +3076,9 @@
     "coursesOffered": [
       "Open to students pursuing diploma or undergraduate degrees at local Malaysian institutions."
     ],
-  "bondingDetails": ["No bomding"],
+  "bondingDetails": {
+    "duration": "No bonding"
+  },
     "numberOfRecipients": null,
     "applicationLink": [
       "https://www.tsllsfoundation.org/how-to-apply"
@@ -3132,7 +3116,7 @@
     "name": "Yayasan Sime Darby Scholarship",
     "shortName": "Sime Darby",
     "description": "Yayasan Sime Darby invites qualified undergraduate students for the September 2025 intake and first-year undergraduate students to apply for an excellence scholarship to pursue/complete their academic dreams at a reputable higher learning institution in Malaysia.​",
-    "logoPlaceholder": "/assets/company_logos/thestar_logo.png",
+    "logoPlaceholder": "/assets/company_logos/Sime_Darby_logo.png",
     "scholarshipLevel": "local",
     "applicationTimeline": {
       "startDate": "09/03/2026",
@@ -3255,8 +3239,7 @@
         "Journalism / Broadcasting",
         "Mass Communication / Public Relation",
         "Human Resource"
-      ],
-      "Overseas": []
+      ]
     },
     "bondingDetails": {
       "workLocation": "Employment in Astro upon graduation"
@@ -3320,30 +3303,7 @@
 				"Answer": "The agreed amount will be paid directly to scholars each semester, based on invoices or receipts submitted, throughout the duration of the studies."
 			}
 		],
-    "scholars": [
-      {
-        "contributorName": "Adibah Hassan",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Adibah Hassan",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      },
-      {
-        "contributorName": "Lisaa Kamal",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: LISAA KAMAL",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      }
-    ]
+    "scholars": null
   },
   {
     "id": "maxis",
@@ -3352,10 +3312,7 @@
     "description": "Maxis is committed to developing tech-savvy, forward-thinking leaders. Through the Maxis Scholarship Programme, they empower high-potential young Malaysians to achieve their academic ambitions while driving meaningful progress.",
     "logoPlaceholder": "/assets/company_logos/maxis_logo.png",
     "scholarshipLevel": "local",
-    "applicationTimeline": {
-      "startDate": "",
-      "endDate": ""
-    },
+    "applicationTimeline": null,
     "eligibilityCriteria": {
       "displayType": "text",
       "mainCriteria": [
@@ -3392,8 +3349,7 @@
         "Technology (AI, Cloud Computing, Computer Science, Cybersecurity, Data Science, IT)",
         "Mathematics / Statistics / Actuarial Science",
         "Accounting / Finance / Economics"
-      ],
-      "Overseas": []
+      ]
     },
     "bondingDetails": {
       "workLocation": "Maxis",
@@ -3474,19 +3430,7 @@
 				"Answer": "For further enquiries, contact scholar@maxis.com.my. However, please expect a delay in response due to high volume of incoming queries."
 			}
 		],
-    "scholars": [
-      {
-        "contributorName": "Larpp Heeng Thong",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Larpp Heeng Thong",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      }
-    ]
+    "scholars": null
   },
 
   {
@@ -3524,8 +3468,7 @@
       "Other related allowances"
     ],
     "coursesOffered": {
-      "Local": ["All foundation and matriculation courses that are offered by local public institutions maximum of 1 year"],
-      "Overseas": []
+      "Local": ["All foundation and matriculation courses that are offered by local public institutions maximum of 1 year"]
     },
     "bondingDetails": {
       "duration":"No bond",
@@ -3591,19 +3534,7 @@
 				"Answer": "You will not be required to serve a scholarship bond at any of Axiata’s companies upon completion of your scholarship. However, you will be invited to join the Alumni Association."
 			}
 		],
-    "scholars": [
-      {
-        "contributorName": "Shazaryna Nur Tasha",
-        "contributorImage": null,
-        "intendedCourse": null,
-        "currentInstitution": null,
-        "contactInformation": "LinkedIn: Shazaryna Nur Tasha",
-        "currentStudies": null,
-        "motivationalQuote": null,
-        "resumeImages": [],
-        "stories": []
-      }
-    ]
+    "scholars": null
   },
   {
 	  "id": "cimb_asean",
@@ -3691,7 +3622,7 @@
 	    "Via email"
 	  ],
 	  "contactEmail": "cimbaseanscholarship@cimb.com",
-	  "contactNumber": "-",
+	  "contactNumber": null,
 	  "FAQs": [
 	    {
 	      "Question": "Do I need to have been accepted by a university to apply?",
@@ -3726,41 +3657,7 @@
 	      "Answer": "Yes, we will accept your application as long as you are able to satisfy our basic eligibility criteria."
 	    }
 	  ],
-	  "scholars": [
-	    {
-	      "contributorName": "Hannah Safiyah",
-	      "contributorImage": null,
-	      "intendedCourse": null,
-	      "currentInstitution": null,
-	      "contactInformation": "LinkedIn: Hannah Safiyah",
-	      "currentStudies": null,
-	      "motivationalQuote": null,
-	      "resumeImages": [],
-	      "stories": []
-	    },
-	    {
-	      "contributorName": "Sharvvind Ganesan",
-	      "contributorImage": null,
-	      "intendedCourse": null,
-	      "currentInstitution": null,
-	      "contactInformation": "LinkedIn: Sharvvind Ganesan",
-	      "currentStudies": null,
-	      "motivationalQuote": null,
-	      "resumeImages": [],
-	      "stories": []
-	    },
-	    {
-	      "contributorName": "Hasya Amalin Hizamel",
-	      "contributorImage": null,
-	      "intendedCourse": null,
-	      "currentInstitution": null,
-	      "contactInformation": "LinkedIn: Hasya Amalin Hizamel",
-	      "currentStudies": null,
-	      "motivationalQuote": null,
-	      "resumeImages": [],
-	      "stories": []
-	    }
-	  ]
+	  "scholars": null
 	}
 ]
 
